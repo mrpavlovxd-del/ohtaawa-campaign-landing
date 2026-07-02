@@ -40,7 +40,7 @@
     }
 
     * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+    html { scroll-behavior: smooth; overflow-x: hidden; }
     body {
       margin: 0;
       background: var(--black);
@@ -49,6 +49,7 @@
       line-height: 1.45;
       letter-spacing: 0;
       text-rendering: geometricPrecision;
+      overflow-x: hidden;
     }
     body, button { font: inherit; }
     a { color: inherit; }
@@ -1212,13 +1213,14 @@
     @media (max-width: 780px) {
       .wrap,
       .topbar-inner { width: min(100% - 28px, var(--max)); }
-      .topbar-inner { min-height: 66px; }
+      .topbar-inner { min-height: 66px; gap: 12px; }
+      .top-nav { display: none; }
       .brand-symbol { width: 38px; height: 38px; }
       .brand-symbol img { left: -25px; width: 90px; }
       .brand-wordmark { width: 132px; height: 24px; }
       .brand-wordmark img { top: -64px; width: 132px; }
       .brand-subtitle { display: none; }
-      .top-actions { gap: 10px; }
+      .top-actions { gap: 10px; margin-left: auto; min-width: 0; }
       .top-actions .top-cta { display: none; }
       .phone-link { font-size: 13px; }
       .hero { min-height: auto; }
@@ -1289,6 +1291,13 @@
     }
     @media (max-width: 420px) {
       h1 { font-size: 37px; }
+      .topbar-inner { width: calc(100% - 20px); }
+      .brand { gap: 8px; }
+      .brand-symbol { width: 34px; height: 34px; }
+      .brand-symbol img { left: -23px; width: 82px; }
+      .brand-wordmark { width: 122px; height: 22px; }
+      .brand-wordmark img { top: -59px; width: 122px; }
+      .phone-link { font-size: 12px; }
       .messenger-row { gap: 8px; }
       .mobile-sticky { grid-template-columns: 1fr 1fr; }
       .mobile-sticky .action-btn { min-height: 47px; }
