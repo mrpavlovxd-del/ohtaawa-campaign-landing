@@ -1,0 +1,58 @@
+{
+  "manifest_version": 1,
+  "project": "OHTAAWA paid landing trust and performance pass v9",
+  "created_at": "2026-07-11",
+  "policy": "Generated assets may create atmosphere or explain a service, but are not real work or proof.",
+  "assets": [
+    {
+      "file": "hero-detailing-bay-v9.webp",
+      "source_type": "generated-illustrative-approved-by-owner",
+      "role": "hero atmosphere",
+      "proof": false
+    },
+    {
+      "file": "protective-film-route-v9.webp",
+      "source_type": "generated-illustrative-approved-by-owner",
+      "role": "new-car scenario illustration",
+      "proof": false
+    },
+    {
+      "file": "polishing-illustrative-v9.webp",
+      "source_type": "generated-illustrative-approved-by-owner",
+      "role": "used-car scenario illustration",
+      "proof": false
+    },
+    {
+      "file": "protective-film-illustrative-v9.webp",
+      "source_type": "generated-illustrative-approved-by-owner",
+      "role": "service process illustration",
+      "proof": false
+    },
+    {
+      "file": "hero-illustrative-v9.webp",
+      "source_type": "generated-illustrative-approved-by-owner",
+      "role": "studio/service illustration",
+      "proof": false
+    },
+    {
+      "file": "real-color-film-front-v9.webp",
+      "source_type": "owner-provided-real-ohtaawa-material",
+      "role": "real color-film result",
+      "proof": true,
+      "privacy": "branded OHTAAWA plate; no private plate used"
+    },
+    {
+      "file": "real-color-film-rear-v9.webp",
+      "source_type": "owner-provided-real-ohtaawa-material",
+      "role": "real color-film result",
+      "proof": true,
+      "privacy": "branded OHTAAWA plate; no private plate used"
+    },
+    {
+      "file": "polish-real-before-after-v9.webp",
+      "source_type": "owner-provided-real-before-after",
+      "role": "real polishing proof",
+      "proof": true
+    }
+  ]
+}
