@@ -1,5 +1,5 @@
 ﻿<!doctype html>
-<html lang="ru" data-ohtaawa-metrica-counter-id="100699599">
+<html lang="ru" data-ohtaawa-metrica-counter-id="100699599" data-ohtaawa-metrica-counter-ids="100699599,110584673">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -1654,6 +1654,7 @@
 
   <script>
     window.ohtaawaMetricaCounterId = window.ohtaawaMetricaCounterId || "100699599";
+    window.ohtaawaMetricaCounterIds = window.ohtaawaMetricaCounterIds || ["100699599", "110584673"];
     window.ohtaawaRequiredEvents = [
       "lead_phone_polish_film_v8",
       "lead_telegram_polish_film_v8",
@@ -1684,8 +1685,19 @@
       trackLinks:true,
       accurateTrackBounce:true
     });
+    ym(110584673, "init", {
+      ssr:true,
+      webvisor:true,
+      clickmap:true,
+      ecommerce:"dataLayer",
+      referrer:document.referrer,
+      url:location.href,
+      accurateTrackBounce:true,
+      trackLinks:true
+    });
   </script>
   <noscript><div><img src="https://mc.yandex.ru/watch/100699599" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <noscript><div><img src="https://mc.yandex.ru/watch/110584673" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
   <script>
     (function () {
       var fired = {};
@@ -1707,9 +1719,12 @@
         var payload = eventPayload(name, details || {});
         window.dataLayer = window.dataLayer || [];
         window.dataLayer.push(payload);
-        var counterId = window.ohtaawaMetricaCounterId || document.documentElement.getAttribute("data-ohtaawa-metrica-counter-id");
-        if (counterId && typeof window.ym === "function") {
-          window.ym(counterId, "reachGoal", name, payload);
+        var fallbackCounterId = window.ohtaawaMetricaCounterId || document.documentElement.getAttribute("data-ohtaawa-metrica-counter-id");
+        var counterIds = window.ohtaawaMetricaCounterIds || (fallbackCounterId ? [fallbackCounterId] : []);
+        if (typeof window.ym === "function") {
+          counterIds.forEach(function (counterId) {
+            window.ym(counterId, "reachGoal", name, payload);
+          });
         }
       }
       function sendOnce(name, details) {
