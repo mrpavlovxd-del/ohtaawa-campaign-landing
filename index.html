@@ -15,8 +15,8 @@
   <meta name="twitter:title" content="OHTAAWA - детейлинг-мойка при записи" />
   <meta name="twitter:description" content="Полировка, защитная антигравийная пленка и консультация по кузову в OHTAAWA." />
   <meta name="twitter:image" content="https://go.detailingspb.ru/assets/hero-detailing-bay-v8.png" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <link rel="shortcut icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="shortcut icon" type="image/svg+xml" href="favicon.svg" />
   <style>
     :root {
       color-scheme: dark;
@@ -438,6 +438,15 @@
       gap: 14px;
       align-items: stretch;
       margin-bottom: 0;
+    }
+    .hero[data-scenario="new-car"] .hero-routes,
+    .hero[data-scenario="used-car"] .hero-routes {
+      grid-template-columns: minmax(0, 1fr);
+      max-width: 760px;
+    }
+    .hero[data-scenario="new-car"] [data-ohtaawa-route="used-car"],
+    .hero[data-scenario="used-car"] [data-ohtaawa-route="new-car"] {
+      display: none;
     }
     .route-pill {
       min-height: 136px;
@@ -911,6 +920,20 @@
       object-fit: cover;
       filter: brightness(.82) contrast(1.06) saturate(.92);
     }
+    .trust-photo-pair {
+      display: grid;
+      grid-template-columns: minmax(0, 1.3fr) minmax(0, .7fr);
+      width: 100%;
+      height: 100%;
+    }
+    .trust-photo-pair img {
+      min-width: 0;
+      object-position: 52% center;
+    }
+    .trust-photo-pair img + img {
+      border-left: 1px solid rgba(245, 239, 228, .16);
+      object-position: 53% center;
+    }
     .trust-visual::after {
       content: "";
       position: absolute;
@@ -982,20 +1005,20 @@
     .review-link:hover { color: var(--ivory); }
     .proof-photos {
       display: grid;
-      grid-template-columns: minmax(0, 1.28fr) minmax(0, .72fr);
+      grid-template-columns: 1fr;
       gap: 12px;
       margin-top: 14px;
     }
     .proof-photos img {
       width: 100%;
-      aspect-ratio: 1.08 / 1;
+      aspect-ratio: 16 / 9;
       object-fit: cover;
       border-radius: 20px;
       border: 1px solid rgba(245, 239, 228, .14);
       filter: brightness(.84) contrast(1.06) saturate(.9);
     }
     .proof-photos img:first-child {
-      aspect-ratio: 1.34 / 1;
+      aspect-ratio: 16 / 9;
       object-position: center center;
     }
     .location-band {
@@ -1148,7 +1171,7 @@
     .mobile-sticky {
       display: none;
       position: fixed;
-      inset: auto 12px 12px;
+      inset: auto 12px calc(12px + env(safe-area-inset-bottom));
       z-index: 90;
       gap: 8px;
       padding: 8px;
@@ -1211,6 +1234,7 @@
       .location-grid { grid-template-columns: 1fr; }
     }
     @media (max-width: 780px) {
+      body { padding-bottom: calc(88px + env(safe-area-inset-bottom)); }
       .wrap,
       .topbar-inner { width: min(100% - 28px, var(--max)); }
       .topbar-inner { min-height: 66px; gap: 12px; }
@@ -1274,8 +1298,9 @@
       .service-copy h3 { font-size: 31px; }
       .service-copy p { font-size: 15px; }
       .terms-box { padding: 24px; border-radius: 26px; }
-      .trust-visual,
-      .trust-visual img { min-height: 360px; }
+      .trust-visual { min-height: 420px; }
+      .trust-visual img { min-height: 420px; }
+      .trust-photo-pair { grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); }
       .proof-photos { grid-template-columns: 1fr; }
       .proof-photos img,
       .proof-photos img:first-child { aspect-ratio: 16 / 9; }
@@ -1333,35 +1358,35 @@
       </div>
     </header>
 
-    <section class="hero" id="top">
-      <img class="hero-bg" src="assets/hero-detailing-bay-v8.png" alt="" />
+    <section class="hero" id="top" data-scenario="generic">
+      <img class="hero-bg" src="assets/hero-detailing-bay-v9.webp" alt="" fetchpriority="high" decoding="async" />
       <div class="hero-veil"></div>
       <div class="hero-light"></div>
       <div class="hero-inner">
         <div class="hero-main">
           <div class="hero-copy">
             <span class="eyebrow">Санкт-Петербург и Ленинградская область</span>
-            <h1>Бесплатная детейлинг-мойка кузова</h1>
-            <p class="hero-lead">при записи на полировку или защитную антигравийную пленку</p>
-            <p class="offer-line">Сначала моем кузов и смотрим состояние лака. Если после консультации вы фиксируете запись на полировку или оклейку пленкой, мойка кузова идет за счет OHTAAWA.</p>
+            <h1 data-scenario-slot="headline">Бесплатная детейлинг-мойка кузова</h1>
+            <p class="hero-lead" data-scenario-slot="lead">при записи на полировку или защитную антигравийную пленку</p>
+            <p class="offer-line" data-scenario-slot="offer">Сначала моем кузов и смотрим состояние лака. Если после консультации вы фиксируете запись на полировку или оклейку пленкой, мойка кузова идет за счет OHTAAWA.</p>
           </div>
         </div>
         <div class="hero-routes">
-          <a class="route-pill" href="#new-car" data-ohtaawa-event="route_new_car_film_v8" data-ohtaawa-location="hero_route">
-            <img src="assets/protective-film-route-v8.png" alt="" />
+          <a class="route-pill" href="#new-car" data-ohtaawa-route="new-car" data-ohtaawa-event="route_new_car_film_v8" data-ohtaawa-location="hero_route">
+            <img src="assets/protective-film-route-v9.webp" alt="" decoding="async" />
             <h3>Новый автомобиль</h3>
             <p>Защитная антигравийная пленка на зоны риска, прозрачная или цветная.</p>
           </a>
-          <a class="route-pill" href="#used-car" data-ohtaawa-event="route_used_polish_v8" data-ohtaawa-location="hero_route">
-            <img src="assets/polishing-illustrative-v8.png" alt="" />
+          <a class="route-pill" href="#used-car" data-ohtaawa-route="used-car" data-ohtaawa-event="route_used_polish_v8" data-ohtaawa-location="hero_route">
+            <img src="assets/polishing-illustrative-v9.webp" alt="" decoding="async" />
             <h3>Авто с пробегом</h3>
             <p>Полировка, восстановление блеска и защита после подготовки.</p>
           </a>
         </div>
         <div class="contact-panel hero-contact-row" id="contacts" aria-label="Способы связи">
           <div class="contact-panel-head">
-            <b>Напишите марку авто и задачу</b>
-            <span>Менеджер предложит ближайшее окно на осмотр кузова.</span>
+            <b data-scenario-slot="contact-title">Напишите марку авто и задачу</b>
+            <span data-scenario-slot="contact-note">Менеджер предложит ближайшее окно на осмотр кузова.</span>
           </div>
           <div class="messenger-row">
             <a class="action-btn primary" href="https://t.me/ohtaawa_chat" aria-label="Написать в Telegram" title="Telegram" data-ohtaawa-event="lead_telegram_polish_film_v8" data-ohtaawa-location="hero" data-ohtaawa-clipboard="Добрый день! Хочу подобрать время осмотра кузова. Авто: [марка/модель]. Задача: полировка или защитная антигравийная пленка.">
@@ -1396,7 +1421,7 @@
         </div>
         <div class="scenario-grid">
           <article class="scenario-card" id="new-car">
-            <img src="assets/protective-film-route-v8.png" alt="" />
+            <img src="assets/protective-film-route-v9.webp" alt="" loading="lazy" decoding="async" />
             <div class="scenario-content">
               <span class="scenario-topline">Новый автомобиль</span>
               <h3>Защитная антигравийная пленка</h3>
@@ -1410,7 +1435,7 @@
             </div>
           </article>
           <article class="scenario-card" id="used-car">
-            <img src="assets/polishing-illustrative-v8.png" alt="" />
+            <img src="assets/polishing-illustrative-v9.webp" alt="" loading="lazy" decoding="async" />
             <div class="scenario-content">
               <span class="scenario-topline">Авто с пробегом</span>
               <h3>Полировка и восстановление внешнего вида</h3>
@@ -1427,7 +1452,7 @@
       </div>
     </section>
 
-    <section class="price-band" aria-label="Ориентиры по стоимости">
+    <section class="price-band" aria-label="Ориентиры по стоимости" data-ohtaawa-view-event="price_view_polish_film_v9">
       <div class="wrap">
         <div class="section-head">
           <div>
@@ -1469,7 +1494,7 @@
       <div class="wrap">
         <div class="inspection-panel">
           <figure class="inspection-visual">
-            <img src="assets/protective-film-illustrative-v8.png" alt="" />
+            <img src="assets/protective-film-illustrative-v9.webp" alt="" loading="lazy" decoding="async" />
           </figure>
           <div class="inspection-card">
             <span class="section-kicker">Как проходит визит</span>
@@ -1511,7 +1536,7 @@
               <p>Для владельцев новых и свежих автомобилей, которые хотят сохранить лак, закрыть зоны риска или аккуратно изменить внешний вид без перекраса.</p>
             </div>
             <figure class="service-image">
-              <img src="assets/protective-film-route-v8.png" alt="" />
+              <img src="assets/protective-film-route-v9.webp" alt="" loading="lazy" decoding="async" />
             </figure>
           </article>
           <article class="service-row">
@@ -1521,7 +1546,7 @@
               <p>Не обещаем одинаковый результат всем. Сначала смотрим толщину и состояние покрытия, затем выбираем мягкую, среднюю или более глубокую коррекцию.</p>
             </div>
             <figure class="service-image">
-              <img src="assets/polishing-illustrative-v8.png" alt="" />
+              <img src="assets/polishing-illustrative-v9.webp" alt="" loading="lazy" decoding="async" />
             </figure>
           </article>
           <article class="service-row">
@@ -1531,7 +1556,7 @@
               <p>Когда кузов уже подготовлен, защитное покрытие помогает дольше удерживать чистый вид, глубину цвета и гладкость поверхности.</p>
             </div>
             <figure class="service-image">
-              <img src="assets/hero-illustrative-v8.png" alt="" />
+              <img src="assets/hero-illustrative-v9.webp" alt="" loading="lazy" decoding="async" />
             </figure>
           </article>
         </div>
@@ -1544,7 +1569,7 @@
           <div class="terms-copy">
             <span class="section-kicker">Условия акции</span>
             <h2>Мойка за наш счет, если вы записываетесь на работу</h2>
-            <p>Мы сделали оффер простым: приезжаете на мойку и консультацию, выбираете полировку или защитную антигравийную пленку, фиксируете запись. Тогда стоимость детейлинг-мойки кузова берем на себя.</p>
+            <p>Сначала моем кузов и спокойно оцениваем состояние покрытия. Если после консультации вы выбираете полировку или оклейку защитной пленкой и фиксируете запись, стоимость детейлинг-мойки кузова берем на себя.</p>
           </div>
           <ul class="terms-list">
             <li>
@@ -1564,7 +1589,7 @@
       </div>
     </section>
 
-    <section class="trust-band" id="reviews">
+    <section class="trust-band" id="reviews" data-ohtaawa-view-event="proof_view_polish_film_v9">
       <div class="wrap">
         <div class="section-head">
           <div>
@@ -1575,10 +1600,13 @@
         </div>
         <div class="trust-layout">
           <figure class="trust-visual">
-            <img src="assets/review-exterior-collage-v8.png" alt="" />
+            <div class="trust-photo-pair" data-asset-source="owner-provided-real-ohtaawa-material">
+              <img src="assets/real-color-film-front-v9.webp" alt="Автомобиль после оклейки цветной защитной пленкой в OHTAAWA" loading="lazy" decoding="async" />
+              <img src="assets/real-color-film-rear-v9.webp" alt="Результат оклейки цветной защитной пленкой, вид сзади" loading="lazy" decoding="async" />
+            </div>
             <figcaption class="trust-caption">
-              <b>Клиентские материалы</b>
-              <span>Автомобили, с которыми работает OHTAAWA: мойка, уход, защитная пленка и восстановление внешнего вида.</span>
+              <b>Реальная работа OHTAAWA</b>
+              <span>Цветная защитная пленка меняет образ автомобиля и одновременно сохраняет заводское покрытие.</span>
             </figcaption>
           </figure>
           <div class="reviews-stack">
@@ -1593,8 +1621,7 @@
               <small>Детали процесса</small>
             </article>
             <div class="proof-photos" aria-label="Крупные планы детейлинга">
-              <img src="assets/polish-real-before-after-v8.jpg" alt="До и после полировки кузова OHTAAWA" />
-              <img src="assets/proof-ppf-close-v8.jpg" alt="Крупный план защитной пленки на кузове" />
+              <img src="assets/polish-real-before-after-v9.webp" alt="До и после полировки кузова OHTAAWA" loading="lazy" decoding="async" data-asset-source="owner-provided-real-before-after" />
             </div>
           </div>
         </div>
@@ -1668,7 +1695,9 @@
       "route_telegram_channel_v8",
       "landing_scroll_50_polish_film_v8",
       "landing_scroll_90_polish_film_v8",
-      "offer_terms_view_polish_film_v8"
+      "offer_terms_view_polish_film_v8",
+      "price_view_polish_film_v9",
+      "proof_view_polish_film_v9"
     ];
   </script>
   <script>
@@ -1685,19 +1714,10 @@
       trackLinks:true,
       accurateTrackBounce:true
     });
-    (function(m,e,t,r,i,k,a){
-      m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-      m[i].l=1*new Date();
-      for (var j = 0; j < e.scripts.length; j += 1) {
-        if (e.scripts[j].src === r) return;
-      }
-      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a);
-    })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js?id=110584673", "ym");
     ym(110584673, "init", {
       ssr:true,
       webvisor:true,
       clickmap:true,
-      ecommerce:"dataLayer",
       referrer:document.referrer,
       url:location.href,
       accurateTrackBounce:true,
@@ -1708,31 +1728,171 @@
   <noscript><div><img src="https://mc.yandex.ru/watch/110584673" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
   <script>
     (function () {
+      var params = new URLSearchParams(window.location.search);
+      var campaign = params.get("utm_campaign") || "";
+      var requestedScenario = (params.get("scenario") || "").toLowerCase();
+      var landingVersion = "v9.1";
+      var scenario = "generic";
+      if (/^(crm|new-car|used-car)$/.test(requestedScenario)) {
+        scenario = requestedScenario;
+      } else if (/(crm|wash_clients|wash-client|wave11)/i.test(campaign)) {
+        scenario = "crm";
+      } else if (/(new.?car|newauto|protective|color.?film|film_new)/i.test(campaign)) {
+        scenario = "new-car";
+      } else if (/(used.?car|polish|restore)/i.test(campaign)) {
+        scenario = "used-car";
+      }
+      var variants = {
+        generic: {
+          title: "OHTAAWA - бесплатная детейлинг-мойка при записи на полировку или защитную пленку",
+          headline: "Бесплатная детейлинг-мойка кузова",
+          lead: "при записи на полировку или защитную антигравийную пленку",
+          offer: "Сначала моем кузов и смотрим состояние лака. Если после консультации вы фиксируете запись на полировку или оклейку пленкой, мойка кузова идет за счет OHTAAWA.",
+          contactTitle: "Напишите марку авто и задачу",
+          contactNote: "Менеджер предложит ближайшее окно на осмотр кузова.",
+          message: "Добрый день! Хочу подобрать время осмотра кузова. Авто: [марка/модель]. Задача: полировка или защитная антигравийная пленка."
+        },
+        crm: {
+          title: "OHTAAWA теперь не только мойка - полировка и защитная пленка",
+          headline: "OHTAAWA теперь не только мойка",
+          lead: "Полировка, защитная и цветная пленка в знакомой студии у Охта Парка",
+          offer: "На следующем визите посмотрим состояние лака и подскажем, где нужна полировка или защита. При подтвержденной записи на работу детейлинг-мойка кузова идет за счет OHTAAWA.",
+          contactTitle: "Расскажите, что нужно вашему автомобилю",
+          contactNote: "Напишите модель и задачу - предложим ближайшее окно на осмотр.",
+          message: "Добрый день! Я клиент OHTAAWA. Хочу подобрать время осмотра кузова. Авто: [марка/модель]. Задача: [что хочется улучшить или защитить]."
+        },
+        "new-car": {
+          title: "Защитная пленка для нового автомобиля - OHTAAWA",
+          headline: "Защитите новый автомобиль до первых сколов",
+          lead: "Зоны риска, весь кузов или цветная защитная пленка",
+          offer: "Подберем защиту под модель, пробег и ваши маршруты. Сначала согласуем материал, края, срок и стоимость, затем зафиксируем дату.",
+          contactTitle: "Получите схему защиты по модели",
+          contactNote: "Менеджер объяснит варианты и предложит время осмотра.",
+          message: "Добрый день! Хочу подобрать защиту для нового автомобиля. Авто: [марка/модель]. Пробег: [км]. Интересуют: [зоны риска / весь кузов / цветная пленка]."
+        },
+        "used-car": {
+          title: "Полировка кузова после осмотра - OHTAAWA",
+          headline: "Что можно исправить полировкой",
+          lead: "Оценим состояние лака и покажем реалистичный результат без лишних обещаний",
+          offer: "Отделим поверхностные следы от дефектов, которые полировкой не убрать. Можно начать с 2-3 фото при дневном свете или короткого осмотра.",
+          contactTitle: "Оцените полировку по фото или на месте",
+          contactNote: "Напишите модель и что беспокоит во внешнем виде кузова.",
+          message: "Добрый день! Хочу оценить полировку. Авто: [марка/модель]. Беспокоит: [царапины / мутный лак / потеря блеска]. Могу прислать 2-3 фото при дневном свете."
+        }
+      };
+      var experimentId = (params.get("experiment_id") || "").trim() || campaign || ("organic_" + scenario);
+
+      function getCounterIds() {
+        var fallbackCounterId = window.ohtaawaMetricaCounterId || document.documentElement.getAttribute("data-ohtaawa-metrica-counter-id");
+        return window.ohtaawaMetricaCounterIds || (fallbackCounterId ? [fallbackCounterId] : []);
+      }
+
+      function sendVisitParams() {
+        if (typeof window.ym !== "function") return;
+        var visitParams = {
+          ohtaawa_landing: {
+            scenario: window.ohtaawaScenario || "generic",
+            experiment_id: experimentId,
+            landing_version: landingVersion,
+            utm_source: params.get("utm_source") || "",
+            utm_medium: params.get("utm_medium") || "",
+            utm_campaign: campaign,
+            utm_content: params.get("utm_content") || "",
+            utm_term: params.get("utm_term") || ""
+          }
+        };
+        getCounterIds().forEach(function (counterId) {
+          window.ym(counterId, "params", visitParams);
+        });
+        window.ohtaawaVisitParams = visitParams;
+      }
+
+      function applyScenario(nextScenario, options) {
+        scenario = variants[nextScenario] ? nextScenario : "generic";
+        var variant = variants[scenario];
+        var hero = document.querySelector(".hero");
+        if (hero) hero.setAttribute("data-scenario", scenario);
+        document.documentElement.setAttribute("data-ohtaawa-scenario", scenario);
+        window.ohtaawaScenario = scenario;
+        window.ohtaawaExperimentId = experimentId;
+        window.ohtaawaLandingVersion = landingVersion;
+        document.title = variant.title;
+        [
+          ["headline", variant.headline],
+          ["lead", variant.lead],
+          ["offer", variant.offer],
+          ["contact-title", variant.contactTitle],
+          ["contact-note", variant.contactNote]
+        ].forEach(function (item) {
+          var node = document.querySelector('[data-scenario-slot="' + item[0] + '"]');
+          if (node) node.textContent = item[1];
+        });
+        document.querySelectorAll("[data-ohtaawa-clipboard]").forEach(function (node) {
+          node.setAttribute("data-ohtaawa-clipboard", variant.message);
+          if ((node.getAttribute("href") || "").indexOf("https://wa.me/") === 0) {
+            node.setAttribute("href", "https://wa.me/79910102020?text=" + encodeURIComponent(variant.message));
+          }
+        });
+        if (options && options.updateUrl && window.history && window.history.replaceState) {
+          var nextUrl = new URL(window.location.href);
+          nextUrl.searchParams.set("scenario", scenario);
+          window.history.replaceState({}, "", nextUrl.toString());
+          params = new URLSearchParams(nextUrl.search);
+        }
+        sendVisitParams();
+        return scenario;
+      }
+
+      window.ohtaawaApplyScenario = applyScenario;
+      applyScenario(scenario, { updateUrl: false });
+
       var fired = {};
       var ticking = false;
       function eventPayload(name, details) {
         return {
           event: name,
           event_name: name,
-          page: "ohtaawa_polish_film_offer_v8",
+          page: "ohtaawa_paid_landing_v9",
+          landing_version: landingVersion,
+          scenario: window.ohtaawaScenario || "generic",
+          experiment_id: window.ohtaawaExperimentId || "",
+          conversion_stage: name.indexOf("lead_") === 0 ? "soft_cta" : "behavior",
+          client_time: new Date().toISOString(),
           location: details && details.location || "",
-          href: details && details.href || "",
+          destination: details && details.destination || "",
           utm_source: new URLSearchParams(window.location.search).get("utm_source") || "",
           utm_medium: new URLSearchParams(window.location.search).get("utm_medium") || "",
           utm_campaign: new URLSearchParams(window.location.search).get("utm_campaign") || "",
-          utm_content: new URLSearchParams(window.location.search).get("utm_content") || ""
+          utm_content: new URLSearchParams(window.location.search).get("utm_content") || "",
+          utm_term: new URLSearchParams(window.location.search).get("utm_term") || ""
         };
       }
-      function sendEvent(name, details) {
+      function sendEvent(name, details, done) {
         var payload = eventPayload(name, details || {});
         window.dataLayer = window.dataLayer || [];
         window.dataLayer.push(payload);
-        var fallbackCounterId = window.ohtaawaMetricaCounterId || document.documentElement.getAttribute("data-ohtaawa-metrica-counter-id");
-        var counterIds = window.ohtaawaMetricaCounterIds || (fallbackCounterId ? [fallbackCounterId] : []);
+        var counterIds = getCounterIds();
+        var finished = false;
+        var remaining = counterIds.length;
+        function finish() {
+          if (finished) return;
+          finished = true;
+          if (typeof done === "function") done();
+        }
+        var timer = typeof done === "function" ? window.setTimeout(finish, 260) : null;
         if (typeof window.ym === "function") {
           counterIds.forEach(function (counterId) {
-            window.ym(counterId, "reachGoal", name, payload);
+            window.ym(counterId, "reachGoal", name, payload, function () {
+              remaining -= 1;
+              if (remaining <= 0) {
+                if (timer) window.clearTimeout(timer);
+                finish();
+              }
+            });
           });
+        } else if (typeof done === "function") {
+          if (timer) window.clearTimeout(timer);
+          finish();
         }
       }
       function sendOnce(name, details) {
@@ -1740,16 +1900,43 @@
         fired[name] = true;
         sendEvent(name, details);
       }
+      function destinationFromHref(href) {
+        if (!href) return "";
+        if (href.indexOf("tel:") === 0) return "phone";
+        if (href.indexOf("https://t.me/") === 0) return "telegram";
+        if (href.indexOf("https://wa.me/") === 0) return "whatsapp";
+        if (href.indexOf("https://max.ru/") === 0) return "max";
+        if (href.indexOf("yandex.ru/maps") !== -1) return "yandex_maps";
+        return "site_link";
+      }
       document.querySelectorAll("[data-ohtaawa-event]").forEach(function (node) {
-        node.addEventListener("click", function () {
+        node.addEventListener("click", function (event) {
           var clipboardText = node.getAttribute("data-ohtaawa-clipboard") || node.getAttribute("data-ohtaawa-copy-phone");
           if (clipboardText && navigator.clipboard && navigator.clipboard.writeText) {
             navigator.clipboard.writeText(clipboardText).catch(function () {});
           }
-          sendEvent(node.getAttribute("data-ohtaawa-event"), {
+          var eventName = node.getAttribute("data-ohtaawa-event");
+          var href = node.getAttribute("href") || "";
+          var routeScenario = node.getAttribute("data-ohtaawa-route");
+          if (routeScenario) {
+            event.preventDefault();
+            applyScenario(routeScenario, { updateUrl: true });
+            sendEvent(eventName, {
+              location: node.getAttribute("data-ohtaawa-location") || "",
+              destination: "scenario_" + routeScenario
+            });
+            var routeTarget = document.getElementById(routeScenario);
+            if (routeTarget) routeTarget.scrollIntoView({ behavior: "smooth", block: "start" });
+            return;
+          }
+          var isContact = eventName.indexOf("lead_") === 0;
+          if (isContact) event.preventDefault();
+          sendEvent(eventName, {
             location: node.getAttribute("data-ohtaawa-location") || "",
-            href: node.getAttribute("href") || ""
-          });
+            destination: destinationFromHref(href)
+          }, isContact ? function () {
+            if (!window.__ohtaawaQa && href) window.location.assign(href);
+          } : null);
         });
       });
       function checkScrollDepth() {
