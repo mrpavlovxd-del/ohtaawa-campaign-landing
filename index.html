@@ -1937,14 +1937,10 @@
             if (routeTarget) routeTarget.scrollIntoView({ behavior: "smooth", block: "start" });
             return;
           }
-          var isContact = eventName.indexOf("lead_") === 0;
-          if (isContact) event.preventDefault();
           sendEvent(eventName, {
             location: node.getAttribute("data-ohtaawa-location") || "",
             destination: destinationFromHref(href)
-          }, isContact ? function () {
-            if (!window.__ohtaawaQa && href) window.location.assign(href);
-          } : null);
+          });
         });
       });
       function checkScrollDepth() {
