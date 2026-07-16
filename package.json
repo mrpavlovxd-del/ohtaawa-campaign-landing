@@ -1,0 +1,13 @@
+{
+  "name": "ohtaawa-campaign-landing",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "npm run test:syntax && npm run test:contract",
+    "test:syntax": "node --check tests/static-server.mjs && node --check tests/partner-attribution.spec.mjs",
+    "test:contract": "playwright test tests/partner-attribution.spec.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.61.1"
+  }
+}
