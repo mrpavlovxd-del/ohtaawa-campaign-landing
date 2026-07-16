@@ -1,0 +1,32 @@
+name: Landing QA
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  static-contract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Use Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Validate JavaScript syntax
+        run: node --check scripts/verify_wave14_contextual_cta.cjs
+
+      - name: Verify contextual CTA contract
+        run: node scripts/verify_wave14_contextual_cta.cjs
+
+      - name: Reject whitespace errors
+        run: git diff --check HEAD^
