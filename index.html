@@ -1680,6 +1680,10 @@
   </div>
 
   <script>
+    (function () {
+      var qaParams = new URLSearchParams(window.location.search);
+      window.__ohtaawaQa = window.__ohtaawaQa === true || qaParams.has("_ym_debug");
+    })();
     window.ohtaawaMetricaCounterId = window.ohtaawaMetricaCounterId || "100699599";
     window.ohtaawaMetricaCounterIds = window.ohtaawaMetricaCounterIds || ["100699599", "110584673"];
     window.ohtaawaRequiredEvents = [
@@ -1701,36 +1705,38 @@
     ];
   </script>
   <script>
-    (function(m,e,t,r,i,k,a){
-      m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-      m[i].l=1*new Date();
-      for (var j = 0; j < e.scripts.length; j += 1) {
-        if (e.scripts[j].src === r) return;
-      }
-      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a);
-    })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-    ym(100699599, "init", {
-      clickmap:true,
-      trackLinks:true,
-      accurateTrackBounce:true
-    });
-    (function(m,e,t,r,i,k,a){
-      m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-      m[i].l=1*new Date();
-      for (var j = 0; j < e.scripts.length; j += 1) {
-        if (e.scripts[j].src === r) return;
-      }
-      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a);
-    })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js?id=110584673", "ym");
-    ym(110584673, "init", {
-      ssr:true,
-      webvisor:true,
-      clickmap:true,
-      referrer:document.referrer,
-      url:location.href,
-      accurateTrackBounce:true,
-      trackLinks:true
-    });
+    if (!window.__ohtaawaQa) {
+      (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < e.scripts.length; j += 1) {
+          if (e.scripts[j].src === r) return;
+        }
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a);
+      })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+      ym(100699599, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+      });
+      (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < e.scripts.length; j += 1) {
+          if (e.scripts[j].src === r) return;
+        }
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a);
+      })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js?id=110584673", "ym");
+      ym(110584673, "init", {
+        ssr:true,
+        webvisor:true,
+        clickmap:true,
+        referrer:document.referrer,
+        url:location.href,
+        accurateTrackBounce:true,
+        trackLinks:true
+      });
+    }
   </script>
   <noscript><div><img src="https://mc.yandex.ru/watch/100699599" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
   <noscript><div><img src="https://mc.yandex.ru/watch/110584673" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
@@ -1738,11 +1744,22 @@
     (function () {
       var params = new URLSearchParams(window.location.search);
       var campaign = params.get("utm_campaign") || "";
-      var requestedScenario = (params.get("scenario") || "").toLowerCase();
+      var requestedScenario = (params.get("scenario") || "").trim().toLowerCase();
       var landingVersion = "v9.1";
+      var allowedScenarios = {
+        generic: true,
+        crm: true,
+        "new-car": true,
+        "used-car": true,
+        partner_referral: true
+      };
+      function normalizeScenario(value) {
+        var normalized = (value || "").trim().toLowerCase();
+        return Object.prototype.hasOwnProperty.call(allowedScenarios, normalized) ? normalized : "generic";
+      }
       var scenario = "generic";
-      if (/^(crm|new-car|used-car)$/.test(requestedScenario)) {
-        scenario = requestedScenario;
+      if (requestedScenario) {
+        scenario = normalizeScenario(requestedScenario);
       } else if (/(crm|wash_clients|wash-client|wave11)/i.test(campaign)) {
         scenario = "crm";
       } else if (/(new.?car|newauto|protective|color.?film|film_new)/i.test(campaign)) {
@@ -1796,7 +1813,6 @@
       }
 
       function sendVisitParams() {
-        if (typeof window.ym !== "function") return;
         var visitParams = {
           ohtaawa_landing: {
             scenario: window.ohtaawaScenario || "generic",
@@ -1809,19 +1825,23 @@
             utm_term: params.get("utm_term") || ""
           }
         };
+        window.ohtaawaVisitParams = visitParams;
+        if (window.__ohtaawaQa || typeof window.ym !== "function") return;
         getCounterIds().forEach(function (counterId) {
           window.ym(counterId, "params", visitParams);
         });
-        window.ohtaawaVisitParams = visitParams;
       }
 
       function applyScenario(nextScenario, options) {
-        scenario = variants[nextScenario] ? nextScenario : "generic";
-        var variant = variants[scenario];
+        scenario = normalizeScenario(nextScenario);
+        var variantName = variants[scenario] ? scenario : "generic";
+        var variant = variants[variantName];
         var hero = document.querySelector(".hero");
-        if (hero) hero.setAttribute("data-scenario", scenario);
+        if (hero) hero.setAttribute("data-scenario", variantName);
         document.documentElement.setAttribute("data-ohtaawa-scenario", scenario);
+        document.documentElement.setAttribute("data-ohtaawa-variant", variantName);
         window.ohtaawaScenario = scenario;
+        window.ohtaawaVariant = variantName;
         window.ohtaawaExperimentId = experimentId;
         window.ohtaawaLandingVersion = landingVersion;
         document.title = variant.title;
@@ -1877,8 +1897,14 @@
       }
       function sendEvent(name, details, done) {
         var payload = eventPayload(name, details || {});
-        window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push(payload);
+        window.ohtaawaLastEventPayload = payload;
+        if (window.__ohtaawaQa) {
+          window.ohtaawaQaEvents = window.ohtaawaQaEvents || [];
+          window.ohtaawaQaEvents.push(payload);
+        } else {
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push(payload);
+        }
         var counterIds = getCounterIds();
         var finished = false;
         var remaining = counterIds.length;
@@ -1888,7 +1914,7 @@
           if (typeof done === "function") done();
         }
         var timer = typeof done === "function" ? window.setTimeout(finish, 260) : null;
-        if (typeof window.ym === "function") {
+        if (!window.__ohtaawaQa && counterIds.length && typeof window.ym === "function") {
           counterIds.forEach(function (counterId) {
             window.ym(counterId, "reachGoal", name, payload, function () {
               remaining -= 1;
