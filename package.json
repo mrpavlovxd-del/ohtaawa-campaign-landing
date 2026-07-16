@@ -1,0 +1,13 @@
+{
+  "name": "ohtaawa-campaign-landing",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "npm run test:static && npm run test:browser",
+    "test:static": "node --test tests/vk-pixel-static.test.mjs",
+    "test:browser": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.61.1"
+  }
+}
