@@ -578,6 +578,36 @@
       font-size: 16px;
       line-height: 1.25;
     }
+    .price-contact {
+      margin-top: 24px;
+      padding: 24px 0;
+      display: grid;
+      grid-template-columns: minmax(260px, .72fr) minmax(520px, 1.28fr);
+      gap: 28px;
+      align-items: center;
+      border-top: 1px solid rgba(245, 239, 228, .14);
+      border-bottom: 1px solid rgba(245, 239, 228, .14);
+    }
+    .price-contact-copy {
+      display: grid;
+      gap: 7px;
+    }
+    .price-contact-copy b {
+      color: var(--ivory);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(25px, 2.2vw, 34px);
+      line-height: 1.08;
+      font-weight: 500;
+    }
+    .price-contact-copy span {
+      max-width: 520px;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.45;
+    }
+    .price-contact .messenger-row {
+      justify-content: flex-end;
+    }
 
     section {
       position: relative;
@@ -1225,6 +1255,13 @@
       .hero-side { max-width: 560px; }
       .messenger-row { gap: 10px; }
       .price-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .price-contact {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+      }
+      .price-contact-copy span { max-width: 680px; }
+      .price-contact .messenger-row { justify-content: center; }
       .scenario-card { min-height: 540px; }
       .service-row,
       .service-row:nth-child(even) { grid-template-columns: 1fr; }
@@ -1276,6 +1313,18 @@
       .hero-side { display: none; }
       .hero-routes { grid-template-columns: 1fr; }
       .price-grid { grid-template-columns: 1fr; }
+      .price-contact {
+        margin-top: 18px;
+        padding: 22px 0;
+        gap: 18px;
+      }
+      .price-contact-copy b { font-size: 27px; }
+      .price-contact .messenger-row {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .price-contact .action-btn { width: 100%; }
       .route-pill { min-height: 136px; padding: 18px; }
       section { padding: 72px 0; }
       .scenario-band { padding-top: 56px; }
@@ -1482,6 +1531,30 @@
             <span>Полировка кузова после осмотра состояния лака</span>
             <strong>от 20 000 ₽</strong>
           </article>
+        </div>
+        <div class="price-contact" aria-label="Получить предварительную оценку">
+          <div class="price-contact-copy">
+            <b data-scenario-slot="price-contact-title">Не знаете, какой вариант подойдет?</b>
+            <span data-scenario-slot="price-contact-note">Напишите модель автомобиля и задачу. Подскажем разумный следующий шаг и ориентир по стоимости.</span>
+          </div>
+          <div class="messenger-row">
+            <a class="action-btn primary" href="https://t.me/ohtaawa_chat" aria-label="Получить оценку в Telegram" title="Telegram" data-ohtaawa-event="lead_telegram_polish_film_v8" data-ohtaawa-location="price_context" data-ohtaawa-clipboard="Добрый день! Хочу получить предварительную оценку. Авто: [марка/модель]. Задача: [что хочется улучшить или защитить].">
+              <span class="action-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21.5 4.5 3.4 11.7c-.8.3-.8 1.4.1 1.7l4.4 1.4 1.7 5.2c.2.8 1.2 1 1.7.3l2.5-3.3 4.6 3.4c.7.5 1.6.1 1.8-.8L22.7 5.7c.2-.8-.5-1.4-1.2-1.2Z"/><path d="m8 14.8 9.9-6.2-7.7 8.1"/></svg></span>
+              <b>Telegram</b>
+            </a>
+            <a class="action-btn" href="https://wa.me/79910102020?text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C%20%D0%BF%D1%80%D0%B5%D0%B4%D0%B2%D0%B0%D1%80%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%83%D1%8E%20%D0%BE%D1%86%D0%B5%D0%BD%D0%BA%D1%83." aria-label="Получить оценку в WhatsApp" title="WhatsApp" data-ohtaawa-event="lead_whatsapp_polish_film_v8" data-ohtaawa-location="price_context" data-ohtaawa-clipboard="Добрый день! Хочу получить предварительную оценку. Авто: [марка/модель]. Задача: [что хочется улучшить или защитить].">
+              <span class="action-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.6 3.5A11.8 11.8 0 0 0 12.2 0 11.8 11.8 0 0 0 2 17.7L.3 24l6.5-1.7a11.8 11.8 0 0 0 5.4 1.4h.1A11.7 11.7 0 0 0 24 11.9c0-3.2-1.2-6.1-3.4-8.4Z"/><path d="M8.6 6.4c-.2-.5-.5-.5-.8-.5h-.7c-.3 0-.7.1-1 .5-.4.4-1.4 1.4-1.4 3.4s1.4 3.9 1.6 4.2c.2.3 2.8 4.3 6.8 6 .9.4 1.6.6 2.1.8.9.3 1.7.2 2.4.1.7-.1 2.3-.9 2.6-1.8.3-.9.3-1.7.2-1.8-.1-.2-.4-.3-.9-.5l-2.6-1.2c-.4-.2-.7-.3-1 .3l-1.2 1.5c-.2.3-.5.3-.9.1-2.4-1.2-4-2.2-5.6-5-.4-.6.4-.6 1.1-2 .1-.3.1-.6 0-.8Z"/></svg></span>
+              <b>WhatsApp</b>
+            </a>
+            <a class="action-btn" href="https://max.ru/u/f9LHodD0cOI5wt5WT7UlPEsbpi4oIsz6xG3oS67WnEdrB3Btf3BZUshskUk" aria-label="Получить оценку в MAX" title="MAX" data-ohtaawa-event="lead_max_direct_polish_film_v8" data-ohtaawa-location="price_context" data-ohtaawa-clipboard="Добрый день! Хочу получить предварительную оценку. Авто: [марка/модель]. Задача: [что хочется улучшить или защитить].">
+              <span class="action-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8.3 15.5V8.7l3.7 4.1 3.7-4.1v6.8"/></svg></span>
+              <b>MAX</b>
+            </a>
+            <a class="action-btn" href="tel:+78127678840" aria-label="Позвонить для оценки" title="Позвонить" data-ohtaawa-event="lead_phone_polish_film_v8" data-ohtaawa-location="price_context">
+              <span class="action-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 16.9v2.7a2 2 0 0 1-2.2 2c-9.7-.8-17.2-8.3-18-18A2 2 0 0 1 3.8 1.5h2.8a2 2 0 0 1 2 1.7l.4 2.5a2 2 0 0 1-.6 1.8L7.1 8.8a13 13 0 0 0 6.1 6.1l1.3-1.3a2 2 0 0 1 1.8-.6l2.5.4a2 2 0 0 1 1.7 2Z"/></svg></span>
+              <b>Позвонить</b>
+            </a>
+          </div>
         </div>
         <div class="taxi-note">
           <b>Комфорт на время работ</b>
@@ -1739,7 +1812,7 @@
       var params = new URLSearchParams(window.location.search);
       var campaign = params.get("utm_campaign") || "";
       var requestedScenario = (params.get("scenario") || "").toLowerCase();
-      var landingVersion = "v9.1";
+      var landingVersion = "v9.2-price-context";
       var scenario = "generic";
       if (/^(crm|new-car|used-car)$/.test(requestedScenario)) {
         scenario = requestedScenario;
@@ -1758,6 +1831,8 @@
           offer: "Сначала моем кузов и смотрим состояние лака. Если после консультации вы фиксируете запись на полировку или оклейку пленкой, мойка кузова идет за счет OHTAAWA.",
           contactTitle: "Напишите марку авто и задачу",
           contactNote: "Менеджер предложит ближайшее окно на осмотр кузова.",
+          priceContactTitle: "Не знаете, какой вариант подойдет?",
+          priceContactNote: "Напишите модель автомобиля и задачу. Подскажем разумный следующий шаг и ориентир по стоимости.",
           message: "Добрый день! Хочу подобрать время осмотра кузова. Авто: [марка/модель]. Задача: полировка или защитная антигравийная пленка."
         },
         crm: {
@@ -1767,6 +1842,8 @@
           offer: "На следующем визите посмотрим состояние лака и подскажем, где нужна полировка или защита. При подтвержденной записи на работу детейлинг-мойка кузова идет за счет OHTAAWA.",
           contactTitle: "Расскажите, что нужно вашему автомобилю",
           contactNote: "Напишите модель и задачу - предложим ближайшее окно на осмотр.",
+          priceContactTitle: "Начните с короткой консультации",
+          priceContactNote: "Напишите модель и задачу. Подскажем, нужен осмотр, полировка или защитная пленка.",
           message: "Добрый день! Я клиент OHTAAWA. Хочу подобрать время осмотра кузова. Авто: [марка/модель]. Задача: [что хочется улучшить или защитить]."
         },
         "new-car": {
@@ -1776,6 +1853,8 @@
           offer: "Подберем защиту под модель, пробег и ваши маршруты. Сначала согласуем материал, края, срок и стоимость, затем зафиксируем дату.",
           contactTitle: "Получите схему защиты по модели",
           contactNote: "Менеджер объяснит варианты и предложит время осмотра.",
+          priceContactTitle: "Получите схему защиты по модели",
+          priceContactNote: "Напишите модель и пробег. Подскажем зоны риска, варианты пленки и предварительный бюджет.",
           message: "Добрый день! Хочу подобрать защиту для нового автомобиля. Авто: [марка/модель]. Пробег: [км]. Интересуют: [зоны риска / весь кузов / цветная пленка]."
         },
         "used-car": {
@@ -1785,6 +1864,8 @@
           offer: "Отделим поверхностные следы от дефектов, которые полировкой не убрать. Можно начать с 2-3 фото при дневном свете или короткого осмотра.",
           contactTitle: "Оцените полировку по фото или на месте",
           contactNote: "Напишите модель и что беспокоит во внешнем виде кузова.",
+          priceContactTitle: "Узнайте, поможет ли полировка",
+          priceContactNote: "Пришлите 2-3 фото при дневном свете. Дадим предварительный ориентир и скажем, нужен ли осмотр.",
           message: "Добрый день! Хочу оценить полировку. Авто: [марка/модель]. Беспокоит: [царапины / мутный лак / потеря блеска]. Могу прислать 2-3 фото при дневном свете."
         }
       };
@@ -1830,7 +1911,9 @@
           ["lead", variant.lead],
           ["offer", variant.offer],
           ["contact-title", variant.contactTitle],
-          ["contact-note", variant.contactNote]
+          ["contact-note", variant.contactNote],
+          ["price-contact-title", variant.priceContactTitle],
+          ["price-contact-note", variant.priceContactNote]
         ].forEach(function (item) {
           var node = document.querySelector('[data-scenario-slot="' + item[0] + '"]');
           if (node) node.textContent = item[1];
@@ -1950,7 +2033,12 @@
         var depth = Math.round((window.scrollY / maxScroll) * 100);
         var sticky = document.querySelector(".mobile-sticky");
         if (sticky) {
-          sticky.classList.toggle("is-visible", window.scrollY > Math.min(720, window.innerHeight * 0.9));
+          var contextActionVisible = Array.from(document.querySelectorAll(".price-contact, .taxi-note")).some(function (node) {
+            var rect = node.getBoundingClientRect();
+            return rect.bottom > 0 && rect.top < window.innerHeight;
+          });
+          var passedHero = window.scrollY > Math.min(720, window.innerHeight * 0.9);
+          sticky.classList.toggle("is-visible", passedHero && !contextActionVisible);
         }
         if (depth >= 50) sendOnce("landing_scroll_50_polish_film_v8");
         if (depth >= 90) sendOnce("landing_scroll_90_polish_film_v8");
