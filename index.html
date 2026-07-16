@@ -1812,7 +1812,7 @@
       var params = new URLSearchParams(window.location.search);
       var campaign = params.get("utm_campaign") || "";
       var requestedScenario = (params.get("scenario") || "").toLowerCase();
-      var landingVersion = "v9.1";
+      var landingVersion = "v9.2-price-context";
       var scenario = "generic";
       if (/^(crm|new-car|used-car)$/.test(requestedScenario)) {
         scenario = requestedScenario;
@@ -2033,7 +2033,12 @@
         var depth = Math.round((window.scrollY / maxScroll) * 100);
         var sticky = document.querySelector(".mobile-sticky");
         if (sticky) {
-          sticky.classList.toggle("is-visible", window.scrollY > Math.min(720, window.innerHeight * 0.9));
+          var contextActionVisible = Array.from(document.querySelectorAll(".price-contact, .taxi-note")).some(function (node) {
+            var rect = node.getBoundingClientRect();
+            return rect.bottom > 0 && rect.top < window.innerHeight;
+          });
+          var passedHero = window.scrollY > Math.min(720, window.innerHeight * 0.9);
+          sticky.classList.toggle("is-visible", passedHero && !contextActionVisible);
         }
         if (depth >= 50) sendOnce("landing_scroll_50_polish_film_v8");
         if (depth >= 90) sendOnce("landing_scroll_90_polish_film_v8");
