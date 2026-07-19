@@ -1739,9 +1739,15 @@
       var params = new URLSearchParams(window.location.search);
       var campaign = params.get("utm_campaign") || "";
       var requestedScenario = (params.get("scenario") || "").toLowerCase();
-      var landingVersion = "v9.1";
+      var requestedUiScenario = (params.get("ui_scenario") || "").toLowerCase();
+      var landingVersion = "v9.2";
       var scenario = "generic";
-      if (/^(crm|new-car|used-car)$/.test(requestedScenario)) {
+      var attributionScenario = "generic";
+      var attributionScenarioLocked = requestedScenario === "partner_referral";
+      if (attributionScenarioLocked) {
+        attributionScenario = requestedScenario;
+        scenario = /^(new-car|used-car)$/.test(requestedUiScenario) ? requestedUiScenario : "new-car";
+      } else if (/^(crm|new-car|used-car)$/.test(requestedScenario)) {
         scenario = requestedScenario;
       } else if (/(crm|wash_clients|wash-client|wave11)/i.test(campaign)) {
         scenario = "crm";
@@ -1750,6 +1756,7 @@
       } else if (/(used.?car|polish|restore)/i.test(campaign)) {
         scenario = "used-car";
       }
+      if (!attributionScenarioLocked) attributionScenario = scenario;
       var variants = {
         generic: {
           title: "OHTAAWA - бесплатная детейлинг-мойка при записи на полировку или защитную пленку",
@@ -1788,7 +1795,7 @@
           message: "Добрый день! Хочу оценить полировку. Авто: [марка/модель]. Беспокоит: [царапины / мутный лак / потеря блеска]. Могу прислать 2-3 фото при дневном свете."
         }
       };
-      var experimentId = (params.get("experiment_id") || "").trim() || campaign || ("organic_" + scenario);
+      var experimentId = (params.get("experiment_id") || "").trim() || campaign || ("organic_" + attributionScenario);
 
       function getCounterIds() {
         var fallbackCounterId = window.ohtaawaMetricaCounterId || document.documentElement.getAttribute("data-ohtaawa-metrica-counter-id");
@@ -1799,7 +1806,8 @@
         if (typeof window.ym !== "function") return;
         var visitParams = {
           ohtaawa_landing: {
-            scenario: window.ohtaawaScenario || "generic",
+            scenario: window.ohtaawaAttributionScenario || "generic",
+            ui_scenario: window.ohtaawaUiScenario || "generic",
             experiment_id: experimentId,
             landing_version: landingVersion,
             utm_source: params.get("utm_source") || "",
@@ -1821,7 +1829,11 @@
         var hero = document.querySelector(".hero");
         if (hero) hero.setAttribute("data-scenario", scenario);
         document.documentElement.setAttribute("data-ohtaawa-scenario", scenario);
-        window.ohtaawaScenario = scenario;
+        if (!attributionScenarioLocked) attributionScenario = scenario;
+        document.documentElement.setAttribute("data-ohtaawa-attribution-scenario", attributionScenario);
+        window.ohtaawaScenario = attributionScenario;
+        window.ohtaawaAttributionScenario = attributionScenario;
+        window.ohtaawaUiScenario = scenario;
         window.ohtaawaExperimentId = experimentId;
         window.ohtaawaLandingVersion = landingVersion;
         document.title = variant.title;
@@ -1843,7 +1855,12 @@
         });
         if (options && options.updateUrl && window.history && window.history.replaceState) {
           var nextUrl = new URL(window.location.href);
-          nextUrl.searchParams.set("scenario", scenario);
+          nextUrl.searchParams.set("scenario", attributionScenario);
+          if (attributionScenarioLocked) {
+            nextUrl.searchParams.set("ui_scenario", scenario);
+          } else {
+            nextUrl.searchParams.delete("ui_scenario");
+          }
           window.history.replaceState({}, "", nextUrl.toString());
           params = new URLSearchParams(nextUrl.search);
         }
@@ -1862,7 +1879,8 @@
           event_name: name,
           page: "ohtaawa_paid_landing_v9",
           landing_version: landingVersion,
-          scenario: window.ohtaawaScenario || "generic",
+          scenario: window.ohtaawaAttributionScenario || "generic",
+          ui_scenario: window.ohtaawaUiScenario || "generic",
           experiment_id: window.ohtaawaExperimentId || "",
           conversion_stage: name.indexOf("lead_") === 0 ? "soft_cta" : "behavior",
           client_time: new Date().toISOString(),
