@@ -1327,6 +1327,149 @@
       .mobile-sticky { grid-template-columns: 1fr 1fr; }
       .mobile-sticky .action-btn { min-height: 47px; }
     }
+
+    .polish-photo-band {
+      display: none;
+      background: #f0ede5;
+      color: #151812;
+      padding: 76px 0;
+    }
+    .polish-photo-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(360px, .75fr);
+      gap: 48px;
+      align-items: center;
+    }
+    .polish-photo-visual {
+      margin: 0;
+      overflow: hidden;
+      border-radius: 6px;
+      background: #090b09;
+      box-shadow: 0 28px 70px rgba(20, 25, 18, .16);
+    }
+    .polish-photo-visual img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+    }
+    .polish-photo-copy { max-width: 520px; }
+    .polish-photo-copy h2 {
+      margin: 12px 0 18px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(38px, 4.4vw, 64px);
+      line-height: .98;
+      font-weight: 500;
+    }
+    .polish-photo-copy > p {
+      margin: 0 0 24px;
+      color: #5e5a50;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+    .photo-shot-list {
+      display: grid;
+      gap: 12px;
+      margin: 0 0 28px;
+    }
+    .photo-shot-list span {
+      display: grid;
+      grid-template-columns: 30px 1fr;
+      gap: 12px;
+      align-items: start;
+      color: #292d24;
+      line-height: 1.45;
+    }
+    .photo-shot-list b {
+      display: grid;
+      place-items: center;
+      width: 30px;
+      height: 30px;
+      border: 1px solid rgba(82, 121, 60, .42);
+      color: #52793c;
+      font-size: 12px;
+      border-radius: 50%;
+    }
+    .photo-contact-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .photo-contact-row .route-btn { min-height: 52px; }
+    html[data-ohtaawa-experiment="wave22-polish-proof-first"] .polish-photo-band { display: block; }
+    html[data-ohtaawa-experiment="wave22-polish-proof-first"] .hero-routes,
+    html[data-ohtaawa-experiment="wave22-polish-proof-first"] .scenario-band,
+    html[data-ohtaawa-experiment="wave22-polish-proof-first"] .services,
+    html[data-ohtaawa-experiment="wave22-polish-proof-first"] .price-card:not(:last-child),
+    html[data-ohtaawa-experiment="wave22-polish-proof-first"] .taxi-note,
+    html[data-ohtaawa-experiment="wave22-polish-proof-first"] .messenger-row .action-btn:nth-child(2),
+    html[data-ohtaawa-experiment="wave22-polish-proof-first"] .messenger-row .action-btn:nth-child(3) { display: none; }
+    html[data-ohtaawa-experiment="wave22-polish-proof-first"] .messenger-row {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      max-width: 620px;
+      margin-inline: auto;
+    }
+    html[data-ohtaawa-experiment="wave22-polish-proof-first"] .price-grid {
+      grid-template-columns: minmax(280px, 520px);
+      justify-content: center;
+    }
+    html[data-ohtaawa-experiment="wave22-polish-proof-first"] .price-card:last-child { text-align: center; }
+    html[data-ohtaawa-experiment="wave22-polish-proof-first"] .trust-layout {
+      grid-template-columns: minmax(0, 760px);
+      justify-content: center;
+    }
+    html[data-ohtaawa-experiment="wave22-polish-proof-first"] .trust-visual,
+    html[data-ohtaawa-experiment="wave22-polish-proof-first"] .reviews-stack .review-card:nth-child(2) { display: none; }
+    html[data-ohtaawa-experiment="wave22-polish-proof-first"] .hero { min-height: 0; }
+    html[data-ohtaawa-experiment="wave22-polish-proof-first"] .hero-inner {
+      min-height: 0;
+      padding-top: clamp(120px, 14vh, 170px);
+      padding-bottom: 64px;
+      align-content: start;
+    }
+    @media (max-width: 820px) {
+      .polish-photo-band { padding: 56px 0; }
+      .polish-photo-layout { grid-template-columns: 1fr; gap: 28px; }
+      .polish-photo-copy { max-width: none; }
+      .polish-photo-copy h2 { font-size: 42px; }
+    }
+    @media (max-width: 520px) {
+      .polish-photo-band { padding: 42px 0 48px; }
+      .polish-photo-copy h2 { font-size: 36px; }
+      .photo-contact-row { display: grid; grid-template-columns: 1fr; }
+      html[data-ohtaawa-experiment="wave22-polish-proof-first"] .messenger-row { grid-template-columns: 1fr 1fr; }
+      html[data-ohtaawa-experiment="wave22-polish-proof-first"] .hero-inner {
+        min-height: auto;
+        padding-top: 96px;
+        padding-bottom: 44px;
+      }
+    }
+    @media (max-width: 380px) and (max-height: 700px) {
+      html[data-ohtaawa-experiment="wave22-polish-proof-first"] .hero-inner {
+        padding-top: 68px;
+        padding-bottom: 24px;
+        gap: 6px;
+      }
+      html[data-ohtaawa-experiment="wave22-polish-proof-first"] .hero-main { gap: 6px; }
+      html[data-ohtaawa-experiment="wave22-polish-proof-first"] .hero-copy {
+        gap: 8px;
+        padding-top: 8px;
+      }
+      html[data-ohtaawa-experiment="wave22-polish-proof-first"] h1 { font-size: 34px; }
+      html[data-ohtaawa-experiment="wave22-polish-proof-first"] .hero-lead {
+        font-size: 15px;
+        line-height: 1.35;
+      }
+      html[data-ohtaawa-experiment="wave22-polish-proof-first"] .offer-line {
+        font-size: 12.5px;
+        line-height: 1.35;
+      }
+      html[data-ohtaawa-experiment="wave22-polish-proof-first"] .contact-panel-head { gap: 3px; }
+      html[data-ohtaawa-experiment="wave22-polish-proof-first"] .contact-panel-head b { font-size: 11px; }
+      html[data-ohtaawa-experiment="wave22-polish-proof-first"] .contact-panel-head span { font-size: 12px; }
+      html[data-ohtaawa-experiment="wave22-polish-proof-first"] .contact-panel { gap: 6px; }
+      html[data-ohtaawa-experiment="wave22-polish-proof-first"] .action-btn { min-height: 48px; }
+    }
   </style>
 </head>
 <body>
@@ -1405,6 +1548,28 @@
               <span class="action-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 16.9v2.7a2 2 0 0 1-2.2 2c-9.7-.8-17.2-8.3-18-18A2 2 0 0 1 3.8 1.5h2.8a2 2 0 0 1 2 1.7l.4 2.5a2 2 0 0 1-.6 1.8L7.1 8.8a13 13 0 0 0 6.1 6.1l1.3-1.3a2 2 0 0 1 1.8-.6l2.5.4a2 2 0 0 1 1.7 2Z"/></svg></span>
               <b>Позвонить</b>
             </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="polish-photo-band" id="photo-estimate" data-ohtaawa-view-event="proof_view_polish_film_v9">
+      <div class="wrap polish-photo-layout">
+        <figure class="polish-photo-visual">
+          <img data-src="assets/polish-real-before-after-v9.webp" alt="Реальный пример до и после полировки кузова в OHTAAWA" loading="lazy" decoding="async" data-asset-source="owner-provided-real-before-after" />
+        </figure>
+        <div class="polish-photo-copy">
+          <span class="section-kicker">Предварительная оценка</span>
+          <h2>Покажите кузов до поездки в студию</h2>
+          <p>По фото нельзя обещать точный результат, но можно понять, похожи ли следы на поверхностные и есть ли смысл планировать полировку.</p>
+          <div class="photo-shot-list" aria-label="Какие фотографии прислать">
+            <span><b>1</b>Общий вид элемента и соседних деталей.</span>
+            <span><b>2</b>Крупный план царапин, паутинки или мутного лака.</span>
+            <span><b>3</b>Кадр при дневном свете или под ярким отражением.</span>
+          </div>
+          <div class="photo-contact-row">
+            <a class="route-btn" href="https://t.me/ohtaawa_chat" data-ohtaawa-event="lead_telegram_polish_film_v8" data-ohtaawa-location="photo_estimate" data-ohtaawa-clipboard="Добрый день! Хочу оценить полировку по фото. Авто: [марка/модель]. Беспокоит: [царапины / мутный лак / потеря блеска]. Прикладываю общий план и крупные фото дефектов.">Отправить 2-3 фото</a>
+            <a class="route-btn secondary" href="tel:+78127678840" data-ohtaawa-event="lead_phone_polish_film_v8" data-ohtaawa-location="photo_estimate">Позвонить мастеру</a>
           </div>
         </div>
       </div>
@@ -1788,7 +1953,45 @@
           message: "Добрый день! Хочу оценить полировку. Авто: [марка/модель]. Беспокоит: [царапины / мутный лак / потеря блеска]. Могу прислать 2-3 фото при дневном свете."
         }
       };
-      var experimentId = (params.get("experiment_id") || "").trim() || campaign || ("organic_" + scenario);
+      var explicitExperimentId = (params.get("experiment_id") || "").trim();
+      var experimentId = explicitExperimentId || campaign || ("organic_" + scenario);
+      var isPolishProofFirst = explicitExperimentId === "wave22_ya_search_polish_proof_first";
+      if (isPolishProofFirst) {
+        document.documentElement.setAttribute("data-ohtaawa-experiment", "wave22-polish-proof-first");
+        variants["used-car"] = {
+          title: "Оценка полировки кузова по фото - OHTAAWA",
+          headline: "Покажите царапины. Оценим полировку по фото",
+          lead: "Ответим, поможет ли полировка, и дадим ориентир до визита",
+          offer: "Пришлите 2-3 фото при дневном свете. Полировка кузова - от 20 000 ₽ после осмотра лака.",
+          contactTitle: "Пришлите 2-3 фото кузова",
+          contactNote: "Общий план, крупный дефект и кадр при ярком отражении.",
+          message: "Добрый день! Хочу оценить полировку по фото. Авто: [марка/модель]. Беспокоит: [царапины / мутный лак / потеря блеска]. Прикладываю общий план и крупные фото дефектов."
+        };
+        scenario = "used-car";
+        var serviceNav = document.querySelector('.top-nav a[href="#services"]');
+        if (serviceNav) {
+          serviceNav.setAttribute("href", "#photo-estimate");
+          serviceNav.textContent = "Оценка по фото";
+        }
+        var topCta = document.querySelector(".top-cta");
+        if (topCta) topCta.textContent = "Оценить по фото";
+        var priceHeading = document.querySelector(".price-band .section-head h2");
+        if (priceHeading) priceHeading.textContent = "Понятный ориентир до осмотра";
+        var priceNote = document.querySelector(".price-band .section-head p");
+        if (priceNote) priceNote.textContent = "Точная стоимость зависит от размера автомобиля, состояния лака и глубины дефектов. После фото скажем, стоит ли приезжать на осмотр.";
+        var inspectionImage = document.querySelector(".inspection-visual img");
+        if (inspectionImage) {
+          inspectionImage.setAttribute("src", "assets/polishing-illustrative-v9.webp");
+          inspectionImage.setAttribute("alt", "Иллюстрация процесса полировки кузова");
+          inspectionImage.setAttribute("data-asset-source", "generated-illustrative");
+        }
+        var proofImage = document.querySelector(".polish-photo-visual img[data-src]");
+        if (proofImage) proofImage.setAttribute("src", proofImage.getAttribute("data-src"));
+        var reviewsHeading = document.querySelector(".trust-band .section-head h2");
+        if (reviewsHeading) reviewsHeading.textContent = "Реальные отзывы и результат полировки";
+        var reviewsLead = document.querySelector(".trust-band .section-head p");
+        if (reviewsLead) reviewsLead.textContent = "До записи можно проверить и репутацию студии, и реальный пример восстановления лакокрасочного покрытия.";
+      }
 
       function getCounterIds() {
         var fallbackCounterId = window.ohtaawaMetricaCounterId || document.documentElement.getAttribute("data-ohtaawa-metrica-counter-id");
