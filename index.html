@@ -1400,7 +1400,6 @@
     html[data-ohtaawa-experiment="wave22-polish-proof-first"] .hero-routes,
     html[data-ohtaawa-experiment="wave22-polish-proof-first"] .scenario-band,
     html[data-ohtaawa-experiment="wave22-polish-proof-first"] .services,
-    html[data-ohtaawa-experiment="wave22-polish-proof-first"] .trust-band,
     html[data-ohtaawa-experiment="wave22-polish-proof-first"] .price-card:not(:last-child),
     html[data-ohtaawa-experiment="wave22-polish-proof-first"] .taxi-note,
     html[data-ohtaawa-experiment="wave22-polish-proof-first"] .messenger-row .action-btn:nth-child(2),
@@ -1415,6 +1414,12 @@
       justify-content: center;
     }
     html[data-ohtaawa-experiment="wave22-polish-proof-first"] .price-card:last-child { text-align: center; }
+    html[data-ohtaawa-experiment="wave22-polish-proof-first"] .trust-layout {
+      grid-template-columns: minmax(0, 760px);
+      justify-content: center;
+    }
+    html[data-ohtaawa-experiment="wave22-polish-proof-first"] .trust-visual,
+    html[data-ohtaawa-experiment="wave22-polish-proof-first"] .reviews-stack .review-card:nth-child(2) { display: none; }
     html[data-ohtaawa-experiment="wave22-polish-proof-first"] .hero { min-height: 0; }
     html[data-ohtaawa-experiment="wave22-polish-proof-first"] .hero-inner {
       min-height: 0;
@@ -1438,6 +1443,32 @@
         padding-top: 96px;
         padding-bottom: 44px;
       }
+    }
+    @media (max-width: 380px) and (max-height: 700px) {
+      html[data-ohtaawa-experiment="wave22-polish-proof-first"] .hero-inner {
+        padding-top: 68px;
+        padding-bottom: 24px;
+        gap: 6px;
+      }
+      html[data-ohtaawa-experiment="wave22-polish-proof-first"] .hero-main { gap: 6px; }
+      html[data-ohtaawa-experiment="wave22-polish-proof-first"] .hero-copy {
+        gap: 8px;
+        padding-top: 8px;
+      }
+      html[data-ohtaawa-experiment="wave22-polish-proof-first"] h1 { font-size: 34px; }
+      html[data-ohtaawa-experiment="wave22-polish-proof-first"] .hero-lead {
+        font-size: 15px;
+        line-height: 1.35;
+      }
+      html[data-ohtaawa-experiment="wave22-polish-proof-first"] .offer-line {
+        font-size: 12.5px;
+        line-height: 1.35;
+      }
+      html[data-ohtaawa-experiment="wave22-polish-proof-first"] .contact-panel-head { gap: 3px; }
+      html[data-ohtaawa-experiment="wave22-polish-proof-first"] .contact-panel-head b { font-size: 11px; }
+      html[data-ohtaawa-experiment="wave22-polish-proof-first"] .contact-panel-head span { font-size: 12px; }
+      html[data-ohtaawa-experiment="wave22-polish-proof-first"] .contact-panel { gap: 6px; }
+      html[data-ohtaawa-experiment="wave22-polish-proof-first"] .action-btn { min-height: 48px; }
     }
   </style>
 </head>
@@ -1525,7 +1556,7 @@
     <section class="polish-photo-band" id="photo-estimate" data-ohtaawa-view-event="proof_view_polish_film_v9">
       <div class="wrap polish-photo-layout">
         <figure class="polish-photo-visual">
-          <img src="assets/polish-real-before-after-v9.webp" alt="Реальный пример до и после полировки кузова в OHTAAWA" loading="eager" decoding="async" data-asset-source="owner-provided-real-before-after" />
+          <img data-src="assets/polish-real-before-after-v9.webp" alt="Реальный пример до и после полировки кузова в OHTAAWA" loading="lazy" decoding="async" data-asset-source="owner-provided-real-before-after" />
         </figure>
         <div class="polish-photo-copy">
           <span class="section-kicker">Предварительная оценка</span>
@@ -1922,13 +1953,14 @@
           message: "Добрый день! Хочу оценить полировку. Авто: [марка/модель]. Беспокоит: [царапины / мутный лак / потеря блеска]. Могу прислать 2-3 фото при дневном свете."
         }
       };
-      var experimentId = (params.get("experiment_id") || "").trim() || campaign || ("organic_" + scenario);
-      var isPolishProofFirst = experimentId === "wave22_ya_search_polish_proof_first";
+      var explicitExperimentId = (params.get("experiment_id") || "").trim();
+      var experimentId = explicitExperimentId || campaign || ("organic_" + scenario);
+      var isPolishProofFirst = explicitExperimentId === "wave22_ya_search_polish_proof_first";
       if (isPolishProofFirst) {
         document.documentElement.setAttribute("data-ohtaawa-experiment", "wave22-polish-proof-first");
         variants["used-car"] = {
           title: "Оценка полировки кузова по фото - OHTAAWA",
-          headline: "Покажите царапины - оценим полировку по фото",
+          headline: "Покажите царапины. Оценим полировку по фото",
           lead: "Ответим, поможет ли полировка, и дадим ориентир до визита",
           offer: "Пришлите 2-3 фото при дневном свете. Полировка кузова - от 20 000 ₽ после осмотра лака.",
           contactTitle: "Пришлите 2-3 фото кузова",
@@ -1950,8 +1982,15 @@
         var inspectionImage = document.querySelector(".inspection-visual img");
         if (inspectionImage) {
           inspectionImage.setAttribute("src", "assets/polishing-illustrative-v9.webp");
-          inspectionImage.setAttribute("alt", "Полировка кузова в студии OHTAAWA");
+          inspectionImage.setAttribute("alt", "Иллюстрация процесса полировки кузова");
+          inspectionImage.setAttribute("data-asset-source", "generated-illustrative");
         }
+        var proofImage = document.querySelector(".polish-photo-visual img[data-src]");
+        if (proofImage) proofImage.setAttribute("src", proofImage.getAttribute("data-src"));
+        var reviewsHeading = document.querySelector(".trust-band .section-head h2");
+        if (reviewsHeading) reviewsHeading.textContent = "Реальные отзывы и результат полировки";
+        var reviewsLead = document.querySelector(".trust-band .section-head p");
+        if (reviewsLead) reviewsLead.textContent = "До записи можно проверить и репутацию студии, и реальный пример восстановления лакокрасочного покрытия.";
       }
 
       function getCounterIds() {
