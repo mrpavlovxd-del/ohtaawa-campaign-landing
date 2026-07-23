@@ -578,6 +578,58 @@
       font-size: 16px;
       line-height: 1.25;
     }
+    .after-price-bridge {
+      display: none;
+      grid-template-columns: minmax(0, 1fr) auto;
+      grid-template-areas: "copy actions";
+      gap: 36px;
+      align-items: center;
+      margin-top: 30px;
+      padding-top: 28px;
+      border-top: 1px solid rgba(245, 239, 228, .18);
+    }
+    .after-price-copy {
+      grid-area: copy;
+      max-width: 690px;
+    }
+    .after-price-copy small {
+      color: var(--green);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+    .after-price-copy h3 {
+      margin-top: 8px;
+      color: var(--ivory);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(27px, 2.4vw, 36px);
+      line-height: 1.02;
+      font-weight: 500;
+    }
+    .after-price-copy p {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .after-price-actions {
+      grid-area: actions;
+      display: grid;
+      gap: 9px;
+      min-width: 190px;
+    }
+    .after-price-actions .route-btn {
+      min-height: 50px;
+      border-color: rgba(159, 208, 117, .54);
+      background: var(--green);
+      color: #0b0e09;
+    }
+    .after-price-actions .route-btn.secondary {
+      border-color: rgba(245, 239, 228, .24);
+      background: transparent;
+      color: var(--ivory);
+    }
 
     section {
       position: relative;
@@ -1190,6 +1242,11 @@
       pointer-events: auto;
       transform: translateY(0);
     }
+    .mobile-sticky.is-visible.is-suppressed {
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(120%);
+    }
     .mobile-sticky .action-btn {
       min-height: 48px;
       border-radius: 15px;
@@ -1414,6 +1471,7 @@
       justify-content: center;
     }
     html[data-ohtaawa-experiment="wave22-polish-proof-first"] .price-card:last-child { text-align: center; }
+    html[data-ohtaawa-experiment="wave22-polish-proof-first"] .after-price-bridge { display: grid; }
     html[data-ohtaawa-experiment="wave22-polish-proof-first"] .trust-layout {
       grid-template-columns: minmax(0, 760px);
       justify-content: center;
@@ -1432,11 +1490,33 @@
       .polish-photo-layout { grid-template-columns: 1fr; gap: 28px; }
       .polish-photo-copy { max-width: none; }
       .polish-photo-copy h2 { font-size: 42px; }
+      .after-price-bridge {
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-areas:
+          "copy"
+          "actions";
+        gap: 20px;
+      }
+      .after-price-actions {
+        grid-template-columns: 1fr 1fr;
+        min-width: 0;
+      }
     }
     @media (max-width: 520px) {
       .polish-photo-band { padding: 42px 0 48px; }
       .polish-photo-copy h2 { font-size: 36px; }
       .photo-contact-row { display: grid; grid-template-columns: 1fr; }
+      .after-price-bridge {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "copy"
+          "actions";
+        gap: 18px;
+        margin-top: 24px;
+        padding-top: 24px;
+      }
+      .after-price-copy h3 { font-size: 29px; }
+      .after-price-actions { grid-template-columns: 1fr; }
       html[data-ohtaawa-experiment="wave22-polish-proof-first"] .messenger-row { grid-template-columns: 1fr 1fr; }
       html[data-ohtaawa-experiment="wave22-polish-proof-first"] .hero-inner {
         min-height: auto;
@@ -1651,6 +1731,17 @@
         <div class="taxi-note">
           <b>Комфорт на время работ</b>
           <p><strong>При полной оклейке защитной пленкой организуем такси до дома и обратно.</strong> Машина остается в студии, а вы не привязываете день к ожиданию и возвращаетесь к готовому автомобилю в удобное время.</p>
+        </div>
+        <div class="after-price-bridge" aria-label="Предварительная оценка после просмотра стоимости">
+          <div class="after-price-copy">
+            <small>Оценка по фото до визита</small>
+            <h3>Нужен ориентир именно по вашему кузову?</h3>
+            <p>Пришлите марку, модель и 2–3 фото. Мастер скажет, поможет ли полировка, и даст предварительный ориентир по стоимости.</p>
+          </div>
+          <div class="after-price-actions">
+            <a class="route-btn" href="https://t.me/ohtaawa_chat" data-ohtaawa-event="lead_telegram_polish_film_v8" data-ohtaawa-location="after_price" data-ohtaawa-clipboard="Добрый день! Хочу оценить полировку по фото. Авто: [марка/модель]. Беспокоит: [царапины / мутный лак / потеря блеска]. Прикладываю общий план и крупные фото дефектов.">Отправить 2–3 фото</a>
+            <a class="route-btn secondary" href="tel:+78127678840" data-ohtaawa-event="lead_phone_polish_film_v8" data-ohtaawa-location="after_price">Позвонить мастеру</a>
+          </div>
         </div>
       </div>
     </section>
@@ -2176,6 +2267,16 @@
         document.querySelectorAll("[data-ohtaawa-view-event]").forEach(function (node) {
           observer.observe(node);
         });
+        var afterPriceBridge = document.querySelector(".after-price-bridge");
+        var mobileSticky = document.querySelector(".mobile-sticky");
+        if (afterPriceBridge && mobileSticky) {
+          var stickyGuard = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+              mobileSticky.classList.toggle("is-suppressed", entry.isIntersecting);
+            });
+          }, { threshold: 0.15 });
+          stickyGuard.observe(afterPriceBridge);
+        }
       }
       setTimeout(checkScrollDepth, 600);
     })();
