@@ -29,3 +29,36 @@ test("wave22 keeps a dedicated call route and measurable proof events", () => {
   assert.match(html, /Иллюстрация процесса полировки кузова/);
   assert.doesNotMatch(html, /wave22-polish-proof-first"\] \.trust-band\s*\{/);
 });
+
+test("wave27 adds an isolated after-price contact bridge for wave22 and wave26", () => {
+  assert.match(html, /class="after-price-bridge"/);
+  assert.match(html, /data-ohtaawa-after-price="enabled"\] \.after-price-bridge \{ display: grid; \}/);
+  assert.match(html, /isWave26PremiumRecent = explicitExperimentId === "wave26"/);
+  assert.match(html, /hasAfterPriceBridge = isPolishProofFirst \|\| isWave26PremiumRecent/);
+  assert.match(html, /requestedScenario === "crm-premium-recent"/);
+  assert.match(html, /data-ohtaawa-location="after_price"/);
+  assert.match(html, /Нужен ориентир именно по вашему кузову\?/);
+  assert.match(html, /Отправить 2–3 фото/);
+  assert.match(html, /mobileSticky\.classList\.toggle\("is-suppressed", entry\.isIntersecting\)/);
+});
+
+test("wave26 keeps relationship-first CRM copy and a relevant after-price prompt", () => {
+  assert.match(html, /data-ohtaawa-experiment", "wave26-premium-recent"/);
+  assert.match(html, /scenario = "crm"/);
+  assert.match(html, /Что действительно стоит сделать с кузовом\?/);
+  assert.match(html, /где достаточно полировки, а где имеет смысл защитная пленка/);
+});
+
+test("wave27 reuses established lead goals and destinations", () => {
+  const bridgeStart = html.indexOf('class="after-price-bridge"');
+  const bridgeEnd = html.indexOf("</section>", bridgeStart);
+  const bridge = html.slice(bridgeStart, bridgeEnd);
+
+  assert.match(bridge, /href="https:\/\/t\.me\/ohtaawa_chat"/);
+  assert.match(bridge, /data-ohtaawa-event="lead_telegram_polish_film_v8"/);
+  assert.match(bridge, /href="tel:\+78127678840"/);
+  assert.match(bridge, /data-ohtaawa-event="lead_phone_polish_film_v8"/);
+  assert.doesNotMatch(bridge, /<form\b/);
+  assert.doesNotMatch(bridge, /<img\b/);
+  assert.doesNotMatch(bridge, /скидк|акци|срочно/i);
+});
