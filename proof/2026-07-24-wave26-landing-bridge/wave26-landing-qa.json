@@ -1,0 +1,87 @@
+{
+  "generatedAt": "2026-07-24T03:52:48.678Z",
+  "experimentId": "wave26",
+  "viewports": [
+    {
+      "viewport": {
+        "name": "desktop-1440x1000",
+        "width": 1440,
+        "height": 1000
+      },
+      "experiment": "wave26-premium-recent",
+      "afterPrice": "enabled",
+      "experimentId": "wave26",
+      "scenario": "crm",
+      "display": "grid",
+      "heading": "Что действительно стоит сделать с кузовом?",
+      "text": "Пришлите марку, модель и 2–3 фото. Мастер подскажет, где достаточно полировки, а где имеет смысл защитная пленка.",
+      "heroHeadline": "OHTAAWA теперь не только мойка",
+      "telegramMessage": "Добрый день! Я клиент OHTAAWA. Хочу подобрать время осмотра кузова. Авто: [марка/модель]. Задача: [что хочется улучшить или защитить].",
+      "telegramLocation": "after_price",
+      "phoneLocation": "after_price",
+      "stickySuppressed": true,
+      "horizontalOverflow": false,
+      "telegramEvent": {
+        "name": "lead_telegram_polish_film_v8",
+        "location": "after_price",
+        "experimentId": "wave26",
+        "scenario": "crm",
+        "destination": "telegram"
+      }
+    },
+    {
+      "viewport": {
+        "name": "mobile-390x844",
+        "width": 390,
+        "height": 844
+      },
+      "experiment": "wave26-premium-recent",
+      "afterPrice": "enabled",
+      "experimentId": "wave26",
+      "scenario": "crm",
+      "display": "grid",
+      "heading": "Что действительно стоит сделать с кузовом?",
+      "text": "Пришлите марку, модель и 2–3 фото. Мастер подскажет, где достаточно полировки, а где имеет смысл защитная пленка.",
+      "heroHeadline": "OHTAAWA теперь не только мойка",
+      "telegramMessage": "Добрый день! Я клиент OHTAAWA. Хочу подобрать время осмотра кузова. Авто: [марка/модель]. Задача: [что хочется улучшить или защитить].",
+      "telegramLocation": "after_price",
+      "phoneLocation": "after_price",
+      "stickySuppressed": true,
+      "horizontalOverflow": false,
+      "telegramEvent": {
+        "name": "lead_telegram_polish_film_v8",
+        "location": "after_price",
+        "experimentId": "wave26",
+        "scenario": "crm",
+        "destination": "telegram"
+      }
+    },
+    {
+      "viewport": {
+        "name": "mobile-320x568",
+        "width": 320,
+        "height": 568
+      },
+      "experiment": "wave26-premium-recent",
+      "afterPrice": "enabled",
+      "experimentId": "wave26",
+      "scenario": "crm",
+      "display": "grid",
+      "heading": "Что действительно стоит сделать с кузовом?",
+      "text": "Пришлите марку, модель и 2–3 фото. Мастер подскажет, где достаточно полировки, а где имеет смысл защитная пленка.",
+      "heroHeadline": "OHTAAWA теперь не только мойка",
+      "telegramMessage": "Добрый день! Я клиент OHTAAWA. Хочу подобрать время осмотра кузова. Авто: [марка/модель]. Задача: [что хочется улучшить или защитить].",
+      "telegramLocation": "after_price",
+      "phoneLocation": "after_price",
+      "stickySuppressed": true,
+      "horizontalOverflow": false,
+      "telegramEvent": {
+        "name": "lead_telegram_polish_film_v8",
+        "location": "after_price",
+        "experimentId": "wave26",
+        "scenario": "crm",
+        "destination": "telegram"
+      }
+    }
+  ]
+}

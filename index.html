@@ -1471,7 +1471,7 @@
       justify-content: center;
     }
     html[data-ohtaawa-experiment="wave22-polish-proof-first"] .price-card:last-child { text-align: center; }
-    html[data-ohtaawa-experiment="wave22-polish-proof-first"] .after-price-bridge { display: grid; }
+    html[data-ohtaawa-after-price="enabled"] .after-price-bridge { display: grid; }
     html[data-ohtaawa-experiment="wave22-polish-proof-first"] .trust-layout {
       grid-template-columns: minmax(0, 760px);
       justify-content: center;
@@ -1997,7 +1997,9 @@
       var requestedScenario = (params.get("scenario") || "").toLowerCase();
       var landingVersion = "v9.1";
       var scenario = "generic";
-      if (/^(crm|new-car|used-car)$/.test(requestedScenario)) {
+      if (requestedScenario === "crm-premium-recent") {
+        scenario = "crm";
+      } else if (/^(crm|new-car|used-car)$/.test(requestedScenario)) {
         scenario = requestedScenario;
       } else if (/(crm|wash_clients|wash-client|wave11)/i.test(campaign)) {
         scenario = "crm";
@@ -2047,6 +2049,24 @@
       var explicitExperimentId = (params.get("experiment_id") || "").trim();
       var experimentId = explicitExperimentId || campaign || ("organic_" + scenario);
       var isPolishProofFirst = explicitExperimentId === "wave22_ya_search_polish_proof_first";
+      var isWave26PremiumRecent = explicitExperimentId === "wave26";
+      var hasAfterPriceBridge = isPolishProofFirst || isWave26PremiumRecent;
+      if (hasAfterPriceBridge) {
+        document.documentElement.setAttribute("data-ohtaawa-after-price", "enabled");
+      }
+      if (isWave26PremiumRecent) {
+        document.documentElement.setAttribute("data-ohtaawa-experiment", "wave26-premium-recent");
+        scenario = "crm";
+        var wave26Bridge = document.querySelector(".after-price-bridge");
+        if (wave26Bridge) {
+          var wave26BridgeKicker = wave26Bridge.querySelector("small");
+          var wave26BridgeHeading = wave26Bridge.querySelector("h3");
+          var wave26BridgeText = wave26Bridge.querySelector("p");
+          if (wave26BridgeKicker) wave26BridgeKicker.textContent = "Быстрая оценка по фото";
+          if (wave26BridgeHeading) wave26BridgeHeading.textContent = "Что действительно стоит сделать с кузовом?";
+          if (wave26BridgeText) wave26BridgeText.textContent = "Пришлите марку, модель и 2–3 фото. Мастер подскажет, где достаточно полировки, а где имеет смысл защитная пленка.";
+        }
+      }
       if (isPolishProofFirst) {
         document.documentElement.setAttribute("data-ohtaawa-experiment", "wave22-polish-proof-first");
         variants["used-car"] = {

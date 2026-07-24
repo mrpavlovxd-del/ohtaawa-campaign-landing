@@ -30,13 +30,23 @@ test("wave22 keeps a dedicated call route and measurable proof events", () => {
   assert.doesNotMatch(html, /wave22-polish-proof-first"\] \.trust-band\s*\{/);
 });
 
-test("wave27 adds an isolated after-price contact bridge for wave22", () => {
+test("wave27 adds an isolated after-price contact bridge for wave22 and wave26", () => {
   assert.match(html, /class="after-price-bridge"/);
-  assert.match(html, /wave22-polish-proof-first"\] \.after-price-bridge \{ display: grid; \}/);
+  assert.match(html, /data-ohtaawa-after-price="enabled"\] \.after-price-bridge \{ display: grid; \}/);
+  assert.match(html, /isWave26PremiumRecent = explicitExperimentId === "wave26"/);
+  assert.match(html, /hasAfterPriceBridge = isPolishProofFirst \|\| isWave26PremiumRecent/);
+  assert.match(html, /requestedScenario === "crm-premium-recent"/);
   assert.match(html, /data-ohtaawa-location="after_price"/);
   assert.match(html, /Нужен ориентир именно по вашему кузову\?/);
   assert.match(html, /Отправить 2–3 фото/);
   assert.match(html, /mobileSticky\.classList\.toggle\("is-suppressed", entry\.isIntersecting\)/);
+});
+
+test("wave26 keeps relationship-first CRM copy and a relevant after-price prompt", () => {
+  assert.match(html, /data-ohtaawa-experiment", "wave26-premium-recent"/);
+  assert.match(html, /scenario = "crm"/);
+  assert.match(html, /Что действительно стоит сделать с кузовом\?/);
+  assert.match(html, /где достаточно полировки, а где имеет смысл защитная пленка/);
 });
 
 test("wave27 reuses established lead goals and destinations", () => {
