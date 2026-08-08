@@ -1,0 +1,162 @@
+{
+  "generatedAt": "2026-07-21T15:00:26.516Z",
+  "control": {
+    "experiment": null,
+    "headline": "Что можно исправить полировкой",
+    "proofSrc": "",
+    "proofDataSrc": "assets/polish-real-before-after-v9.webp",
+    "proofSectionDisplay": "none",
+    "assetExpected": "assets/polish-real-before-after-v9.webp",
+    "proofRequested": false
+  },
+  "viewports": [
+    {
+      "viewport": {
+        "name": "mobile-320x568",
+        "width": 320,
+        "height": 568
+      },
+      "experiment": "wave22-polish-proof-first",
+      "experimentId": "wave22_ya_search_polish_proof_first",
+      "headline": "Покажите царапины. Оценим полировку по фото",
+      "ctaTop": 515,
+      "ctaBottom": 563,
+      "ctaVisibleInFirstViewport": true,
+      "viewportHeight": 568,
+      "horizontalOverflow": false,
+      "proofSrc": "assets/polish-real-before-after-v9.webp",
+      "proofComplete": true,
+      "proofAssetSource": "owner-provided-real-before-after",
+      "generatedAssetSource": "generated-illustrative",
+      "generatedAlt": "Иллюстрация процесса полировки кузова",
+      "reviewsDisplay": "block",
+      "reviewLinkHref": "#reviews",
+      "reviewsHeading": "Реальные отзывы и результат полировки",
+      "hasDisallowedServiceCopy": false,
+      "expectedExperiment": "wave22_ya_search_polish_proof_first",
+      "expectedProof": "assets/polish-real-before-after-v9.webp",
+      "telegramEvent": {
+        "name": "lead_telegram_polish_film_v8",
+        "experimentId": "wave22_ya_search_polish_proof_first",
+        "scenario": "used-car",
+        "location": "hero",
+        "destination": "telegram",
+        "valid": true
+      },
+      "generatedImageComplete": true,
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "viewport": {
+        "name": "mobile-360x640",
+        "width": 360,
+        "height": 640
+      },
+      "experiment": "wave22-polish-proof-first",
+      "experimentId": "wave22_ya_search_polish_proof_first",
+      "headline": "Покажите царапины. Оценим полировку по фото",
+      "ctaTop": 421,
+      "ctaBottom": 469,
+      "ctaVisibleInFirstViewport": true,
+      "viewportHeight": 640,
+      "horizontalOverflow": false,
+      "proofSrc": "assets/polish-real-before-after-v9.webp",
+      "proofComplete": true,
+      "proofAssetSource": "owner-provided-real-before-after",
+      "generatedAssetSource": "generated-illustrative",
+      "generatedAlt": "Иллюстрация процесса полировки кузова",
+      "reviewsDisplay": "block",
+      "reviewLinkHref": "#reviews",
+      "reviewsHeading": "Реальные отзывы и результат полировки",
+      "hasDisallowedServiceCopy": false,
+      "expectedExperiment": "wave22_ya_search_polish_proof_first",
+      "expectedProof": "assets/polish-real-before-after-v9.webp",
+      "telegramEvent": {
+        "name": "lead_telegram_polish_film_v8",
+        "experimentId": "wave22_ya_search_polish_proof_first",
+        "scenario": "used-car",
+        "location": "hero",
+        "destination": "telegram",
+        "valid": true
+      },
+      "generatedImageComplete": true,
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "viewport": {
+        "name": "mobile-390x844",
+        "width": 390,
+        "height": 844
+      },
+      "experiment": "wave22-polish-proof-first",
+      "experimentId": "wave22_ya_search_polish_proof_first",
+      "headline": "Покажите царапины. Оценим полировку по фото",
+      "ctaTop": 560,
+      "ctaBottom": 614,
+      "ctaVisibleInFirstViewport": true,
+      "viewportHeight": 844,
+      "horizontalOverflow": false,
+      "proofSrc": "assets/polish-real-before-after-v9.webp",
+      "proofComplete": true,
+      "proofAssetSource": "owner-provided-real-before-after",
+      "generatedAssetSource": "generated-illustrative",
+      "generatedAlt": "Иллюстрация процесса полировки кузова",
+      "reviewsDisplay": "block",
+      "reviewLinkHref": "#reviews",
+      "reviewsHeading": "Реальные отзывы и результат полировки",
+      "hasDisallowedServiceCopy": false,
+      "expectedExperiment": "wave22_ya_search_polish_proof_first",
+      "expectedProof": "assets/polish-real-before-after-v9.webp",
+      "telegramEvent": {
+        "name": "lead_telegram_polish_film_v8",
+        "experimentId": "wave22_ya_search_polish_proof_first",
+        "scenario": "used-car",
+        "location": "hero",
+        "destination": "telegram",
+        "valid": true
+      },
+      "generatedImageComplete": true,
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "viewport": {
+        "name": "desktop-1440x1000",
+        "width": 1440,
+        "height": 1000
+      },
+      "experiment": "wave22-polish-proof-first",
+      "experimentId": "wave22_ya_search_polish_proof_first",
+      "headline": "Покажите царапины. Оценим полировку по фото",
+      "ctaTop": 666,
+      "ctaBottom": 720,
+      "ctaVisibleInFirstViewport": true,
+      "viewportHeight": 1000,
+      "horizontalOverflow": false,
+      "proofSrc": "assets/polish-real-before-after-v9.webp",
+      "proofComplete": true,
+      "proofAssetSource": "owner-provided-real-before-after",
+      "generatedAssetSource": "generated-illustrative",
+      "generatedAlt": "Иллюстрация процесса полировки кузова",
+      "reviewsDisplay": "block",
+      "reviewLinkHref": "#reviews",
+      "reviewsHeading": "Реальные отзывы и результат полировки",
+      "hasDisallowedServiceCopy": false,
+      "expectedExperiment": "wave22_ya_search_polish_proof_first",
+      "expectedProof": "assets/polish-real-before-after-v9.webp",
+      "telegramEvent": {
+        "name": "lead_telegram_polish_film_v8",
+        "experimentId": "wave22_ya_search_polish_proof_first",
+        "scenario": "used-car",
+        "location": "hero",
+        "destination": "telegram",
+        "valid": true
+      },
+      "generatedImageComplete": true,
+      "consoleErrors": [],
+      "pageErrors": []
+    }
+  ]
+}
