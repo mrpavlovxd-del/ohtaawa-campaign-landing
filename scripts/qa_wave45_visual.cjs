@@ -56,6 +56,22 @@ async function auditViewport(browser, name, viewport) {
     contactChannels: [...document.querySelectorAll("[data-channel]")].map(
       (node) => node.dataset.channel,
     ),
+    bottomFixedObstructions: [...document.querySelectorAll("body *")]
+      .filter((node) => {
+        const style = getComputedStyle(node);
+        const rect = node.getBoundingClientRect();
+        return style.position === "fixed" &&
+          style.display !== "none" &&
+          style.visibility !== "hidden" &&
+          Number(style.opacity || 1) > 0.05 &&
+          rect.width > 0 &&
+          rect.height >= 40 &&
+          rect.bottom >= window.innerHeight - 1;
+      })
+      .map((node) => node.className || node.tagName),
+    carouselThumbCount: document.querySelectorAll(".carousel-thumbs button").length,
+    carouselGridColumnCount: getComputedStyle(document.querySelector(".carousel-thumbs"))
+      .gridTemplateColumns.split(" ").filter(Boolean).length,
   }));
 
   await page.screenshot({ path: path.join(outputDir, `${name}-hero.png`) });
@@ -78,6 +94,14 @@ async function auditViewport(browser, name, viewport) {
   await page.locator("#proof").scrollIntoViewIfNeeded();
   await page.waitForTimeout(200);
   await page.screenshot({ path: path.join(outputDir, `${name}-proof.png`) });
+
+  await page.locator("#scope").scrollIntoViewIfNeeded();
+  await page.waitForTimeout(200);
+  await page.screenshot({ path: path.join(outputDir, `${name}-scope.png`) });
+
+  await page.locator(".scope-price").scrollIntoViewIfNeeded();
+  await page.waitForTimeout(200);
+  await page.screenshot({ path: path.join(outputDir, `${name}-scope-price.png`) });
 
   await page.close();
 
@@ -103,7 +127,8 @@ async function main() {
   try {
     const desktop = await auditViewport(browser, "desktop-1440", { width: 1440, height: 900 });
     const mobile = await auditViewport(browser, "mobile-390", { width: 390, height: 844 });
-    const reports = { desktop, mobile };
+    const mobileWide = await auditViewport(browser, "mobile-430", { width: 430, height: 932 });
+    const reports = { desktop, mobile, mobileWide };
     const pass = Object.values(reports).every(
       (report) =>
         report.title &&
@@ -111,6 +136,9 @@ async function main() {
         report.brokenImages.length === 0 &&
         report.unnamedButtons === 0 &&
         report.contactChannels.join(",") === "telegram,whatsapp,max,phone" &&
+        report.bottomFixedObstructions.length === 0 &&
+        report.carouselThumbCount === 4 &&
+        report.carouselGridColumnCount === 4 &&
         report.contactDialogOpen &&
         report.carouselChanged &&
         report.galleryOpen &&
