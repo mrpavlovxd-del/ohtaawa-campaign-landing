@@ -373,6 +373,12 @@ summary {
   transition: transform 180ms ease;
 }
 
+.action-arrow {
+  font-family: Arial, sans-serif;
+  font-variant-emoji: text;
+  line-height: 1;
+}
+
 .primary-action:hover span,
 .line-action:hover span {
   transform: translate(2px, -2px);
@@ -943,7 +949,7 @@ summary {
 
 .carousel-thumbs {
   display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1px;
   padding-top: 1px;
   background: rgba(255, 255, 255, 0.12);
@@ -1510,10 +1516,6 @@ summary {
   line-height: 1.6;
 }
 
-.mobile-contact {
-  display: none;
-}
-
 .contact-sheet,
 .gallery-dialog {
   margin: auto;
@@ -1900,7 +1902,6 @@ summary {
 
 @media (max-width: 620px) {
   body {
-    padding-bottom: 66px;
     font-size: 15px;
   }
 
@@ -1962,8 +1963,8 @@ summary {
   .hero h1 {
     max-width: 470px;
     margin-bottom: 19px;
-    font-size: 43px;
-    line-height: 0.99;
+    font-size: 40px;
+    line-height: 1.01;
   }
 
   .hero-price {
@@ -2049,6 +2050,19 @@ summary {
     font-size: 37px;
   }
 
+  .proof-heading {
+    gap: 18px;
+  }
+
+  .proof-heading h2 {
+    font-size: 32px;
+    line-height: 1.04;
+  }
+
+  .proof-heading h2 br {
+    display: none;
+  }
+
   .protection-heading > p:last-child,
   .proof-heading > p,
   .process-heading > p {
@@ -2091,7 +2105,7 @@ summary {
   }
 
   .scope-copy {
-    padding: 72px 15px 82px;
+    padding: 64px 15px 40px;
   }
 
   .scope-price {
@@ -2104,7 +2118,7 @@ summary {
   }
 
   .proof {
-    padding-bottom: 92px;
+    padding-bottom: 76px;
   }
 
   .work-carousel {
@@ -2113,7 +2127,8 @@ summary {
   }
 
   .carousel-stage {
-    min-height: 470px;
+    min-height: 0;
+    aspect-ratio: 1 / 1;
   }
 
   .carousel-image-button img {
@@ -2146,10 +2161,11 @@ summary {
   }
 
   .carousel-thumbs {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .process {
+    padding-top: 68px;
     padding-bottom: 88px;
   }
 
@@ -2295,23 +2311,6 @@ summary {
   .footer-links {
     flex-wrap: wrap;
     gap: 12px 20px;
-  }
-
-  .mobile-contact {
-    position: fixed;
-    z-index: 90;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    min-height: 58px;
-    display: block;
-    padding: 0 18px;
-    border-top: 1px solid rgba(255, 255, 255, 0.24);
-    color: var(--ink);
-    background: var(--accent-bright);
-    font-size: 13px;
-    font-weight: 800;
-    cursor: pointer;
   }
 
   .contact-sheet {
