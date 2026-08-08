@@ -79,6 +79,7 @@ async function main() {
     ]),
     agreedOffer: includesAll(html, [
       "180 000 ₽",
+      "Окрашенные элементы кузова",
       "3–5 дней",
       "5 лет",
       "Детейлинг-мойка кузова во время консультации — за наш счет",
@@ -94,6 +95,11 @@ async function main() {
       "landing_scroll_90_polish_film_v8",
     ]),
     qaIsolation: includesAll(app, ["_ym_debug", "codex", "smoke"]),
+    messageMatch: includesAll(app, [
+      "newcar_fullfilm",
+      "price_install_fullfilm",
+      "НОВЫЙ АВТОМОБИЛЬ · OHTAAWA",
+    ]),
     provenanceManifest: fs.existsSync(provenancePath),
     forbiddenCopyAbsent: ![
       "запускное предложение",
@@ -133,7 +139,8 @@ async function main() {
       productionPublished: false,
       paidCampaignActivated: false,
       ownerApprovalRequired: true,
-      urgencyVariantRequiresRealLaunchDeadline: true,
+      firstCohort: "control",
+      urgencyVariantRequiresRealLaunchDeadline: false,
     },
   };
 
@@ -154,7 +161,7 @@ async function main() {
       `- visual QA desktop/mobile: ${visualPass ? "PASS" : "FAIL"};`,
       `- source/offer/privacy checks: ${sourcePass ? "PASS" : "FAIL"}.`,
       "",
-      "Production не изменён, платные кампании не активированы. Перед публикацией нужны просмотр владельца, выбор первой честной urgency-когорты и подтверждение команды «выкладывай».",
+      "Production не изменён, платные кампании не активированы. Первая когорта зафиксирована как control без таймера; перед публикацией нужны просмотр владельца и команда «выкладывай Wave45 control».",
       "",
     ].join("\n"),
     "utf8",

@@ -46,6 +46,26 @@
   document.body.dataset.scenario = attribution.scenario;
   document.body.dataset.experiment = attribution.experiment_id;
 
+  const initMessageMatch = () => {
+    const eyebrow = document.querySelector("[data-hero-eyebrow-copy]");
+    const lead = document.querySelector("[data-hero-lead]");
+    if (!eyebrow || !lead) return;
+
+    if (attribution.utm_content === "newcar_fullfilm") {
+      eyebrow.textContent = "НОВЫЙ АВТОМОБИЛЬ · OHTAAWA";
+      lead.textContent =
+        "Защитите новый кузов до первых сколов. Премиальная прозрачная пленка, подготовка, монтаж и финальный контроль уже входят в стоимость.";
+      return;
+    }
+
+    if (attribution.utm_content === "price_install_fullfilm") {
+      eyebrow.textContent = "ФИКСИРОВАННАЯ ЦЕНА · OHTAAWA";
+      lead.textContent =
+        "Окрашенные элементы кузова, подготовка автомобиля, монтаж и финальный контроль — в одном пакете за 180 000 ₽.";
+    }
+  };
+  initMessageMatch();
+
   const loadMetrika = () => {
     const counter = Number(config.metrikaCounter);
     if (!counter || isQa) return;
