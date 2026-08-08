@@ -1,0 +1,82 @@
+{
+  "manifest_version": 1,
+  "project": "OHTAAWA wave45 full-film landing",
+  "created_at": "2026-08-04",
+  "policy": "Generated assets are atmosphere or explanatory visuals only. Real proof uses owner-provided OHTAAWA materials. Public use requires owner approval.",
+  "assets": [
+    {
+      "file": "hero-full-film-desktop.webp",
+      "source_type": "generated-illustrative-owner-approved-anchor",
+      "role": "hero atmosphere",
+      "proof": false,
+      "publish_status": "existing-approved-anchor"
+    },
+    {
+      "file": "hero-full-film-mobile.webp",
+      "source_type": "generated-illustrative-owner-approved-anchor",
+      "role": "mobile hero atmosphere",
+      "proof": false,
+      "publish_status": "existing-approved-anchor"
+    },
+    {
+      "file": "generated/wave45-protective-skin.webp",
+      "source_type": "chatgpt-subscription-generated-explanatory",
+      "role": "transparent-film explanatory visual",
+      "proof": false,
+      "prompt_registry": "docs/ohtaawa-retargeting/agent-work/2026-08-04/landing-wave45-proof-first-redesign/ART_DIRECTION_PROMPT_PACK.md",
+      "publish_status": "candidate_not_published"
+    },
+    {
+      "file": "generated/wave45-protective-skin-close.webp",
+      "source_type": "derived-from-chatgpt-subscription-generated-explanatory",
+      "role": "transparent-film explanatory visual, closer composition",
+      "proof": false,
+      "transformation": "deterministic crop, Lanczos resize and WebP compression",
+      "prompt_registry": "docs/ohtaawa-retargeting/agent-work/2026-08-04/landing-wave45-proof-first-redesign/ART_DIRECTION_PROMPT_PACK.md",
+      "publish_status": "candidate_not_published"
+    },
+    {
+      "file": "proof/atmosphere-film-detail.webp",
+      "source_type": "generated-atmosphere",
+      "role": "service atmosphere",
+      "proof": false,
+      "publish_status": "candidate_not_published"
+    },
+    {
+      "file": "proof/atmosphere-studio-finish.webp",
+      "source_type": "generated-atmosphere",
+      "role": "studio atmosphere",
+      "proof": false,
+      "publish_status": "candidate_not_published"
+    },
+    {
+      "file": "proof/real/real-finished-porsche.webp",
+      "source_type": "owner-provided-real-ohtaawa-material",
+      "role": "real proof carousel",
+      "proof": true,
+      "publish_status": "candidate_not_published"
+    },
+    {
+      "file": "proof/real/crops/film-sheet-wide.webp",
+      "source_type": "owner-provided-real-ohtaawa-material",
+      "role": "real proof carousel",
+      "proof": true,
+      "transformation": "deterministic crop, Lanczos resize and WebP compression",
+      "publish_status": "candidate_not_published"
+    },
+    {
+      "file": "proof/real/real-gloss-front.webp",
+      "source_type": "owner-provided-real-ohtaawa-material",
+      "role": "real proof carousel",
+      "proof": true,
+      "publish_status": "candidate_not_published"
+    },
+    {
+      "file": "proof/real/real-gloss-panel.webp",
+      "source_type": "owner-provided-real-ohtaawa-material",
+      "role": "real proof carousel",
+      "proof": true,
+      "publish_status": "candidate_not_published"
+    }
+  ]
+}

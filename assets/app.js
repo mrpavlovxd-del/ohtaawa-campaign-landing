@@ -1,428 +1,491 @@
-(function () {
+(() => {
   "use strict";
 
-  document.documentElement.classList.add("js");
+  const configNode = document.getElementById("landing-config");
+  const config = configNode ? JSON.parse(configNode.textContent || "{}") : {};
+  const params = new URLSearchParams(window.location.search);
+  const hostname = window.location.hostname.toLowerCase();
+  const qaTokens = ["qa", "codex", "smoke", "_ym_debug"];
+  const qaMarker = [
+    params.get("utm_source"),
+    params.get("utm_medium"),
+    params.get("utm_campaign"),
+    params.get("utm_content"),
+    params.get("scenario"),
+    params.get("experiment_id"),
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+  const qaValuePattern = /(^|[\s_-])(qa|codex|smoke)(?=$|[\s_-])/;
+  const isQa =
+    hostname === "localhost" ||
+    hostname === "127.0.0.1" ||
+    qaTokens.some((token) => params.has(token)) ||
+    qaValuePattern.test(qaMarker);
 
-  var configNode = document.getElementById("landing-config");
-  if (!configNode) return;
-
-  var config = JSON.parse(configNode.textContent);
-  var params = new URLSearchParams(window.location.search);
-  var requestedScenario = (params.get("scenario") || "").toLowerCase();
-  var requestedUiScenario = (params.get("ui_scenario") || "").toLowerCase();
-  var attributionScenario = requestedScenario || config.serviceRoute;
-  var uiScenario = requestedUiScenario || config.serviceRoute;
-  var fired = Object.create(null);
-  var contactOrigin = "";
-  var toastTimer = null;
-
-  function isQaVisit() {
-    var debug = (params.get("_ym_debug") || "").toLowerCase();
-    var marker = [
-      params.get("utm_source") || "",
-      params.get("utm_medium") || "",
-      params.get("utm_campaign") || "",
-      params.get("utm_content") || "",
-      params.get("experiment_id") || ""
-    ].join(" ").toLowerCase();
-
-    return /^(1|true|yes)$/.test(debug) || /(^|\s|_)(qa|codex|smoke)(\s|_|$)/.test(marker);
-  }
-
-  var qaVisit = isQaVisit();
-  var experimentId = params.get("experiment_id") || config.experimentId;
-
-  window.ohtaawaLanding = {
-    version: config.landingVersion,
-    route: config.serviceRoute,
-    offerId: config.offerId,
-    scenario: attributionScenario,
-    uiScenario: uiScenario,
-    experimentId: experimentId,
-    analyticsDisabled: qaVisit
+  const compact = (value, fallback = "") => {
+    const normalized = String(value ?? fallback).trim().slice(0, 160);
+    return normalized || fallback;
   };
 
-  function eventPayload(name, details) {
-    details = details || {};
-    var contactEvents = [
-      "hero_cta_click",
-      "contact_sheet_open",
-      "channel_open",
-      "messenger_click",
-      "phone_click"
-    ];
+  const attribution = {
+    utm_source: compact(params.get("utm_source"), "direct"),
+    utm_medium: compact(params.get("utm_medium"), "none"),
+    utm_campaign: compact(params.get("utm_campaign"), "none"),
+    utm_content: compact(params.get("utm_content"), "none"),
+    utm_term: compact(params.get("utm_term"), "none"),
+    scenario: compact(params.get("scenario"), "control"),
+    experiment_id: compact(params.get("experiment_id"), config.experimentId || "wave45_control"),
+    service_route: compact(config.serviceRoute, "film_full"),
+    offer_id: compact(config.offerId, "full_film_fixed_180"),
+    landing_version: compact(config.landingVersion, "wave45-proof-first"),
+  };
+  const qaEvents = [];
 
-    return {
-      event: name,
-      event_name: name,
-      page: "ohtaawa_wave43_full_film",
-      landing_version: config.landingVersion,
-      service_route: config.serviceRoute,
-      scenario: attributionScenario,
-      ui_scenario: uiScenario,
-      offer_id: config.offerId,
-      experiment_id: experimentId,
-      conversion_stage: contactEvents.indexOf(name) >= 0 ? "soft_contact" : "behavior",
-      client_time: new Date().toISOString(),
-      location: details.location || "",
-      contact_origin: details.contactOrigin || contactOrigin || "",
-      destination: details.destination || "",
-      utm_source: params.get("utm_source") || "",
-      utm_medium: params.get("utm_medium") || "",
-      utm_campaign: params.get("utm_campaign") || "",
-      utm_content: params.get("utm_content") || "",
-      utm_term: params.get("utm_term") || ""
-    };
-  }
+  document.body.dataset.scenario = attribution.scenario;
+  document.body.dataset.experiment = attribution.experiment_id;
 
-  function sendEvent(name, details, done) {
-    var payload = eventPayload(name, details);
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push(payload);
+  const loadMetrika = () => {
+    const counter = Number(config.metrikaCounter);
+    if (!counter || isQa) return;
 
-    var completed = false;
-    function finish() {
-      if (completed) return;
-      completed = true;
-      if (typeof done === "function") done();
-    }
-
-    if (!qaVisit && typeof window.ym === "function") {
-      var timer = window.setTimeout(finish, 350);
-      window.ym(config.metrikaCounter, "reachGoal", name, payload, function () {
-        window.clearTimeout(timer);
-        finish();
-      });
-    } else {
-      finish();
-    }
-  }
-
-  function sendOnce(name, details) {
-    if (!name || fired[name]) return;
-    fired[name] = true;
-    sendEvent(name, details);
-  }
-
-  function initMetrika() {
-    if (qaVisit) return;
-
-    window.ym = window.ym || function () {
-      (window.ym.a = window.ym.a || []).push(arguments);
-    };
+    window.ym =
+      window.ym ||
+      function () {
+        (window.ym.a = window.ym.a || []).push(arguments);
+      };
     window.ym.l = Date.now();
 
-    var script = document.createElement("script");
-    script.async = true;
-    script.src = "https://mc.yandex.ru/metrika/tag.js?id=" + config.metrikaCounter;
-    document.head.appendChild(script);
+    if (!document.querySelector('script[src*="mc.yandex.ru/metrika/tag.js"]')) {
+      const script = document.createElement("script");
+      script.async = true;
+      script.src = "https://mc.yandex.ru/metrika/tag.js";
+      document.head.appendChild(script);
+    }
 
-    window.ym(config.metrikaCounter, "init", {
-      ssr: true,
-      webvisor: true,
+    window.ym(counter, "init", {
       clickmap: true,
-      accurateTrackBounce: true,
       trackLinks: true,
-      referrer: document.referrer,
-      url: window.location.href
+      accurateTrackBounce: true,
+      webvisor: true,
     });
+  };
 
-    window.ym(config.metrikaCounter, "params", {
-      ohtaawa_landing: {
-        landing_version: config.landingVersion,
-        service_route: config.serviceRoute,
-        scenario: attributionScenario,
-        ui_scenario: uiScenario,
-        offer_id: config.offerId,
-        experiment_id: experimentId,
-        qa_visit: "no",
-        utm_source: params.get("utm_source") || "",
-        utm_medium: params.get("utm_medium") || "",
-        utm_campaign: params.get("utm_campaign") || "",
-        utm_content: params.get("utm_content") || "",
-        utm_term: params.get("utm_term") || ""
-      }
-    });
+  const track = (eventName, details = {}) => {
+    const event = compact(eventName);
+    if (!event) return;
+
+    const payload = {
+      ...attribution,
+      ...details,
+      event_time: new Date().toISOString(),
+      page_path: window.location.pathname,
+    };
+
+    window.dispatchEvent(
+      new CustomEvent("ohtaawa:track", {
+        detail: { event, payload, qa: isQa },
+      }),
+    );
+
+    if (isQa) {
+      qaEvents.push({ event, payload });
+      configNode?.setAttribute("data-qa-events", JSON.stringify(qaEvents));
+    }
+
+    if (!isQa && Number(config.metrikaCounter) && typeof window.ym === "function") {
+      window.ym(Number(config.metrikaCounter), "reachGoal", event, payload);
+      window.ym(Number(config.metrikaCounter), "params", {
+        ohtaawa_event: { name: event, ...payload },
+      });
+    }
+  };
+
+  window.ohtaawaAnalytics = {
+    config,
+    attribution,
+    isQa,
+    qaEvents,
+    track,
+  };
+
+  loadMetrika();
+
+  const header = document.querySelector("[data-header]");
+  const syncHeader = () => header?.classList.toggle("is-scrolled", window.scrollY > 24);
+  syncHeader();
+  window.addEventListener("scroll", syncHeader, { passive: true });
+
+  const revealNodes = [...document.querySelectorAll("[data-reveal]")];
+  if ("IntersectionObserver" in window) {
+    const revealObserver = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        });
+      },
+      { threshold: 0.14, rootMargin: "0px 0px -40px" },
+    );
+    revealNodes.forEach((node) => revealObserver.observe(node));
+  } else {
+    revealNodes.forEach((node) => node.classList.add("is-visible"));
   }
 
-  function showToast(message) {
-    var toast = document.querySelector("[data-toast]");
+  const viewedEvents = new Set();
+  const viewNodes = [...document.querySelectorAll("[data-view-event]")];
+  if ("IntersectionObserver" in window) {
+    const viewObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          const eventName = entry.target.dataset.viewEvent;
+          if (!eventName || viewedEvents.has(eventName)) return;
+          viewedEvents.add(eventName);
+          track(eventName, { visible_ratio: Number(entry.intersectionRatio.toFixed(2)) });
+        });
+      },
+      { threshold: [0.45] },
+    );
+    viewNodes.forEach((node) => viewObserver.observe(node));
+  }
+
+  track("landing_view", {
+    viewport_width: window.innerWidth,
+    viewport_height: window.innerHeight,
+    referrer_host: document.referrer ? new URL(document.referrer).hostname : "direct",
+  });
+
+  const reachedScroll = new Set();
+  const scrollGoals = {
+    50: "landing_scroll_50_polish_film_v8",
+    90: "landing_scroll_90_polish_film_v8",
+  };
+  const trackScroll = () => {
+    const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+    if (scrollable <= 0) return;
+    const progress = Math.round((window.scrollY / scrollable) * 100);
+    [50, 90].forEach((threshold) => {
+      if (progress < threshold || reachedScroll.has(threshold)) return;
+      reachedScroll.add(threshold);
+      track(scrollGoals[threshold], { scroll_percent: threshold });
+    });
+  };
+  window.addEventListener("scroll", trackScroll, { passive: true });
+
+  document.querySelectorAll("[data-track-event]").forEach((node) => {
+    node.addEventListener("click", () => {
+      track(node.dataset.trackEvent, {
+        location: compact(node.dataset.trackLocation, "unknown"),
+      });
+    });
+  });
+
+  const toast = document.querySelector("[data-toast]");
+  let toastTimer = 0;
+  const showToast = (message) => {
     if (!toast) return;
+    window.clearTimeout(toastTimer);
     toast.textContent = message;
     toast.classList.add("is-visible");
-    window.clearTimeout(toastTimer);
-    toastTimer = window.setTimeout(function () {
-      toast.classList.remove("is-visible");
-    }, 3000);
-  }
+    toastTimer = window.setTimeout(() => toast.classList.remove("is-visible"), 3200);
+  };
 
-  function initContactSheet() {
-    var dialog = document.getElementById("contact-sheet");
-    if (!dialog) return;
+  const contactDialog = document.getElementById("contact-sheet");
+  let contactLocation = "unknown";
+  const setDialogState = (open) => document.body.classList.toggle("dialog-open", open);
 
-    function openContact(origin) {
-      contactOrigin = origin || "unknown";
-      sendEvent("hero_cta_click", {
-        location: contactOrigin,
-        contactOrigin: contactOrigin,
-        destination: "contact_sheet"
-      });
-
-      if (typeof dialog.showModal === "function") {
-        dialog.showModal();
-      } else {
-        dialog.setAttribute("open", "");
+  document.querySelectorAll("[data-open-contact]").forEach((button) => {
+    button.addEventListener("click", () => {
+      contactLocation = compact(button.dataset.contactLocation, "unknown");
+      track("contact_sheet_open", { location: contactLocation });
+      if (contactDialog?.showModal) {
+        contactDialog.showModal();
+        setDialogState(true);
       }
-      document.body.classList.add("is-dialog-open");
-      sendEvent("contact_sheet_open", {
-        location: contactOrigin,
-        contactOrigin: contactOrigin,
-        destination: "contact_sheet"
-      });
+    });
+  });
+
+  document.querySelector("[data-close-contact]")?.addEventListener("click", () => {
+    contactDialog?.close();
+  });
+
+  contactDialog?.addEventListener("close", () => setDialogState(false));
+  contactDialog?.addEventListener("click", (event) => {
+    if (event.target === contactDialog) contactDialog.close();
+  });
+
+  const rememberContactSignal = (channel) => {
+    try {
+      sessionStorage.setItem(
+        "ohtaawa_last_contact_signal",
+        JSON.stringify({
+          channel,
+          location: contactLocation,
+          at: new Date().toISOString(),
+          campaign: attribution.utm_campaign,
+          source: attribution.utm_source,
+        }),
+      );
+    } catch {
+      // Analytics must never block the contact path.
+    }
+  };
+
+  const contactGoalByChannel = {
+    phone: "lead_phone_polish_film_v8",
+    telegram: "lead_telegram_polish_film_v8",
+    whatsapp: "lead_whatsapp_polish_film_v8",
+    max: "lead_max_direct_polish_film_v8",
+  };
+
+  document.querySelectorAll("[data-channel]").forEach((link) => {
+    const channel = compact(link.dataset.channel, "unknown");
+    const message = compact(link.dataset.copyMessage);
+
+    if (channel === "whatsapp" && message) {
+      const base = compact(config.whatsappUrl, link.href);
+      link.href = base + (base.includes("?") ? "&" : "?") + "text=" + encodeURIComponent(message);
     }
 
-    function closeContact() {
-      if (dialog.open && typeof dialog.close === "function") {
-        dialog.close();
-      } else {
-        dialog.removeAttribute("open");
-      }
-      document.body.classList.remove("is-dialog-open");
-    }
-
-    document.querySelectorAll("[data-open-contact]").forEach(function (node) {
-      node.addEventListener("click", function () {
-        openContact(node.getAttribute("data-contact-location") || "unknown");
+    link.addEventListener("click", () => {
+      rememberContactSignal(channel);
+      track("contact_channel_click", {
+        channel,
+        location: contactLocation,
       });
-    });
-
-    var closeButton = dialog.querySelector("[data-close-contact]");
-    if (closeButton) closeButton.addEventListener("click", closeContact);
-    dialog.addEventListener("close", function () {
-      document.body.classList.remove("is-dialog-open");
-    });
-    dialog.addEventListener("click", function (event) {
-      if (event.target === dialog) closeContact();
-    });
-  }
-
-  function copyPreparedMessage(node) {
-    var channel = node.getAttribute("data-channel");
-    var message = node.getAttribute("data-copy-message") || "";
-    if (!message || (channel !== "telegram" && channel !== "max")) return;
-    if (!navigator.clipboard || !navigator.clipboard.writeText) return;
-
-    navigator.clipboard.writeText(message).then(function () {
-      showToast("Текст обращения скопирован. Вставьте его в открывшийся чат.");
-    }).catch(function () {});
-  }
-
-  function initContactLinks() {
-    document.querySelectorAll("[data-channel]").forEach(function (node) {
-      var channel = node.getAttribute("data-channel");
-      var message = node.getAttribute("data-copy-message") || "";
-
-      if (channel === "whatsapp" && message) {
-        node.setAttribute("href", config.whatsappUrl + "?text=" + encodeURIComponent(message));
-      }
-
-      node.addEventListener("click", function (event) {
-        copyPreparedMessage(node);
-        var details = {
-          location: "contact_sheet",
-          contactOrigin: contactOrigin,
-          destination: channel
-        };
-
-        if (channel === "phone") {
-          event.preventDefault();
-          sendEvent("phone_click", details, function () {
-            window.location.href = node.getAttribute("href");
-          });
-          return;
-        }
-
-        sendEvent("channel_open", details);
-        sendEvent("messenger_click", details);
-      });
-    });
-  }
-
-  function initTrackedLinks() {
-    document.querySelectorAll("[data-track-event]").forEach(function (node) {
-      node.addEventListener("click", function (event) {
-        var eventName = node.getAttribute("data-track-event");
-        var href = node.getAttribute("href") || "";
-        var details = {
-          location: node.getAttribute("data-track-location") || "",
-          destination: eventName === "map_click" ? "yandex_maps" : "phone"
-        };
-
-        if (href.indexOf("tel:") === 0) {
-          event.preventDefault();
-          sendEvent(eventName, details, function () {
-            window.location.href = href;
-          });
-          return;
-        }
-
-        sendEvent(eventName, details);
-      });
-    });
-  }
-
-  function initViewTracking() {
-    var nodes = document.querySelectorAll("[data-view-event]");
-    if (!("IntersectionObserver" in window)) {
-      nodes.forEach(function (node) {
-        sendOnce(node.getAttribute("data-view-event"), { location: "fallback_view" });
-      });
-      return;
-    }
-
-    var observer = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (!entry.isIntersecting || entry.intersectionRatio < 0.3) return;
-        sendOnce(entry.target.getAttribute("data-view-event"), {
-          location: entry.target.id || "section_view"
+      const contactGoal = contactGoalByChannel[channel];
+      if (contactGoal) {
+        track(contactGoal, {
+          channel,
+          location: contactLocation,
         });
-        observer.unobserve(entry.target);
-      });
-    }, { threshold: [0.3, 0.6] });
+      }
 
-    nodes.forEach(function (node) {
-      observer.observe(node);
+      if ((channel === "telegram" || channel === "max") && message && navigator.clipboard?.writeText) {
+        navigator.clipboard
+          .writeText(message)
+          .then(() => showToast("Текст обращения скопирован. Вставьте его в открывшийся чат."))
+          .catch(() => {});
+      }
     });
-  }
+  });
 
-  function initReveal() {
-    var nodes = document.querySelectorAll("[data-reveal]");
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches ||
-        !("IntersectionObserver" in window)) {
-      nodes.forEach(function (node) {
-        node.classList.add("is-visible");
+  const carousel = document.querySelector("[data-carousel]");
+  if (carousel) {
+    const mainImage = carousel.querySelector("[data-carousel-main]");
+    const title = carousel.querySelector("[data-carousel-title]");
+    const copy = carousel.querySelector("[data-carousel-copy]");
+    const counter = carousel.querySelector("[data-carousel-counter]");
+    const tabs = [...carousel.querySelectorAll("[data-slide]")];
+    const previous = carousel.querySelector("[data-carousel-prev]");
+    const next = carousel.querySelector("[data-carousel-next]");
+    const open = carousel.querySelector("[data-carousel-open]");
+    const gallery = document.getElementById("gallery-dialog");
+    const galleryImage = gallery?.querySelector("[data-gallery-image]");
+    const galleryTitle = gallery?.querySelector("[data-gallery-title]");
+    let activeIndex = 0;
+    let carouselTimer = 0;
+    let touchStart = 0;
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    const selectSlide = (index, interaction = "auto") => {
+      if (!tabs.length || !mainImage || !title || !copy || !counter) return;
+      activeIndex = (index + tabs.length) % tabs.length;
+      const selected = tabs[activeIndex];
+
+      mainImage.style.opacity = "0.2";
+      window.setTimeout(() => {
+        mainImage.src = selected.dataset.src || mainImage.src;
+        mainImage.alt = selected.dataset.alt || "";
+        title.textContent = selected.dataset.title || "";
+        copy.textContent = selected.dataset.copy || "";
+        counter.textContent =
+          String(activeIndex + 1).padStart(2, "0") +
+          " / " +
+          String(tabs.length).padStart(2, "0");
+        const decoded = mainImage.decode ? mainImage.decode() : Promise.resolve();
+        decoded.catch(() => {}).finally(() => {
+          mainImage.style.opacity = "1";
+        });
+      }, reducedMotion ? 0 : 120);
+
+      tabs.forEach((tab, indexValue) => {
+        const isSelected = indexValue === activeIndex;
+        tab.setAttribute("aria-selected", String(isSelected));
+        tab.tabIndex = isSelected ? 0 : -1;
       });
-      return;
-    }
 
-    var observer = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add("is-visible");
-        observer.unobserve(entry.target);
+      if (interaction !== "auto" && interaction !== "initial") {
+        track("proof_carousel_interaction", {
+          interaction,
+          slide: activeIndex + 1,
+          slide_title: compact(selected.dataset.title),
+        });
+      }
+    };
+
+    const stopAutoplay = () => window.clearInterval(carouselTimer);
+    const startAutoplay = () => {
+      stopAutoplay();
+      if (reducedMotion || document.hidden) return;
+      carouselTimer = window.setInterval(() => selectSlide(activeIndex + 1, "auto"), 7000);
+    };
+
+    tabs.forEach((tab, index) => {
+      tab.addEventListener("click", () => {
+        selectSlide(index, "thumbnail");
+        startAutoplay();
       });
-    }, { rootMargin: "0px 0px -7% 0px", threshold: 0.06 });
-
-    nodes.forEach(function (node) {
-      observer.observe(node);
-    });
-  }
-
-  function initScrollTracking() {
-    var ticking = false;
-
-    function measure() {
-      ticking = false;
-      var documentHeight = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
-      var viewportBottom = window.scrollY + window.innerHeight;
-      var depth = documentHeight <= window.innerHeight ? 100 : viewportBottom / documentHeight * 100;
-      if (depth >= 50) sendOnce("scroll_50", { location: "page" });
-      if (depth >= 90) sendOnce("scroll_90", { location: "page" });
-    }
-
-    window.addEventListener("scroll", function () {
-      if (ticking) return;
-      ticking = true;
-      window.requestAnimationFrame(measure);
-    }, { passive: true });
-
-    measure();
-  }
-
-  function initInspectionLight() {
-    var hero = document.querySelector(".hero");
-    var heroLight = document.querySelector("[data-inspection-light]");
-    var proof = document.querySelector("[data-proof-stage]");
-    var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (reduced) return;
-
-    function bind(node, target, property) {
-      if (!node || !target) return;
-      node.addEventListener("pointermove", function (event) {
-        var rect = node.getBoundingClientRect();
-        var percent = Math.max(0, Math.min(100, (event.clientX - rect.left) / rect.width * 100));
-        target.style.setProperty(property, percent.toFixed(2) + "%");
-      }, { passive: true });
-    }
-
-    bind(hero, heroLight, "--scan-x");
-    bind(proof, proof, "--proof-x");
-  }
-
-  function initMobileContact() {
-    var button = document.querySelector(".mobile-contact");
-    var hero = document.querySelector(".hero");
-    if (!button || !hero) return;
-
-    var ticking = false;
-    function sync() {
-      ticking = false;
-      var mobile = window.matchMedia("(max-width: 820px)").matches;
-      button.classList.toggle("is-visible", mobile && window.scrollY > hero.offsetHeight * 0.58);
-    }
-
-    function requestSync() {
-      if (ticking) return;
-      ticking = true;
-      window.requestAnimationFrame(sync);
-    }
-
-    window.addEventListener("scroll", requestSync, { passive: true });
-    window.addEventListener("resize", requestSync);
-    sync();
-  }
-
-  function initFaqTracking() {
-    document.querySelectorAll(".faq-list details").forEach(function (node, index) {
-      node.addEventListener("toggle", function () {
-        if (!node.open) return;
-        sendEvent("faq_open", { location: "faq_" + (index + 1), destination: "content" });
+      tab.addEventListener("keydown", (event) => {
+        if (!["ArrowLeft", "ArrowRight"].includes(event.key)) return;
+        event.preventDefault();
+        selectSlide(activeIndex + (event.key === "ArrowRight" ? 1 : -1), "keyboard");
+        tabs[activeIndex]?.focus();
       });
     });
+
+    previous?.addEventListener("click", () => {
+      selectSlide(activeIndex - 1, "previous");
+      startAutoplay();
+    });
+    next?.addEventListener("click", () => {
+      selectSlide(activeIndex + 1, "next");
+      startAutoplay();
+    });
+
+    carousel.addEventListener("mouseenter", stopAutoplay);
+    carousel.addEventListener("mouseleave", startAutoplay);
+    carousel.addEventListener("focusin", stopAutoplay);
+    carousel.addEventListener("focusout", startAutoplay);
+    carousel.addEventListener(
+      "touchstart",
+      (event) => {
+        touchStart = event.changedTouches[0]?.clientX || 0;
+        stopAutoplay();
+      },
+      { passive: true },
+    );
+    carousel.addEventListener(
+      "touchend",
+      (event) => {
+        const touchEnd = event.changedTouches[0]?.clientX || 0;
+        const distance = touchEnd - touchStart;
+        if (Math.abs(distance) > 55) {
+          selectSlide(activeIndex + (distance < 0 ? 1 : -1), "swipe");
+        }
+        startAutoplay();
+      },
+      { passive: true },
+    );
+
+    open?.addEventListener("click", () => {
+      if (!gallery?.showModal || !galleryImage || !galleryTitle || !mainImage || !title) return;
+      galleryImage.src = mainImage.src;
+      galleryImage.alt = mainImage.alt;
+      galleryTitle.textContent = title.textContent;
+      gallery.showModal();
+      setDialogState(true);
+      track("proof_gallery_open", { slide: activeIndex + 1 });
+    });
+
+    gallery?.querySelector("[data-gallery-close]")?.addEventListener("click", () => gallery.close());
+    gallery?.addEventListener("click", (event) => {
+      if (event.target === gallery) gallery.close();
+    });
+    gallery?.addEventListener("close", () => setDialogState(false));
+
+    document.addEventListener("visibilitychange", () => {
+      if (document.hidden) stopAutoplay();
+      else startAutoplay();
+    });
+
+    selectSlide(0, "initial");
+    startAutoplay();
   }
 
-  function initDeadlineCountdown() {
-    var node = document.querySelector("[data-deadline]");
-    if (!node) return;
+  const formatDate = (value) => {
+    const date = new Date(value);
+    if (Number.isNaN(date.getTime())) return "";
+    return new Intl.DateTimeFormat("ru-RU", {
+      day: "numeric",
+      month: "long",
+      timeZone: "Europe/Moscow",
+    }).format(date);
+  };
 
-    var deadline = new Date(node.getAttribute("data-deadline"));
-    var daysNode = node.querySelector("[data-countdown-days]");
-    var hoursNode = node.querySelector("[data-countdown-hours]");
-    if (Number.isNaN(deadline.getTime()) || !daysNode || !hoursNode) return;
+  const initUrgency = () => {
+    const panel = document.querySelector("[data-urgency-panel]");
+    if (!panel) return;
 
-    function render() {
-      var remaining = Math.max(0, deadline.getTime() - Date.now());
-      var totalHours = Math.floor(remaining / 3600000);
-      var days = Math.floor(totalHours / 24);
-      var hours = totalHours % 24;
-      daysNode.textContent = String(days).padStart(2, "0");
-      hoursNode.textContent = String(hours).padStart(2, "0");
+    const variant = compact(params.get("urgency"), config.urgencyDefault || "control");
+    const supported = ["deadline", "week", "countdown", "three_days"];
+    if (!supported.includes(variant)) return;
+
+    const deadlineValue = variant === "week" ? config.weekDeadline : config.campaignDeadline;
+    const deadline = new Date(deadlineValue);
+    const now = new Date();
+    if (Number.isNaN(deadline.getTime()) || deadline <= now) return;
+
+    const title = panel.querySelector("[data-urgency-title]");
+    const copy = panel.querySelector("[data-urgency-copy]");
+    const label = panel.querySelector("[data-urgency-label]");
+    const countdown = panel.querySelector("[data-countdown]");
+    const remainingDays = Math.max(1, Math.ceil((deadline - now) / 86400000));
+
+    panel.hidden = false;
+    document.body.dataset.urgency = variant;
+    label.textContent = variant === "week" ? "Предложение этой недели" : "Ограниченное предложение";
+
+    if (variant === "three_days") {
+      title.textContent =
+        remainingDays <= 3
+          ? "До завершения — " + remainingDays + " дн."
+          : "Цена действует до " + formatDate(deadlineValue);
+      copy.textContent = "До указанной даты можно зафиксировать полную оклейку кузова по цене 180 000 ₽.";
+    } else if (variant === "week") {
+      title.textContent = "Цена 180 000 ₽ действует до " + formatDate(deadlineValue);
+      copy.textContent = "Запись можно выбрать на удобную дату после завершения недели.";
+    } else {
+      title.textContent = "Цена 180 000 ₽ действует до " + formatDate(deadlineValue);
+      copy.textContent = "До этой даты можно зафиксировать стоимость полной оклейки кузова.";
     }
 
-    render();
-    window.setInterval(render, 60000);
-  }
+    if (variant === "countdown") {
+      countdown.hidden = false;
+      const daysNode = countdown.querySelector("[data-countdown-days]");
+      const hoursNode = countdown.querySelector("[data-countdown-hours]");
+      const update = () => {
+        const distance = deadline - new Date();
+        if (distance <= 0) {
+          panel.hidden = true;
+          return;
+        }
+        const days = Math.floor(distance / 86400000);
+        const hours = Math.floor((distance % 86400000) / 3600000);
+        daysNode.textContent = String(days).padStart(2, "0");
+        hoursNode.textContent = String(hours).padStart(2, "0");
+      };
+      update();
+      window.setInterval(update, 60000);
+    }
 
-  initMetrika();
-  initContactSheet();
-  initContactLinks();
-  initTrackedLinks();
-  initViewTracking();
-  initReveal();
-  initScrollTracking();
-  initInspectionLight();
-  initMobileContact();
-  initFaqTracking();
-  initDeadlineCountdown();
-  sendOnce("landing_view", { location: "page_load" });
+    track("urgency_variant_view", {
+      urgency_variant: variant,
+      urgency_deadline: deadline.toISOString(),
+    });
+  };
+  initUrgency();
+
+  document.querySelectorAll(".faq-list details").forEach((details, index) => {
+    details.addEventListener("toggle", () => {
+      if (!details.open) return;
+      track("faq_open", {
+        faq_index: index + 1,
+        faq_question: compact(details.querySelector("summary")?.textContent),
+      });
+    });
+  });
 })();
