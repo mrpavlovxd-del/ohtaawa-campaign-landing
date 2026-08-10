@@ -1,0 +1,83 @@
+{
+  "manifest_version": 1,
+  "project": "OHTAAWA wave46 risk-zones landing",
+  "created_at": "2026-08-09",
+  "policy": "Generated visuals are used only as service atmosphere. Factual proof uses owner-provided OHTAAWA media with existing provenance. Public use remains subject to owner approval.",
+  "assets": [
+    {
+      "file": "risk-zones/hero-desktop.webp",
+      "source_type": "built-in-imagegen-generated-illustrative",
+      "role": "desktop hero atmosphere",
+      "proof": false,
+      "reference": "wave45 approved visual direction",
+      "source_artifact": "C:/Users/Никита/.codex/generated_images/019ed7ef-bd62-7162-81d1-eda30cb42d53/exec-a3058729-3dfd-4a51-8b40-e1c87bc11871.png",
+      "transformation": "WebP conversion and compression",
+      "publish_status": "candidate_not_published"
+    },
+    {
+      "file": "risk-zones/hero-mobile.webp",
+      "source_type": "built-in-imagegen-generated-illustrative",
+      "role": "mobile hero atmosphere",
+      "proof": false,
+      "reference": "wave45 approved visual direction",
+      "source_artifact": "C:/Users/Никита/.codex/generated_images/019ed7ef-bd62-7162-81d1-eda30cb42d53/exec-5c312ca4-f74f-4b48-b308-23e19151814b.png",
+      "transformation": "WebP conversion and compression",
+      "publish_status": "candidate_not_published"
+    },
+    {
+      "file": "risk-zones/package-front-detail.webp",
+      "source_type": "built-in-imagegen-generated-illustrative",
+      "role": "package atmosphere and front-surface close view",
+      "proof": false,
+      "reference": "wave46 hero studio language",
+      "source_artifact": "C:/Users/Никита/.codex/generated_images/019ed7ef-bd62-7162-81d1-eda30cb42d53/exec-dd1ad58b-4012-4cc9-b4f5-44c1675e2ae1.png",
+      "transformation": "Lanczos resize and WebP compression",
+      "publish_status": "candidate_not_published"
+    },
+    {
+      "file": "proof/real/crops/film-wide-process-wide.webp",
+      "source_type": "owner-provided-real-ohtaawa-material",
+      "role": "package and process proof",
+      "proof": true,
+      "transformation": "existing deterministic crop and WebP derivative",
+      "provenance_reference": "assets/provenance-wave45.json",
+      "publish_status": "candidate_not_published"
+    },
+    {
+      "file": "proof/real/crops/film-sheet-wide.webp",
+      "source_type": "owner-provided-real-ohtaawa-material",
+      "role": "proof carousel",
+      "proof": true,
+      "transformation": "existing deterministic crop and WebP derivative",
+      "provenance_reference": "assets/provenance-wave45.json",
+      "publish_status": "candidate_not_published"
+    },
+    {
+      "file": "proof/real/crops/film-edge-process-wide.webp",
+      "source_type": "owner-provided-real-ohtaawa-material",
+      "role": "proof carousel",
+      "proof": true,
+      "transformation": "existing deterministic crop and WebP derivative",
+      "provenance_reference": "assets/provenance-wave45.json",
+      "publish_status": "candidate_not_published"
+    },
+    {
+      "file": "proof/real/crops/gloss-front-wide.webp",
+      "source_type": "owner-provided-real-ohtaawa-material",
+      "role": "road-impact visual and proof carousel",
+      "proof": true,
+      "transformation": "existing deterministic crop and WebP derivative",
+      "provenance_reference": "assets/provenance-wave45.json",
+      "publish_status": "candidate_not_published"
+    },
+    {
+      "file": "proof/real/crops/finished-porsche-wide.webp",
+      "source_type": "owner-provided-real-ohtaawa-material",
+      "role": "proof carousel",
+      "proof": true,
+      "transformation": "existing deterministic crop and WebP derivative",
+      "provenance_reference": "assets/provenance-wave45.json",
+      "publish_status": "candidate_not_published"
+    }
+  ]
+}
