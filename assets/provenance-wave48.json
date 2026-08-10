@@ -1,0 +1,52 @@
+{
+  "manifest_version": 1,
+  "project": "OHTAAWA wave48 color-film landing",
+  "created_at": "2026-08-10",
+  "policy": "Generated assets are atmosphere or internal visual targets only. Real proof uses owner-provided OHTAAWA materials. Public use requires owner approval.",
+  "assets": [
+    {
+      "file": "generated/wave48-color-film-concept-target.png",
+      "sha256": "4C17876743ACC8B30071DBE7C0139A48B78F127E6A9372398B1E188786222E5A",
+      "source_type": "built-in-imagegen-concept-target",
+      "role": "internal visual target",
+      "proof": false,
+      "publish_status": "internal_only_never_publish"
+    },
+    {
+      "file": "generated/wave48-color-film-hero-desktop.webp",
+      "sha256": "C00281A8C41099BD325D21D70275FED5C166579092D861243C703FA871E4787E",
+      "source_type": "built-in-imagegen-atmospheric-derivative",
+      "source_reference": "real-color-film-front-v9.webp",
+      "role": "desktop hero atmosphere",
+      "proof": false,
+      "transformation": "generated edit followed by deterministic sharp resize and WebP export",
+      "publish_status": "owner_approval_required"
+    },
+    {
+      "file": "generated/wave48-color-film-hero-mobile.webp",
+      "sha256": "02EE72050A94ED397CDB55F8D41A1555715B7940FB882B7B9B7613F75B09EDB6",
+      "source_type": "derived-from-built-in-imagegen-atmosphere",
+      "source_reference": "generated/wave48-color-film-hero-desktop.webp",
+      "role": "mobile hero atmosphere",
+      "proof": false,
+      "transformation": "deterministic attention crop, sharp resize and WebP export",
+      "publish_status": "owner_approval_required"
+    },
+    {
+      "file": "real-color-film-front-v9.webp",
+      "sha256": "1FB5D88D8CC855B7165BF651120A593417FAEB216C0525C444C0634B6FDB9EE6",
+      "source_type": "owner-provided-real-ohtaawa-material",
+      "role": "real front-view proof carousel",
+      "proof": true,
+      "publish_status": "candidate_not_published"
+    },
+    {
+      "file": "real-color-film-rear-v9.webp",
+      "sha256": "84965339D28887E12ED2FDDC9AAFB24673959333A55F2F8F0A4FE40ADD4B88AF",
+      "source_type": "owner-provided-real-ohtaawa-material",
+      "role": "real rear-view proof carousel",
+      "proof": true,
+      "publish_status": "candidate_not_published"
+    }
+  ]
+}

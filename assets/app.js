@@ -179,9 +179,10 @@
   });
 
   const reachedScroll = new Set();
+  const configuredScrollGoals = config.scrollGoals || {};
   const scrollGoals = {
-    50: "landing_scroll_50_polish_film_v8",
-    90: "landing_scroll_90_polish_film_v8",
+    50: compact(configuredScrollGoals["50"], "landing_scroll_50_polish_film_v8"),
+    90: compact(configuredScrollGoals["90"], "landing_scroll_90_polish_film_v8"),
   };
   const trackScroll = () => {
     const scrollable = document.documentElement.scrollHeight - window.innerHeight;
@@ -254,11 +255,15 @@
     }
   };
 
-  const contactGoalByChannel = {
+  const defaultContactGoalByChannel = {
     phone: "lead_phone_polish_film_v8",
     telegram: "lead_telegram_polish_film_v8",
     whatsapp: "lead_whatsapp_polish_film_v8",
     max: "lead_max_direct_polish_film_v8",
+  };
+  const contactGoalByChannel = {
+    ...defaultContactGoalByChannel,
+    ...(config.contactGoals || {}),
   };
 
   document.querySelectorAll("[data-channel]").forEach((link) => {
