@@ -1,0 +1,12 @@
+# Wave50: found issues ledger
+
+| ID | Источник | Severity | Owner/director | Факт / риск | Действие | Статус | Проверка |
+|---|---|---|---|---|---|---|---|
+| W50-001 | Exact UTM/Webvisor 8–13.08 | Critical | CRO / Analytics | 30/30 видят цену, 22/30 proof, но все channel CTA равны 0 | Изолированный question-first эксперимент | Candidate verified; live outcome pending owner launch | Experiment QA + clean cohort after approval |
+| W50-002 | CTA/copy audit | High | CRO / Russian Copy | «Записаться на консультацию» требует решения до завершения сравнения | Сменить только commitment semantics | Closed locally | DOM/copy contract + screenshots |
+| W50-003 | PR #21 reused-reference | Medium | Decision Board | Wave49 одновременно меняет wording, modal step и channel exposure; четыре равных действия занимают значительную часть mobile hero | Не смешивать с Wave50; оставить следующим самостоятельным тестом | Deferred | Diff/contract comparison |
+| W50-004 | Cross-route analytics audit | High | Analytics | Root/color use generic `contact_sheet_open`, risk-zones route-specific event; diagnostic stage is inconsistent | Add dedicated Wave50 intent event; prepare mapping note, do not edit Metrika | Closed locally; live goal mapping pending owner | Tracking smoke / no live requests |
+| W50-005 | Fresh baseline | Low | Visual QA | Все три routes проходят 1440/430/390 functional visual smoke | Preserve baseline; add 360 and final proof | Closed | Final matrix |
+| W50-006 | Asset inventory | Medium | Performance / Assets | Repo retains multi-megabyte legacy PNGs, but initial route heroes use compressed WebP; loaded-route cost still needs measurement | Measure route resource weight/Web Vitals; do not delete unrelated assets | Closed by measurement; unrelated legacy cleanup deferred | Performance QA JSON |
+| W50-007 | Launch boundaries | Critical | Release / Owner | Production, Metrika, ads and Mango are outside task write scope | Stop at PR and owner decision | Accepted boundary | Git/PR and final report |
+| W50-008 | Config audit | Low | Analytics / Release | Root содержит истекшие `campaignDeadline`/`weekDeadline`, но `urgencyDefault=control`, поэтому countdown/urgency UI не показывается | Сохранить control без изменения; перед будущим urgency-тестом выпустить отдельный контракт с актуальной датой | Deferred | `assets/app.js` ignores expired deadline; browser screenshots show no urgency block |

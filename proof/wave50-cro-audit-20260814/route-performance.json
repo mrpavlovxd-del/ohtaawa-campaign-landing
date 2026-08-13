@@ -1,0 +1,228 @@
+{
+  "pass": true,
+  "baseUrl": "http://127.0.0.1:4195",
+  "reports": [
+    {
+      "routeName": "root-180k",
+      "viewportName": "desktop-1440",
+      "initial": {
+        "transferBytes": 895615,
+        "encodedBytes": 892615,
+        "resourceCount": 10,
+        "fcp": 492,
+        "vitals": {
+          "lcp": 492,
+          "cls": 0
+        }
+      },
+      "full": {
+        "transferBytes": 1399881,
+        "encodedBytes": 1395981,
+        "resourceCount": 14,
+        "fcp": 492,
+        "vitals": {
+          "lcp": 492,
+          "cls": 0
+        }
+      },
+      "staticChecks": {
+        "isQa": true,
+        "documentWidth": 1440,
+        "viewportWidth": 1440,
+        "noHorizontalOverflow": true,
+        "brokenImages": [],
+        "unnamedButtons": 0
+      },
+      "mainFrameMetrikaRequests": 0,
+      "sameOriginErrors": [],
+      "consoleErrors": [],
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "routeName": "root-180k",
+      "viewportName": "mobile-390",
+      "initial": {
+        "transferBytes": 824091,
+        "encodedBytes": 821091,
+        "resourceCount": 10,
+        "fcp": 240,
+        "vitals": {
+          "lcp": 240,
+          "cls": 0
+        }
+      },
+      "full": {
+        "transferBytes": 1328357,
+        "encodedBytes": 1324457,
+        "resourceCount": 13,
+        "fcp": 240,
+        "vitals": {
+          "lcp": 1388,
+          "cls": 0
+        }
+      },
+      "staticChecks": {
+        "isQa": true,
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "noHorizontalOverflow": true,
+        "brokenImages": [],
+        "unnamedButtons": 0
+      },
+      "mainFrameMetrikaRequests": 0,
+      "sameOriginErrors": [],
+      "consoleErrors": [],
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "routeName": "risk-zones-60k",
+      "viewportName": "desktop-1440",
+      "initial": {
+        "transferBytes": 540272,
+        "encodedBytes": 537572,
+        "resourceCount": 9,
+        "fcp": 208,
+        "vitals": {
+          "lcp": 208,
+          "cls": 0
+        }
+      },
+      "full": {
+        "transferBytes": 973894,
+        "encodedBytes": 970294,
+        "resourceCount": 13,
+        "fcp": 208,
+        "vitals": {
+          "lcp": 208,
+          "cls": 0
+        }
+      },
+      "staticChecks": {
+        "isQa": true,
+        "documentWidth": 1440,
+        "viewportWidth": 1440,
+        "noHorizontalOverflow": true,
+        "brokenImages": [],
+        "unnamedButtons": 0
+      },
+      "mainFrameMetrikaRequests": 0,
+      "sameOriginErrors": [],
+      "consoleErrors": [],
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "routeName": "risk-zones-60k",
+      "viewportName": "mobile-390",
+      "initial": {
+        "transferBytes": 502952,
+        "encodedBytes": 500252,
+        "resourceCount": 9,
+        "fcp": 212,
+        "vitals": {
+          "lcp": 212,
+          "cls": 0
+        }
+      },
+      "full": {
+        "transferBytes": 1046146,
+        "encodedBytes": 1042246,
+        "resourceCount": 14,
+        "fcp": 212,
+        "vitals": {
+          "lcp": 1412,
+          "cls": 0
+        }
+      },
+      "staticChecks": {
+        "isQa": true,
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "noHorizontalOverflow": true,
+        "brokenImages": [],
+        "unnamedButtons": 0
+      },
+      "mainFrameMetrikaRequests": 0,
+      "sameOriginErrors": [],
+      "consoleErrors": [],
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "routeName": "color-film-230k",
+      "viewportName": "desktop-1440",
+      "initial": {
+        "transferBytes": 831482,
+        "encodedBytes": 828782,
+        "resourceCount": 9,
+        "fcp": 260,
+        "vitals": {
+          "lcp": 260,
+          "cls": 0
+        }
+      },
+      "full": {
+        "transferBytes": 831482,
+        "encodedBytes": 828782,
+        "resourceCount": 10,
+        "fcp": 260,
+        "vitals": {
+          "lcp": 1340,
+          "cls": 0
+        }
+      },
+      "staticChecks": {
+        "isQa": true,
+        "documentWidth": 1440,
+        "viewportWidth": 1440,
+        "noHorizontalOverflow": true,
+        "brokenImages": [],
+        "unnamedButtons": 0
+      },
+      "mainFrameMetrikaRequests": 0,
+      "sameOriginErrors": [],
+      "consoleErrors": [],
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "routeName": "color-film-230k",
+      "viewportName": "mobile-390",
+      "initial": {
+        "transferBytes": 558058,
+        "encodedBytes": 555658,
+        "resourceCount": 8,
+        "fcp": 232,
+        "vitals": {
+          "lcp": 232,
+          "cls": 0
+        }
+      },
+      "full": {
+        "transferBytes": 939520,
+        "encodedBytes": 936520,
+        "resourceCount": 11,
+        "fcp": 232,
+        "vitals": {
+          "lcp": 232,
+          "cls": 0
+        }
+      },
+      "staticChecks": {
+        "isQa": true,
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "noHorizontalOverflow": true,
+        "brokenImages": [],
+        "unnamedButtons": 0
+      },
+      "mainFrameMetrikaRequests": 0,
+      "sameOriginErrors": [],
+      "consoleErrors": [],
+      "pageErrors": [],
+      "pass": true
+    }
+  ]
+}
