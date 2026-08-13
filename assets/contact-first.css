@@ -1,0 +1,120 @@
+.contact-console {
+  max-width: 680px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: minmax(210px, 0.9fr) minmax(300px, 1.1fr);
+  border: 1px solid rgba(192, 223, 139, 0.5);
+  border-radius: 4px;
+  background: rgba(7, 10, 8, 0.88);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.34);
+  backdrop-filter: blur(18px);
+  overflow: hidden;
+}
+
+.contact-console-copy {
+  padding: 22px 24px;
+  border-right: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.contact-console-copy > span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--accent-bright);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.contact-console-copy h2 {
+  margin-bottom: 8px;
+  color: var(--white);
+  font-family: var(--serif);
+  font-size: 29px;
+  font-weight: 400;
+  line-height: 1.02;
+}
+
+.contact-console-copy p {
+  margin-bottom: 0;
+  color: #b9beb8;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.hero-contact-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.hero-contact-list a {
+  min-height: 72px;
+  display: grid;
+  grid-template-columns: 34px 1fr auto;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+  color: var(--white);
+  transition: color 180ms ease, background 180ms ease;
+}
+
+.hero-contact-list a:nth-child(odd) {
+  border-right: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.hero-contact-list a:nth-child(n + 3) {
+  border-bottom: 0;
+}
+
+.hero-contact-list a:hover,
+.hero-contact-list a:focus-visible {
+  color: var(--ink);
+  background: var(--accent-bright);
+}
+
+.hero-contact-list .contact-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.hero-contact-list strong {
+  font-size: 13px;
+}
+
+.hero-contact-list i {
+  font-style: normal;
+}
+
+.hero-scope-link {
+  margin-bottom: 24px;
+}
+
+@media (max-width: 720px) {
+  .contact-console {
+    grid-template-columns: 1fr;
+    margin-bottom: 16px;
+  }
+
+  .contact-console-copy {
+    padding: 18px 16px 16px;
+    border-right: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+  }
+
+  .contact-console-copy h2 {
+    font-size: 27px;
+  }
+
+  .hero-contact-list a {
+    min-height: 62px;
+    padding: 10px 11px;
+  }
+
+  .hero-contact-list strong {
+    font-size: 12px;
+  }
+
+  .hero-scope-link {
+    margin-bottom: 20px;
+  }
+}
