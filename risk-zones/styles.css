@@ -362,13 +362,15 @@
   }
 
   .risk-hero .hero-picture img {
-    object-position: center;
+    top: -20%;
+    height: 120%;
+    object-position: center bottom;
   }
 
   .risk-hero .hero-shade {
     background:
-      linear-gradient(180deg, rgba(4, 7, 5, 0.98) 0%, rgba(4, 7, 5, 0.89) 49%, rgba(4, 7, 5, 0.56) 72%, rgba(4, 7, 5, 0.9) 100%),
-      linear-gradient(90deg, rgba(4, 7, 5, 0.78), transparent);
+      linear-gradient(180deg, rgba(4, 7, 5, 0.88) 0%, rgba(4, 7, 5, 0.72) 44%, rgba(4, 7, 5, 0.34) 72%, rgba(4, 7, 5, 0.78) 100%),
+      linear-gradient(90deg, rgba(4, 7, 5, 0.52), transparent 88%);
   }
 
   .risk-hero .hero-shell {

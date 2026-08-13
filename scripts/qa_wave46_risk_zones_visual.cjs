@@ -37,6 +37,8 @@ async function auditViewport(browser, name, viewport) {
   const { page, consoleErrors } = await loadPage(browser, viewport);
   const staticChecks = await page.evaluate(() => {
     const thumbs = document.querySelector(".carousel-thumbs");
+    const heroImage = document.querySelector(".risk-hero .hero-picture img");
+    const heroStyle = heroImage ? getComputedStyle(heroImage) : null;
     return {
       title: document.title,
       viewportWidth: window.innerWidth,
@@ -68,6 +70,14 @@ async function auditViewport(browser, name, viewport) {
           const style = getComputedStyle(node);
           return rect.width > 0 && rect.height > 0 && style.display !== "none";
         }).length,
+      heroImage: heroImage ? {
+        currentSrc: heroImage.currentSrc,
+        naturalWidth: heroImage.naturalWidth,
+        naturalHeight: heroImage.naturalHeight,
+        top: heroStyle?.top || "",
+        height: heroStyle?.height || "",
+        objectPosition: heroStyle?.objectPosition || "",
+      } : null,
     };
   });
 
@@ -105,6 +115,11 @@ async function auditViewport(browser, name, viewport) {
   return {
     ...staticChecks,
     noHorizontalOverflow: staticChecks.documentWidth <= staticChecks.viewportWidth + 1,
+    heroImageLoaded: Boolean(staticChecks.heroImage?.naturalWidth),
+    mobileHeroSourceSelected: viewport.width > 720 ||
+      /hero-mobile\.webp(?:\?|$)/.test(staticChecks.heroImage?.currentSrc || ""),
+    mobileHeroCropApplied: viewport.width > 620 ||
+      staticChecks.heroImage?.objectPosition === "50% 100%",
     contactDialogOpen,
     carouselChanged: before !== after,
     galleryOpen,
@@ -127,6 +142,7 @@ async function main() {
     };
     const pass = Object.values(reports).every((report) =>
       report.title && report.noHorizontalOverflow && report.brokenImages.length === 0 &&
+      report.heroImageLoaded && report.mobileHeroSourceSelected && report.mobileHeroCropApplied &&
       report.unnamedButtons === 0 && report.contactChannels.join(",") === "telegram,whatsapp,max,phone" &&
       report.bottomFixedObstructions.length === 0 && report.carouselThumbCount === 4 &&
       report.carouselGridColumnCount === 4 && report.visibleCtas >= 3 && report.contactDialogOpen &&

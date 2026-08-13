@@ -39,7 +39,10 @@ async function main() {
   const metrikaRequests = [];
   const consoleErrors = [];
   page.on("request", (request) => {
-    if (/mc\.yandex\.ru\/metrika\/tag\.js|mc\.yandex\.ru\/watch\//.test(request.url())) metrikaRequests.push(request.url());
+    const isLandingFrame = request.frame() === page.mainFrame();
+    if (isLandingFrame && /mc\.yandex\.ru\/metrika\/tag\.js|mc\.yandex\.ru\/watch\//.test(request.url())) {
+      metrikaRequests.push(request.url());
+    }
   });
   page.on("console", (message) => { if (message.type() === "error") consoleErrors.push(message.text()); });
   try {
