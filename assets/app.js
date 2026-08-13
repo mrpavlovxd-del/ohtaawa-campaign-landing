@@ -238,13 +238,13 @@
     if (event.target === contactDialog) contactDialog.close();
   });
 
-  const rememberContactSignal = (channel) => {
+  const rememberContactSignal = (channel, location = contactLocation) => {
     try {
       sessionStorage.setItem(
         "ohtaawa_last_contact_signal",
         JSON.stringify({
           channel,
-          location: contactLocation,
+          location,
           at: new Date().toISOString(),
           campaign: attribution.utm_campaign,
           source: attribution.utm_source,
@@ -276,16 +276,17 @@
     }
 
     link.addEventListener("click", () => {
-      rememberContactSignal(channel);
+      const channelLocation = compact(link.dataset.contactLocation, contactLocation);
+      rememberContactSignal(channel, channelLocation);
       track("contact_channel_click", {
         channel,
-        location: contactLocation,
+        location: channelLocation,
       });
       const contactGoal = contactGoalByChannel[channel];
       if (contactGoal) {
         track(contactGoal, {
           channel,
-          location: contactLocation,
+          location: channelLocation,
         });
       }
 
