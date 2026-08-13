@@ -72,4 +72,3 @@ Decision: option 1. The existing substrate supports the required responsive pane
 
 - Local candidate and QA are autonomous and reversible.
 - Public deployment and a paid Wave49 campaign remain separate launch actions after visual/behavioral proof.
-

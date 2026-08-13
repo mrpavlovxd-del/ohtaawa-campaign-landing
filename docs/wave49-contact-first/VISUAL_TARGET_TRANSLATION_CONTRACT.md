@@ -25,4 +25,3 @@ The existing Wave45 production landing is the binding visual target. Wave49 must
 - The contact console must not push the price out of the first mobile viewport.
 - The next-section hint must remain visible or immediately reachable.
 - All text, focus, hit areas and tracking stay code-native and accessible.
-
