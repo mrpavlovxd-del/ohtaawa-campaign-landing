@@ -31,6 +31,8 @@ Wave49 одновременно меняет CTA wording, modal step и види
 
 ## Launch boundary
 
-PR не предназначен для автоматического merge/deploy. Live Wave45 не меняется до родительского контрольного порога `60` сопоставимых кликов, `3 000 ₽` или `14 дней`, если не возникнет системный stop condition. Публикация route, live goal mapping, рекламная когорта, бюджеты и Mango требуют отдельного решения владельца. Root production page этим PR не заменяется.
+Статус: `PRODUCTION_CANDIDATE_READY / NOT FOR DEPLOY`. Это означает готовые implementation, mobile-first proof, event contract и rollback, но не разрешение на launch.
+
+PR не предназначен для автоматического merge/deploy. Эта ветка не принимает monitoring/stop/continue/edit решения по активным Wave45/46/48 — они остаются в родительской маркетинговой задаче. Все organic/no-ad визиты владельца 14.08 и его тестовый Mango-звонок исключены. Публикация route, live goal mapping, рекламная когорта, бюджеты и Mango требуют отдельного решения владельца. Root production page этим PR не заменяется.
 
 Подробности: `docs/wave50-question-first/QA_AND_OWNER_REVIEW_RU.md`.

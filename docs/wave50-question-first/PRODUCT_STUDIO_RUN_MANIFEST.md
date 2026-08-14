@@ -18,6 +18,8 @@
 - Funnel localization after price/proof/terms and before contact is **likely true**. The narrower claim that UX, offer wording or trust is the cause remains **plausible but unproven**; session segments are observational/self-selected, duration may include idle time, and long-cycle comparison or external handoff remain alternatives.
 - Wave48 N=1 preserves the chosen experiment but does not increase its causal status: the color-film CTA is already softer than root while still leading to consultation/date commitment.
 - Existing Wave49 screenshots and docs are `reused-reference`, not fresh proof for this run.
+- All recent 14 August organic/no-ad visits across the owner's devices and the owner's Mango test call are QA, not demand or hard-lead evidence.
+- Scope ownership: this run owns CRO diagnosis and the landing candidate only. Live Wave45/46/48 monitoring and campaign decisions remain in the parent marketing task.
 
 ## Pipeline
 
@@ -87,3 +89,5 @@ The current substrate supports the copy-only derivative, dialogs, keyboard/focus
 Autonomous: isolated worktree, branch, local implementation, tests, screenshots, commit, push and PR.
 
 Blocked without owner approval: production merge/deploy, publication of the route, Metrika goal creation/editing, advertising-cabinet changes, budget/spend, Mango changes, campaign launch or mixing cohorts.
+
+Readiness label: `PRODUCTION_CANDIDATE_READY / NOT FOR DEPLOY`. Candidate readiness means source, QA, proof and rollback are prepared; launch readiness additionally requires owner approval, production deployment choice, live goal mapping and a clean paid-cohort plan.

@@ -39,7 +39,8 @@ Cross-offer N=1: первый чистый Wave48-визит пришел по �
 
 - Сравнивать только чистые UTM-когорты с исключением QA.
 - Не смешивать Wave45, Wave49 и Wave50.
-- Не вмешиваться в текущий live Wave45 до родительского контрольного порога `60` сопоставимых кликов, `3 000 ₽` или `14 дней`, если раньше не возникнет системная поломка/стоп-сигнал.
+- Не принимать в этой ветке stop/continue/edit решения по Wave45/46/48: их мониторинг принадлежит родительской маркетинговой задаче.
+- Не вмешиваться в текущие live Wave45/46/48; их пороги, системные stop-signals и продолжение определяются только родительской маркетинговой задачей.
 - После отдельного owner gate и запуска Wave50: диагностический review после `30` сопоставимых чистых кликов или `1 500 ₽`; коммерческое решение — только по hard outcomes, диагностическое — по ступеням intent/channel.
 - До `10` чистых визитов любой route-срез остается sanity/описательным; `30` чистых визитов на cell — диагностический, а не причинный или коммерческий порог.
 - Известные `0/30` control относятся к channel CTA, не к intent-open. Сначала нужно получить exact `contact_sheet_open` baseline. Только при подтвержденных равных сопоставимых когортах `contact_sheet_open=0/30` control против `≥5/30` candidate intent-open номинальный one-sided Fisher составит `p≈0,026`; это всё равно soft evidence и требует проверки трафика/периода/QA. Hard winner заранее не объявляется по open/click.
@@ -50,4 +51,4 @@ Cross-offer N=1: первый чистый Wave48-визит пришел по �
 
 ## Launch boundary
 
-Локальная реализация, QA, commit, push и PR автономны. Production publication, Metrika goal creation, paid campaign preparation/edit/launch and Mango changes require a separate owner decision.
+Локальная реализация, QA, commit, push и PR автономны. Candidate может быть implementation-complete, но остается `NOT FOR DEPLOY`. Production publication/merge, Metrika goal creation, paid campaign preparation/edit/launch and Mango changes require a separate owner decision.

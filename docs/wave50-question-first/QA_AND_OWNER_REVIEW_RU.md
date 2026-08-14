@@ -1,6 +1,8 @@
 # Wave50: QA и owner review
 
-Дата: 14.08.2026. Readiness: `IMPLEMENTATION_READY / NEEDS_OWNER_APPROVAL`.
+Дата: 14.08.2026. Readiness: `PRODUCTION_CANDIDATE_READY / NOT FOR DEPLOY / NEEDS_OWNER_APPROVAL`.
+
+Здесь `PRODUCTION_CANDIDATE_READY` означает: изолированная реализация, mobile-first QA, tracking contract, proof pack и rollback готовы к owner review. Это не `LAUNCH_READY`: production merge/deploy, live goal mapping и paid cohort не разрешены и не выполнены.
 
 ## Что проверено
 
@@ -60,7 +62,9 @@
 
 - Не проверено: реальная конверсия, содержательность диалогов, качество handoff в мессенджерах/телефоне, полевые Web Vitals, live goal mapping в Метрике. Подтвержденных hard leads по paid-трафику сейчас `0`.
 - Не выполнялись: merge/deploy, публикация route, изменение Метрики, рекламы, бюджета, Mango или production-конфигурации.
-- До отдельного owner gate live Wave45 остается неизменным до родительского контрольного порога `60` сопоставимых кликов, `3 000 ₽` или `14 дней`. Для запуска Wave50 требуется принять экспериментальный контракт, выбрать чистую когорту, утвердить goal mapping и deployment. После запуска Wave50 review — через `30` сопоставимых чистых кликов или `1 500 ₽`, без смешивания Wave45/Wave49/Wave50.
+- Не выполнялись monitoring/stop/continue решения по Wave45/46/48: они остаются в родительской маркетинговой задаче.
+- Все organic/no-ad визиты владельца 14.08 с нескольких устройств и его тестовый Mango-звонок исключены; подтвержденных paid hard leads они не создают.
+- Для запуска Wave50 требуется отдельный owner gate, принятый экспериментальный контракт, чистая когорта, goal mapping и deployment choice. После разрешенного запуска Wave50 review — через `30` сопоставимых чистых кликов или `1 500 ₽`, без смешивания Wave45/Wave49/Wave50. Monitoring и пороги live Wave45/46/48 принадлежат родительской задаче.
 - Rollback: снять Wave50-когорту с нового route и вернуть трафик на прежний неизмененный URL; root Wave45 не заменяется этим PR.
 
 ## Рекомендация

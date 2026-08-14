@@ -1,10 +1,12 @@
 # Wave50 Question First: owner-grade red-team
 
-Дата: 14.08.2026. Статус: `IMPLEMENTATION_READY / NOT FOR DEPLOY / OWNER GATE REQUIRED`.
+Дата: 14.08.2026. Статус: `PRODUCTION_CANDIDATE_READY / NOT FOR DEPLOY / OWNER GATE REQUIRED`.
 
 ## Вывод
 
 Wave50 остается лучшим первым контролируемым CRO-тестом. Он не пытается доказать заранее, что причина нулевых обращений — UX: кандидат меняет только обязательность первого шага и добавляет наблюдаемую ступень `landing → intent open → channel click → hard lead`.
+
+`PRODUCTION_CANDIDATE_READY` означает готовность implementation/proof/rollback для решения владельца, а не право на публикацию. Активные кампании и их monitoring находятся вне scope этой ветки.
 
 ## Проверенные факты
 
@@ -50,5 +52,6 @@ Wave50 остается лучшим первым контролируемым C
 - Browser QA не заменяет полевые Web Vitals и live reconciliation с hard leads.
 - Без CTA-view и отдельного intent/contact-sheet baseline нельзя отличить «CTA видел, не открыл» от последующего channel friction. Эти события требуют отдельного owner-gated instrumentation решения, а не тихого live изменения.
 - PR #22 остается Draft и `NOT FOR DEPLOY`. Merge, deploy, публикация route, live goal mapping, новая paid-когорта, бюджет и Mango требуют отдельного решения владельца.
+- Все organic/no-ad визиты владельца 14.08 и его тестовый Mango-звонок исключены; campaign monitoring/stop/continue решения остаются в родительской задаче.
 
 Рекомендация: не трогать live Wave45/Wave46/Wave48. Wave48 до 10 clean visits остается описательным сигналом; 30 clean visits дают отдельный route-diagnostic, но не объединяются с Wave45/Wave50. После отдельного owner gate тестировать Wave50 чистой когортой; диагностический review после 30 сопоставимых чистых кликов или 1 500 ₽, решение о победе — только по содержательным обращениям. Если intent-open появляется без channel click, следующим отдельным тестом становится Wave49; если intent-open не растет — proof/value-at-decision.
