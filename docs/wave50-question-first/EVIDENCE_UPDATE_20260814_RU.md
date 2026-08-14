@@ -5,6 +5,7 @@
 - Делегированный owner-approved срез родительской маркетинговой задачи.
 - Read-only checkpoint: `docs/ohtaawa-retargeting/agent-work/2026-08-14/LIVE_MARKETING_CHECKPOINT_RU.md`.
 - Read-only query capture: `docs/ohtaawa-retargeting/agent-work/2026-08-14/yandex-search-queries/wave45-refresh-2026-08-14-2026-08-14T07-56-36-480Z.json`, captured `2026-08-14T07:56:36Z`, 25 строк.
+- Read-only Wave48 query capture: `docs/ohtaawa-retargeting/agent-work/2026-08-14/yandex-search-queries/wave48-first-click-2026-08-14-2026-08-14T18-52-00-897Z.json`; локально подтверждает запрос и расход. Exact session/reconciliation — делегированный clean-data срез родительской задачи около 21:02 МСК.
 - Exact UTM/Webvisor-срез с исключенными ручными визитами владельца и QA-звонком.
 
 Исходники остаются в родительском workspace и не копируются в публичный landing repo; в PR хранится только безопасная агрегированная интерпретация.
@@ -22,6 +23,15 @@
 | Hard lead | 0 подтвержденных обращений из paid-трафика | Коммерческий результат пока отсутствует; QA-звонок не считается лидом |
 
 Доставка уже выросла до 42 кликов, но exact behavioral cohort остается отдельным подтвержденным срезом из 30 чистых визитов; эти знаменатели не смешиваются. Funnel rates внутри него: price `100%`, proof `73,3%`, terms `26,7%`, scroll50 `26,7%`, scroll90 `3,3%`, channel action `0%`.
+
+## Wave48 color-film: отдельный N=1 сигнал
+
+- Запрос: «сколько стоит оклейка всего автомобиля цветной пленкой»; расход `43,55 ₽`.
+- Exact UTM, counter `110584673`: `1` candidate-human visit, не QA; `50 с`, `1` pageview.
+- Достигнуты offerTerms, price, proof, process, warranty и scroll50; scroll90 и TG/WA/MAX/phone равны `0`.
+- Соответствующего обращения в Mango/Avito нет.
+
+Это наблюдение не добавляется к знаменателю Wave45 `30`: другая услуга, цена, route и CTA. Оно направленно поддерживает повторяемость паттерна «коммерческий price-intent → глубокое изучение → нет зарегистрированного контакта» на втором оффере. При `N=1` оно не оценивает частоту и не доказывает причину.
 
 ## Clean-session duration
 
@@ -51,11 +61,12 @@
 - локализация разрыва — `LIKELY_TRUE`;
 - плохой трафик как главное объяснение — `LIKELY_FALSE` по текущему срезу;
 - конкретная причинность CTA/UX/trust — `PLAUSIBLE_BUT_UNPROVEN`;
+- Wave48 N=1 как поддержка именно question-first — `DIRECTIONALLY_SUPPORTIVE_BUT_NON_CAUSAL`;
 - многопеременный редизайн сейчас — `HIGH_RISK_IF_WRONG`.
 
-**Evidence for:** commercial query mix, 100% price exposure, 73,3% proof exposure, proof median 58 с, terms/scroll50 median 80 с, только 5/30 сессий короче 15 с, 0/30 channel actions, нет stop-сигнала по нерелевантному расходу.
+**Evidence for:** commercial query mix, 100% price exposure, 73,3% proof exposure, proof median 58 с, terms/scroll50 median 80 с, только 5/30 сессий короче 15 с, 0/30 channel actions, нет stop-сигнала по нерелевантному расходу; отдельный Wave48-визит повторил глубокое изучение без channel action.
 
-**Uncertainty:** дорогая услуга допускает длинный цикл сравнения; нет отдельного intent-open baseline; duration-сегменты self-selected и могут включать idle; browser clicks не доказывают диалог; 30 визитов — небольшая выборка. При `0/30` односторонняя 95%-граница истинной вероятности события примерно `9,5%`, поэтому нельзя утверждать, что реальная вероятность строго нулевая.
+**Uncertainty:** Wave48 имеет `N=1`; его CTA уже звучит мягче («Обсудить цвет и дату»), но dialog и финальный CTA всё равно ведут к консультации/выбору времени. Поэтому наблюдение совместимо и с commitment friction, и с длинным сравнением, доверием, неподходящей ценой или отсутствием готовности сейчас. Нет отдельного intent-open baseline; duration-сегменты self-selected и могут включать idle; browser clicks не доказывают диалог; 30 визитов — небольшая выборка. При `0/30` односторонняя 95%-граница истинной вероятности события примерно `9,5%`, поэтому нельзя утверждать, что реальная вероятность строго нулевая.
 
 ## Решение
 
@@ -71,3 +82,5 @@
 2. Публикация Wave50, goal mapping и направление платного трафика требуют отдельного owner gate.
 3. После разрешенного запуска Wave50 диагностический review — после `30` чистых сопоставимых кликов или `1 500 ₽`.
 4. Hard outcome — только содержательный квалифицированный диалог/звонок с зафиксированным следующим шагом; CTA/open/click остаются soft events.
+5. Wave48 до `10` чистых визитов остается описательным cross-offer сигналом; при `30` чистых визитах возможен отдельный диагностический срез, но не объединение с Wave45/Wave50.
+6. Для причинной проверки до live нужны `CTA view → intent/contact-sheet open → channel click → canonical channel event → reconciled hard outcome`. Известные Wave45 `0/30` относятся к channel CTA, а не к intent-open, поэтому сейчас статистическое сравнение intent невозможно. Только если отдельный exact control-срез подтвердит `contact_sheet_open=0/30`, то `≥5/30` candidate intent-open даст номинальный one-sided Fisher `p≈0,026`; это всё равно soft evidence, не доказательство коммерческой победы и не компенсация нерандомизированного трафика.

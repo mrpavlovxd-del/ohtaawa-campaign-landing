@@ -6,6 +6,8 @@
 
 Clean-session slice: общая медиана 33 с; price-only 8 — медиана 9 с; proof 22 — 58 с; offer terms и scroll50 по 8 — 80 с; CTA 0. Это усиливает post-proof/contact-barrier гипотезу, но сегменты self-selected и не доказывают причинность.
 
+Cross-offer N=1: первый clean Wave48-визит по запросу о стоимости полной цветной оклейки провел 50 с, достиг terms/price/proof/process/warranty/scroll50 и не дал scroll90, contact CTA или hard lead. Это направленно поддерживает локализацию перед контактом, но не доказывает question-first и не объединяется с Wave45: другой offer/route/price, а CTA Wave48 уже мягче root.
+
 Единственная экспериментальная переменная — семантика первого шага: вместо «записаться на консультацию» посетитель может «задать вопрос по автомобилю». Оффер, цена, proof, layout, media и каналы сохранены. Добавлено диагностическое событие `contact_intent_open_question_first_v1`; canonical channel goals сохранены.
 
 Owner-grade red-team уточнил результат первого шага без расширения переменной: администратор «уточнит сроки работ и ближайшие даты». Это же сформулировано в подготовленном сообщении для TG/WA/MAX.
@@ -25,6 +27,7 @@ Wave49 одновременно меняет CTA wording, modal step и види
 - route performance smoke: PASS;
 - fresh owner red-team proof `proof/wave50-owner-red-team-20260814-final/`: PASS;
 - security/privacy value scan: PASS перед commit.
+- текущий evidence-only update не меняет HTML/JS/CSS и не требует нового visual QA; committed owner-grade proof остается действующим.
 
 ## Launch boundary
 

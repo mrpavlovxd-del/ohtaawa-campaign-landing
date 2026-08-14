@@ -17,6 +17,20 @@ Every browser payload must retain UTM, scenario, experiment ID, service route, o
 
 The desktop header phone remains a parallel direct path inherited from Wave45: it can produce the canonical phone goal without an intent-open event. This is held constant, must be reported separately by `location=header`, and must not be forced into the modal funnel.
 
+## Evidence needed before a causal claim
+
+| Check | Required evidence | Gate |
+|---|---|---|
+| CTA exposure | Proposed `primary_contact_cta_view` with location, or a documented first-viewport invariant | No live event addition without owner approval |
+| Control intent | Exact-UTM `contact_sheet_open` for Wave45/Wave48 | Report separately by route and CTA location |
+| Candidate intent | `contact_intent_open_question_first_v1` and `contact_sheet_open` | Counts should reconcile 1:1 outside the inherited header phone path |
+| Channel choice | `contact_channel_click` plus canonical per-channel event | Channel click cannot exceed sheet open; channel totals must reconcile |
+| Hard outcome | QA-excluded Mango/messenger/Avito/lead-ledger reconciliation | Open/click never becomes a lead by itself |
+
+`N<10` clean visits per route is descriptive only. `N=30` clean comparable visits or the approved spend checkpoint is a diagnostic review, not automatic proof. Current Wave45 `0/30` is a channel-click result, not an intent baseline. Only after an exact comparable control establishes `contact_sheet_open=0/30` would `≥5/30` candidate intent opens produce nominal one-sided Fisher `p≈0.026`; this remains a soft funnel signal because cohorts are not randomized and commercial success still requires meaningful conversations.
+
+The Wave48 `N=1` visit reaches terms/price/proof/process/warranty/scroll50 without a channel event. It supports collecting the same ladder across offers, but must not be pooled with Wave45 or Wave50.
+
 ## Cabinet boundary
 
 The frontend candidate may emit the dedicated event locally. Creating or verifying a matching Metrika goal is a separate read/write cabinet action and is not authorized in this task.

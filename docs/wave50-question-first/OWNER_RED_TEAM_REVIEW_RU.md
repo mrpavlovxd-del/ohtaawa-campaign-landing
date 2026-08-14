@@ -11,6 +11,7 @@ Wave50 остается лучшим первым контролируемым C
 - Wave45: 361 показ, 42 клика, 1 430,15 ₽, CTR 11,63%, CPC 34,05 ₽; подтвержденных hard leads из paid-трафика 0.
 - Поисковые запросы преимущественно коммерческие; доля сомнительных заметно ниже раннего stop-порога `>30%`.
 - Отдельный exact-срез остается 30 чистыми визитами: price 30, proof 22, conditions 8, scroll50 8, scroll90 1, TG/WA/MAX/phone 0. Рост delivery до 42 кликов не смешивается с этим знаменателем.
+- Wave48 добавляет только cross-offer N=1: явный price-intent запрос, 50 с, terms/price/proof/process/warranty/scroll50 и ни одного contact CTA/hard lead. Он не добавляется к Wave45 `30`.
 - Локализация разрыва после цены/proof и перед контактом — `LIKELY_TRUE`; конкретная причина CTA/UX/trust — `PLAUSIBLE_BUT_UNPROVEN`; плохой трафик как главное объяснение — `LIKELY_FALSE` по текущим данным.
 
 ## Что меняется
@@ -37,6 +38,7 @@ Wave50 остается лучшим первым контролируемым C
 
 ## Что отклонено
 
+- Менять Wave48 или переносить на него question-first после одного визита: `N=1` не является причинным сравнением.
 - Wave49/direct-channel panel сейчас: меняет одновременно wording, modal step и channel exposure.
 - Новый hero, дополнительный proof, скидка или urgency: добавят вторую переменную без доказанного causal gap.
 - Считать intent-open или channel click лидом: это soft diagnostics; победа определяется содержательным диалогом/звонком.
@@ -46,6 +48,7 @@ Wave50 остается лучшим первым контролируемым C
 - Кандидат может увеличить открытия dialog без роста содержательных обращений.
 - Дорогая услуга допускает длинный цикл сравнения, который один landing не устранит.
 - Browser QA не заменяет полевые Web Vitals и live reconciliation с hard leads.
+- Без CTA-view и отдельного intent/contact-sheet baseline нельзя отличить «CTA видел, не открыл» от последующего channel friction. Эти события требуют отдельного owner-gated instrumentation решения, а не тихого live изменения.
 - PR #22 остается Draft и `NOT FOR DEPLOY`. Merge, deploy, публикация route, live goal mapping, новая paid-когорта, бюджет и Mango требуют отдельного решения владельца.
 
-Рекомендация: не трогать live Wave45/Wave46/Wave48. После отдельного owner gate тестировать Wave50 чистой когортой; диагностический review после 30 сопоставимых чистых кликов или 1 500 ₽, решение о победе — только по содержательным обращениям. Если intent-open появляется без channel click, следующим отдельным тестом становится Wave49; если intent-open не растет — proof/value-at-decision.
+Рекомендация: не трогать live Wave45/Wave46/Wave48. Wave48 до 10 clean visits остается описательным сигналом; 30 clean visits дают отдельный route-diagnostic, но не объединяются с Wave45/Wave50. После отдельного owner gate тестировать Wave50 чистой когортой; диагностический review после 30 сопоставимых чистых кликов или 1 500 ₽, решение о победе — только по содержательным обращениям. Если intent-open появляется без channel click, следующим отдельным тестом становится Wave49; если intent-open не растет — proof/value-at-decision.
