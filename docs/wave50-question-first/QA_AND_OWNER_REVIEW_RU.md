@@ -1,6 +1,6 @@
 # Wave50: QA и owner review
 
-Дата: 14.08.2026. Readiness: `PRODUCTION_CANDIDATE_READY / NOT FOR DEPLOY / NEEDS_OWNER_APPROVAL`.
+Дата QA: 14.08.2026. Evidence refresh: 15.08.2026. Readiness: `PRODUCTION_CANDIDATE_READY / NOT FOR DEPLOY / NEEDS_OWNER_APPROVAL`.
 
 Здесь `PRODUCTION_CANDIDATE_READY` означает: изолированная реализация, mobile-first QA, tracking contract, proof pack и rollback готовы к owner review. Это не `LAUNCH_READY`: production merge/deploy, live goal mapping и paid cohort не разрешены и не выполнены.
 
@@ -42,7 +42,7 @@
 
 Финальный red-team уточнил микрокопирайт без расширения экспериментальной переменной: вместо неестественного «по ближайшему времени» теперь указано «сроки работ и ближайшие даты». QA-сценарий очищает служебный toast перед proof-снимком, поэтому доказательный кадр не содержит состояния от предыдущего клика. Один предварительный desktop-прогон зарегистрировал отмену загрузки невыбранного mobile responsive asset; немедленный чистый rerun и финальный прогон проблему не воспроизвели, при этом строгий network gate сохранен.
 
-Свежая clean-session проверка усиливает приоритет кандидата: общая медиана `33 с`, proof-сегмент `22/30` с медианой `58 с`, offer terms и scroll50 по `8/30` с медианой `80 с`, но CTA `0`. При этом price-only `8/30` имеют медиану `9 с`. Вывод ограничен: часть посетителей быстро сверяет цену, другая часть глубоко изучает страницу без контакта; сегменты self-selected, а время может включать idle.
+Свежая exact-когорта выросла до `33` визитов: price `33`, proof `25`, offer terms/scroll50 `8`, scroll90 `1`, channel CTA `0`; `18/33` длились ≥30 с, `11/33` — ≥60 с. Детальные медианы (`33 с` overall, `9 с` price-only, `58 с` proof, `80 с` terms/scroll50) относятся к предыдущему 30-визитному подмножеству и не экстраполируются на три новых визита. Вывод ограничен: часть посетителей быстро сверяет цену, другая часть изучает страницу без контакта; сегменты self-selected, а время может включать idle.
 
 ## Proof pack
 

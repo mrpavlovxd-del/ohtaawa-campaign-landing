@@ -1,6 +1,6 @@
 # Wave50 Question First: owner-grade red-team
 
-Дата: 14.08.2026. Статус: `PRODUCTION_CANDIDATE_READY / NOT FOR DEPLOY / OWNER GATE REQUIRED`.
+Дата: 15.08.2026. Статус: `PRODUCTION_CANDIDATE_READY / NOT FOR DEPLOY / OWNER GATE REQUIRED`.
 
 ## Вывод
 
@@ -10,10 +10,10 @@ Wave50 остается лучшим первым контролируемым C
 
 ## Проверенные факты
 
-- Wave45: 361 показ, 42 клика, 1 430,15 ₽, CTR 11,63%, CPC 34,05 ₽; подтвержденных hard leads из paid-трафика 0.
+- Wave45: 45 кликов, 1 494,42 ₽, расчетный CPC 33,21 ₽. Актуальное число показов в свежем срезе не передано, поэтому новый CTR не заявляется.
 - Поисковые запросы преимущественно коммерческие; доля сомнительных заметно ниже раннего stop-порога `>30%`.
-- Отдельный exact-срез остается 30 чистыми визитами: price 30, proof 22, conditions 8, scroll50 8, scroll90 1, TG/WA/MAX/phone 0. Рост delivery до 42 кликов не смешивается с этим знаменателем.
-- Wave48 добавляет только cross-offer N=1: явный price-intent запрос, 50 с, terms/price/proof/process/warranty/scroll50 и ни одного contact CTA/hard lead. Он не добавляется к Wave45 `30`.
+- Отдельный exact-срез вырос до 33 чистых визитов: price 33, proof 25, conditions 8, scroll50 8, scroll90 1, TG/WA/MAX/phone 0. `18/33` визитов длились ≥30 с, `11/33` — ≥60 с. Delivery `45` кликов не смешивается с этим знаменателем.
+- Wave48 получил два клика по строго релевантным запросам, но обработан пока один behavioral visit: 50 с, terms/price/proof/process/warranty/scroll50 и ни одного contact CTA/hard lead. Поведенческий `N=1` не добавляется к Wave45 `33`.
 - Локализация разрыва после цены/proof и перед контактом — `LIKELY_TRUE`; конкретная причина CTA/UX/trust — `PLAUSIBLE_BUT_UNPROVEN`; плохой трафик как главное объяснение — `LIKELY_FALSE` по текущим данным.
 
 ## Что меняется
@@ -40,9 +40,10 @@ Wave50 остается лучшим первым контролируемым C
 
 ## Что отклонено
 
-- Менять Wave48 или переносить на него question-first после одного визита: `N=1` не является причинным сравнением.
+- Менять Wave48 или переносить на него question-first после одного обработанного визита: behavioral `N=1` не является причинным сравнением.
 - Wave49/direct-channel panel сейчас: меняет одновременно wording, modal step и channel exposure.
 - Новый hero, дополнительный proof, скидка или urgency: добавят вторую переменную без доказанного causal gap.
+- «Получить расчёт» вместо question-first: при фиксированной цене 180 000 ₽ неясно, что именно рассчитывается и какой результат обещан. Это отдельная estimate-first гипотеза, а не безопасное уточнение текущей переменной.
 - Считать intent-open или channel click лидом: это soft diagnostics; победа определяется содержательным диалогом/звонком.
 
 ## Риски и граница запуска
@@ -54,4 +55,4 @@ Wave50 остается лучшим первым контролируемым C
 - PR #22 остается Draft и `NOT FOR DEPLOY`. Merge, deploy, публикация route, live goal mapping, новая paid-когорта, бюджет и Mango требуют отдельного решения владельца.
 - Все organic/no-ad визиты владельца 14.08 и его тестовый Mango-звонок исключены; campaign monitoring/stop/continue решения остаются в родительской задаче.
 
-Рекомендация: не трогать live Wave45/Wave46/Wave48. Wave48 до 10 clean visits остается описательным сигналом; 30 clean visits дают отдельный route-diagnostic, но не объединяются с Wave45/Wave50. После отдельного owner gate тестировать Wave50 чистой когортой; диагностический review после 30 сопоставимых чистых кликов или 1 500 ₽, решение о победе — только по содержательным обращениям. Если intent-open появляется без channel click, следующим отдельным тестом становится Wave49; если intent-open не растет — proof/value-at-decision.
+Рекомендация: не трогать live Wave45/Wave46/Wave48. Wave48 до 10 обработанных clean visits остается описательным сигналом; его два клика сейчас дают только один behavioral visit. После отдельного owner gate тестировать неизмененный Wave50 question-first чистой когортой; диагностический review после 30 сопоставимых чистых кликов или 1 500 ₽, решение о победе — только по содержательным обращениям. Если intent-open появляется без channel click, следующим отдельным тестом становится Wave49; если intent-open не растет — proof/value-at-decision. Estimate-first рассматривать лишь отдельным контрактом с определенным deliverable.

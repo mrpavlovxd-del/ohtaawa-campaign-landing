@@ -27,9 +27,9 @@ The desktop header phone remains a parallel direct path inherited from Wave45: i
 | Channel choice | `contact_channel_click` plus canonical per-channel event | Channel click cannot exceed sheet open; channel totals must reconcile |
 | Hard outcome | QA-excluded Mango/messenger/Avito/lead-ledger reconciliation | Open/click never becomes a lead by itself |
 
-`N<10` clean visits per route is descriptive only. `N=30` clean comparable visits or the approved spend checkpoint is a diagnostic review, not automatic proof. Current Wave45 `0/30` is a channel-click result, not an intent baseline. Only after an exact comparable control establishes `contact_sheet_open=0/30` would `≥5/30` candidate intent opens produce nominal one-sided Fisher `p≈0.026`; this remains a soft funnel signal because cohorts are not randomized and commercial success still requires meaningful conversations.
+`N<10` clean visits per route is descriptive only. `N=30` clean comparable visits or the approved spend checkpoint is a diagnostic review, not automatic proof. Current Wave45 `0/33` is a channel-click result, not an intent baseline. Only after an exact comparable control establishes `contact_sheet_open=0/33` would `≥5/33` candidate intent opens produce nominal one-sided Fisher `p≈0.0266`; this remains a soft funnel signal because cohorts are not randomized and commercial success still requires meaningful conversations.
 
-The Wave48 `N=1` visit reaches terms/price/proof/process/warranty/scroll50 without a channel event. It supports collecting the same ladder across offers, but must not be pooled with Wave45 or Wave50.
+Wave48 has two strictly relevant paid clicks, but only one processed behavioral visit. That `N=1` visit reaches terms/price/proof/process/warranty/scroll50 without a channel event. Delivery clicks must not substitute for processed-session denominator, and Wave48 must not be pooled with Wave45 or Wave50.
 
 ## Cabinet boundary
 
