@@ -268,6 +268,11 @@ async function auditViewport(browser, name, viewport) {
     qaEvents: window.ohtaawaAnalytics?.qaEvents || [],
   }));
   await page.locator("[data-close-contact]").click();
+  await page.evaluate(() => {
+    const toast = document.querySelector("[data-toast]");
+    toast?.classList.remove("is-visible");
+    if (toast) toast.textContent = "";
+  });
 
   await revealFullPage(page);
   const proof = page.locator("#proof");

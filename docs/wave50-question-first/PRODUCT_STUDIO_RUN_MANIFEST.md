@@ -2,15 +2,15 @@
 
 - **Run ID:** `ohtaawa-wave50-question-first-20260814`
 - **Timestamp:** `2026-08-14 MSK`
-- **Evidence refresh:** `2026-08-14`, parent marketing checkpoint and search-query report captured at `2026-08-14T00:02:53Z`
+- **Evidence refresh:** `2026-08-14`, parent marketing checkpoint and search-query report captured at `2026-08-14T07:56:36Z`
 - **Task type:** evidence-led CRO audit and controlled paid-landing derivative
 - **Surface:** OHTAAWA campaign landings; implementation target is full transparent body protection
 - **Mode:** audit-first, implementation-alpha from the current production benchmark
 
 ## Context and truth
 
-- Source of truth: owner brief, parent `LIVE_MARKETING_CHECKPOINT_RU.md`, the fresh 24-row Wave45 search-query report, exact Wave45 UTM/Webvisor slice and clean-session duration segmentation for 8–14 August, current production HTML, `origin/main` at `f6d19c6`, Wave49 PR #21 as a candidate reference, campaign/ad copy pack, current OHTAAWA assets and provenance.
-- Delivery: 340 impressions, 38 clicks, CTR 11.18%, spend 1,331.83 RUB, average CPC 35.05 RUB; no cabinet goals.
+- Source of truth: owner brief, parent `LIVE_MARKETING_CHECKPOINT_RU.md`, the fresh 25-row Wave45 search-query report, exact Wave45 UTM/Webvisor slice and clean-session duration segmentation for 8–14 August, current production HTML, `origin/main` at `f6d19c6`, Wave49 PR #21 as a candidate reference, campaign/ad copy pack, current OHTAAWA assets and provenance.
+- Delivery: 361 impressions, 42 clicks, CTR 11.63%, spend 1,430.15 RUB, average CPC 34.05 RUB; no confirmed paid hard leads.
 - Observed funnel: 30 exact paid visits; price 30, proof 22, offer terms 8, scroll 50% 8, scroll 90% 1, Telegram/WhatsApp/MAX/phone 0.
 - Clean-session distribution: median 33 seconds, mean 87 seconds (right-skewed); 16/30 at least 30 seconds, 11/30 at least 60 seconds, 6/30 at least 120 seconds, 5/30 below 15 seconds. Price-only median is 9 seconds; proof median 58 seconds; offer-terms and scroll50 medians 80 seconds.
 - Fresh queries are dominated by price/cost, full-film, protective-film and Saint Petersburg service intent; the agreed `>30%` irrelevant-spend stop signal is not observed.

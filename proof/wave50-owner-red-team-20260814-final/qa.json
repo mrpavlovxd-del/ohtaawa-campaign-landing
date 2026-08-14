@@ -1,0 +1,1141 @@
+{
+  "pass": true,
+  "url": "http://127.0.0.1:4196/question-first/?utm_source=codex&utm_medium=qa&utm_campaign=wave50_owner_red_team_final&scenario=full-film&experiment_id=wave50_owner_red_team_final",
+  "reports": [
+    {
+      "name": "desktop-1440",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "staticChecks": {
+        "lang": "ru",
+        "title": "Полная защитная оклейка кузова за 180 000 ₽ | OHTAAWA",
+        "h1Count": 1,
+        "mainExists": true,
+        "skipLinkExists": true,
+        "dialogLabelled": true,
+        "headingSkips": [],
+        "unnamedInteractive": [],
+        "missingAlt": [],
+        "tapTargetFailures": [],
+        "viewportWidth": 1440,
+        "documentWidth": 1440,
+        "noHorizontalOverflow": true,
+        "brokenImages": [],
+        "intentCtaCount": 5,
+        "heroDirectChannelCount": 0,
+        "heroCtaText": "Задать вопрос по автомобилю\n              ↗︎",
+        "heroCtaInFirstViewport": true,
+        "heroCtaContrast": 13.34,
+        "priceText": "180 000 ₽",
+        "offerTitle": "Полная оклейка кузова защитной пленкой",
+        "config": {
+          "metrikaCounter": 110584673,
+          "landingVersion": "wave50-question-first",
+          "serviceRoute": "film_full",
+          "offerId": "full_film_fixed_180",
+          "experimentId": "wave50_question_first",
+          "urgencyDefault": "control",
+          "campaignDeadline": "2026-08-12T23:59:59+03:00",
+          "weekDeadline": "2026-08-09T23:59:59+03:00",
+          "whatsappUrl": "https://wa.me/79910102020"
+        },
+        "isQa": true,
+        "reducedMotion": true
+      },
+      "dialogFocusContained": true,
+      "tracking": {
+        "observedNames": [
+          "contact_intent_open_question_first_v1",
+          "contact_sheet_open",
+          "contact_channel_click",
+          "lead_telegram_polish_film_v8",
+          "contact_channel_click",
+          "lead_whatsapp_polish_film_v8",
+          "contact_channel_click",
+          "lead_max_direct_polish_film_v8",
+          "contact_channel_click",
+          "lead_phone_polish_film_v8"
+        ],
+        "qaEventNames": [
+          "landing_view",
+          "price_view_polish_film_v9",
+          "contact_intent_open_question_first_v1",
+          "contact_sheet_open",
+          "contact_channel_click",
+          "lead_telegram_polish_film_v8",
+          "contact_channel_click",
+          "lead_whatsapp_polish_film_v8",
+          "contact_channel_click",
+          "lead_max_direct_polish_film_v8",
+          "contact_channel_click",
+          "lead_phone_polish_film_v8"
+        ],
+        "missingObserved": [],
+        "qaMetrikaRequests": [],
+        "thirdPartyMapMetrikaRequestCount": 6
+      },
+      "interactions": {
+        "carouselChanged": true,
+        "galleryOpen": true,
+        "faqOpen": true
+      },
+      "network": {
+        "sameOriginErrors": [],
+        "sameOriginFailures": [],
+        "externalErrorResponses": [],
+        "externalFailedRequests": []
+      },
+      "performance": {
+        "initial": {
+          "fcp": 404,
+          "ttfb": 8.5,
+          "domContentLoaded": 205,
+          "transferBytes": 895615,
+          "encodedBytes": 892615,
+          "resourceCount": 10,
+          "resources": [
+            {
+              "name": "http://127.0.0.1:4196/assets/hero-full-film-desktop.webp",
+              "initiatorType": "link",
+              "transferSize": 203182,
+              "encodedBodySize": 202882,
+              "duration": 26.7
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/styles.css?v=wave45-20260808b",
+              "initiatorType": "link",
+              "transferSize": 42052,
+              "encodedBodySize": 41752,
+              "duration": 28.3
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/ohtaawa-mark.png",
+              "initiatorType": "img",
+              "transferSize": 27746,
+              "encodedBodySize": 27446,
+              "duration": 55.3
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/ohtaawa-wordmark.png",
+              "initiatorType": "img",
+              "transferSize": 20129,
+              "encodedBodySize": 19829,
+              "duration": 61.6
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/proof/real/crops/finished-porsche-wide.webp",
+              "initiatorType": "img",
+              "transferSize": 178728,
+              "encodedBodySize": 178428,
+              "duration": 40.3
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/app.js?v=wave50-question-first-20260814a",
+              "initiatorType": "script",
+              "transferSize": 19738,
+              "encodedBodySize": 19438,
+              "duration": 50.8
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/proof/real/crops/film-sheet-wide.webp",
+              "initiatorType": "img",
+              "transferSize": 100530,
+              "encodedBodySize": 100230,
+              "duration": 57.1
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/proof/real/crops/gloss-front-wide.webp",
+              "initiatorType": "img",
+              "transferSize": 124378,
+              "encodedBodySize": 124078,
+              "duration": 44.8
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/proof/real/crops/gloss-panel-wide.webp",
+              "initiatorType": "img",
+              "transferSize": 120000,
+              "encodedBodySize": 119700,
+              "duration": 34.3
+            },
+            {
+              "name": "http://127.0.0.1:4196/favicon.ico",
+              "initiatorType": "other",
+              "transferSize": 59132,
+              "encodedBodySize": 58832,
+              "duration": 10
+            }
+          ],
+          "vitals": {
+            "lcp": 404,
+            "cls": 0,
+            "inp": 0,
+            "longTaskMs": 0
+          }
+        },
+        "fullPage": {
+          "transferBytes": 1399881,
+          "encodedBytes": 1395981,
+          "resourceCount": 14,
+          "resources": [
+            {
+              "name": "http://127.0.0.1:4196/assets/hero-full-film-desktop.webp",
+              "initiatorType": "link",
+              "transferSize": 203182,
+              "encodedBodySize": 202882,
+              "duration": 26.7
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/styles.css?v=wave45-20260808b",
+              "initiatorType": "link",
+              "transferSize": 42052,
+              "encodedBodySize": 41752,
+              "duration": 28.3
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/ohtaawa-mark.png",
+              "initiatorType": "img",
+              "transferSize": 27746,
+              "encodedBodySize": 27446,
+              "duration": 55.3
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/ohtaawa-wordmark.png",
+              "initiatorType": "img",
+              "transferSize": 20129,
+              "encodedBodySize": 19829,
+              "duration": 61.6
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/proof/real/crops/finished-porsche-wide.webp",
+              "initiatorType": "img",
+              "transferSize": 178728,
+              "encodedBodySize": 178428,
+              "duration": 40.3
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/app.js?v=wave50-question-first-20260814a",
+              "initiatorType": "script",
+              "transferSize": 19738,
+              "encodedBodySize": 19438,
+              "duration": 50.8
+            },
+            {
+              "name": "https://yandex.ru/map-widget/v1/?ll=30.443212%2C60.126070&z=16&pt=30.443212%2C60.126070%2Cpm2gnm",
+              "initiatorType": "iframe",
+              "transferSize": 0,
+              "encodedBodySize": 0,
+              "duration": 3558.7
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/proof/real/crops/film-sheet-wide.webp",
+              "initiatorType": "img",
+              "transferSize": 100530,
+              "encodedBodySize": 100230,
+              "duration": 57.1
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/proof/real/crops/gloss-front-wide.webp",
+              "initiatorType": "img",
+              "transferSize": 124378,
+              "encodedBodySize": 124078,
+              "duration": 44.8
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/proof/real/crops/gloss-panel-wide.webp",
+              "initiatorType": "img",
+              "transferSize": 120000,
+              "encodedBodySize": 119700,
+              "duration": 34.3
+            },
+            {
+              "name": "http://127.0.0.1:4196/favicon.ico",
+              "initiatorType": "other",
+              "transferSize": 59132,
+              "encodedBodySize": 58832,
+              "duration": 10
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/generated/wave45-protective-skin-close.webp",
+              "initiatorType": "img",
+              "transferSize": 81884,
+              "encodedBodySize": 81584,
+              "duration": 13.4
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/proof/atmosphere-film-detail.webp",
+              "initiatorType": "img",
+              "transferSize": 219472,
+              "encodedBodySize": 219172,
+              "duration": 5.6
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/proof/atmosphere-studio-finish.webp",
+              "initiatorType": "img",
+              "transferSize": 202910,
+              "encodedBodySize": 202610,
+              "duration": 3.9
+            }
+          ],
+          "brokenImages": [],
+          "vitals": {
+            "lcp": 404,
+            "cls": 0,
+            "inp": 96,
+            "longTaskMs": 0
+          }
+        }
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "name": "mobile-430",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "staticChecks": {
+        "lang": "ru",
+        "title": "Полная защитная оклейка кузова за 180 000 ₽ | OHTAAWA",
+        "h1Count": 1,
+        "mainExists": true,
+        "skipLinkExists": true,
+        "dialogLabelled": true,
+        "headingSkips": [],
+        "unnamedInteractive": [],
+        "missingAlt": [],
+        "tapTargetFailures": [],
+        "viewportWidth": 430,
+        "documentWidth": 430,
+        "noHorizontalOverflow": true,
+        "brokenImages": [],
+        "intentCtaCount": 5,
+        "heroDirectChannelCount": 0,
+        "heroCtaText": "Задать вопрос по автомобилю\n              ↗︎",
+        "heroCtaInFirstViewport": true,
+        "heroCtaContrast": 13.34,
+        "priceText": "180 000 ₽",
+        "offerTitle": "Полная оклейка кузова защитной пленкой",
+        "config": {
+          "metrikaCounter": 110584673,
+          "landingVersion": "wave50-question-first",
+          "serviceRoute": "film_full",
+          "offerId": "full_film_fixed_180",
+          "experimentId": "wave50_question_first",
+          "urgencyDefault": "control",
+          "campaignDeadline": "2026-08-12T23:59:59+03:00",
+          "weekDeadline": "2026-08-09T23:59:59+03:00",
+          "whatsappUrl": "https://wa.me/79910102020"
+        },
+        "isQa": true,
+        "reducedMotion": true
+      },
+      "dialogFocusContained": true,
+      "tracking": {
+        "observedNames": [
+          "contact_intent_open_question_first_v1",
+          "contact_sheet_open",
+          "contact_channel_click",
+          "lead_telegram_polish_film_v8",
+          "contact_channel_click",
+          "lead_whatsapp_polish_film_v8",
+          "contact_channel_click",
+          "lead_max_direct_polish_film_v8",
+          "contact_channel_click",
+          "lead_phone_polish_film_v8"
+        ],
+        "qaEventNames": [
+          "landing_view",
+          "price_view_polish_film_v9",
+          "contact_intent_open_question_first_v1",
+          "contact_sheet_open",
+          "contact_channel_click",
+          "lead_telegram_polish_film_v8",
+          "contact_channel_click",
+          "lead_whatsapp_polish_film_v8",
+          "contact_channel_click",
+          "lead_max_direct_polish_film_v8",
+          "contact_channel_click",
+          "lead_phone_polish_film_v8"
+        ],
+        "missingObserved": [],
+        "qaMetrikaRequests": [],
+        "thirdPartyMapMetrikaRequestCount": 0
+      },
+      "interactions": {
+        "carouselChanged": true,
+        "galleryOpen": true,
+        "faqOpen": true
+      },
+      "network": {
+        "sameOriginErrors": [],
+        "sameOriginFailures": [],
+        "externalErrorResponses": [],
+        "externalFailedRequests": []
+      },
+      "performance": {
+        "initial": {
+          "fcp": 224,
+          "ttfb": 7.1,
+          "domContentLoaded": 196.5,
+          "transferBytes": 824091,
+          "encodedBytes": 821091,
+          "resourceCount": 10,
+          "resources": [
+            {
+              "name": "http://127.0.0.1:4196/assets/hero-full-film-mobile.webp",
+              "initiatorType": "link",
+              "transferSize": 131658,
+              "encodedBodySize": 131358,
+              "duration": 78.1
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/styles.css?v=wave45-20260808b",
+              "initiatorType": "link",
+              "transferSize": 42052,
+              "encodedBodySize": 41752,
+              "duration": 22.8
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/ohtaawa-mark.png",
+              "initiatorType": "img",
+              "transferSize": 27746,
+              "encodedBodySize": 27446,
+              "duration": 107.2
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/ohtaawa-wordmark.png",
+              "initiatorType": "img",
+              "transferSize": 20129,
+              "encodedBodySize": 19829,
+              "duration": 114
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/proof/real/crops/finished-porsche-wide.webp",
+              "initiatorType": "img",
+              "transferSize": 178728,
+              "encodedBodySize": 178428,
+              "duration": 27.4
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/app.js?v=wave50-question-first-20260814a",
+              "initiatorType": "script",
+              "transferSize": 19738,
+              "encodedBodySize": 19438,
+              "duration": 37
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/proof/real/crops/film-sheet-wide.webp",
+              "initiatorType": "img",
+              "transferSize": 100530,
+              "encodedBodySize": 100230,
+              "duration": 41.3
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/proof/real/crops/gloss-front-wide.webp",
+              "initiatorType": "img",
+              "transferSize": 124378,
+              "encodedBodySize": 124078,
+              "duration": 59.7
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/proof/real/crops/gloss-panel-wide.webp",
+              "initiatorType": "img",
+              "transferSize": 120000,
+              "encodedBodySize": 119700,
+              "duration": 68.3
+            },
+            {
+              "name": "http://127.0.0.1:4196/favicon.ico",
+              "initiatorType": "other",
+              "transferSize": 59132,
+              "encodedBodySize": 58832,
+              "duration": 67.2
+            }
+          ],
+          "vitals": {
+            "lcp": 240,
+            "cls": 0,
+            "inp": 0,
+            "longTaskMs": 0
+          }
+        },
+        "fullPage": {
+          "transferBytes": 1328357,
+          "encodedBytes": 1324457,
+          "resourceCount": 13,
+          "resources": [
+            {
+              "name": "http://127.0.0.1:4196/assets/hero-full-film-mobile.webp",
+              "initiatorType": "link",
+              "transferSize": 131658,
+              "encodedBodySize": 131358,
+              "duration": 78.1
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/styles.css?v=wave45-20260808b",
+              "initiatorType": "link",
+              "transferSize": 42052,
+              "encodedBodySize": 41752,
+              "duration": 22.8
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/ohtaawa-mark.png",
+              "initiatorType": "img",
+              "transferSize": 27746,
+              "encodedBodySize": 27446,
+              "duration": 107.2
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/ohtaawa-wordmark.png",
+              "initiatorType": "img",
+              "transferSize": 20129,
+              "encodedBodySize": 19829,
+              "duration": 114
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/proof/real/crops/finished-porsche-wide.webp",
+              "initiatorType": "img",
+              "transferSize": 178728,
+              "encodedBodySize": 178428,
+              "duration": 27.4
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/app.js?v=wave50-question-first-20260814a",
+              "initiatorType": "script",
+              "transferSize": 19738,
+              "encodedBodySize": 19438,
+              "duration": 37
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/proof/real/crops/film-sheet-wide.webp",
+              "initiatorType": "img",
+              "transferSize": 100530,
+              "encodedBodySize": 100230,
+              "duration": 41.3
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/proof/real/crops/gloss-front-wide.webp",
+              "initiatorType": "img",
+              "transferSize": 124378,
+              "encodedBodySize": 124078,
+              "duration": 59.7
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/proof/real/crops/gloss-panel-wide.webp",
+              "initiatorType": "img",
+              "transferSize": 120000,
+              "encodedBodySize": 119700,
+              "duration": 68.3
+            },
+            {
+              "name": "http://127.0.0.1:4196/favicon.ico",
+              "initiatorType": "other",
+              "transferSize": 59132,
+              "encodedBodySize": 58832,
+              "duration": 67.2
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/generated/wave45-protective-skin-close.webp",
+              "initiatorType": "img",
+              "transferSize": 81884,
+              "encodedBodySize": 81584,
+              "duration": 6.4
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/proof/atmosphere-film-detail.webp",
+              "initiatorType": "img",
+              "transferSize": 219472,
+              "encodedBodySize": 219172,
+              "duration": 3.2
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/proof/atmosphere-studio-finish.webp",
+              "initiatorType": "img",
+              "transferSize": 202910,
+              "encodedBodySize": 202610,
+              "duration": 3.5
+            }
+          ],
+          "brokenImages": [],
+          "vitals": {
+            "lcp": 240,
+            "cls": 0,
+            "inp": 48,
+            "longTaskMs": 0
+          }
+        }
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "name": "mobile-390",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "staticChecks": {
+        "lang": "ru",
+        "title": "Полная защитная оклейка кузова за 180 000 ₽ | OHTAAWA",
+        "h1Count": 1,
+        "mainExists": true,
+        "skipLinkExists": true,
+        "dialogLabelled": true,
+        "headingSkips": [],
+        "unnamedInteractive": [],
+        "missingAlt": [],
+        "tapTargetFailures": [],
+        "viewportWidth": 390,
+        "documentWidth": 390,
+        "noHorizontalOverflow": true,
+        "brokenImages": [],
+        "intentCtaCount": 5,
+        "heroDirectChannelCount": 0,
+        "heroCtaText": "Задать вопрос по автомобилю\n              ↗︎",
+        "heroCtaInFirstViewport": true,
+        "heroCtaContrast": 13.34,
+        "priceText": "180 000 ₽",
+        "offerTitle": "Полная оклейка кузова защитной пленкой",
+        "config": {
+          "metrikaCounter": 110584673,
+          "landingVersion": "wave50-question-first",
+          "serviceRoute": "film_full",
+          "offerId": "full_film_fixed_180",
+          "experimentId": "wave50_question_first",
+          "urgencyDefault": "control",
+          "campaignDeadline": "2026-08-12T23:59:59+03:00",
+          "weekDeadline": "2026-08-09T23:59:59+03:00",
+          "whatsappUrl": "https://wa.me/79910102020"
+        },
+        "isQa": true,
+        "reducedMotion": true
+      },
+      "dialogFocusContained": true,
+      "tracking": {
+        "observedNames": [
+          "contact_intent_open_question_first_v1",
+          "contact_sheet_open",
+          "contact_channel_click",
+          "lead_telegram_polish_film_v8",
+          "contact_channel_click",
+          "lead_whatsapp_polish_film_v8",
+          "contact_channel_click",
+          "lead_max_direct_polish_film_v8",
+          "contact_channel_click",
+          "lead_phone_polish_film_v8"
+        ],
+        "qaEventNames": [
+          "landing_view",
+          "price_view_polish_film_v9",
+          "contact_intent_open_question_first_v1",
+          "contact_sheet_open",
+          "contact_channel_click",
+          "lead_telegram_polish_film_v8",
+          "contact_channel_click",
+          "lead_whatsapp_polish_film_v8",
+          "contact_channel_click",
+          "lead_max_direct_polish_film_v8",
+          "contact_channel_click",
+          "lead_phone_polish_film_v8"
+        ],
+        "missingObserved": [],
+        "qaMetrikaRequests": [],
+        "thirdPartyMapMetrikaRequestCount": 0
+      },
+      "interactions": {
+        "carouselChanged": true,
+        "galleryOpen": true,
+        "faqOpen": true
+      },
+      "network": {
+        "sameOriginErrors": [],
+        "sameOriginFailures": [],
+        "externalErrorResponses": [],
+        "externalFailedRequests": []
+      },
+      "performance": {
+        "initial": {
+          "fcp": 196,
+          "ttfb": 2.5,
+          "domContentLoaded": 176,
+          "transferBytes": 824091,
+          "encodedBytes": 821091,
+          "resourceCount": 10,
+          "resources": [
+            {
+              "name": "http://127.0.0.1:4196/assets/hero-full-film-mobile.webp",
+              "initiatorType": "link",
+              "transferSize": 131658,
+              "encodedBodySize": 131358,
+              "duration": 17.1
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/styles.css?v=wave45-20260808b",
+              "initiatorType": "link",
+              "transferSize": 42052,
+              "encodedBodySize": 41752,
+              "duration": 15.9
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/ohtaawa-mark.png",
+              "initiatorType": "img",
+              "transferSize": 27746,
+              "encodedBodySize": 27446,
+              "duration": 22.3
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/ohtaawa-wordmark.png",
+              "initiatorType": "img",
+              "transferSize": 20129,
+              "encodedBodySize": 19829,
+              "duration": 27
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/proof/real/crops/finished-porsche-wide.webp",
+              "initiatorType": "img",
+              "transferSize": 178728,
+              "encodedBodySize": 178428,
+              "duration": 22.5
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/app.js?v=wave50-question-first-20260814a",
+              "initiatorType": "script",
+              "transferSize": 19738,
+              "encodedBodySize": 19438,
+              "duration": 21.9
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/proof/real/crops/film-sheet-wide.webp",
+              "initiatorType": "img",
+              "transferSize": 100530,
+              "encodedBodySize": 100230,
+              "duration": 18.4
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/proof/real/crops/gloss-front-wide.webp",
+              "initiatorType": "img",
+              "transferSize": 124378,
+              "encodedBodySize": 124078,
+              "duration": 22.4
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/proof/real/crops/gloss-panel-wide.webp",
+              "initiatorType": "img",
+              "transferSize": 120000,
+              "encodedBodySize": 119700,
+              "duration": 35.7
+            },
+            {
+              "name": "http://127.0.0.1:4196/favicon.ico",
+              "initiatorType": "other",
+              "transferSize": 59132,
+              "encodedBodySize": 58832,
+              "duration": 27.2
+            }
+          ],
+          "vitals": {
+            "lcp": 196,
+            "cls": 0,
+            "inp": 0,
+            "longTaskMs": 0
+          }
+        },
+        "fullPage": {
+          "transferBytes": 1328357,
+          "encodedBytes": 1324457,
+          "resourceCount": 13,
+          "resources": [
+            {
+              "name": "http://127.0.0.1:4196/assets/hero-full-film-mobile.webp",
+              "initiatorType": "link",
+              "transferSize": 131658,
+              "encodedBodySize": 131358,
+              "duration": 17.1
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/styles.css?v=wave45-20260808b",
+              "initiatorType": "link",
+              "transferSize": 42052,
+              "encodedBodySize": 41752,
+              "duration": 15.9
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/ohtaawa-mark.png",
+              "initiatorType": "img",
+              "transferSize": 27746,
+              "encodedBodySize": 27446,
+              "duration": 22.3
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/ohtaawa-wordmark.png",
+              "initiatorType": "img",
+              "transferSize": 20129,
+              "encodedBodySize": 19829,
+              "duration": 27
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/proof/real/crops/finished-porsche-wide.webp",
+              "initiatorType": "img",
+              "transferSize": 178728,
+              "encodedBodySize": 178428,
+              "duration": 22.5
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/app.js?v=wave50-question-first-20260814a",
+              "initiatorType": "script",
+              "transferSize": 19738,
+              "encodedBodySize": 19438,
+              "duration": 21.9
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/proof/real/crops/film-sheet-wide.webp",
+              "initiatorType": "img",
+              "transferSize": 100530,
+              "encodedBodySize": 100230,
+              "duration": 18.4
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/proof/real/crops/gloss-front-wide.webp",
+              "initiatorType": "img",
+              "transferSize": 124378,
+              "encodedBodySize": 124078,
+              "duration": 22.4
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/proof/real/crops/gloss-panel-wide.webp",
+              "initiatorType": "img",
+              "transferSize": 120000,
+              "encodedBodySize": 119700,
+              "duration": 35.7
+            },
+            {
+              "name": "http://127.0.0.1:4196/favicon.ico",
+              "initiatorType": "other",
+              "transferSize": 59132,
+              "encodedBodySize": 58832,
+              "duration": 27.2
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/generated/wave45-protective-skin-close.webp",
+              "initiatorType": "img",
+              "transferSize": 81884,
+              "encodedBodySize": 81584,
+              "duration": 4.2
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/proof/atmosphere-film-detail.webp",
+              "initiatorType": "img",
+              "transferSize": 219472,
+              "encodedBodySize": 219172,
+              "duration": 4
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/proof/atmosphere-studio-finish.webp",
+              "initiatorType": "img",
+              "transferSize": 202910,
+              "encodedBodySize": 202610,
+              "duration": 3.5
+            }
+          ],
+          "brokenImages": [],
+          "vitals": {
+            "lcp": 196,
+            "cls": 0,
+            "inp": 40,
+            "longTaskMs": 0
+          }
+        }
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "name": "mobile-360",
+      "viewport": {
+        "width": 360,
+        "height": 800
+      },
+      "staticChecks": {
+        "lang": "ru",
+        "title": "Полная защитная оклейка кузова за 180 000 ₽ | OHTAAWA",
+        "h1Count": 1,
+        "mainExists": true,
+        "skipLinkExists": true,
+        "dialogLabelled": true,
+        "headingSkips": [],
+        "unnamedInteractive": [],
+        "missingAlt": [],
+        "tapTargetFailures": [],
+        "viewportWidth": 360,
+        "documentWidth": 360,
+        "noHorizontalOverflow": true,
+        "brokenImages": [],
+        "intentCtaCount": 5,
+        "heroDirectChannelCount": 0,
+        "heroCtaText": "Задать вопрос по автомобилю\n              ↗︎",
+        "heroCtaInFirstViewport": true,
+        "heroCtaContrast": 13.34,
+        "priceText": "180 000 ₽",
+        "offerTitle": "Полная оклейка кузова защитной пленкой",
+        "config": {
+          "metrikaCounter": 110584673,
+          "landingVersion": "wave50-question-first",
+          "serviceRoute": "film_full",
+          "offerId": "full_film_fixed_180",
+          "experimentId": "wave50_question_first",
+          "urgencyDefault": "control",
+          "campaignDeadline": "2026-08-12T23:59:59+03:00",
+          "weekDeadline": "2026-08-09T23:59:59+03:00",
+          "whatsappUrl": "https://wa.me/79910102020"
+        },
+        "isQa": true,
+        "reducedMotion": true
+      },
+      "dialogFocusContained": true,
+      "tracking": {
+        "observedNames": [
+          "contact_intent_open_question_first_v1",
+          "contact_sheet_open",
+          "contact_channel_click",
+          "lead_telegram_polish_film_v8",
+          "contact_channel_click",
+          "lead_whatsapp_polish_film_v8",
+          "contact_channel_click",
+          "lead_max_direct_polish_film_v8",
+          "contact_channel_click",
+          "lead_phone_polish_film_v8"
+        ],
+        "qaEventNames": [
+          "landing_view",
+          "price_view_polish_film_v9",
+          "contact_intent_open_question_first_v1",
+          "contact_sheet_open",
+          "contact_channel_click",
+          "lead_telegram_polish_film_v8",
+          "contact_channel_click",
+          "lead_whatsapp_polish_film_v8",
+          "contact_channel_click",
+          "lead_max_direct_polish_film_v8",
+          "contact_channel_click",
+          "lead_phone_polish_film_v8"
+        ],
+        "missingObserved": [],
+        "qaMetrikaRequests": [],
+        "thirdPartyMapMetrikaRequestCount": 0
+      },
+      "interactions": {
+        "carouselChanged": true,
+        "galleryOpen": true,
+        "faqOpen": true
+      },
+      "network": {
+        "sameOriginErrors": [],
+        "sameOriginFailures": [],
+        "externalErrorResponses": [],
+        "externalFailedRequests": []
+      },
+      "performance": {
+        "initial": {
+          "fcp": 212,
+          "ttfb": 2.8,
+          "domContentLoaded": 169.1,
+          "transferBytes": 824091,
+          "encodedBytes": 821091,
+          "resourceCount": 10,
+          "resources": [
+            {
+              "name": "http://127.0.0.1:4196/assets/hero-full-film-mobile.webp",
+              "initiatorType": "link",
+              "transferSize": 131658,
+              "encodedBodySize": 131358,
+              "duration": 14.3
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/styles.css?v=wave45-20260808b",
+              "initiatorType": "link",
+              "transferSize": 42052,
+              "encodedBodySize": 41752,
+              "duration": 15.1
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/ohtaawa-mark.png",
+              "initiatorType": "img",
+              "transferSize": 27746,
+              "encodedBodySize": 27446,
+              "duration": 23.7
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/ohtaawa-wordmark.png",
+              "initiatorType": "img",
+              "transferSize": 20129,
+              "encodedBodySize": 19829,
+              "duration": 24
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/proof/real/crops/finished-porsche-wide.webp",
+              "initiatorType": "img",
+              "transferSize": 178728,
+              "encodedBodySize": 178428,
+              "duration": 19.2
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/app.js?v=wave50-question-first-20260814a",
+              "initiatorType": "script",
+              "transferSize": 19738,
+              "encodedBodySize": 19438,
+              "duration": 19.7
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/proof/real/crops/film-sheet-wide.webp",
+              "initiatorType": "img",
+              "transferSize": 100530,
+              "encodedBodySize": 100230,
+              "duration": 34.4
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/proof/real/crops/gloss-front-wide.webp",
+              "initiatorType": "img",
+              "transferSize": 124378,
+              "encodedBodySize": 124078,
+              "duration": 36.2
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/proof/real/crops/gloss-panel-wide.webp",
+              "initiatorType": "img",
+              "transferSize": 120000,
+              "encodedBodySize": 119700,
+              "duration": 35.9
+            },
+            {
+              "name": "http://127.0.0.1:4196/favicon.ico",
+              "initiatorType": "other",
+              "transferSize": 59132,
+              "encodedBodySize": 58832,
+              "duration": 29.6
+            }
+          ],
+          "vitals": {
+            "lcp": 212,
+            "cls": 0,
+            "inp": 0,
+            "longTaskMs": 0
+          }
+        },
+        "fullPage": {
+          "transferBytes": 1328357,
+          "encodedBytes": 1324457,
+          "resourceCount": 13,
+          "resources": [
+            {
+              "name": "http://127.0.0.1:4196/assets/hero-full-film-mobile.webp",
+              "initiatorType": "link",
+              "transferSize": 131658,
+              "encodedBodySize": 131358,
+              "duration": 14.3
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/styles.css?v=wave45-20260808b",
+              "initiatorType": "link",
+              "transferSize": 42052,
+              "encodedBodySize": 41752,
+              "duration": 15.1
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/ohtaawa-mark.png",
+              "initiatorType": "img",
+              "transferSize": 27746,
+              "encodedBodySize": 27446,
+              "duration": 23.7
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/ohtaawa-wordmark.png",
+              "initiatorType": "img",
+              "transferSize": 20129,
+              "encodedBodySize": 19829,
+              "duration": 24
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/proof/real/crops/finished-porsche-wide.webp",
+              "initiatorType": "img",
+              "transferSize": 178728,
+              "encodedBodySize": 178428,
+              "duration": 19.2
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/app.js?v=wave50-question-first-20260814a",
+              "initiatorType": "script",
+              "transferSize": 19738,
+              "encodedBodySize": 19438,
+              "duration": 19.7
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/proof/real/crops/film-sheet-wide.webp",
+              "initiatorType": "img",
+              "transferSize": 100530,
+              "encodedBodySize": 100230,
+              "duration": 34.4
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/proof/real/crops/gloss-front-wide.webp",
+              "initiatorType": "img",
+              "transferSize": 124378,
+              "encodedBodySize": 124078,
+              "duration": 36.2
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/proof/real/crops/gloss-panel-wide.webp",
+              "initiatorType": "img",
+              "transferSize": 120000,
+              "encodedBodySize": 119700,
+              "duration": 35.9
+            },
+            {
+              "name": "http://127.0.0.1:4196/favicon.ico",
+              "initiatorType": "other",
+              "transferSize": 59132,
+              "encodedBodySize": 58832,
+              "duration": 29.6
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/generated/wave45-protective-skin-close.webp",
+              "initiatorType": "img",
+              "transferSize": 81884,
+              "encodedBodySize": 81584,
+              "duration": 4.3
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/proof/atmosphere-film-detail.webp",
+              "initiatorType": "img",
+              "transferSize": 219472,
+              "encodedBodySize": 219172,
+              "duration": 3.7
+            },
+            {
+              "name": "http://127.0.0.1:4196/assets/proof/atmosphere-studio-finish.webp",
+              "initiatorType": "img",
+              "transferSize": 202910,
+              "encodedBodySize": 202610,
+              "duration": 3.9
+            }
+          ],
+          "brokenImages": [],
+          "vitals": {
+            "lcp": 212,
+            "cls": 0,
+            "inp": 48,
+            "longTaskMs": 0
+          }
+        }
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "pass": true
+    }
+  ]
+}
