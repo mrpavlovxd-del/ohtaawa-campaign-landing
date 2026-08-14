@@ -9,11 +9,12 @@
 
 ## Context and truth
 
-- Source of truth: owner brief, parent `LIVE_MARKETING_CHECKPOINT_RU.md`, the fresh 24-row Wave45 search-query report, exact Wave45 UTM/Webvisor slice for 8–14 August, current production HTML, `origin/main` at `f6d19c6`, Wave49 PR #21 as a candidate reference, campaign/ad copy pack, current OHTAAWA assets and provenance.
+- Source of truth: owner brief, parent `LIVE_MARKETING_CHECKPOINT_RU.md`, the fresh 24-row Wave45 search-query report, exact Wave45 UTM/Webvisor slice and clean-session duration segmentation for 8–14 August, current production HTML, `origin/main` at `f6d19c6`, Wave49 PR #21 as a candidate reference, campaign/ad copy pack, current OHTAAWA assets and provenance.
 - Delivery: 340 impressions, 38 clicks, CTR 11.18%, spend 1,331.83 RUB, average CPC 35.05 RUB; no cabinet goals.
 - Observed funnel: 30 exact paid visits; price 30, proof 22, offer terms 8, scroll 50% 8, scroll 90% 1, Telegram/WhatsApp/MAX/phone 0.
+- Clean-session distribution: median 33 seconds, mean 87 seconds (right-skewed); 16/30 at least 30 seconds, 11/30 at least 60 seconds, 6/30 at least 120 seconds, 5/30 below 15 seconds. Price-only median is 9 seconds; proof median 58 seconds; offer-terms and scroll50 medians 80 seconds.
 - Fresh queries are dominated by price/cost, full-film, protective-film and Saint Petersburg service intent; the agreed `>30%` irrelevant-spend stop signal is not observed.
-- Funnel localization after price/proof and before contact is **likely true**. The narrower claim that UX, offer wording or trust is the cause remains **plausible but unproven**; long-cycle comparison and external handoff remain alternatives.
+- Funnel localization after price/proof/terms and before contact is **likely true**. The narrower claim that UX, offer wording or trust is the cause remains **plausible but unproven**; session segments are observational/self-selected, duration may include idle time, and long-cycle comparison or external handoff remain alternatives.
 - Existing Wave49 screenshots and docs are `reused-reference`, not fresh proof for this run.
 
 ## Pipeline
