@@ -31,6 +31,8 @@ The desktop header phone remains a parallel direct path inherited from Wave45: i
 
 Wave48 has two strictly relevant paid clicks, but only one processed behavioral visit. That `N=1` visit reaches terms/price/proof/process/warranty/scroll50 without a channel event. Delivery clicks must not substitute for processed-session denominator, and Wave48 must not be pooled with Wave45 or Wave50.
 
+The 15 August production smoke confirms that route-specific page events and all four channel click targets can fire under QA isolation on full-film, risk-zones and color-film. This is implementation evidence only: it does not establish a live `contact_sheet_open` baseline, prove an external app opened successfully, or count a meaningful conversation.
+
 ## Cabinet boundary
 
 The frontend candidate may emit the dedicated event locally. Creating or verifying a matching Metrika goal is a separate read/write cabinet action and is not authorized in this task.

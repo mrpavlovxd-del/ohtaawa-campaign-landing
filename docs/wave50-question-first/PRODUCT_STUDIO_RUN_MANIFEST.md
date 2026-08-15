@@ -2,7 +2,7 @@
 
 - **Run ID:** `ohtaawa-wave50-question-first-20260814`
 - **Timestamp:** `2026-08-14 MSK`
-- **Evidence refresh:** `2026-08-15 MSK`, including the 33-visit Wave45 exact cohort and Wave48 two-click/one-processed-visit distinction
+- **Evidence refresh:** `2026-08-15 MSK`, including the 33-visit Wave45 exact cohort, Wave48 two-click/one-processed-visit distinction, and production desktop/mobile smoke for all three routes
 - **Task type:** evidence-led CRO audit and controlled paid-landing derivative
 - **Surface:** OHTAAWA campaign landings; implementation target is full transparent body protection
 - **Mode:** audit-first; current continuation is evidence-only with no UI or production implementation
@@ -14,6 +14,7 @@
 - Observed funnel: 33 exact paid visits; price 33, proof 25, offer terms 8, scroll 50% 8, scroll 90% 1, Telegram/WhatsApp/MAX/phone 0.
 - Fresh clean-session thresholds: 18/33 at least 30 seconds and 11/33 at least 60 seconds. The earlier 30-visit subset had median 33 seconds, mean 87 seconds (right-skewed), 6/30 at least 120 seconds and 5/30 below 15 seconds; price-only median 9 seconds, proof median 58 seconds, offer-terms and scroll50 medians 80 seconds. Those detailed subset values are not imputed to the three new visits.
 - Cross-offer Wave48 observation: two strictly relevant paid clicks, but only one processed non-QA behavioral visit. That visit lasted 50 seconds, reached terms/price/proof/process/warranty/scroll50, and produced no scroll90/contact/hard outcome. It is directional behavioral N=1 evidence only and is never pooled with Wave45/Wave50.
+- Production counterfact: parent proof at `docs/ohtaawa-retargeting/agent-work/2026-08-15/production-mobile-smoke/` shows 3/3 routes HTTPS 200, desktop and 390×844 screenshots, zero broken images/layout issues, visible heroes, seven contact links per route, and no missing route event/target/UTM. QA markers prevented test-goal pollution. Persistent page-level breakage is therefore unlikely as the primary explanation; external handoff and intermittent/client-specific failures remain untested.
 - Fresh queries are dominated by price/cost, full-film, protective-film and Saint Petersburg service intent; the agreed `>30%` irrelevant-spend stop signal is not observed.
 - Funnel localization after price/proof/terms and before contact is **likely true**. The narrower claim that UX, offer wording or trust is the cause remains **plausible but unproven**; session segments are observational/self-selected, duration may include idle time, and long-cycle comparison or external handoff remain alternatives.
 - Wave48 two-click delivery / behavioral N=1 preserves the chosen experiment but does not increase its causal status: the color-film CTA is already softer than root while still leading to consultation/date commitment.

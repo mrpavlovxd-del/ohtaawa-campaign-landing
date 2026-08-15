@@ -10,6 +10,8 @@
 
 Cross-offer: Wave48 получил два клика по строго релевантным price-intent запросам о полной цветной оклейке/смене цвета в СПб, но Метрика пока обработала только один clean visit. Он провел `50 с`, достиг offerTerms/price/proof/process/warranty/scroll50 и не достиг scroll90 или contact CTA; hard обращения нет. Это направленно поддерживает локализацию до контакта на втором оффере, но не доказывает question-first: behavioral `N=1`, другая цена/услуга, а CTA Wave48 уже мягче root, хотя всё еще ведет к консультации и выбору времени.
 
+Технический контрфакт 15.08: все три live route прошли desktop/mobile `390×844` smoke с HTTPS 200, загруженными hero, `0` broken images/layout issues, семью contact links на route и route-specific event smoke без missing targets/events/UTM. Поэтому Wave50 не является recovery-патчем: техническая надежность страницы остается неизменяемым условием, а тест изолирует только психологическую обязательность первого шага. Один smoke не проверяет внешний handoff или intermittent/client-specific failures.
+
 ## Единственная изменяемая переменная
 
 Смысл первого шага меняется с записи на возможность задать вопрос по конкретному автомобилю.

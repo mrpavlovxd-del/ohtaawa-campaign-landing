@@ -8,6 +8,8 @@
 
 Cross-offer: Wave48 получил два клика по строго релевантным запросам, но обработан пока один clean visit. Он провел 50 с, достиг terms/price/proof/process/warranty/scroll50 и не дал scroll90, contact CTA или hard lead. Это behavioral `N=1`: направленно поддерживает локализацию перед контактом, но не доказывает question-first и не объединяется с Wave45.
 
+Технический контрфакт 15.08: все три production route прошли desktop/mobile 390 smoke — HTTPS 200, hero присутствуют, 0 broken images/overflow/layout issues, 7 contact links/route, route-specific event smoke без missing targets/events/UTM; тестовые цели не отправлялись в Метрику. Это снимает воспроизводимую page-level поломку с ведущих объяснений, но не доказывает commitment friction и не проверяет внешний handoff.
+
 Единственная экспериментальная переменная — семантика первого шага: вместо «записаться на консультацию» посетитель может «задать вопрос по автомобилю». Оффер, цена, proof, layout, media и каналы сохранены. Добавлено диагностическое событие `contact_intent_open_question_first_v1`; canonical channel goals сохранены.
 
 Owner-grade red-team уточнил результат первого шага без расширения переменной: администратор «уточнит сроки работ и ближайшие даты». Это же сформулировано в подготовленном сообщении для TG/WA/MAX.
@@ -30,6 +32,7 @@ Wave49 одновременно меняет CTA wording, modal step и види
 - fresh owner red-team proof `proof/wave50-owner-red-team-20260814-final/`: PASS;
 - security/privacy value scan: PASS перед commit.
 - текущий evidence-only update не меняет HTML/JS/CSS и не требует нового visual QA; committed owner-grade proof остается действующим.
+- parent production smoke 15.08 для full-film/risk-zones/color-film: PASS; desktop/mobile screenshots и JSON сохранены вне публичного landing repo.
 
 ## Launch boundary
 

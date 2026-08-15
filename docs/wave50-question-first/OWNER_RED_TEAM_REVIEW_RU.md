@@ -14,7 +14,9 @@ Wave50 остается лучшим первым контролируемым C
 - Поисковые запросы преимущественно коммерческие; доля сомнительных заметно ниже раннего stop-порога `>30%`.
 - Отдельный exact-срез вырос до 33 чистых визитов: price 33, proof 25, conditions 8, scroll50 8, scroll90 1, TG/WA/MAX/phone 0. `18/33` визитов длились ≥30 с, `11/33` — ≥60 с. Delivery `45` кликов не смешивается с этим знаменателем.
 - Wave48 получил два клика по строго релевантным запросам, но обработан пока один behavioral visit: 50 с, terms/price/proof/process/warranty/scroll50 и ни одного contact CTA/hard lead. Поведенческий `N=1` не добавляется к Wave45 `33`.
+- Production smoke 15.08 на full-film/risk-zones/color-film: 3/3 HTTPS 200; desktop и 390×844, 0 broken images, 0 layout/overflow issues, hero присутствуют, 7 contact links/route, route-specific click events без missing targets/events/UTM; QA-цели в Метрику не отправлялись. Mobile hero зон риска просмотрен отдельно и присутствует.
 - Локализация разрыва после цены/proof и перед контактом — `LIKELY_TRUE`; конкретная причина CTA/UX/trust — `PLAUSIBLE_BUT_UNPROVEN`; плохой трафик как главное объяснение — `LIKELY_FALSE` по текущим данным.
+- Missing hero, сломанный page-level CTA или mobile overflow как главное объяснение — `LIKELY_FALSE` по текущему smoke. Внешний handoff и intermittent/client-specific failures не проверены.
 
 ## Что меняется
 
@@ -35,6 +37,7 @@ Wave50 остается лучшим первым контролируемым C
 | Accessibility | Landmark, skip link, labels, focus containment, contrast и reduced motion smoke | PASS |
 | Event mapping | Intent open → sheet open → channel click/canonical goal; QA traffic изолирован | PASS |
 | Скорость/вес | 805–875 KB initial, 1 297–1 367 KB full; локальные FCP/LCP 196–404/196–404 ms, CLS 0 | PASS, не field CWV |
+| Production counterfact | Текущие три routes воспроизводятся на desktop/390 без hero/image/overflow/CTA-event дефектов | PASS; не causal proof и не внешний handoff test |
 
 Финальный прогон: `proof/wave50-owner-red-team-20260814-final/qa.json`. Свежие кадры hero/contact/proof/scope-price лежат рядом для 1440, 430, 390 и 360 px. Console errors, same-origin network errors, broken images, overflow и собственные запросы Метрики: 0.
 
@@ -51,6 +54,7 @@ Wave50 остается лучшим первым контролируемым C
 - Кандидат может увеличить открытия dialog без роста содержательных обращений.
 - Дорогая услуга допускает длинный цикл сравнения, который один landing не устранит.
 - Browser QA не заменяет полевые Web Vitals и live reconciliation с hard leads.
+- Один production smoke не исключает редкий device/network defect или сбой уже после перехода в телефон/мессенджер; он исключает только воспроизводимую page-level поломку в проверенных состояниях.
 - Без CTA-view и отдельного intent/contact-sheet baseline нельзя отличить «CTA видел, не открыл» от последующего channel friction. Эти события требуют отдельного owner-gated instrumentation решения, а не тихого live изменения.
 - PR #22 остается Draft и `NOT FOR DEPLOY`. Merge, deploy, публикация route, live goal mapping, новая paid-когорта, бюджет и Mango требуют отдельного решения владельца.
 - Все organic/no-ad визиты владельца 14.08 и его тестовый Mango-звонок исключены; campaign monitoring/stop/continue решения остаются в родительской задаче.

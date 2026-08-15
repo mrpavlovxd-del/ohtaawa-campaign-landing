@@ -14,6 +14,7 @@
 - QA isolation: собственные запросы landing к Метрике `0`; сторонний iframe Яндекс Карт учитывается отдельно и не является запросом страницы.
 - Tracking: `contact_intent_open_question_first_v1`, `contact_sheet_open`, `contact_channel_click` и четыре существующих canonical channel events наблюдаются в QA.
 - Регрессия: Wave45 message-match/tracking и Wave46 risk-zones message-match/tracking проходят при штатных QA attribution-параметрах; визуальные smoke всех трех production routes проходят.
+- Fresh production counterfact 15.08: full-film/risk-zones/color-film прошли HTTPS 200 и desktop/mobile `390×844`; hero загружены, 0 broken images, 0 layout/overflow issues, 7 contact links/route и 0 missing route events/targets/UTM. QA-маркеры не отправляли тестовые цели в Метрику; mobile hero risk-zones визуально присутствует.
 
 ## Производительность кандидата
 
