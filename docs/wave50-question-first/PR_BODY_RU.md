@@ -10,6 +10,8 @@ Cross-offer: Wave48 получил два клика по строго реле�
 
 Wave46 получил 3 клика, но только 2 exact визита по 18/23 с: price 2, proof/contact CTA 0. Это descriptive `N=2`, не post-proof когорта. Mango 15.08: 0 новых звонков после исключения owner QA. Малые Wave46/48 не расширяют Wave50 и не меняют его однофакторный контракт.
 
+Traffic-quality cross-check: все 5 фактических Wave46/48 запросов коммерческие и route-relevant; все 3+2 клика пришли через автотаргетинг. 35 ручных операторных фраз дали 0 показов, поэтому manual control отсутствует. Явный query junk не объясняет эти пять кликов, но `N=5` не доказывает CTA/UX-причину и не разрешает targeting change.
+
 Attribution correction 15.08 08:41: технический Mango-звонок и весь неразмеченный organic/no-ad агрегат с нескольких owner-устройств за предшествующие пару часов являются ручным QA. Точное число визитов не домысливается; batch исключен целиком из спроса, лидов и выводов о качестве сайта. Paid exact-UTM Wave45/46/48 остаются валидными отдельно.
 
 Технический контрфакт 15.08: все три production route прошли desktop/mobile 390 smoke — HTTPS 200, hero присутствуют, 0 broken images/overflow/layout issues, 7 contact links/route, route-specific event smoke без missing targets/events/UTM; тестовые цели не отправлялись в Метрику. Это снимает воспроизводимую page-level поломку с ведущих объяснений, но не доказывает commitment friction и не проверяет внешний handoff.

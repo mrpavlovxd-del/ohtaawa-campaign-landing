@@ -47,6 +47,8 @@ Exact-когорта по checkpoint 15.08 остается на `33` визит
 
 Clean-data checkpoint 15.08 не меняет QA кандидата: Wave45 exact cohort осталась `33`, Wave46 имеет только два коротких price-only визита, Wave48 — один обработанный визит, Mango — `0` новых звонков. Это evidence-only refresh; HTML/CSS/JS, event map и screenshots не изменены, повторный visual QA не требуется.
 
+Direct query/phrase reports также не меняют QA кандидата: `5/5` фактических Wave46/48 queries релевантны, все клики пришли через автотаргетинг, а `35` manual phrases не получили показов. Это traffic-quality context при `N=5`, не новый UI input и не targeting authorization.
+
 Attribution correction 08:41 МСК: технический Mango-звонок и весь неразмеченный organic/no-ad агрегат owner-устройств за предшествующие пару часов исключены целиком как known QA. Точное число не восстанавливается предположением. Paid exact-UTM Wave45/46/48 не исключаются и не смешиваются с этим batch.
 
 ## Proof pack
