@@ -8,6 +8,8 @@
 
 Это production-ready по source/QA/rollback кандидат, но не доказанный CRO-победитель. Текущие факты локализуют наблюдаемый разрыв после цены/proof и до контакта; конкретная причина `CTA / trust / offer / UX` остается `PLAUSIBLE_BUT_UNPROVEN`. Production smoke трех live routes исключает воспроизводимую поломку hero, broken images, horizontal overflow или page-level CTA в проверенных состояниях, но не проверяет психологический порог, внешний messenger/phone handoff или работу менеджера.
 
+Последний clean-data checkpoint: Wave45 `400/45/1 494,42 ₽`, exact cohort без новых визитов остается `33`; Wave46 behavioral `N=2`, Wave48 behavioral `N=1`, Mango `0`. Малые cross-offer samples описательны и не меняют кандидат, proof pack или причинный статус гипотезы.
+
 ## Product Studio и Decision Board
 
 Пройдены Product Studio Kernel, Paid Campaign Landing, owner-hypothesis challenge, Russian copy, mobile-first, browser visual QA и Product Excellence proof gates. Library Selection Gate выбрал текущий semantic HTML/CSS/JS: новая библиотека, виджет или визуальный asset добавили бы лишнюю переменную.

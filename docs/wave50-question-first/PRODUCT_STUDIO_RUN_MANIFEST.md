@@ -2,18 +2,20 @@
 
 - **Run ID:** `ohtaawa-wave50-question-first-20260814`
 - **Timestamp:** `2026-08-14 MSK`
-- **Evidence refresh:** `2026-08-15 MSK`, including the 33-visit Wave45 exact cohort, Wave48 two-click/one-processed-visit distinction, and production desktop/mobile smoke for all three routes
+- **Evidence refresh:** `2026-08-15 MSK`, canonical parent checkpoint with Wave45 `400/45/1,494.42 RUB`, unchanged 33-visit exact cohort, Wave46 delivery `74/3` with behavioral `N=2`, Wave48 delivery `22/2` with behavioral `N=1`, Mango `0`, and production desktop/mobile smoke for all three routes
 - **Task type:** evidence-led CRO audit and controlled paid-landing derivative
 - **Surface:** OHTAAWA campaign landings; implementation target is full transparent body protection
 - **Mode:** audit-first; isolated candidate implementation and fresh validation, with no production/public mutation
 
 ## Context and truth
 
-- Source of truth: owner brief, parent `LIVE_MARKETING_CHECKPOINT_RU.md`, the 25-row Wave45 search-query report, delegated exact Wave45 UTM/Webvisor slice for 8–14 August, Wave48 first-click query capture plus the delegated two-click/one-processed-session distinction, current production HTML, `origin/main` at `f6d19c6`, Wave49 PR #21 as a candidate reference, campaign/ad copy pack, current OHTAAWA assets and provenance. The latest aggregate is delegation-authoritative; no matching raw 33-row export is stored in this landing repo.
-- Delivery: 45 clicks, spend 1,494.42 RUB, calculated average CPC 33.21 RUB. The fresh slice does not provide current impressions, so no updated CTR is claimed here.
+- Source of truth: owner brief, canonical parent `docs/ohtaawa-retargeting/agent-work/2026-08-15/LIVE_MARKETING_CHECKPOINT_RU.md`, the 25-row Wave45 search-query report, delegated exact Wave45 UTM/Webvisor slice for 8–15 August, Wave46/48 exact-session summaries, current production HTML, `origin/main` at `f6d19c6`, Wave49 PR #21 as a candidate reference, campaign/ad copy pack, current OHTAAWA assets and provenance. The latest aggregate is delegation-authoritative; no matching raw 33-row export is stored in this landing repo.
+- Delivery: 400 impressions, 45 clicks, spend 1,494.42 RUB, calculated average CPC 33.21 RUB. No new exact Wave45 visit appeared after 14 August; delivery clicks and the exact 33-visit denominator remain separate facts.
 - Observed funnel: 33 exact paid visits; price 33, proof 25, offer terms 8, scroll 50% 8, scroll 90% 1, Telegram/WhatsApp/MAX/phone 0.
 - Fresh clean-session thresholds: 18/33 at least 30 seconds and 11/33 at least 60 seconds. The earlier 30-visit subset had median 33 seconds, mean 87 seconds (right-skewed), 6/30 at least 120 seconds and 5/30 below 15 seconds; price-only median 9 seconds, proof median 58 seconds, offer-terms and scroll50 medians 80 seconds. Those detailed subset values are not imputed to the three new visits.
 - Cross-offer Wave48 observation: two strictly relevant paid clicks, but only one processed non-QA behavioral visit. That visit lasted 50 seconds, reached terms/price/proof/process/warranty/scroll50, and produced no scroll90/contact/hard outcome. It is directional behavioral N=1 evidence only and is never pooled with Wave45/Wave50.
+- Cross-offer Wave46 observation: 74 impressions, 3 clicks and 122.37 RUB; only two exact visits are processed, lasting 18 and 23 seconds. Both reached price, neither reached proof or a contact CTA. This is descriptive `N=2`, not evidence for the Wave45 post-proof barrier and not a reason to alter Wave50.
+- Mango produced zero new calls on 15 August after owner QA exclusion. This preserves the no-hard-lead checkpoint but does not identify the failing landing stage.
 - Production counterfact: parent proof at `docs/ohtaawa-retargeting/agent-work/2026-08-15/production-mobile-smoke/` shows 3/3 routes HTTPS 200, desktop and 390×844 screenshots, zero broken images/layout issues, visible heroes, seven contact links per route, and no missing route event/target/UTM. QA markers prevented test-goal pollution. Persistent page-level breakage is therefore unlikely as the primary explanation; external handoff and intermittent/client-specific failures remain untested.
 - Fresh queries are dominated by price/cost, full-film, protective-film and Saint Petersburg service intent; the agreed `>30%` irrelevant-spend stop signal is not observed.
 - Funnel localization after price/proof/terms and before contact is **likely true**. The narrower claim that UX, offer wording or trust is the cause remains **plausible but unproven**; session segments are observational/self-selected, duration may include idle time, and long-cycle comparison or external handoff remain alternatives.

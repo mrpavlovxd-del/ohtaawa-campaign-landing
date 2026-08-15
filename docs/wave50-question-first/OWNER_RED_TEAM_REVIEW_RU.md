@@ -10,10 +10,12 @@ Wave50 остается лучшим первым контролируемым C
 
 ## Проверенные факты
 
-- Wave45: 45 кликов, 1 494,42 ₽, расчетный CPC 33,21 ₽. Актуальное число показов в свежем срезе не передано, поэтому новый CTR не заявляется.
+- Wave45: 400 показов, 45 кликов, 1 494,42 ₽, расчетный CPC 33,21 ₽. После 14.08 новых exact visits нет.
 - Поисковые запросы преимущественно коммерческие; доля сомнительных заметно ниже раннего stop-порога `>30%`.
 - Отдельный exact-срез вырос до 33 чистых визитов: price 33, proof 25, conditions 8, scroll50 8, scroll90 1, TG/WA/MAX/phone 0. `18/33` визитов длились ≥30 с, `11/33` — ≥60 с. Delivery `45` кликов не смешивается с этим знаменателем.
 - Wave48 получил два клика по строго релевантным запросам, но обработан пока один behavioral visit: 50 с, terms/price/proof/process/warranty/scroll50 и ни одного contact CTA/hard lead. Поведенческий `N=1` не добавляется к Wave45 `33`.
+- Wave46: 74 показа / 3 клика / 122,37 ₽; два exact визита по 18/23 с достигли цены, но не proof/contact CTA. Behavioral `N=2` остается descriptive-only и не доказывает тот же post-proof barrier.
+- Mango 15.08: новых звонков `0`; owner QA исключен. Это hard-outcome checkpoint, а не доказательство причины на landing.
 - Production smoke 15.08 на full-film/risk-zones/color-film: 3/3 HTTPS 200; desktop и 390×844, 0 broken images, 0 layout/overflow issues, hero присутствуют, 7 contact links/route, route-specific click events без missing targets/events/UTM; QA-цели в Метрику не отправлялись. Mobile hero зон риска просмотрен отдельно и присутствует.
 - Локализация разрыва после цены/proof и перед контактом — `LIKELY_TRUE`; конкретная причина CTA/UX/trust — `PLAUSIBLE_BUT_UNPROVEN`; плохой трафик как главное объяснение — `LIKELY_FALSE` по текущим данным.
 - Missing hero, сломанный page-level CTA или mobile overflow как главное объяснение — `LIKELY_FALSE` по текущему smoke. Внешний handoff и intermittent/client-specific failures не проверены.
@@ -60,4 +62,4 @@ Wave50 остается лучшим первым контролируемым C
 - PR #22 остается Draft и `NOT FOR DEPLOY`. Merge, deploy, публикация route, live goal mapping, новая paid-когорта, бюджет и Mango требуют отдельного решения владельца.
 - Все organic/no-ad визиты владельца 14.08 и его тестовый Mango-звонок исключены; campaign monitoring/stop/continue решения остаются в родительской задаче.
 
-Рекомендация: не трогать live Wave45/Wave46/Wave48. Wave48 до 10 обработанных clean visits остается описательным сигналом; его два клика сейчас дают только один behavioral visit. После отдельного owner gate тестировать неизмененный Wave50 question-first чистой когортой; диагностический review после 30 сопоставимых чистых кликов или 1 500 ₽, решение о победе — только по содержательным обращениям. Если intent-open появляется без channel click, следующим отдельным тестом становится Wave49; если intent-open не растет — proof/value-at-decision. Estimate-first рассматривать лишь отдельным контрактом с определенным deliverable.
+Рекомендация: не трогать live Wave45/Wave46/Wave48. Wave46/48 до 10 обработанных clean visits остаются описательными сигналами и не расширяют Wave50. После отдельного owner gate тестировать неизмененный Wave50 question-first чистой когортой; диагностический review после 30 сопоставимых чистых кликов или 1 500 ₽, решение о победе — только по содержательным обращениям. Если intent-open появляется без channel click, следующим отдельным тестом становится Wave49; если intent-open не растет — proof/value-at-decision. Estimate-first рассматривать лишь отдельным контрактом с определенным deliverable.
