@@ -15,6 +15,8 @@
 
 Every browser payload must retain UTM, scenario, experiment ID, service route, offer ID, landing version, event time and page path. QA traffic must remain local in `window.ohtaawaAnalytics.qaEvents` and must not load/send Metrika.
 
+Attribution invariant: known QA must be excluded through the parent `analytics-known-qa-batches.json`. The owner-confirmed untagged organic aggregate from the interval preceding 15 August 08:41 MSK and the technical Mango call are excluded wholesale, with no guessed visit count. Paid exact-UTM Wave45/46/48 cohorts remain separate and valid.
+
 The desktop header phone remains a parallel direct path inherited from Wave45: it can produce the canonical phone goal without an intent-open event. This is held constant, must be reported separately by `location=header`, and must not be forced into the modal funnel.
 
 ## Evidence needed before a causal claim

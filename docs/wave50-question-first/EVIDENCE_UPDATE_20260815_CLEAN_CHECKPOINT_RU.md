@@ -9,7 +9,7 @@ Source of truth: `docs/ohtaawa-retargeting/agent-work/2026-08-15/LIVE_MARKETING_
 | Wave45 / 180 000 ₽ | 400 показов / 45 кликов / 1 494,42 ₽ | 33 визита; price 33, proof 25, terms/scroll50 8, scroll90 1, channel CTA 0; после 14.08 новых exact visits нет | 0 подтвержденных paid leads |
 | Wave46 / 60 000 ₽ | 74 / 3 / 122,37 ₽ | 2 визита по 18/23 с; price 2, proof/contact CTA 0 | 0 |
 | Wave48 / 230 000 ₽ | 22 / 2 / 54,26 ₽ | обработан 1 визит: 50 с, price/proof/process/warranty/scroll50, CTA 0; второй клик не появился в exact-сегменте | 0 |
-| Mango 15.08 | — | owner QA исключен | 0 новых звонков |
+| Mango 15.08 | — | технический owner-QA звонок исключен | 0 новых целевых звонков после исключения |
 
 Production smoke всех трех routes остается PASS и является контрфактом против постоянной page-level поломки.
 
@@ -20,6 +20,7 @@ Production smoke всех трех routes остается PASS и являет�
 - Wave46 — descriptive behavioral `N=2`: оба визита price-only, поэтому это не повторение Wave45 post-proof паттерна.
 - Wave48 — directional behavioral `N=1`; второй delivery click пока нельзя считать behavioral visit.
 - Mango `0` подтверждает отсутствие hard outcome, но не объясняет, на каком этапе возникает барьер.
+- Весь неразмеченный organic/no-ad агрегат owner-QA интервала перед 08:41 МСК исключен без численного предположения; он не участвует в оценке спроса, конверсии или качества сайта. Paid exact-UTM когорты остаются отдельными.
 
 Классификация: локализация разрыва до первого контакта — `LIKELY_TRUE`; конкретная причина `CTA / trust / offer / UX` — `PLAUSIBLE_BUT_UNPROVEN`; постоянная техническая поломка в проверенных desktop/mobile состояниях — `LIKELY_FALSE`.
 

@@ -10,6 +10,8 @@ Cross-offer: Wave48 получил два клика по строго реле�
 
 Wave46 получил 3 клика, но только 2 exact визита по 18/23 с: price 2, proof/contact CTA 0. Это descriptive `N=2`, не post-proof когорта. Mango 15.08: 0 новых звонков после исключения owner QA. Малые Wave46/48 не расширяют Wave50 и не меняют его однофакторный контракт.
 
+Attribution correction 15.08 08:41: технический Mango-звонок и весь неразмеченный organic/no-ad агрегат с нескольких owner-устройств за предшествующие пару часов являются ручным QA. Точное число визитов не домысливается; batch исключен целиком из спроса, лидов и выводов о качестве сайта. Paid exact-UTM Wave45/46/48 остаются валидными отдельно.
+
 Технический контрфакт 15.08: все три production route прошли desktop/mobile 390 smoke — HTTPS 200, hero присутствуют, 0 broken images/overflow/layout issues, 7 contact links/route, route-specific event smoke без missing targets/events/UTM; тестовые цели не отправлялись в Метрику. Это снимает воспроизводимую page-level поломку с ведущих объяснений, но не доказывает commitment friction и не проверяет внешний handoff.
 
 Единственная экспериментальная переменная — семантика первого шага: вместо «записаться на консультацию» посетитель может «задать вопрос по автомобилю». Оффер, цена, proof, layout, media и каналы сохранены. Добавлено диагностическое событие `contact_intent_open_question_first_v1`; canonical channel goals сохранены.
@@ -42,7 +44,7 @@ Wave49 одновременно меняет CTA wording, modal step и види
 
 Статус: `PRODUCTION_CANDIDATE_READY / NOT FOR DEPLOY`. Это означает готовые implementation, mobile-first proof, event contract и rollback, но не разрешение на launch.
 
-PR не предназначен для автоматического merge/deploy. Эта ветка не принимает monitoring/stop/continue/edit решения по активным Wave45/46/48 — они остаются в родительской маркетинговой задаче. Все organic/no-ad визиты владельца 14.08 и его тестовый Mango-звонок исключены. Публикация route, live goal mapping, рекламная когорта, бюджеты и Mango требуют отдельного решения владельца. Root production page этим PR не заменяется.
+PR не предназначен для автоматического merge/deploy. Эта ветка не принимает monitoring/stop/continue/edit решения по активным Wave45/46/48 — они остаются в родительской маркетинговой задаче. Owner-QA organic aggregate указанного интервала и технический Mango-звонок исключены без домысла количества. Публикация route, live goal mapping, рекламная когорта, бюджеты и Mango требуют отдельного решения владельца. Root production page этим PR не заменяется.
 
 Owner proof index: `docs/wave50-question-first/PRODUCT_EXCELLENCE_PROOF_PACK_20260815_RU.md`.
 

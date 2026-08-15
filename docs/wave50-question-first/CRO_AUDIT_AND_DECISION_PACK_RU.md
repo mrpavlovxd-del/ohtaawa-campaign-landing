@@ -12,7 +12,7 @@
 - Fresh clean-session thresholds: `18/33` находятся на странице не менее 30 с, `11/33` — не менее 60 с. Более детальная сегментация относится к предыдущему 30-визитному подмножеству: медиана `33 с`, среднее `87 с` искажено длинными сессиями; `6/30` ≥120 с, `5/30` <15 с; price-only `8` — медиана `9 с`; proof `22` — `58 с`; offer terms/scroll50 `8` — по `80 с`. Эти медианы не экстраполируются на три новых визита.
 - Wave46 risk-zones: `74` показа, `3` клика, `122,37 ₽`; exact UTM содержит только `2` визита по `18` и `23 с`, price `2`, proof/contact CTA `0`. Это descriptive `N=2`: посетители не дошли до proof, поэтому с Wave45 post-proof паттерном их объединять нельзя.
 - Wave48 color-film: `22` показа, `2` клика, `54,26 ₽` по строго релевантным запросам о стоимости полной цветной оклейки и смене цвета пленкой в СПб. Метрика обработала пока один clean candidate-human визит: `50 с`, `1` pageview, достигнуты offerTerms/price/proof/process/warranty/scroll50; scroll90 не достигнут, TG/WA/MAX/phone `0`. Delivery `N=2`, behavioral `N=1`; второй клик еще не появился в exact-сегменте.
-- Mango 15.08: новых звонков `0`. Все недавние organic/no-ad просмотры владельца и его тестовый Mango-звонок исключены и не являются лидами.
+- Attribution correction 15.08 08:41 МСК: владелец подтвердил, что технический Mango-звонок и весь неразмеченный organic/no-ad агрегат с нескольких устройств за предшествующие пару часов были ручным QA. Точное число визитов не восстанавливается и не заявляется; весь интервал исключен из спроса, лидов и выводов о качестве сайта. После исключения новых целевых звонков Mango `0`. Paid exact-UTM Wave45/46/48 остаются валидными отдельно.
 - Свежий локальный baseline от `origin/main` прошел visual/interaction smoke на `1440x900`, `430x932`, `390x844`: нет horizontal overflow, broken images, unnamed buttons и console errors; dialog/carousel/gallery/FAQ работают.
 - Объявления Wave45 обещают полную оклейку за `180 000 ₽`, подготовку/монтаж, `3–5 дней` или `5 лет` гарантии. Root hero повторяет услугу и цену; message match высокий.
 
@@ -28,6 +28,7 @@
 - постоянная техническая поломка hero/page-level CTA или mobile overflow как главное объяснение — **LIKELY_FALSE по smoke 15.08**; intermittent/client-specific сбои и внешний handoff этим не исключены;
 - повторение post-information/no-contact паттерна на Wave48 — **DIRECTIONALLY_SUPPORTIVE**, но при behavioral `N=1` не причинно и не объединяется с Wave45;
 - Wave46 — **DESCRIPTIVE_ONLY**: behavioral `N=2`, короткие price-only визиты без proof не подтверждают и не опровергают Wave50;
+- неразмеченный organic/no-ad агрегат указанного owner-QA интервала — **KNOWN_QA_EXCLUSION**, не evidence за или против landing;
 - «получить расчёт» как немедленная замена question-first — **PLAUSIBLE_BUT_UNPROVEN / HIGH_RISK_IF_WRONG**: при фиксированной цене не определены объект расчета и обещанный результат;
 - смешивание нескольких изменений — **HIGH_RISK_IF_WRONG** для интерпретации результата.
 

@@ -47,6 +47,8 @@ Exact-когорта по checkpoint 15.08 остается на `33` визит
 
 Clean-data checkpoint 15.08 не меняет QA кандидата: Wave45 exact cohort осталась `33`, Wave46 имеет только два коротких price-only визита, Wave48 — один обработанный визит, Mango — `0` новых звонков. Это evidence-only refresh; HTML/CSS/JS, event map и screenshots не изменены, повторный visual QA не требуется.
 
+Attribution correction 08:41 МСК: технический Mango-звонок и весь неразмеченный organic/no-ad агрегат owner-устройств за предшествующие пару часов исключены целиком как known QA. Точное число не восстанавливается предположением. Paid exact-UTM Wave45/46/48 не исключаются и не смешиваются с этим batch.
+
 ## Proof pack
 
 - `proof/wave50-owner-validation-20260815-final/qa.json` — финальный строгий browser QA после copy/visual red-team.
@@ -67,7 +69,7 @@ Clean-data checkpoint 15.08 не меняет QA кандидата: Wave45 exac
 - Не проверено: реальная конверсия, содержательность диалогов, качество handoff в мессенджерах/телефоне, полевые Web Vitals, live goal mapping в Метрике. Подтвержденных hard leads по paid-трафику сейчас `0`.
 - Не выполнялись: merge/deploy, публикация route, изменение Метрики, рекламы, бюджета, Mango или production-конфигурации.
 - Не выполнялись monitoring/stop/continue решения по Wave45/46/48: они остаются в родительской маркетинговой задаче.
-- Все organic/no-ad визиты владельца 14.08 с нескольких устройств и его тестовый Mango-звонок исключены; подтвержденных paid hard leads они не создают.
+- Owner-confirmed неразмеченный organic/no-ad агрегат указанного интервала и технический Mango-звонок исключены без численного домысла; подтвержденных paid hard leads они не создают и ничего не доказывают о качестве сайта.
 - Для запуска Wave50 требуется отдельный owner gate, принятый экспериментальный контракт, чистая когорта, goal mapping и deployment choice. После разрешенного запуска Wave50 review — через `30` сопоставимых чистых кликов или `1 500 ₽`, без смешивания Wave45/Wave49/Wave50. Monitoring и пороги live Wave45/46/48 принадлежат родительской задаче.
 - Rollback: снять Wave50-когорту с нового route и вернуть трафик на прежний неизмененный URL; root Wave45 не заменяется этим PR.
 

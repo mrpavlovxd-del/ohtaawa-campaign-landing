@@ -12,6 +12,8 @@ Cross-offer: Wave48 получил два клика по строго реле�
 
 Wave46 получил `3` клика, но exact UTM обработал только `2` коротких визита (`18/23 с`): price `2`, proof/contact CTA `0`. Это descriptive `N=2`, не post-proof когорта; она не объединяется с Wave45 и не изменяет экспериментальную переменную. Mango 15.08 не дал новых звонков после исключения owner QA, что подтверждает отсутствие hard outcome, но не его причину.
 
+Attribution guardrail: owner-confirmed untagged organic/no-ad traffic from the interval preceding 15.08 08:41 MSK and the technical Mango call are one known-QA exclusion batch. Its visit count is not guessed or reconstructed; none of its aggregate behavior may enter demand, lead or site-quality conclusions. Paid exact-UTM Wave45/46/48 remain eligible separately.
+
 Технический контрфакт 15.08: все три live route прошли desktop/mobile `390×844` smoke с HTTPS 200, загруженными hero, `0` broken images/layout issues, семью contact links на route и route-specific event smoke без missing targets/events/UTM. Поэтому Wave50 не является recovery-патчем: техническая надежность страницы остается неизменяемым условием, а тест изолирует только психологическую обязательность первого шага. Один smoke не проверяет внешний handoff или intermittent/client-specific failures.
 
 ## Единственная изменяемая переменная

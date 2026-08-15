@@ -2,7 +2,7 @@
 
 - **Run ID:** `ohtaawa-wave50-question-first-20260814`
 - **Timestamp:** `2026-08-14 MSK`
-- **Evidence refresh:** `2026-08-15 MSK`, canonical parent checkpoint with Wave45 `400/45/1,494.42 RUB`, unchanged 33-visit exact cohort, Wave46 delivery `74/3` with behavioral `N=2`, Wave48 delivery `22/2` with behavioral `N=1`, Mango `0`, and production desktop/mobile smoke for all three routes
+- **Evidence refresh:** `2026-08-15 MSK`, canonical parent checkpoint with Wave45 `400/45/1,494.42 RUB`, unchanged 33-visit exact cohort, Wave46 delivery `74/3` with behavioral `N=2`, Wave48 delivery `22/2` with behavioral `N=1`, Mango `0`, production desktop/mobile smoke, and the 08:41 owner-QA attribution correction
 - **Task type:** evidence-led CRO audit and controlled paid-landing derivative
 - **Surface:** OHTAAWA campaign landings; implementation target is full transparent body protection
 - **Mode:** audit-first; isolated candidate implementation and fresh validation, with no production/public mutation
@@ -22,7 +22,7 @@
 - Wave48 two-click delivery / behavioral N=1 preserves the chosen experiment but does not increase its causal status: the color-film CTA is already softer than root while still leading to consultation/date commitment.
 - “Get an estimate” remains outside the selected variable: with a fixed 180,000 RUB offer, its deliverable is undefined and would add an unverified promise. The smallest diagnostic intervention remains “ask a question about the vehicle.”
 - Existing Wave49 screenshots and docs are `reused-reference`, not fresh proof for this run.
-- All recent 14 August organic/no-ad visits across the owner's devices and the owner's Mango test call are QA, not demand or hard-lead evidence.
+- Owner correction at 15 August 08:41 MSK: the entire untagged organic/no-ad aggregate from multiple owner devices in the preceding couple of hours and the technical Mango call are one known-QA exclusion. No visit count is guessed. This batch is excluded from demand, lead and site-quality conclusions; paid exact-UTM cohorts remain valid separately.
 - Scope ownership: this run owns CRO diagnosis and the landing candidate only. Live Wave45/46/48 monitoring and campaign decisions remain in the parent marketing task.
 
 ## Pipeline

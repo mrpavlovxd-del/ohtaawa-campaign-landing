@@ -7,7 +7,7 @@
 - Read-only checkpoint: `docs/ohtaawa-retargeting/agent-work/2026-08-14/LIVE_MARKETING_CHECKPOINT_RU.md`.
 - Read-only query capture: `docs/ohtaawa-retargeting/agent-work/2026-08-14/yandex-search-queries/wave45-refresh-2026-08-14-2026-08-14T07-56-36-480Z.json`, captured `2026-08-14T07:56:36Z`, 25 строк.
 - Read-only Wave48 query capture: `docs/ohtaawa-retargeting/agent-work/2026-08-14/yandex-search-queries/wave48-first-click-2026-08-14-2026-08-14T18-52-00-897Z.json`; локально подтверждает запрос и расход. Exact session/reconciliation — делегированный clean-data срез родительской задачи около 21:02 МСК.
-- Exact UTM/Webvisor-срез с исключенными ручными визитами владельца и QA-звонком. Все недавние organic/no-ad визиты 14.08 с нескольких устройств принадлежат владельцу; тестовый Mango-звонок 14.08 также принадлежит владельцу и не является лидом.
+- Exact UTM/Webvisor-срез учитывается отдельно. По owner correction 15.08 08:41 МСК весь неразмеченный organic/no-ad агрегат с нескольких устройств за предшествующие пару часов и технический Mango-звонок относятся к ручному QA. Точное число визитов не восстанавливается предположением; агрегат исключен целиком из спроса, лидов и оценки качества сайта.
 - Production visual smoke 15.08: `docs/ohtaawa-retargeting/agent-work/2026-08-15/production-mobile-smoke/` в родительском workspace. Локально просмотрены три QA JSON и шесть viewport screenshots.
 
 Исходники остаются в родительском workspace и не копируются в публичный landing repo; в PR хранится только безопасная агрегированная интерпретация.

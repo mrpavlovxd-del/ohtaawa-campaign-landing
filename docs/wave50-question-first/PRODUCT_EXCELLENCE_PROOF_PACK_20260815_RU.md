@@ -10,6 +10,8 @@
 
 Последний clean-data checkpoint: Wave45 `400/45/1 494,42 ₽`, exact cohort без новых визитов остается `33`; Wave46 behavioral `N=2`, Wave48 behavioral `N=1`, Mango `0`. Малые cross-offer samples описательны и не меняют кандидат, proof pack или причинный статус гипотезы.
 
+Attribution correction: технический Mango-звонок и весь неразмеченный organic/no-ad агрегат owner-QA интервала перед 08:41 МСК исключены целиком. Их точное количество не домысливается, а поведение не используется как доказательство спроса, лида или качества сайта. Paid exact-UTM когорты сохраняются отдельно.
+
 ## Product Studio и Decision Board
 
 Пройдены Product Studio Kernel, Paid Campaign Landing, owner-hypothesis challenge, Russian copy, mobile-first, browser visual QA и Product Excellence proof gates. Library Selection Gate выбрал текущий semantic HTML/CSS/JS: новая библиотека, виджет или визуальный asset добавили бы лишнюю переменную.
