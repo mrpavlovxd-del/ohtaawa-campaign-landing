@@ -15,6 +15,7 @@ Current Wave45 production/root at `origin/main` is the visual target and `reused
 
 - One consistent question-first CTA label.
 - Contact-sheet headline, explanatory sentence and prepared messenger text aligned to the same lower-commitment intent.
+- One conditional-sequencing clarification beside the hero CTA: answer first, consultation with the unchanged free wash only if the visitor chooses to come.
 - Dedicated diagnostic event attributes.
 
 ## Translation loss limits

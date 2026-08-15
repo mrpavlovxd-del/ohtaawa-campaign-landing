@@ -22,6 +22,7 @@ Wave50 остается лучшим первым контролируемым C
 
 - Один согласованный question-first смысл во всех пяти CTA: «Задать вопрос по автомобилю».
 - Dialog и подготовленное сообщение просят марку/модель и ясно сообщают результат: администратор уточнит сроки работ и ближайшие даты.
+- Hero trust note больше не переводит вопрос обратно в обязательный полуторачасовой визит: сначала ответ администратора, затем консультация с неизменной бесплатной мойкой только если посетитель решит приехать.
 - Добавлено отдельное диагностическое событие `contact_intent_open_question_first_v1`; сохранены `contact_sheet_open`, `contact_channel_click` и четыре canonical channel events.
 
 Не меняются цена 180 000 ₽, состав, срок 3–5 дней, гарантия 5 лет, мойка, такси, hero, proof, layout, изображения, каналы, рекламная аудитория и production routes.
@@ -36,10 +37,10 @@ Wave50 остается лучшим первым контролируемым C
 | Mobile-first | 430/390/360: без overflow, clipping и мелких tap targets; CTA, цена и trust rail читаемы | PASS |
 | Accessibility | Landmark, skip link, labels, focus containment, contrast и reduced motion smoke | PASS |
 | Event mapping | Intent open → sheet open → channel click/canonical goal; QA traffic изолирован | PASS |
-| Скорость/вес | 805–875 KB initial, 1 297–1 367 KB full; локальные FCP/LCP 196–404/196–404 ms, CLS 0 | PASS, не field CWV |
+| Скорость/вес | 805–875 KB initial, 1 297–1 367 KB full; локальные FCP/LCP 220–516/220–516 ms, CLS 0 | PASS, не field CWV |
 | Production counterfact | Текущие три routes воспроизводятся на desktop/390 без hero/image/overflow/CTA-event дефектов | PASS; не causal proof и не внешний handoff test |
 
-Финальный прогон: `proof/wave50-owner-red-team-20260814-final/qa.json`. Свежие кадры hero/contact/proof/scope-price лежат рядом для 1440, 430, 390 и 360 px. Console errors, same-origin network errors, broken images, overflow и собственные запросы Метрики: 0.
+Финальный прогон на итоговом HTML: `proof/wave50-owner-validation-20260815-final/qa.json`. Свежие кадры hero/contact/proof/proof-viewport/scope-price лежат рядом для 1440, 430, 390 и 360 px. Console errors, same-origin network errors, broken images, overflow и собственные запросы Метрики: 0. Служебный focus/skip-link и перекрытие proof-заголовка sticky header отсутствуют в финальных viewport-кадрах.
 
 ## Что отклонено
 

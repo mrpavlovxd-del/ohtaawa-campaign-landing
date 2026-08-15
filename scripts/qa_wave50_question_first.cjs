@@ -272,12 +272,18 @@ async function auditViewport(browser, name, viewport) {
     const toast = document.querySelector("[data-toast]");
     toast?.classList.remove("is-visible");
     if (toast) toast.textContent = "";
+    if (document.activeElement instanceof HTMLElement) document.activeElement.blur();
   });
 
   await revealFullPage(page);
   const proof = page.locator("#proof");
-  await proof.scrollIntoViewIfNeeded();
+  await proof.evaluate((node) => {
+    const headerHeight = document.querySelector(".site-header")?.getBoundingClientRect().height || 0;
+    const top = window.scrollY + node.getBoundingClientRect().top - headerHeight - 24;
+    window.scrollTo({ top: Math.max(0, top), behavior: "instant" });
+  });
   await page.waitForTimeout(120);
+  await page.screenshot({ path: path.join(outputDir, `${name}-proof-viewport.png`) });
   await proof.screenshot({ path: path.join(outputDir, `${name}-proof.png`) });
 
   const scopePrice = page.locator(".scope-price");

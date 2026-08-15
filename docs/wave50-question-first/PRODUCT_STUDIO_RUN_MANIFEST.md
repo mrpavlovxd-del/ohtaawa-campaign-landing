@@ -5,7 +5,7 @@
 - **Evidence refresh:** `2026-08-15 MSK`, including the 33-visit Wave45 exact cohort, Wave48 two-click/one-processed-visit distinction, and production desktop/mobile smoke for all three routes
 - **Task type:** evidence-led CRO audit and controlled paid-landing derivative
 - **Surface:** OHTAAWA campaign landings; implementation target is full transparent body protection
-- **Mode:** audit-first; current continuation is evidence-only with no UI or production implementation
+- **Mode:** audit-first; isolated candidate implementation and fresh validation, with no production/public mutation
 
 ## Context and truth
 
@@ -61,6 +61,7 @@ The current substrate supports the copy-only derivative, dialogs, keyboard/focus
 - Add isolated route `/question-first/` from `origin/main`.
 - Keep offer, price, hero, proof, package, timing, guarantee, address, media, layout and contact channels unchanged.
 - Change only the meaning of the first step from booking a consultation to asking a question about the visitor's car.
+- Keep that meaning consistent in the hero trust note: the question comes first; consultation and its unchanged free wash/duration are conditional later-stage facts.
 - Add a dedicated intent-open event while retaining the existing contact-sheet and canonical channel events.
 - Do not expose four direct channels in the first viewport; Wave49 remains the next distinct hypothesis, not mixed into Wave50.
 
@@ -75,6 +76,8 @@ The current substrate supports the copy-only derivative, dialogs, keyboard/focus
 - Accessibility and tap-target smoke.
 - Web Vitals/resource-weight evidence.
 - Security/privacy scan, diff review, rollback and owner approval pack.
+
+Completion evidence is indexed in `PRODUCT_EXCELLENCE_PROOF_PACK_20260815_RU.md`; the final browser run is `proof/wave50-owner-validation-20260815-final/qa.json`.
 
 ## Self-reject conditions
 

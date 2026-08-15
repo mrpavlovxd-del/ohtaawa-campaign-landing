@@ -12,6 +12,8 @@ Cross-offer: Wave48 получил два клика по строго реле�
 
 Единственная экспериментальная переменная — семантика первого шага: вместо «записаться на консультацию» посетитель может «задать вопрос по автомобилю». Оффер, цена, proof, layout, media и каналы сохранены. Добавлено диагностическое событие `contact_intent_open_question_first_v1`; canonical channel goals сохранены.
 
+Финальный copy red-team устранил противоречие рядом с hero CTA: бесплатная мойка и полуторачасовая консультация сохранены без изменения, но теперь явно следуют только после ответа администратора и решения посетителя приехать. Это согласование той же question-first переменной, а не новый оффер.
+
 Owner-grade red-team уточнил результат первого шага без расширения переменной: администратор «уточнит сроки работ и ближайшие даты». Это же сформулировано в подготовленном сообщении для TG/WA/MAX.
 
 Формулировка «получить расчёт» намеренно не добавлена: цена уже фиксирована, а объект и результат расчёта не определены. Estimate-first остается отдельной будущей гипотезой, чтобы текущий тест сохранял однофакторность и не обещал непроверенное.
@@ -29,9 +31,9 @@ Wave49 одновременно меняет CTA wording, modal step и види
 - QA isolation: PASS, собственных запросов Метрики 0;
 - Wave45/Wave46 message-match + tracking regression: PASS;
 - route performance smoke: PASS;
-- fresh owner red-team proof `proof/wave50-owner-red-team-20260814-final/`: PASS;
+- fresh owner validation на итоговом HTML `proof/wave50-owner-validation-20260815-final/`: PASS;
 - security/privacy value scan: PASS перед commit.
-- текущий evidence-only update не меняет HTML/JS/CSS и не требует нового visual QA; committed owner-grade proof остается действующим.
+- статический однофакторный контракт после conditional hero copy: PASS; DOM/assets/offer unchanged.
 - parent production smoke 15.08 для full-film/risk-zones/color-film: PASS; desktop/mobile screenshots и JSON сохранены вне публичного landing repo.
 
 ## Launch boundary
@@ -39,5 +41,7 @@ Wave49 одновременно меняет CTA wording, modal step и види
 Статус: `PRODUCTION_CANDIDATE_READY / NOT FOR DEPLOY`. Это означает готовые implementation, mobile-first proof, event contract и rollback, но не разрешение на launch.
 
 PR не предназначен для автоматического merge/deploy. Эта ветка не принимает monitoring/stop/continue/edit решения по активным Wave45/46/48 — они остаются в родительской маркетинговой задаче. Все organic/no-ad визиты владельца 14.08 и его тестовый Mango-звонок исключены. Публикация route, live goal mapping, рекламная когорта, бюджеты и Mango требуют отдельного решения владельца. Root production page этим PR не заменяется.
+
+Owner proof index: `docs/wave50-question-first/PRODUCT_EXCELLENCE_PROOF_PACK_20260815_RU.md`.
 
 Подробности: `docs/wave50-question-first/QA_AND_OWNER_REVIEW_RU.md`.
