@@ -1,0 +1,45 @@
+{
+  "manifest_version": 1,
+  "project": "OHTAAWA Wave53 leather-care landing",
+  "created_at": "2026-08-16",
+  "policy": "Real media may be used only within verified context and rights. Generated media is excluded from Wave53 proof and must never be presented as client work.",
+  "assets": [
+    {
+      "asset_id": "lc-real-brand-seat-process-001",
+      "source_reference": "canonical OHTAAWA brand project/public/images/ohtaawa/premium-car.jpg",
+      "source_sha256": "b9775de3cc94f1f180037ce068de693fd5c9142092e08113f876b469a99be079",
+      "source_type": "real-public-brand-asset",
+      "content_truth": "interior cleaning action on a leather seat; not verified as Wave53, Koch application or a client case",
+      "role": "draft hero atmosphere",
+      "proof": false,
+      "privacy_review": "no face, readable plate, VIN, key or personal item visible in selected crops",
+      "rights_status": "pending-owner-confirmation",
+      "production_status": "blocked-pending-owner-confirmation",
+      "disallowed_claims": ["real Wave53 case", "Koch application", "before/after", "guaranteed result"]
+    },
+    {
+      "file": "leather-care/hero-desktop.webp",
+      "sha256": "70e7b2d018e928f2c7bf350d35bbe469c40f9a69103fcea7e5306978f6817324",
+      "width": 1500,
+      "height": 1000,
+      "derived_from": "lc-real-brand-seat-process-001",
+      "transformation": "truthful crop, Lanczos resize, WebP quality 84, metadata stripped",
+      "production_status": "blocked-pending-owner-confirmation"
+    },
+    {
+      "file": "leather-care/hero-mobile.webp",
+      "sha256": "45138c9df966a306f4a59fc88f6ace2a8433aff6fe75d78f30d7d3e95e127429",
+      "width": 810,
+      "height": 1080,
+      "derived_from": "lc-real-brand-seat-process-001",
+      "transformation": "truthful crop, Lanczos resize, WebP quality 84, metadata stripped",
+      "production_status": "blocked-pending-owner-confirmation"
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset_id": "lc-generated-interior-003",
+      "reason": "generated service illustration; legacy provenance forbids hero use and it cannot close the factual proof gap"
+    }
+  ]
+}

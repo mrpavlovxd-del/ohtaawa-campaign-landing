@@ -1,0 +1,29 @@
+{
+  "project": "OHTAAWA Wave53 Leather Care",
+  "updated": "2026-08-16",
+  "rules": [
+    "No asset is evidence of a client result unless source, context and rights are verified.",
+    "Generated media must never be presented as real OHTAAWA work.",
+    "Production use of the selected real brand asset requires owner confirmation of rights and context."
+  ],
+  "decisions": [
+    {
+      "asset_id": "lc-real-brand-seat-process-001",
+      "draft_pr": "allowed-as-atmosphere-without-proof-claim",
+      "production": "blocked-pending-owner-rights-confirmation",
+      "approval_status": "pending-owner-review"
+    },
+    {
+      "asset_id": "lc-real-brand-interior-detail-002",
+      "draft_pr": "not-selected",
+      "production": "blocked",
+      "approval_status": "not-requested"
+    },
+    {
+      "asset_id": "lc-generated-interior-003",
+      "draft_pr": "excluded",
+      "production": "excluded",
+      "approval_status": "not-applicable"
+    }
+  ]
+}
