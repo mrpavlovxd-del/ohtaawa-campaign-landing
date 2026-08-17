@@ -1,0 +1,10 @@
+node_modules/
+
+# Internal-only source render; optimized generated-illustrative derivatives are tracked.
+artifacts/qwen-full-film-generated-assets/
+
+# Superseded local evidence kept outside the review diff.
+artifacts/qwen-full-film-qa/
+artifacts/qwen-full-film-qa-v2/
+artifacts/sol-qa-v2-1/
+artifacts/sol-performance-v2-2/

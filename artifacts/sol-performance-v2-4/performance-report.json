@@ -1,0 +1,6042 @@
+{
+  "schema": "ohtaawa-sol-performance-v2.4/1",
+  "startedAt": "2026-08-17T01:30:37.359Z",
+  "finishedAt": "2026-08-17T01:31:24.099Z",
+  "root": ".",
+  "outputDirectory": "artifacts/sol-performance-v2-4",
+  "result": {
+    "pass": true,
+    "assertionCount": 70,
+    "passedAssertions": 70,
+    "failedAssertions": 0,
+    "failed": []
+  },
+  "methodology": {
+    "runner": "Playwright with Chromium CDP",
+    "coldRunPolicy": "new incognito context per run; browser HTTP cache cleared and disabled via CDP; origin storage cleared; service workers bypassed",
+    "network": {
+      "latencyMs": 150,
+      "downloadBitsPerSecond": 1600000,
+      "uploadBitsPerSecond": 750000,
+      "downloadBytesPerSecond": 200000,
+      "uploadBytesPerSecond": 93750,
+      "connectionType": "cellular4g"
+    },
+    "cpuThrottlingRate": 4,
+    "observerInjection": "Page.addScriptToEvaluateOnNewDocument before page.goto",
+    "observedEntryTypes": [
+      "paint",
+      "largest-contentful-paint",
+      "layout-shift",
+      "longtask"
+    ],
+    "primaryTimingPoint": "after load, CDP network quiescence, and a 1000 ms stabilization window; before scripted scroll or proof interaction",
+    "initialTransferDefinition": "sum of PerformanceNavigationTiming and PerformanceResourceTiming transferSize at the primary timing point",
+    "fullTransferDefinition": "sum of navigation and resource transferSize after proof traversal, every proof image decode, stepped full-page traversal, and every document image decode",
+    "initialResourceFilenameDefinition": "ordered unique filenames from navigation and resource timing entries present before scripted scroll or proof interaction",
+    "proofResourceGate": "the current primary proof WebP may load initially; every secondary retained proof WebP must be absent before scroll and every retained proof WebP must be present after deliberate proof traversal",
+    "tbtProxyDefinition": "sum(max(0, long-task duration - 50 ms)) for PerformanceObserver longtask entries beginning at or after FCP and observed before the primary timing point",
+    "tbtProxyWarning": "This is a clearly labeled long-task blocking proxy, not Lighthouse Total Blocking Time: no Lighthouse TTI window or Lighthouse trace model is used.",
+    "aggregation": "mobile primary values use the median of five cold runs; min and max are retained; hard sample assertions are also recorded for every run"
+  },
+  "budgets": {
+    "lcpMs": 2500,
+    "fcpMs": 1800,
+    "clsTarget": 0.05,
+    "clsMax": 0.1,
+    "tbtProxyMs": 200,
+    "mobileInitialBytes": 358400,
+    "desktopInitialBytes": 460800,
+    "fullAfterProofBytes": 1048576
+  },
+  "environment": {
+    "node": "v22.22.2",
+    "playwright": "1.62.1",
+    "browser": "chromium",
+    "browserVersion": "151.0.7922.34",
+    "headless": true,
+    "server": {
+      "scheme": "http",
+      "host": "127.0.0.1",
+      "port": 56756,
+      "loopbackOnly": true,
+      "cacheControl": "no-store"
+    }
+  },
+  "runs": [
+    {
+      "id": "mobile-390x844-cold-01",
+      "profile": "mobile-390x844",
+      "kind": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "deviceScaleFactor": 1
+      },
+      "coldRun": true,
+      "startedAt": "2026-08-17T01:30:37.634Z",
+      "finishedAt": "2026-08-17T01:30:45.316Z",
+      "emulation": {
+        "network": {
+          "latencyMs": 150,
+          "downloadBitsPerSecond": 1600000,
+          "uploadBitsPerSecond": 750000,
+          "downloadBytesPerSecond": 200000,
+          "uploadBytesPerSecond": 93750,
+          "connectionType": "cellular4g"
+        },
+        "cpuThrottlingRate": 4,
+        "navigatorConnectionObserved": {
+          "effectiveType": "4g",
+          "downlink": 10,
+          "rtt": 0,
+          "saveData": false
+        }
+      },
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+      "initialIdle": {
+        "timedOut": false
+      },
+      "proofIdle": {
+        "timedOut": false
+      },
+      "fullIdle": {
+        "timedOut": false
+      },
+      "initial": {
+        "sampledAtMs": 4166.799999998882,
+        "metrics": {
+          "fcpMs": 1352,
+          "lcpMs": 1352,
+          "cls": 0,
+          "tbtProxyMs": 0,
+          "responseStartMs": 8.5,
+          "domContentLoadedMs": 1353.199999999255,
+          "loadEventEndMs": 1353.2999999988824
+        },
+        "observer": {
+          "installedBeforeNavigation": true,
+          "supported": {
+            "paint": true,
+            "largest-contentful-paint": true,
+            "layout-shift": true,
+            "longtask": true
+          },
+          "errors": [],
+          "counts": {
+            "paint": 2,
+            "largestContentfulPaint": 1,
+            "layoutShift": 0,
+            "longTask": 0,
+            "longTasksAfterFcp": 0
+          },
+          "lcpCandidate": {
+            "startTime": 1352,
+            "renderTime": 1352,
+            "loadTime": 852,
+            "size": 115329,
+            "url": "http://127.0.0.1:56756/assets/generated/qwen-tension-material-mobile.webp",
+            "element": {
+              "tagName": "IMG",
+              "id": "",
+              "className": ""
+            }
+          },
+          "layoutShifts": [],
+          "longTasks": []
+        },
+        "transfer": {
+          "bytes": 322560,
+          "resourceFilenames": [
+            "index.html",
+            "qwen-full-film.css",
+            "ohtaawa-mark.png",
+            "ohtaawa-wordmark.png",
+            "qwen-tension-material-mobile.webp",
+            "qwen-full-film.js",
+            "finished-porsche-wide.webp"
+          ],
+          "entries": [
+            {
+              "entryType": "navigation",
+              "name": "/?qa=1&utm_source=codex&utm_medium=performance_qa&utm_campaign=sol_perf_v2_4&scenario=full-film&experiment_id=sol_perf_v2_4_mobile_1",
+              "initiatorType": "navigation",
+              "startTime": 0,
+              "duration": 1353.2999999988824,
+              "transferSize": 45391,
+              "encodedBodySize": 45091,
+              "decodedBodySize": 45091,
+              "responseStart": 8.5,
+              "domContentLoadedEventEnd": 1353.199999999255,
+              "loadEventEnd": 1353.2999999988824
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/qwen-full-film.css",
+              "initiatorType": "link",
+              "startTime": 211.2999999988824,
+              "duration": 608.4000000003725,
+              "transferSize": 24049,
+              "encodedBodySize": 23749,
+              "decodedBodySize": 23749
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/ohtaawa-mark.png",
+              "initiatorType": "img",
+              "startTime": 212.7999999988824,
+              "duration": 653.8000000007451,
+              "transferSize": 27746,
+              "encodedBodySize": 27446,
+              "decodedBodySize": 27446
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/ohtaawa-wordmark.png",
+              "initiatorType": "img",
+              "startTime": 212.89999999850988,
+              "duration": 574.7000000011176,
+              "transferSize": 20129,
+              "encodedBodySize": 19829,
+              "decodedBodySize": 19829
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/generated/qwen-tension-material-mobile.webp",
+              "initiatorType": "img",
+              "startTime": 216.5,
+              "duration": 335.59999999962747,
+              "transferSize": 7098,
+              "encodedBodySize": 6798,
+              "decodedBodySize": 6798
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/qwen-full-film.js",
+              "initiatorType": "script",
+              "startTime": 467.2999999988824,
+              "duration": 430.30000000074506,
+              "transferSize": 19419,
+              "encodedBodySize": 19119,
+              "decodedBodySize": 19119
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/proof/real/crops/finished-porsche-wide.webp",
+              "initiatorType": "img",
+              "startTime": 1313.5999999996275,
+              "duration": 1072.2999999988824,
+              "transferSize": 178728,
+              "encodedBodySize": 178428,
+              "decodedBodySize": 178428
+            }
+          ]
+        },
+        "cdp": {
+          "transferBytes": 321751,
+          "requestCount": 7,
+          "finishedCount": 7,
+          "failedCount": 0,
+          "cacheHitCount": 0,
+          "resources": [
+            {
+              "url": "/?qa=1&utm_source=codex&utm_medium=performance_qa&utm_campaign=sol_perf_v2_4&scenario=full-film&experiment_id=sol_perf_v2_4_mobile_1",
+              "method": "GET",
+              "type": "Document",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "text/html",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 45282,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/qwen-full-film.css",
+              "method": "GET",
+              "type": "Stylesheet",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "text/css",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 23939,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/ohtaawa-mark.png",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/png",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 27622,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/ohtaawa-wordmark.png",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/png",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 20005,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/generated/qwen-tension-material-mobile.webp",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/webp",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 6974,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/qwen-full-film.js",
+              "method": "GET",
+              "type": "Script",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "application/javascript",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 19323,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/proof/real/crops/finished-porsche-wide.webp",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/webp",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 178606,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            }
+          ]
+        }
+      },
+      "proofManifest": {
+        "proofFound": true,
+        "primaryProofWebpFilename": "finished-porsche-wide.webp",
+        "primaryProofWebpPath": "/assets/proof/real/crops/finished-porsche-wide.webp",
+        "retainedProofWebpFilenames": [
+          "finished-porsche-wide.webp",
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "retainedProofWebpPaths": [
+          "/assets/proof/real/crops/finished-porsche-wide.webp",
+          "/assets/proof/real/crops/film-sheet-wide.webp",
+          "/assets/proof/real/crops/gloss-front-wide.webp"
+        ],
+        "secondaryProofWebpFilenames": [
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "secondaryProofWebpPaths": [
+          "/assets/proof/real/crops/film-sheet-wide.webp",
+          "/assets/proof/real/crops/gloss-front-wide.webp"
+        ]
+      },
+      "proofResourceGate": {
+        "initialResourceFilenames": [
+          "index.html",
+          "qwen-full-film.css",
+          "ohtaawa-mark.png",
+          "ohtaawa-wordmark.png",
+          "qwen-tension-material-mobile.webp",
+          "qwen-full-film.js",
+          "finished-porsche-wide.webp"
+        ],
+        "primaryProofWebpFilename": "finished-porsche-wide.webp",
+        "retainedProofWebpFilenames": [
+          "finished-porsche-wide.webp",
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "secondaryProofWebpFilenames": [
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "secondaryLoadedBeforeScroll": [],
+        "retainedLoadedAfterTraversal": [
+          "finished-porsche-wide.webp",
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "retainedMissingAfterTraversal": [],
+        "secondaryDeferredPass": true,
+        "retainedLoadedPass": true
+      },
+      "proof": {
+        "found": true,
+        "tabs": 3,
+        "decodedTabs": 3,
+        "images": [
+          {
+            "src": "/assets/proof/real/crops/gloss-front-wide.webp",
+            "complete": true,
+            "naturalWidth": 1200,
+            "naturalHeight": 675
+          },
+          {
+            "src": "/assets/proof/real/crops/finished-porsche-wide.webp",
+            "complete": true,
+            "naturalWidth": 1200,
+            "naturalHeight": 675
+          },
+          {
+            "src": "/assets/proof/real/crops/film-sheet-wide.webp",
+            "complete": true,
+            "naturalWidth": 1600,
+            "naturalHeight": 900
+          },
+          {
+            "src": "/assets/proof/real/crops/gloss-front-wide.webp",
+            "complete": true,
+            "naturalWidth": 1200,
+            "naturalHeight": 675
+          }
+        ]
+      },
+      "fullPage": {
+        "positionsVisited": 10,
+        "stepPx": 633,
+        "geometry": {
+          "height": 5239,
+          "viewportHeight": 844
+        },
+        "decode": {
+          "total": 8,
+          "decoded": 8,
+          "broken": [],
+          "finalScrollY": 4395,
+          "scrollHeight": 5239
+        }
+      },
+      "full": {
+        "sampledAtMs": 7667,
+        "metrics": {
+          "fcpMs": 1352,
+          "lcpMs": 1352,
+          "cls": 0,
+          "tbtProxyMs": 0,
+          "responseStartMs": 8.5,
+          "domContentLoadedMs": 1353.199999999255,
+          "loadEventEndMs": 1353.2999999988824
+        },
+        "observer": {
+          "installedBeforeNavigation": true,
+          "supported": {
+            "paint": true,
+            "largest-contentful-paint": true,
+            "layout-shift": true,
+            "longtask": true
+          },
+          "errors": [],
+          "counts": {
+            "paint": 2,
+            "largestContentfulPaint": 1,
+            "layoutShift": 0,
+            "longTask": 0,
+            "longTasksAfterFcp": 0
+          },
+          "lcpCandidate": {
+            "startTime": 1352,
+            "renderTime": 1352,
+            "loadTime": 852,
+            "size": 115329,
+            "url": "http://127.0.0.1:56756/assets/generated/qwen-tension-material-mobile.webp",
+            "element": {
+              "tagName": "IMG",
+              "id": "",
+              "className": ""
+            }
+          },
+          "layoutShifts": [],
+          "longTasks": []
+        },
+        "transfer": {
+          "bytes": 547468,
+          "resourceFilenames": [
+            "index.html",
+            "qwen-full-film.css",
+            "ohtaawa-mark.png",
+            "ohtaawa-wordmark.png",
+            "qwen-tension-material-mobile.webp",
+            "qwen-full-film.js",
+            "finished-porsche-wide.webp",
+            "film-sheet-wide.webp",
+            "gloss-front-wide.webp"
+          ],
+          "entries": [
+            {
+              "entryType": "navigation",
+              "name": "/?qa=1&utm_source=codex&utm_medium=performance_qa&utm_campaign=sol_perf_v2_4&scenario=full-film&experiment_id=sol_perf_v2_4_mobile_1",
+              "initiatorType": "navigation",
+              "startTime": 0,
+              "duration": 1353.2999999988824,
+              "transferSize": 45391,
+              "encodedBodySize": 45091,
+              "decodedBodySize": 45091,
+              "responseStart": 8.5,
+              "domContentLoadedEventEnd": 1353.199999999255,
+              "loadEventEnd": 1353.2999999988824
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/qwen-full-film.css",
+              "initiatorType": "link",
+              "startTime": 211.2999999988824,
+              "duration": 608.4000000003725,
+              "transferSize": 24049,
+              "encodedBodySize": 23749,
+              "decodedBodySize": 23749
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/ohtaawa-mark.png",
+              "initiatorType": "img",
+              "startTime": 212.7999999988824,
+              "duration": 653.8000000007451,
+              "transferSize": 27746,
+              "encodedBodySize": 27446,
+              "decodedBodySize": 27446
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/ohtaawa-wordmark.png",
+              "initiatorType": "img",
+              "startTime": 212.89999999850988,
+              "duration": 574.7000000011176,
+              "transferSize": 20129,
+              "encodedBodySize": 19829,
+              "decodedBodySize": 19829
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/generated/qwen-tension-material-mobile.webp",
+              "initiatorType": "img",
+              "startTime": 216.5,
+              "duration": 335.59999999962747,
+              "transferSize": 7098,
+              "encodedBodySize": 6798,
+              "decodedBodySize": 6798
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/qwen-full-film.js",
+              "initiatorType": "script",
+              "startTime": 467.2999999988824,
+              "duration": 430.30000000074506,
+              "transferSize": 19419,
+              "encodedBodySize": 19119,
+              "decodedBodySize": 19119
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/proof/real/crops/finished-porsche-wide.webp",
+              "initiatorType": "img",
+              "startTime": 1313.5999999996275,
+              "duration": 1072.2999999988824,
+              "transferSize": 178728,
+              "encodedBodySize": 178428,
+              "decodedBodySize": 178428
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/proof/real/crops/film-sheet-wide.webp",
+              "initiatorType": "img",
+              "startTime": 4217.299999998882,
+              "duration": 1157.5,
+              "transferSize": 100530,
+              "encodedBodySize": 100230,
+              "decodedBodySize": 100230
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/proof/real/crops/gloss-front-wide.webp",
+              "initiatorType": "img",
+              "startTime": 4217.699999999255,
+              "duration": 1283.5,
+              "transferSize": 124378,
+              "encodedBodySize": 124078,
+              "decodedBodySize": 124078
+            }
+          ]
+        },
+        "cdp": {
+          "transferBytes": 546415,
+          "requestCount": 9,
+          "finishedCount": 9,
+          "failedCount": 0,
+          "cacheHitCount": 0,
+          "resources": [
+            {
+              "url": "/?qa=1&utm_source=codex&utm_medium=performance_qa&utm_campaign=sol_perf_v2_4&scenario=full-film&experiment_id=sol_perf_v2_4_mobile_1",
+              "method": "GET",
+              "type": "Document",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "text/html",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 45282,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/qwen-full-film.css",
+              "method": "GET",
+              "type": "Stylesheet",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "text/css",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 23939,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/ohtaawa-mark.png",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/png",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 27622,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/ohtaawa-wordmark.png",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/png",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 20005,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/generated/qwen-tension-material-mobile.webp",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/webp",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 6974,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/qwen-full-film.js",
+              "method": "GET",
+              "type": "Script",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "application/javascript",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 19323,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/proof/real/crops/finished-porsche-wide.webp",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/webp",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 178606,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/proof/real/crops/film-sheet-wide.webp",
+              "method": "GET",
+              "type": "Image",
+              "stage": "proof",
+              "status": 200,
+              "mimeType": "image/webp",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 100408,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/proof/real/crops/gloss-front-wide.webp",
+              "method": "GET",
+              "type": "Image",
+              "stage": "proof",
+              "status": 200,
+              "mimeType": "image/webp",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 124256,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            }
+          ]
+        }
+      },
+      "diagnostics": {
+        "consoleErrors": [],
+        "pageErrors": []
+      },
+      "assertions": [
+        {
+          "scope": "mobile-390x844-cold-01",
+          "metric": "fcp",
+          "pass": true,
+          "actual": 1352,
+          "budget": 1800,
+          "unit": "ms",
+          "operator": "<="
+        },
+        {
+          "scope": "mobile-390x844-cold-01",
+          "metric": "lcp",
+          "pass": true,
+          "actual": 1352,
+          "budget": 2500,
+          "unit": "ms",
+          "operator": "<="
+        },
+        {
+          "scope": "mobile-390x844-cold-01",
+          "metric": "cls-hard-max",
+          "pass": true,
+          "actual": 0,
+          "budget": 0.1,
+          "unit": "score",
+          "operator": "<="
+        },
+        {
+          "scope": "mobile-390x844-cold-01",
+          "metric": "cls-target",
+          "pass": true,
+          "actual": 0,
+          "budget": 0.05,
+          "unit": "score",
+          "operator": "<="
+        },
+        {
+          "scope": "mobile-390x844-cold-01",
+          "metric": "tbt-proxy",
+          "pass": true,
+          "actual": 0,
+          "budget": 200,
+          "unit": "ms",
+          "operator": "<="
+        },
+        {
+          "scope": "mobile-390x844-cold-01",
+          "metric": "initial-transfer",
+          "pass": true,
+          "actual": 322560,
+          "budget": 358400,
+          "unit": "bytes",
+          "operator": "<="
+        },
+        {
+          "scope": "mobile-390x844-cold-01",
+          "metric": "full-after-proof-transfer",
+          "pass": true,
+          "actual": 547468,
+          "budget": 1048576,
+          "unit": "bytes",
+          "operator": "<="
+        },
+        {
+          "scope": "mobile-390x844-cold-01",
+          "metric": "secondary-proof-webp-before-scroll",
+          "pass": true,
+          "actual": 0,
+          "budget": 0,
+          "unit": "files",
+          "operator": "==",
+          "details": {
+            "secondaryProofWebpFilenames": [
+              "film-sheet-wide.webp",
+              "gloss-front-wide.webp"
+            ],
+            "loadedBeforeScroll": [],
+            "initialResourceFilenames": [
+              "index.html",
+              "qwen-full-film.css",
+              "ohtaawa-mark.png",
+              "ohtaawa-wordmark.png",
+              "qwen-tension-material-mobile.webp",
+              "qwen-full-film.js",
+              "finished-porsche-wide.webp"
+            ]
+          }
+        },
+        {
+          "scope": "mobile-390x844-cold-01",
+          "metric": "retained-proof-webp-after-traversal",
+          "pass": true,
+          "actual": 3,
+          "budget": 3,
+          "unit": "files",
+          "operator": "==",
+          "details": {
+            "retainedProofWebpFilenames": [
+              "finished-porsche-wide.webp",
+              "film-sheet-wide.webp",
+              "gloss-front-wide.webp"
+            ],
+            "loadedAfterTraversal": [
+              "finished-porsche-wide.webp",
+              "film-sheet-wide.webp",
+              "gloss-front-wide.webp"
+            ],
+            "missingAfterTraversal": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "mobile-390x844-cold-02",
+      "profile": "mobile-390x844",
+      "kind": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "deviceScaleFactor": 1
+      },
+      "coldRun": true,
+      "startedAt": "2026-08-17T01:30:45.389Z",
+      "finishedAt": "2026-08-17T01:30:53.065Z",
+      "emulation": {
+        "network": {
+          "latencyMs": 150,
+          "downloadBitsPerSecond": 1600000,
+          "uploadBitsPerSecond": 750000,
+          "downloadBytesPerSecond": 200000,
+          "uploadBytesPerSecond": 93750,
+          "connectionType": "cellular4g"
+        },
+        "cpuThrottlingRate": 4,
+        "navigatorConnectionObserved": {
+          "effectiveType": "4g",
+          "downlink": 10,
+          "rtt": 0,
+          "saveData": false
+        }
+      },
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+      "initialIdle": {
+        "timedOut": false
+      },
+      "proofIdle": {
+        "timedOut": false
+      },
+      "fullIdle": {
+        "timedOut": false
+      },
+      "initial": {
+        "sampledAtMs": 4157.699999999255,
+        "metrics": {
+          "fcpMs": 1340,
+          "lcpMs": 1340,
+          "cls": 0,
+          "tbtProxyMs": 0,
+          "responseStartMs": 2.5,
+          "domContentLoadedMs": 1342.0999999996275,
+          "loadEventEndMs": 1342.199999999255
+        },
+        "observer": {
+          "installedBeforeNavigation": true,
+          "supported": {
+            "paint": true,
+            "largest-contentful-paint": true,
+            "layout-shift": true,
+            "longtask": true
+          },
+          "errors": [],
+          "counts": {
+            "paint": 2,
+            "largestContentfulPaint": 1,
+            "layoutShift": 0,
+            "longTask": 0,
+            "longTasksAfterFcp": 0
+          },
+          "lcpCandidate": {
+            "startTime": 1340,
+            "renderTime": 1340,
+            "loadTime": 865.8999999985099,
+            "size": 115329,
+            "url": "http://127.0.0.1:56756/assets/generated/qwen-tension-material-mobile.webp",
+            "element": {
+              "tagName": "IMG",
+              "id": "",
+              "className": ""
+            }
+          },
+          "layoutShifts": [],
+          "longTasks": []
+        },
+        "transfer": {
+          "bytes": 322560,
+          "resourceFilenames": [
+            "index.html",
+            "qwen-full-film.css",
+            "ohtaawa-mark.png",
+            "ohtaawa-wordmark.png",
+            "qwen-tension-material-mobile.webp",
+            "qwen-full-film.js",
+            "finished-porsche-wide.webp"
+          ],
+          "entries": [
+            {
+              "entryType": "navigation",
+              "name": "/?qa=1&utm_source=codex&utm_medium=performance_qa&utm_campaign=sol_perf_v2_4&scenario=full-film&experiment_id=sol_perf_v2_4_mobile_2",
+              "initiatorType": "navigation",
+              "startTime": 0,
+              "duration": 1342.199999999255,
+              "transferSize": 45391,
+              "encodedBodySize": 45091,
+              "decodedBodySize": 45091,
+              "responseStart": 2.5,
+              "domContentLoadedEventEnd": 1342.0999999996275,
+              "loadEventEnd": 1342.199999999255
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/qwen-full-film.css",
+              "initiatorType": "link",
+              "startTime": 202.2999999988824,
+              "duration": 618.8000000007451,
+              "transferSize": 24049,
+              "encodedBodySize": 23749,
+              "decodedBodySize": 23749
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/ohtaawa-mark.png",
+              "initiatorType": "img",
+              "startTime": 203.19999999925494,
+              "duration": 664.8000000007451,
+              "transferSize": 27746,
+              "encodedBodySize": 27446,
+              "decodedBodySize": 27446
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/ohtaawa-wordmark.png",
+              "initiatorType": "img",
+              "startTime": 203.59999999962747,
+              "duration": 585.5,
+              "transferSize": 20129,
+              "encodedBodySize": 19829,
+              "decodedBodySize": 19829
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/generated/qwen-tension-material-mobile.webp",
+              "initiatorType": "img",
+              "startTime": 224.89999999850988,
+              "duration": 313.40000000037253,
+              "transferSize": 7098,
+              "encodedBodySize": 6798,
+              "decodedBodySize": 6798
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/qwen-full-film.js",
+              "initiatorType": "script",
+              "startTime": 481.7999999988824,
+              "duration": 417.30000000074506,
+              "transferSize": 19419,
+              "encodedBodySize": 19119,
+              "decodedBodySize": 19119
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/proof/real/crops/finished-porsche-wide.webp",
+              "initiatorType": "img",
+              "startTime": 1305,
+              "duration": 1056.5999999996275,
+              "transferSize": 178728,
+              "encodedBodySize": 178428,
+              "decodedBodySize": 178428
+            }
+          ]
+        },
+        "cdp": {
+          "transferBytes": 321751,
+          "requestCount": 7,
+          "finishedCount": 7,
+          "failedCount": 0,
+          "cacheHitCount": 0,
+          "resources": [
+            {
+              "url": "/?qa=1&utm_source=codex&utm_medium=performance_qa&utm_campaign=sol_perf_v2_4&scenario=full-film&experiment_id=sol_perf_v2_4_mobile_2",
+              "method": "GET",
+              "type": "Document",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "text/html",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 45282,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/qwen-full-film.css",
+              "method": "GET",
+              "type": "Stylesheet",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "text/css",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 23939,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/ohtaawa-mark.png",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/png",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 27622,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/ohtaawa-wordmark.png",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/png",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 20005,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/generated/qwen-tension-material-mobile.webp",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/webp",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 6974,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/qwen-full-film.js",
+              "method": "GET",
+              "type": "Script",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "application/javascript",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 19323,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/proof/real/crops/finished-porsche-wide.webp",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/webp",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 178606,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            }
+          ]
+        }
+      },
+      "proofManifest": {
+        "proofFound": true,
+        "primaryProofWebpFilename": "finished-porsche-wide.webp",
+        "primaryProofWebpPath": "/assets/proof/real/crops/finished-porsche-wide.webp",
+        "retainedProofWebpFilenames": [
+          "finished-porsche-wide.webp",
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "retainedProofWebpPaths": [
+          "/assets/proof/real/crops/finished-porsche-wide.webp",
+          "/assets/proof/real/crops/film-sheet-wide.webp",
+          "/assets/proof/real/crops/gloss-front-wide.webp"
+        ],
+        "secondaryProofWebpFilenames": [
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "secondaryProofWebpPaths": [
+          "/assets/proof/real/crops/film-sheet-wide.webp",
+          "/assets/proof/real/crops/gloss-front-wide.webp"
+        ]
+      },
+      "proofResourceGate": {
+        "initialResourceFilenames": [
+          "index.html",
+          "qwen-full-film.css",
+          "ohtaawa-mark.png",
+          "ohtaawa-wordmark.png",
+          "qwen-tension-material-mobile.webp",
+          "qwen-full-film.js",
+          "finished-porsche-wide.webp"
+        ],
+        "primaryProofWebpFilename": "finished-porsche-wide.webp",
+        "retainedProofWebpFilenames": [
+          "finished-porsche-wide.webp",
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "secondaryProofWebpFilenames": [
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "secondaryLoadedBeforeScroll": [],
+        "retainedLoadedAfterTraversal": [
+          "finished-porsche-wide.webp",
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "retainedMissingAfterTraversal": [],
+        "secondaryDeferredPass": true,
+        "retainedLoadedPass": true
+      },
+      "proof": {
+        "found": true,
+        "tabs": 3,
+        "decodedTabs": 3,
+        "images": [
+          {
+            "src": "/assets/proof/real/crops/gloss-front-wide.webp",
+            "complete": true,
+            "naturalWidth": 1200,
+            "naturalHeight": 675
+          },
+          {
+            "src": "/assets/proof/real/crops/finished-porsche-wide.webp",
+            "complete": true,
+            "naturalWidth": 1200,
+            "naturalHeight": 675
+          },
+          {
+            "src": "/assets/proof/real/crops/film-sheet-wide.webp",
+            "complete": true,
+            "naturalWidth": 1600,
+            "naturalHeight": 900
+          },
+          {
+            "src": "/assets/proof/real/crops/gloss-front-wide.webp",
+            "complete": true,
+            "naturalWidth": 1200,
+            "naturalHeight": 675
+          }
+        ]
+      },
+      "fullPage": {
+        "positionsVisited": 10,
+        "stepPx": 633,
+        "geometry": {
+          "height": 5239,
+          "viewportHeight": 844
+        },
+        "decode": {
+          "total": 8,
+          "decoded": 8,
+          "broken": [],
+          "finalScrollY": 4395,
+          "scrollHeight": 5239
+        }
+      },
+      "full": {
+        "sampledAtMs": 7663.199999999255,
+        "metrics": {
+          "fcpMs": 1340,
+          "lcpMs": 1340,
+          "cls": 0,
+          "tbtProxyMs": 0,
+          "responseStartMs": 2.5,
+          "domContentLoadedMs": 1342.0999999996275,
+          "loadEventEndMs": 1342.199999999255
+        },
+        "observer": {
+          "installedBeforeNavigation": true,
+          "supported": {
+            "paint": true,
+            "largest-contentful-paint": true,
+            "layout-shift": true,
+            "longtask": true
+          },
+          "errors": [],
+          "counts": {
+            "paint": 2,
+            "largestContentfulPaint": 1,
+            "layoutShift": 0,
+            "longTask": 0,
+            "longTasksAfterFcp": 0
+          },
+          "lcpCandidate": {
+            "startTime": 1340,
+            "renderTime": 1340,
+            "loadTime": 865.8999999985099,
+            "size": 115329,
+            "url": "http://127.0.0.1:56756/assets/generated/qwen-tension-material-mobile.webp",
+            "element": {
+              "tagName": "IMG",
+              "id": "",
+              "className": ""
+            }
+          },
+          "layoutShifts": [],
+          "longTasks": []
+        },
+        "transfer": {
+          "bytes": 547468,
+          "resourceFilenames": [
+            "index.html",
+            "qwen-full-film.css",
+            "ohtaawa-mark.png",
+            "ohtaawa-wordmark.png",
+            "qwen-tension-material-mobile.webp",
+            "qwen-full-film.js",
+            "finished-porsche-wide.webp",
+            "film-sheet-wide.webp",
+            "gloss-front-wide.webp"
+          ],
+          "entries": [
+            {
+              "entryType": "navigation",
+              "name": "/?qa=1&utm_source=codex&utm_medium=performance_qa&utm_campaign=sol_perf_v2_4&scenario=full-film&experiment_id=sol_perf_v2_4_mobile_2",
+              "initiatorType": "navigation",
+              "startTime": 0,
+              "duration": 1342.199999999255,
+              "transferSize": 45391,
+              "encodedBodySize": 45091,
+              "decodedBodySize": 45091,
+              "responseStart": 2.5,
+              "domContentLoadedEventEnd": 1342.0999999996275,
+              "loadEventEnd": 1342.199999999255
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/qwen-full-film.css",
+              "initiatorType": "link",
+              "startTime": 202.2999999988824,
+              "duration": 618.8000000007451,
+              "transferSize": 24049,
+              "encodedBodySize": 23749,
+              "decodedBodySize": 23749
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/ohtaawa-mark.png",
+              "initiatorType": "img",
+              "startTime": 203.19999999925494,
+              "duration": 664.8000000007451,
+              "transferSize": 27746,
+              "encodedBodySize": 27446,
+              "decodedBodySize": 27446
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/ohtaawa-wordmark.png",
+              "initiatorType": "img",
+              "startTime": 203.59999999962747,
+              "duration": 585.5,
+              "transferSize": 20129,
+              "encodedBodySize": 19829,
+              "decodedBodySize": 19829
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/generated/qwen-tension-material-mobile.webp",
+              "initiatorType": "img",
+              "startTime": 224.89999999850988,
+              "duration": 313.40000000037253,
+              "transferSize": 7098,
+              "encodedBodySize": 6798,
+              "decodedBodySize": 6798
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/qwen-full-film.js",
+              "initiatorType": "script",
+              "startTime": 481.7999999988824,
+              "duration": 417.30000000074506,
+              "transferSize": 19419,
+              "encodedBodySize": 19119,
+              "decodedBodySize": 19119
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/proof/real/crops/finished-porsche-wide.webp",
+              "initiatorType": "img",
+              "startTime": 1305,
+              "duration": 1056.5999999996275,
+              "transferSize": 178728,
+              "encodedBodySize": 178428,
+              "decodedBodySize": 178428
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/proof/real/crops/film-sheet-wide.webp",
+              "initiatorType": "img",
+              "startTime": 4213.699999999255,
+              "duration": 1158.5999999996275,
+              "transferSize": 100530,
+              "encodedBodySize": 100230,
+              "decodedBodySize": 100230
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/proof/real/crops/gloss-front-wide.webp",
+              "initiatorType": "img",
+              "startTime": 4214,
+              "duration": 1298.5999999996275,
+              "transferSize": 124378,
+              "encodedBodySize": 124078,
+              "decodedBodySize": 124078
+            }
+          ]
+        },
+        "cdp": {
+          "transferBytes": 546415,
+          "requestCount": 9,
+          "finishedCount": 9,
+          "failedCount": 0,
+          "cacheHitCount": 0,
+          "resources": [
+            {
+              "url": "/?qa=1&utm_source=codex&utm_medium=performance_qa&utm_campaign=sol_perf_v2_4&scenario=full-film&experiment_id=sol_perf_v2_4_mobile_2",
+              "method": "GET",
+              "type": "Document",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "text/html",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 45282,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/qwen-full-film.css",
+              "method": "GET",
+              "type": "Stylesheet",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "text/css",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 23939,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/ohtaawa-mark.png",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/png",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 27622,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/ohtaawa-wordmark.png",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/png",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 20005,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/generated/qwen-tension-material-mobile.webp",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/webp",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 6974,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/qwen-full-film.js",
+              "method": "GET",
+              "type": "Script",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "application/javascript",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 19323,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/proof/real/crops/finished-porsche-wide.webp",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/webp",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 178606,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/proof/real/crops/film-sheet-wide.webp",
+              "method": "GET",
+              "type": "Image",
+              "stage": "proof",
+              "status": 200,
+              "mimeType": "image/webp",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 100408,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/proof/real/crops/gloss-front-wide.webp",
+              "method": "GET",
+              "type": "Image",
+              "stage": "proof",
+              "status": 200,
+              "mimeType": "image/webp",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 124256,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            }
+          ]
+        }
+      },
+      "diagnostics": {
+        "consoleErrors": [],
+        "pageErrors": []
+      },
+      "assertions": [
+        {
+          "scope": "mobile-390x844-cold-02",
+          "metric": "fcp",
+          "pass": true,
+          "actual": 1340,
+          "budget": 1800,
+          "unit": "ms",
+          "operator": "<="
+        },
+        {
+          "scope": "mobile-390x844-cold-02",
+          "metric": "lcp",
+          "pass": true,
+          "actual": 1340,
+          "budget": 2500,
+          "unit": "ms",
+          "operator": "<="
+        },
+        {
+          "scope": "mobile-390x844-cold-02",
+          "metric": "cls-hard-max",
+          "pass": true,
+          "actual": 0,
+          "budget": 0.1,
+          "unit": "score",
+          "operator": "<="
+        },
+        {
+          "scope": "mobile-390x844-cold-02",
+          "metric": "cls-target",
+          "pass": true,
+          "actual": 0,
+          "budget": 0.05,
+          "unit": "score",
+          "operator": "<="
+        },
+        {
+          "scope": "mobile-390x844-cold-02",
+          "metric": "tbt-proxy",
+          "pass": true,
+          "actual": 0,
+          "budget": 200,
+          "unit": "ms",
+          "operator": "<="
+        },
+        {
+          "scope": "mobile-390x844-cold-02",
+          "metric": "initial-transfer",
+          "pass": true,
+          "actual": 322560,
+          "budget": 358400,
+          "unit": "bytes",
+          "operator": "<="
+        },
+        {
+          "scope": "mobile-390x844-cold-02",
+          "metric": "full-after-proof-transfer",
+          "pass": true,
+          "actual": 547468,
+          "budget": 1048576,
+          "unit": "bytes",
+          "operator": "<="
+        },
+        {
+          "scope": "mobile-390x844-cold-02",
+          "metric": "secondary-proof-webp-before-scroll",
+          "pass": true,
+          "actual": 0,
+          "budget": 0,
+          "unit": "files",
+          "operator": "==",
+          "details": {
+            "secondaryProofWebpFilenames": [
+              "film-sheet-wide.webp",
+              "gloss-front-wide.webp"
+            ],
+            "loadedBeforeScroll": [],
+            "initialResourceFilenames": [
+              "index.html",
+              "qwen-full-film.css",
+              "ohtaawa-mark.png",
+              "ohtaawa-wordmark.png",
+              "qwen-tension-material-mobile.webp",
+              "qwen-full-film.js",
+              "finished-porsche-wide.webp"
+            ]
+          }
+        },
+        {
+          "scope": "mobile-390x844-cold-02",
+          "metric": "retained-proof-webp-after-traversal",
+          "pass": true,
+          "actual": 3,
+          "budget": 3,
+          "unit": "files",
+          "operator": "==",
+          "details": {
+            "retainedProofWebpFilenames": [
+              "finished-porsche-wide.webp",
+              "film-sheet-wide.webp",
+              "gloss-front-wide.webp"
+            ],
+            "loadedAfterTraversal": [
+              "finished-porsche-wide.webp",
+              "film-sheet-wide.webp",
+              "gloss-front-wide.webp"
+            ],
+            "missingAfterTraversal": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "mobile-390x844-cold-03",
+      "profile": "mobile-390x844",
+      "kind": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "deviceScaleFactor": 1
+      },
+      "coldRun": true,
+      "startedAt": "2026-08-17T01:30:53.131Z",
+      "finishedAt": "2026-08-17T01:31:00.809Z",
+      "emulation": {
+        "network": {
+          "latencyMs": 150,
+          "downloadBitsPerSecond": 1600000,
+          "uploadBitsPerSecond": 750000,
+          "downloadBytesPerSecond": 200000,
+          "uploadBytesPerSecond": 93750,
+          "connectionType": "cellular4g"
+        },
+        "cpuThrottlingRate": 4,
+        "navigatorConnectionObserved": {
+          "effectiveType": "4g",
+          "downlink": 9.2,
+          "rtt": 0,
+          "saveData": false
+        }
+      },
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+      "initialIdle": {
+        "timedOut": false
+      },
+      "proofIdle": {
+        "timedOut": false
+      },
+      "fullIdle": {
+        "timedOut": false
+      },
+      "initial": {
+        "sampledAtMs": 4164.9000000003725,
+        "metrics": {
+          "fcpMs": 1332,
+          "lcpMs": 1332,
+          "cls": 0,
+          "tbtProxyMs": 0,
+          "responseStartMs": 2,
+          "domContentLoadedMs": 1338.7000000011176,
+          "loadEventEndMs": 1338.7000000011176
+        },
+        "observer": {
+          "installedBeforeNavigation": true,
+          "supported": {
+            "paint": true,
+            "largest-contentful-paint": true,
+            "layout-shift": true,
+            "longtask": true
+          },
+          "errors": [],
+          "counts": {
+            "paint": 2,
+            "largestContentfulPaint": 1,
+            "layoutShift": 0,
+            "longTask": 0,
+            "longTasksAfterFcp": 0
+          },
+          "lcpCandidate": {
+            "startTime": 1332,
+            "renderTime": 1332,
+            "loadTime": 838.9000000003725,
+            "size": 115329,
+            "url": "http://127.0.0.1:56756/assets/generated/qwen-tension-material-mobile.webp",
+            "element": {
+              "tagName": "IMG",
+              "id": "",
+              "className": ""
+            }
+          },
+          "layoutShifts": [],
+          "longTasks": []
+        },
+        "transfer": {
+          "bytes": 322560,
+          "resourceFilenames": [
+            "index.html",
+            "qwen-full-film.css",
+            "ohtaawa-mark.png",
+            "ohtaawa-wordmark.png",
+            "qwen-tension-material-mobile.webp",
+            "qwen-full-film.js",
+            "finished-porsche-wide.webp"
+          ],
+          "entries": [
+            {
+              "entryType": "navigation",
+              "name": "/?qa=1&utm_source=codex&utm_medium=performance_qa&utm_campaign=sol_perf_v2_4&scenario=full-film&experiment_id=sol_perf_v2_4_mobile_3",
+              "initiatorType": "navigation",
+              "startTime": 0,
+              "duration": 1338.7000000011176,
+              "transferSize": 45391,
+              "encodedBodySize": 45091,
+              "decodedBodySize": 45091,
+              "responseStart": 2,
+              "domContentLoadedEventEnd": 1338.7000000011176,
+              "loadEventEnd": 1338.7000000011176
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/qwen-full-film.css",
+              "initiatorType": "link",
+              "startTime": 198.5,
+              "duration": 600.3000000007451,
+              "transferSize": 24049,
+              "encodedBodySize": 23749,
+              "decodedBodySize": 23749
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/ohtaawa-mark.png",
+              "initiatorType": "img",
+              "startTime": 199.59999999962747,
+              "duration": 661.2000000011176,
+              "transferSize": 27746,
+              "encodedBodySize": 27446,
+              "decodedBodySize": 27446
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/ohtaawa-wordmark.png",
+              "initiatorType": "img",
+              "startTime": 199.7000000011176,
+              "duration": 568.1999999992549,
+              "transferSize": 20129,
+              "encodedBodySize": 19829,
+              "decodedBodySize": 19829
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/generated/qwen-tension-material-mobile.webp",
+              "initiatorType": "img",
+              "startTime": 218.7000000011176,
+              "duration": 312.7999999988824,
+              "transferSize": 7098,
+              "encodedBodySize": 6798,
+              "decodedBodySize": 6798
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/qwen-full-film.js",
+              "initiatorType": "script",
+              "startTime": 475.30000000074506,
+              "duration": 417,
+              "transferSize": 19419,
+              "encodedBodySize": 19119,
+              "decodedBodySize": 19119
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/proof/real/crops/finished-porsche-wide.webp",
+              "initiatorType": "img",
+              "startTime": 1298.4000000003725,
+              "duration": 1070.300000000745,
+              "transferSize": 178728,
+              "encodedBodySize": 178428,
+              "decodedBodySize": 178428
+            }
+          ]
+        },
+        "cdp": {
+          "transferBytes": 321751,
+          "requestCount": 7,
+          "finishedCount": 7,
+          "failedCount": 0,
+          "cacheHitCount": 0,
+          "resources": [
+            {
+              "url": "/?qa=1&utm_source=codex&utm_medium=performance_qa&utm_campaign=sol_perf_v2_4&scenario=full-film&experiment_id=sol_perf_v2_4_mobile_3",
+              "method": "GET",
+              "type": "Document",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "text/html",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 45282,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/qwen-full-film.css",
+              "method": "GET",
+              "type": "Stylesheet",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "text/css",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 23939,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/ohtaawa-mark.png",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/png",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 27622,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/ohtaawa-wordmark.png",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/png",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 20005,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/generated/qwen-tension-material-mobile.webp",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/webp",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 6974,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/qwen-full-film.js",
+              "method": "GET",
+              "type": "Script",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "application/javascript",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 19323,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/proof/real/crops/finished-porsche-wide.webp",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/webp",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 178606,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            }
+          ]
+        }
+      },
+      "proofManifest": {
+        "proofFound": true,
+        "primaryProofWebpFilename": "finished-porsche-wide.webp",
+        "primaryProofWebpPath": "/assets/proof/real/crops/finished-porsche-wide.webp",
+        "retainedProofWebpFilenames": [
+          "finished-porsche-wide.webp",
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "retainedProofWebpPaths": [
+          "/assets/proof/real/crops/finished-porsche-wide.webp",
+          "/assets/proof/real/crops/film-sheet-wide.webp",
+          "/assets/proof/real/crops/gloss-front-wide.webp"
+        ],
+        "secondaryProofWebpFilenames": [
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "secondaryProofWebpPaths": [
+          "/assets/proof/real/crops/film-sheet-wide.webp",
+          "/assets/proof/real/crops/gloss-front-wide.webp"
+        ]
+      },
+      "proofResourceGate": {
+        "initialResourceFilenames": [
+          "index.html",
+          "qwen-full-film.css",
+          "ohtaawa-mark.png",
+          "ohtaawa-wordmark.png",
+          "qwen-tension-material-mobile.webp",
+          "qwen-full-film.js",
+          "finished-porsche-wide.webp"
+        ],
+        "primaryProofWebpFilename": "finished-porsche-wide.webp",
+        "retainedProofWebpFilenames": [
+          "finished-porsche-wide.webp",
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "secondaryProofWebpFilenames": [
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "secondaryLoadedBeforeScroll": [],
+        "retainedLoadedAfterTraversal": [
+          "finished-porsche-wide.webp",
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "retainedMissingAfterTraversal": [],
+        "secondaryDeferredPass": true,
+        "retainedLoadedPass": true
+      },
+      "proof": {
+        "found": true,
+        "tabs": 3,
+        "decodedTabs": 3,
+        "images": [
+          {
+            "src": "/assets/proof/real/crops/gloss-front-wide.webp",
+            "complete": true,
+            "naturalWidth": 1200,
+            "naturalHeight": 675
+          },
+          {
+            "src": "/assets/proof/real/crops/finished-porsche-wide.webp",
+            "complete": true,
+            "naturalWidth": 1200,
+            "naturalHeight": 675
+          },
+          {
+            "src": "/assets/proof/real/crops/film-sheet-wide.webp",
+            "complete": true,
+            "naturalWidth": 1600,
+            "naturalHeight": 900
+          },
+          {
+            "src": "/assets/proof/real/crops/gloss-front-wide.webp",
+            "complete": true,
+            "naturalWidth": 1200,
+            "naturalHeight": 675
+          }
+        ]
+      },
+      "fullPage": {
+        "positionsVisited": 10,
+        "stepPx": 633,
+        "geometry": {
+          "height": 5239,
+          "viewportHeight": 844
+        },
+        "decode": {
+          "total": 8,
+          "decoded": 8,
+          "broken": [],
+          "finalScrollY": 4395,
+          "scrollHeight": 5239
+        }
+      },
+      "full": {
+        "sampledAtMs": 7667.700000001118,
+        "metrics": {
+          "fcpMs": 1332,
+          "lcpMs": 1332,
+          "cls": 0,
+          "tbtProxyMs": 0,
+          "responseStartMs": 2,
+          "domContentLoadedMs": 1338.7000000011176,
+          "loadEventEndMs": 1338.7000000011176
+        },
+        "observer": {
+          "installedBeforeNavigation": true,
+          "supported": {
+            "paint": true,
+            "largest-contentful-paint": true,
+            "layout-shift": true,
+            "longtask": true
+          },
+          "errors": [],
+          "counts": {
+            "paint": 2,
+            "largestContentfulPaint": 1,
+            "layoutShift": 0,
+            "longTask": 0,
+            "longTasksAfterFcp": 0
+          },
+          "lcpCandidate": {
+            "startTime": 1332,
+            "renderTime": 1332,
+            "loadTime": 838.9000000003725,
+            "size": 115329,
+            "url": "http://127.0.0.1:56756/assets/generated/qwen-tension-material-mobile.webp",
+            "element": {
+              "tagName": "IMG",
+              "id": "",
+              "className": ""
+            }
+          },
+          "layoutShifts": [],
+          "longTasks": []
+        },
+        "transfer": {
+          "bytes": 547468,
+          "resourceFilenames": [
+            "index.html",
+            "qwen-full-film.css",
+            "ohtaawa-mark.png",
+            "ohtaawa-wordmark.png",
+            "qwen-tension-material-mobile.webp",
+            "qwen-full-film.js",
+            "finished-porsche-wide.webp",
+            "film-sheet-wide.webp",
+            "gloss-front-wide.webp"
+          ],
+          "entries": [
+            {
+              "entryType": "navigation",
+              "name": "/?qa=1&utm_source=codex&utm_medium=performance_qa&utm_campaign=sol_perf_v2_4&scenario=full-film&experiment_id=sol_perf_v2_4_mobile_3",
+              "initiatorType": "navigation",
+              "startTime": 0,
+              "duration": 1338.7000000011176,
+              "transferSize": 45391,
+              "encodedBodySize": 45091,
+              "decodedBodySize": 45091,
+              "responseStart": 2,
+              "domContentLoadedEventEnd": 1338.7000000011176,
+              "loadEventEnd": 1338.7000000011176
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/qwen-full-film.css",
+              "initiatorType": "link",
+              "startTime": 198.5,
+              "duration": 600.3000000007451,
+              "transferSize": 24049,
+              "encodedBodySize": 23749,
+              "decodedBodySize": 23749
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/ohtaawa-mark.png",
+              "initiatorType": "img",
+              "startTime": 199.59999999962747,
+              "duration": 661.2000000011176,
+              "transferSize": 27746,
+              "encodedBodySize": 27446,
+              "decodedBodySize": 27446
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/ohtaawa-wordmark.png",
+              "initiatorType": "img",
+              "startTime": 199.7000000011176,
+              "duration": 568.1999999992549,
+              "transferSize": 20129,
+              "encodedBodySize": 19829,
+              "decodedBodySize": 19829
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/generated/qwen-tension-material-mobile.webp",
+              "initiatorType": "img",
+              "startTime": 218.7000000011176,
+              "duration": 312.7999999988824,
+              "transferSize": 7098,
+              "encodedBodySize": 6798,
+              "decodedBodySize": 6798
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/qwen-full-film.js",
+              "initiatorType": "script",
+              "startTime": 475.30000000074506,
+              "duration": 417,
+              "transferSize": 19419,
+              "encodedBodySize": 19119,
+              "decodedBodySize": 19119
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/proof/real/crops/finished-porsche-wide.webp",
+              "initiatorType": "img",
+              "startTime": 1298.4000000003725,
+              "duration": 1070.300000000745,
+              "transferSize": 178728,
+              "encodedBodySize": 178428,
+              "decodedBodySize": 178428
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/proof/real/crops/film-sheet-wide.webp",
+              "initiatorType": "img",
+              "startTime": 4215.9000000003725,
+              "duration": 1173.5,
+              "transferSize": 100530,
+              "encodedBodySize": 100230,
+              "decodedBodySize": 100230
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/proof/real/crops/gloss-front-wide.webp",
+              "initiatorType": "img",
+              "startTime": 4216,
+              "duration": 1299.4000000003725,
+              "transferSize": 124378,
+              "encodedBodySize": 124078,
+              "decodedBodySize": 124078
+            }
+          ]
+        },
+        "cdp": {
+          "transferBytes": 546415,
+          "requestCount": 9,
+          "finishedCount": 9,
+          "failedCount": 0,
+          "cacheHitCount": 0,
+          "resources": [
+            {
+              "url": "/?qa=1&utm_source=codex&utm_medium=performance_qa&utm_campaign=sol_perf_v2_4&scenario=full-film&experiment_id=sol_perf_v2_4_mobile_3",
+              "method": "GET",
+              "type": "Document",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "text/html",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 45282,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/qwen-full-film.css",
+              "method": "GET",
+              "type": "Stylesheet",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "text/css",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 23939,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/ohtaawa-mark.png",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/png",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 27622,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/ohtaawa-wordmark.png",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/png",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 20005,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/generated/qwen-tension-material-mobile.webp",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/webp",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 6974,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/qwen-full-film.js",
+              "method": "GET",
+              "type": "Script",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "application/javascript",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 19323,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/proof/real/crops/finished-porsche-wide.webp",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/webp",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 178606,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/proof/real/crops/film-sheet-wide.webp",
+              "method": "GET",
+              "type": "Image",
+              "stage": "proof",
+              "status": 200,
+              "mimeType": "image/webp",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 100408,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/proof/real/crops/gloss-front-wide.webp",
+              "method": "GET",
+              "type": "Image",
+              "stage": "proof",
+              "status": 200,
+              "mimeType": "image/webp",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 124256,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            }
+          ]
+        }
+      },
+      "diagnostics": {
+        "consoleErrors": [],
+        "pageErrors": []
+      },
+      "assertions": [
+        {
+          "scope": "mobile-390x844-cold-03",
+          "metric": "fcp",
+          "pass": true,
+          "actual": 1332,
+          "budget": 1800,
+          "unit": "ms",
+          "operator": "<="
+        },
+        {
+          "scope": "mobile-390x844-cold-03",
+          "metric": "lcp",
+          "pass": true,
+          "actual": 1332,
+          "budget": 2500,
+          "unit": "ms",
+          "operator": "<="
+        },
+        {
+          "scope": "mobile-390x844-cold-03",
+          "metric": "cls-hard-max",
+          "pass": true,
+          "actual": 0,
+          "budget": 0.1,
+          "unit": "score",
+          "operator": "<="
+        },
+        {
+          "scope": "mobile-390x844-cold-03",
+          "metric": "cls-target",
+          "pass": true,
+          "actual": 0,
+          "budget": 0.05,
+          "unit": "score",
+          "operator": "<="
+        },
+        {
+          "scope": "mobile-390x844-cold-03",
+          "metric": "tbt-proxy",
+          "pass": true,
+          "actual": 0,
+          "budget": 200,
+          "unit": "ms",
+          "operator": "<="
+        },
+        {
+          "scope": "mobile-390x844-cold-03",
+          "metric": "initial-transfer",
+          "pass": true,
+          "actual": 322560,
+          "budget": 358400,
+          "unit": "bytes",
+          "operator": "<="
+        },
+        {
+          "scope": "mobile-390x844-cold-03",
+          "metric": "full-after-proof-transfer",
+          "pass": true,
+          "actual": 547468,
+          "budget": 1048576,
+          "unit": "bytes",
+          "operator": "<="
+        },
+        {
+          "scope": "mobile-390x844-cold-03",
+          "metric": "secondary-proof-webp-before-scroll",
+          "pass": true,
+          "actual": 0,
+          "budget": 0,
+          "unit": "files",
+          "operator": "==",
+          "details": {
+            "secondaryProofWebpFilenames": [
+              "film-sheet-wide.webp",
+              "gloss-front-wide.webp"
+            ],
+            "loadedBeforeScroll": [],
+            "initialResourceFilenames": [
+              "index.html",
+              "qwen-full-film.css",
+              "ohtaawa-mark.png",
+              "ohtaawa-wordmark.png",
+              "qwen-tension-material-mobile.webp",
+              "qwen-full-film.js",
+              "finished-porsche-wide.webp"
+            ]
+          }
+        },
+        {
+          "scope": "mobile-390x844-cold-03",
+          "metric": "retained-proof-webp-after-traversal",
+          "pass": true,
+          "actual": 3,
+          "budget": 3,
+          "unit": "files",
+          "operator": "==",
+          "details": {
+            "retainedProofWebpFilenames": [
+              "finished-porsche-wide.webp",
+              "film-sheet-wide.webp",
+              "gloss-front-wide.webp"
+            ],
+            "loadedAfterTraversal": [
+              "finished-porsche-wide.webp",
+              "film-sheet-wide.webp",
+              "gloss-front-wide.webp"
+            ],
+            "missingAfterTraversal": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "mobile-390x844-cold-04",
+      "profile": "mobile-390x844",
+      "kind": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "deviceScaleFactor": 1
+      },
+      "coldRun": true,
+      "startedAt": "2026-08-17T01:31:00.885Z",
+      "finishedAt": "2026-08-17T01:31:08.578Z",
+      "emulation": {
+        "network": {
+          "latencyMs": 150,
+          "downloadBitsPerSecond": 1600000,
+          "uploadBitsPerSecond": 750000,
+          "downloadBytesPerSecond": 200000,
+          "uploadBytesPerSecond": 93750,
+          "connectionType": "cellular4g"
+        },
+        "cpuThrottlingRate": 4,
+        "navigatorConnectionObserved": {
+          "effectiveType": "4g",
+          "downlink": 10,
+          "rtt": 0,
+          "saveData": false
+        }
+      },
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+      "initialIdle": {
+        "timedOut": false
+      },
+      "proofIdle": {
+        "timedOut": false
+      },
+      "fullIdle": {
+        "timedOut": false
+      },
+      "initial": {
+        "sampledAtMs": 4182.9000000003725,
+        "metrics": {
+          "fcpMs": 1344,
+          "lcpMs": 1344,
+          "cls": 0,
+          "tbtProxyMs": 0,
+          "responseStartMs": 2.5,
+          "domContentLoadedMs": 1342.5,
+          "loadEventEndMs": 1342.699999999255
+        },
+        "observer": {
+          "installedBeforeNavigation": true,
+          "supported": {
+            "paint": true,
+            "largest-contentful-paint": true,
+            "layout-shift": true,
+            "longtask": true
+          },
+          "errors": [],
+          "counts": {
+            "paint": 2,
+            "largestContentfulPaint": 1,
+            "layoutShift": 0,
+            "longTask": 0,
+            "longTasksAfterFcp": 0
+          },
+          "lcpCandidate": {
+            "startTime": 1344,
+            "renderTime": 1344,
+            "loadTime": 826.2999999988824,
+            "size": 115329,
+            "url": "http://127.0.0.1:56756/assets/generated/qwen-tension-material-mobile.webp",
+            "element": {
+              "tagName": "IMG",
+              "id": "",
+              "className": ""
+            }
+          },
+          "layoutShifts": [],
+          "longTasks": []
+        },
+        "transfer": {
+          "bytes": 322560,
+          "resourceFilenames": [
+            "index.html",
+            "qwen-full-film.css",
+            "ohtaawa-mark.png",
+            "ohtaawa-wordmark.png",
+            "qwen-tension-material-mobile.webp",
+            "qwen-full-film.js",
+            "finished-porsche-wide.webp"
+          ],
+          "entries": [
+            {
+              "entryType": "navigation",
+              "name": "/?qa=1&utm_source=codex&utm_medium=performance_qa&utm_campaign=sol_perf_v2_4&scenario=full-film&experiment_id=sol_perf_v2_4_mobile_4",
+              "initiatorType": "navigation",
+              "startTime": 0,
+              "duration": 1342.699999999255,
+              "transferSize": 45391,
+              "encodedBodySize": 45091,
+              "decodedBodySize": 45091,
+              "responseStart": 2.5,
+              "domContentLoadedEventEnd": 1342.5,
+              "loadEventEnd": 1342.699999999255
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/qwen-full-film.css",
+              "initiatorType": "link",
+              "startTime": 191.5,
+              "duration": 591.7999999988824,
+              "transferSize": 24049,
+              "encodedBodySize": 23749,
+              "decodedBodySize": 23749
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/ohtaawa-mark.png",
+              "initiatorType": "img",
+              "startTime": 192.40000000037253,
+              "duration": 638.5,
+              "transferSize": 27746,
+              "encodedBodySize": 27446,
+              "decodedBodySize": 27446
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/ohtaawa-wordmark.png",
+              "initiatorType": "img",
+              "startTime": 192.7999999988824,
+              "duration": 559.7000000011176,
+              "transferSize": 20129,
+              "encodedBodySize": 19829,
+              "decodedBodySize": 19829
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/generated/qwen-tension-material-mobile.webp",
+              "initiatorType": "img",
+              "startTime": 224.90000000037253,
+              "duration": 324.8999999985099,
+              "transferSize": 7098,
+              "encodedBodySize": 6798,
+              "decodedBodySize": 6798
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/qwen-full-film.js",
+              "initiatorType": "script",
+              "startTime": 601.5,
+              "duration": 308.40000000037253,
+              "transferSize": 19419,
+              "encodedBodySize": 19119,
+              "decodedBodySize": 19119
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/proof/real/crops/finished-porsche-wide.webp",
+              "initiatorType": "img",
+              "startTime": 1310.2999999988824,
+              "duration": 1064.7000000011176,
+              "transferSize": 178728,
+              "encodedBodySize": 178428,
+              "decodedBodySize": 178428
+            }
+          ]
+        },
+        "cdp": {
+          "transferBytes": 321751,
+          "requestCount": 7,
+          "finishedCount": 7,
+          "failedCount": 0,
+          "cacheHitCount": 0,
+          "resources": [
+            {
+              "url": "/?qa=1&utm_source=codex&utm_medium=performance_qa&utm_campaign=sol_perf_v2_4&scenario=full-film&experiment_id=sol_perf_v2_4_mobile_4",
+              "method": "GET",
+              "type": "Document",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "text/html",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 45282,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/qwen-full-film.css",
+              "method": "GET",
+              "type": "Stylesheet",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "text/css",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 23939,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/ohtaawa-mark.png",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/png",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 27622,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/ohtaawa-wordmark.png",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/png",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 20005,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/generated/qwen-tension-material-mobile.webp",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/webp",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 6974,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/qwen-full-film.js",
+              "method": "GET",
+              "type": "Script",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "application/javascript",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 19323,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/proof/real/crops/finished-porsche-wide.webp",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/webp",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 178606,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            }
+          ]
+        }
+      },
+      "proofManifest": {
+        "proofFound": true,
+        "primaryProofWebpFilename": "finished-porsche-wide.webp",
+        "primaryProofWebpPath": "/assets/proof/real/crops/finished-porsche-wide.webp",
+        "retainedProofWebpFilenames": [
+          "finished-porsche-wide.webp",
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "retainedProofWebpPaths": [
+          "/assets/proof/real/crops/finished-porsche-wide.webp",
+          "/assets/proof/real/crops/film-sheet-wide.webp",
+          "/assets/proof/real/crops/gloss-front-wide.webp"
+        ],
+        "secondaryProofWebpFilenames": [
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "secondaryProofWebpPaths": [
+          "/assets/proof/real/crops/film-sheet-wide.webp",
+          "/assets/proof/real/crops/gloss-front-wide.webp"
+        ]
+      },
+      "proofResourceGate": {
+        "initialResourceFilenames": [
+          "index.html",
+          "qwen-full-film.css",
+          "ohtaawa-mark.png",
+          "ohtaawa-wordmark.png",
+          "qwen-tension-material-mobile.webp",
+          "qwen-full-film.js",
+          "finished-porsche-wide.webp"
+        ],
+        "primaryProofWebpFilename": "finished-porsche-wide.webp",
+        "retainedProofWebpFilenames": [
+          "finished-porsche-wide.webp",
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "secondaryProofWebpFilenames": [
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "secondaryLoadedBeforeScroll": [],
+        "retainedLoadedAfterTraversal": [
+          "finished-porsche-wide.webp",
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "retainedMissingAfterTraversal": [],
+        "secondaryDeferredPass": true,
+        "retainedLoadedPass": true
+      },
+      "proof": {
+        "found": true,
+        "tabs": 3,
+        "decodedTabs": 3,
+        "images": [
+          {
+            "src": "/assets/proof/real/crops/gloss-front-wide.webp",
+            "complete": true,
+            "naturalWidth": 1200,
+            "naturalHeight": 675
+          },
+          {
+            "src": "/assets/proof/real/crops/finished-porsche-wide.webp",
+            "complete": true,
+            "naturalWidth": 1200,
+            "naturalHeight": 675
+          },
+          {
+            "src": "/assets/proof/real/crops/film-sheet-wide.webp",
+            "complete": true,
+            "naturalWidth": 1600,
+            "naturalHeight": 900
+          },
+          {
+            "src": "/assets/proof/real/crops/gloss-front-wide.webp",
+            "complete": true,
+            "naturalWidth": 1200,
+            "naturalHeight": 675
+          }
+        ]
+      },
+      "fullPage": {
+        "positionsVisited": 10,
+        "stepPx": 633,
+        "geometry": {
+          "height": 5239,
+          "viewportHeight": 844
+        },
+        "decode": {
+          "total": 8,
+          "decoded": 8,
+          "broken": [],
+          "finalScrollY": 4395,
+          "scrollHeight": 5239
+        }
+      },
+      "full": {
+        "sampledAtMs": 7681.9000000003725,
+        "metrics": {
+          "fcpMs": 1344,
+          "lcpMs": 1344,
+          "cls": 0,
+          "tbtProxyMs": 0,
+          "responseStartMs": 2.5,
+          "domContentLoadedMs": 1342.5,
+          "loadEventEndMs": 1342.699999999255
+        },
+        "observer": {
+          "installedBeforeNavigation": true,
+          "supported": {
+            "paint": true,
+            "largest-contentful-paint": true,
+            "layout-shift": true,
+            "longtask": true
+          },
+          "errors": [],
+          "counts": {
+            "paint": 2,
+            "largestContentfulPaint": 1,
+            "layoutShift": 0,
+            "longTask": 0,
+            "longTasksAfterFcp": 0
+          },
+          "lcpCandidate": {
+            "startTime": 1344,
+            "renderTime": 1344,
+            "loadTime": 826.2999999988824,
+            "size": 115329,
+            "url": "http://127.0.0.1:56756/assets/generated/qwen-tension-material-mobile.webp",
+            "element": {
+              "tagName": "IMG",
+              "id": "",
+              "className": ""
+            }
+          },
+          "layoutShifts": [],
+          "longTasks": []
+        },
+        "transfer": {
+          "bytes": 547468,
+          "resourceFilenames": [
+            "index.html",
+            "qwen-full-film.css",
+            "ohtaawa-mark.png",
+            "ohtaawa-wordmark.png",
+            "qwen-tension-material-mobile.webp",
+            "qwen-full-film.js",
+            "finished-porsche-wide.webp",
+            "film-sheet-wide.webp",
+            "gloss-front-wide.webp"
+          ],
+          "entries": [
+            {
+              "entryType": "navigation",
+              "name": "/?qa=1&utm_source=codex&utm_medium=performance_qa&utm_campaign=sol_perf_v2_4&scenario=full-film&experiment_id=sol_perf_v2_4_mobile_4",
+              "initiatorType": "navigation",
+              "startTime": 0,
+              "duration": 1342.699999999255,
+              "transferSize": 45391,
+              "encodedBodySize": 45091,
+              "decodedBodySize": 45091,
+              "responseStart": 2.5,
+              "domContentLoadedEventEnd": 1342.5,
+              "loadEventEnd": 1342.699999999255
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/qwen-full-film.css",
+              "initiatorType": "link",
+              "startTime": 191.5,
+              "duration": 591.7999999988824,
+              "transferSize": 24049,
+              "encodedBodySize": 23749,
+              "decodedBodySize": 23749
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/ohtaawa-mark.png",
+              "initiatorType": "img",
+              "startTime": 192.40000000037253,
+              "duration": 638.5,
+              "transferSize": 27746,
+              "encodedBodySize": 27446,
+              "decodedBodySize": 27446
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/ohtaawa-wordmark.png",
+              "initiatorType": "img",
+              "startTime": 192.7999999988824,
+              "duration": 559.7000000011176,
+              "transferSize": 20129,
+              "encodedBodySize": 19829,
+              "decodedBodySize": 19829
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/generated/qwen-tension-material-mobile.webp",
+              "initiatorType": "img",
+              "startTime": 224.90000000037253,
+              "duration": 324.8999999985099,
+              "transferSize": 7098,
+              "encodedBodySize": 6798,
+              "decodedBodySize": 6798
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/qwen-full-film.js",
+              "initiatorType": "script",
+              "startTime": 601.5,
+              "duration": 308.40000000037253,
+              "transferSize": 19419,
+              "encodedBodySize": 19119,
+              "decodedBodySize": 19119
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/proof/real/crops/finished-porsche-wide.webp",
+              "initiatorType": "img",
+              "startTime": 1310.2999999988824,
+              "duration": 1064.7000000011176,
+              "transferSize": 178728,
+              "encodedBodySize": 178428,
+              "decodedBodySize": 178428
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/proof/real/crops/film-sheet-wide.webp",
+              "initiatorType": "img",
+              "startTime": 4236.5,
+              "duration": 1158.7999999988824,
+              "transferSize": 100530,
+              "encodedBodySize": 100230,
+              "decodedBodySize": 100230
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/proof/real/crops/gloss-front-wide.webp",
+              "initiatorType": "img",
+              "startTime": 4236.5999999996275,
+              "duration": 1283.5999999996275,
+              "transferSize": 124378,
+              "encodedBodySize": 124078,
+              "decodedBodySize": 124078
+            }
+          ]
+        },
+        "cdp": {
+          "transferBytes": 546415,
+          "requestCount": 9,
+          "finishedCount": 9,
+          "failedCount": 0,
+          "cacheHitCount": 0,
+          "resources": [
+            {
+              "url": "/?qa=1&utm_source=codex&utm_medium=performance_qa&utm_campaign=sol_perf_v2_4&scenario=full-film&experiment_id=sol_perf_v2_4_mobile_4",
+              "method": "GET",
+              "type": "Document",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "text/html",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 45282,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/qwen-full-film.css",
+              "method": "GET",
+              "type": "Stylesheet",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "text/css",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 23939,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/ohtaawa-mark.png",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/png",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 27622,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/ohtaawa-wordmark.png",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/png",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 20005,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/generated/qwen-tension-material-mobile.webp",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/webp",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 6974,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/qwen-full-film.js",
+              "method": "GET",
+              "type": "Script",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "application/javascript",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 19323,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/proof/real/crops/finished-porsche-wide.webp",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/webp",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 178606,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/proof/real/crops/film-sheet-wide.webp",
+              "method": "GET",
+              "type": "Image",
+              "stage": "proof",
+              "status": 200,
+              "mimeType": "image/webp",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 100408,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/proof/real/crops/gloss-front-wide.webp",
+              "method": "GET",
+              "type": "Image",
+              "stage": "proof",
+              "status": 200,
+              "mimeType": "image/webp",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 124256,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            }
+          ]
+        }
+      },
+      "diagnostics": {
+        "consoleErrors": [],
+        "pageErrors": []
+      },
+      "assertions": [
+        {
+          "scope": "mobile-390x844-cold-04",
+          "metric": "fcp",
+          "pass": true,
+          "actual": 1344,
+          "budget": 1800,
+          "unit": "ms",
+          "operator": "<="
+        },
+        {
+          "scope": "mobile-390x844-cold-04",
+          "metric": "lcp",
+          "pass": true,
+          "actual": 1344,
+          "budget": 2500,
+          "unit": "ms",
+          "operator": "<="
+        },
+        {
+          "scope": "mobile-390x844-cold-04",
+          "metric": "cls-hard-max",
+          "pass": true,
+          "actual": 0,
+          "budget": 0.1,
+          "unit": "score",
+          "operator": "<="
+        },
+        {
+          "scope": "mobile-390x844-cold-04",
+          "metric": "cls-target",
+          "pass": true,
+          "actual": 0,
+          "budget": 0.05,
+          "unit": "score",
+          "operator": "<="
+        },
+        {
+          "scope": "mobile-390x844-cold-04",
+          "metric": "tbt-proxy",
+          "pass": true,
+          "actual": 0,
+          "budget": 200,
+          "unit": "ms",
+          "operator": "<="
+        },
+        {
+          "scope": "mobile-390x844-cold-04",
+          "metric": "initial-transfer",
+          "pass": true,
+          "actual": 322560,
+          "budget": 358400,
+          "unit": "bytes",
+          "operator": "<="
+        },
+        {
+          "scope": "mobile-390x844-cold-04",
+          "metric": "full-after-proof-transfer",
+          "pass": true,
+          "actual": 547468,
+          "budget": 1048576,
+          "unit": "bytes",
+          "operator": "<="
+        },
+        {
+          "scope": "mobile-390x844-cold-04",
+          "metric": "secondary-proof-webp-before-scroll",
+          "pass": true,
+          "actual": 0,
+          "budget": 0,
+          "unit": "files",
+          "operator": "==",
+          "details": {
+            "secondaryProofWebpFilenames": [
+              "film-sheet-wide.webp",
+              "gloss-front-wide.webp"
+            ],
+            "loadedBeforeScroll": [],
+            "initialResourceFilenames": [
+              "index.html",
+              "qwen-full-film.css",
+              "ohtaawa-mark.png",
+              "ohtaawa-wordmark.png",
+              "qwen-tension-material-mobile.webp",
+              "qwen-full-film.js",
+              "finished-porsche-wide.webp"
+            ]
+          }
+        },
+        {
+          "scope": "mobile-390x844-cold-04",
+          "metric": "retained-proof-webp-after-traversal",
+          "pass": true,
+          "actual": 3,
+          "budget": 3,
+          "unit": "files",
+          "operator": "==",
+          "details": {
+            "retainedProofWebpFilenames": [
+              "finished-porsche-wide.webp",
+              "film-sheet-wide.webp",
+              "gloss-front-wide.webp"
+            ],
+            "loadedAfterTraversal": [
+              "finished-porsche-wide.webp",
+              "film-sheet-wide.webp",
+              "gloss-front-wide.webp"
+            ],
+            "missingAfterTraversal": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "mobile-390x844-cold-05",
+      "profile": "mobile-390x844",
+      "kind": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "deviceScaleFactor": 1
+      },
+      "coldRun": true,
+      "startedAt": "2026-08-17T01:31:08.650Z",
+      "finishedAt": "2026-08-17T01:31:16.329Z",
+      "emulation": {
+        "network": {
+          "latencyMs": 150,
+          "downloadBitsPerSecond": 1600000,
+          "uploadBitsPerSecond": 750000,
+          "downloadBytesPerSecond": 200000,
+          "uploadBytesPerSecond": 93750,
+          "connectionType": "cellular4g"
+        },
+        "cpuThrottlingRate": 4,
+        "navigatorConnectionObserved": {
+          "effectiveType": "4g",
+          "downlink": 10,
+          "rtt": 0,
+          "saveData": false
+        }
+      },
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+      "initialIdle": {
+        "timedOut": false
+      },
+      "proofIdle": {
+        "timedOut": false
+      },
+      "fullIdle": {
+        "timedOut": false
+      },
+      "initial": {
+        "sampledAtMs": 4169.4000000003725,
+        "metrics": {
+          "fcpMs": 1352,
+          "lcpMs": 1352,
+          "cls": 0,
+          "tbtProxyMs": 0,
+          "responseStartMs": 2,
+          "domContentLoadedMs": 1356.5999999996275,
+          "loadEventEndMs": 1356.800000000745
+        },
+        "observer": {
+          "installedBeforeNavigation": true,
+          "supported": {
+            "paint": true,
+            "largest-contentful-paint": true,
+            "layout-shift": true,
+            "longtask": true
+          },
+          "errors": [],
+          "counts": {
+            "paint": 2,
+            "largestContentfulPaint": 1,
+            "layoutShift": 0,
+            "longTask": 0,
+            "longTasksAfterFcp": 0
+          },
+          "lcpCandidate": {
+            "startTime": 1352,
+            "renderTime": 1352,
+            "loadTime": 855.3000000007451,
+            "size": 115329,
+            "url": "http://127.0.0.1:56756/assets/generated/qwen-tension-material-mobile.webp",
+            "element": {
+              "tagName": "IMG",
+              "id": "",
+              "className": ""
+            }
+          },
+          "layoutShifts": [],
+          "longTasks": []
+        },
+        "transfer": {
+          "bytes": 322560,
+          "resourceFilenames": [
+            "index.html",
+            "qwen-full-film.css",
+            "ohtaawa-mark.png",
+            "ohtaawa-wordmark.png",
+            "qwen-tension-material-mobile.webp",
+            "qwen-full-film.js",
+            "finished-porsche-wide.webp"
+          ],
+          "entries": [
+            {
+              "entryType": "navigation",
+              "name": "/?qa=1&utm_source=codex&utm_medium=performance_qa&utm_campaign=sol_perf_v2_4&scenario=full-film&experiment_id=sol_perf_v2_4_mobile_5",
+              "initiatorType": "navigation",
+              "startTime": 0,
+              "duration": 1356.800000000745,
+              "transferSize": 45391,
+              "encodedBodySize": 45091,
+              "decodedBodySize": 45091,
+              "responseStart": 2,
+              "domContentLoadedEventEnd": 1356.5999999996275,
+              "loadEventEnd": 1356.800000000745
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/qwen-full-film.css",
+              "initiatorType": "link",
+              "startTime": 208,
+              "duration": 601,
+              "transferSize": 24049,
+              "encodedBodySize": 23749,
+              "decodedBodySize": 23749
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/ohtaawa-mark.png",
+              "initiatorType": "img",
+              "startTime": 209.2000000011176,
+              "duration": 647.6999999992549,
+              "transferSize": 27746,
+              "encodedBodySize": 27446,
+              "decodedBodySize": 27446
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/ohtaawa-wordmark.png",
+              "initiatorType": "img",
+              "startTime": 209.59999999962747,
+              "duration": 553.2000000011176,
+              "transferSize": 20129,
+              "encodedBodySize": 19829,
+              "decodedBodySize": 19829
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/generated/qwen-tension-material-mobile.webp",
+              "initiatorType": "img",
+              "startTime": 232.5,
+              "duration": 326.59999999962747,
+              "transferSize": 7098,
+              "encodedBodySize": 6798,
+              "decodedBodySize": 6798
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/qwen-full-film.js",
+              "initiatorType": "script",
+              "startTime": 566,
+              "duration": 352.7000000011176,
+              "transferSize": 19419,
+              "encodedBodySize": 19119,
+              "decodedBodySize": 19119
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/proof/real/crops/finished-porsche-wide.webp",
+              "initiatorType": "img",
+              "startTime": 1316.7000000011176,
+              "duration": 1075.8999999985099,
+              "transferSize": 178728,
+              "encodedBodySize": 178428,
+              "decodedBodySize": 178428
+            }
+          ]
+        },
+        "cdp": {
+          "transferBytes": 321751,
+          "requestCount": 7,
+          "finishedCount": 7,
+          "failedCount": 0,
+          "cacheHitCount": 0,
+          "resources": [
+            {
+              "url": "/?qa=1&utm_source=codex&utm_medium=performance_qa&utm_campaign=sol_perf_v2_4&scenario=full-film&experiment_id=sol_perf_v2_4_mobile_5",
+              "method": "GET",
+              "type": "Document",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "text/html",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 45282,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/qwen-full-film.css",
+              "method": "GET",
+              "type": "Stylesheet",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "text/css",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 23939,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/ohtaawa-mark.png",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/png",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 27622,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/ohtaawa-wordmark.png",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/png",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 20005,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/generated/qwen-tension-material-mobile.webp",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/webp",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 6974,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/qwen-full-film.js",
+              "method": "GET",
+              "type": "Script",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "application/javascript",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 19323,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/proof/real/crops/finished-porsche-wide.webp",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/webp",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 178606,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            }
+          ]
+        }
+      },
+      "proofManifest": {
+        "proofFound": true,
+        "primaryProofWebpFilename": "finished-porsche-wide.webp",
+        "primaryProofWebpPath": "/assets/proof/real/crops/finished-porsche-wide.webp",
+        "retainedProofWebpFilenames": [
+          "finished-porsche-wide.webp",
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "retainedProofWebpPaths": [
+          "/assets/proof/real/crops/finished-porsche-wide.webp",
+          "/assets/proof/real/crops/film-sheet-wide.webp",
+          "/assets/proof/real/crops/gloss-front-wide.webp"
+        ],
+        "secondaryProofWebpFilenames": [
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "secondaryProofWebpPaths": [
+          "/assets/proof/real/crops/film-sheet-wide.webp",
+          "/assets/proof/real/crops/gloss-front-wide.webp"
+        ]
+      },
+      "proofResourceGate": {
+        "initialResourceFilenames": [
+          "index.html",
+          "qwen-full-film.css",
+          "ohtaawa-mark.png",
+          "ohtaawa-wordmark.png",
+          "qwen-tension-material-mobile.webp",
+          "qwen-full-film.js",
+          "finished-porsche-wide.webp"
+        ],
+        "primaryProofWebpFilename": "finished-porsche-wide.webp",
+        "retainedProofWebpFilenames": [
+          "finished-porsche-wide.webp",
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "secondaryProofWebpFilenames": [
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "secondaryLoadedBeforeScroll": [],
+        "retainedLoadedAfterTraversal": [
+          "finished-porsche-wide.webp",
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "retainedMissingAfterTraversal": [],
+        "secondaryDeferredPass": true,
+        "retainedLoadedPass": true
+      },
+      "proof": {
+        "found": true,
+        "tabs": 3,
+        "decodedTabs": 3,
+        "images": [
+          {
+            "src": "/assets/proof/real/crops/gloss-front-wide.webp",
+            "complete": true,
+            "naturalWidth": 1200,
+            "naturalHeight": 675
+          },
+          {
+            "src": "/assets/proof/real/crops/finished-porsche-wide.webp",
+            "complete": true,
+            "naturalWidth": 1200,
+            "naturalHeight": 675
+          },
+          {
+            "src": "/assets/proof/real/crops/film-sheet-wide.webp",
+            "complete": true,
+            "naturalWidth": 1600,
+            "naturalHeight": 900
+          },
+          {
+            "src": "/assets/proof/real/crops/gloss-front-wide.webp",
+            "complete": true,
+            "naturalWidth": 1200,
+            "naturalHeight": 675
+          }
+        ]
+      },
+      "fullPage": {
+        "positionsVisited": 10,
+        "stepPx": 633,
+        "geometry": {
+          "height": 5239,
+          "viewportHeight": 844
+        },
+        "decode": {
+          "total": 8,
+          "decoded": 8,
+          "broken": [],
+          "finalScrollY": 4395,
+          "scrollHeight": 5239
+        }
+      },
+      "full": {
+        "sampledAtMs": 7668.700000001118,
+        "metrics": {
+          "fcpMs": 1352,
+          "lcpMs": 1352,
+          "cls": 0,
+          "tbtProxyMs": 0,
+          "responseStartMs": 2,
+          "domContentLoadedMs": 1356.5999999996275,
+          "loadEventEndMs": 1356.800000000745
+        },
+        "observer": {
+          "installedBeforeNavigation": true,
+          "supported": {
+            "paint": true,
+            "largest-contentful-paint": true,
+            "layout-shift": true,
+            "longtask": true
+          },
+          "errors": [],
+          "counts": {
+            "paint": 2,
+            "largestContentfulPaint": 1,
+            "layoutShift": 0,
+            "longTask": 0,
+            "longTasksAfterFcp": 0
+          },
+          "lcpCandidate": {
+            "startTime": 1352,
+            "renderTime": 1352,
+            "loadTime": 855.3000000007451,
+            "size": 115329,
+            "url": "http://127.0.0.1:56756/assets/generated/qwen-tension-material-mobile.webp",
+            "element": {
+              "tagName": "IMG",
+              "id": "",
+              "className": ""
+            }
+          },
+          "layoutShifts": [],
+          "longTasks": []
+        },
+        "transfer": {
+          "bytes": 547468,
+          "resourceFilenames": [
+            "index.html",
+            "qwen-full-film.css",
+            "ohtaawa-mark.png",
+            "ohtaawa-wordmark.png",
+            "qwen-tension-material-mobile.webp",
+            "qwen-full-film.js",
+            "finished-porsche-wide.webp",
+            "film-sheet-wide.webp",
+            "gloss-front-wide.webp"
+          ],
+          "entries": [
+            {
+              "entryType": "navigation",
+              "name": "/?qa=1&utm_source=codex&utm_medium=performance_qa&utm_campaign=sol_perf_v2_4&scenario=full-film&experiment_id=sol_perf_v2_4_mobile_5",
+              "initiatorType": "navigation",
+              "startTime": 0,
+              "duration": 1356.800000000745,
+              "transferSize": 45391,
+              "encodedBodySize": 45091,
+              "decodedBodySize": 45091,
+              "responseStart": 2,
+              "domContentLoadedEventEnd": 1356.5999999996275,
+              "loadEventEnd": 1356.800000000745
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/qwen-full-film.css",
+              "initiatorType": "link",
+              "startTime": 208,
+              "duration": 601,
+              "transferSize": 24049,
+              "encodedBodySize": 23749,
+              "decodedBodySize": 23749
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/ohtaawa-mark.png",
+              "initiatorType": "img",
+              "startTime": 209.2000000011176,
+              "duration": 647.6999999992549,
+              "transferSize": 27746,
+              "encodedBodySize": 27446,
+              "decodedBodySize": 27446
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/ohtaawa-wordmark.png",
+              "initiatorType": "img",
+              "startTime": 209.59999999962747,
+              "duration": 553.2000000011176,
+              "transferSize": 20129,
+              "encodedBodySize": 19829,
+              "decodedBodySize": 19829
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/generated/qwen-tension-material-mobile.webp",
+              "initiatorType": "img",
+              "startTime": 232.5,
+              "duration": 326.59999999962747,
+              "transferSize": 7098,
+              "encodedBodySize": 6798,
+              "decodedBodySize": 6798
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/qwen-full-film.js",
+              "initiatorType": "script",
+              "startTime": 566,
+              "duration": 352.7000000011176,
+              "transferSize": 19419,
+              "encodedBodySize": 19119,
+              "decodedBodySize": 19119
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/proof/real/crops/finished-porsche-wide.webp",
+              "initiatorType": "img",
+              "startTime": 1316.7000000011176,
+              "duration": 1075.8999999985099,
+              "transferSize": 178728,
+              "encodedBodySize": 178428,
+              "decodedBodySize": 178428
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/proof/real/crops/film-sheet-wide.webp",
+              "initiatorType": "img",
+              "startTime": 4220.5999999996275,
+              "duration": 1147.1000000014901,
+              "transferSize": 100530,
+              "encodedBodySize": 100230,
+              "decodedBodySize": 100230
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/proof/real/crops/gloss-front-wide.webp",
+              "initiatorType": "img",
+              "startTime": 4221,
+              "duration": 1288.5,
+              "transferSize": 124378,
+              "encodedBodySize": 124078,
+              "decodedBodySize": 124078
+            }
+          ]
+        },
+        "cdp": {
+          "transferBytes": 546415,
+          "requestCount": 9,
+          "finishedCount": 9,
+          "failedCount": 0,
+          "cacheHitCount": 0,
+          "resources": [
+            {
+              "url": "/?qa=1&utm_source=codex&utm_medium=performance_qa&utm_campaign=sol_perf_v2_4&scenario=full-film&experiment_id=sol_perf_v2_4_mobile_5",
+              "method": "GET",
+              "type": "Document",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "text/html",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 45282,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/qwen-full-film.css",
+              "method": "GET",
+              "type": "Stylesheet",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "text/css",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 23939,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/ohtaawa-mark.png",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/png",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 27622,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/ohtaawa-wordmark.png",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/png",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 20005,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/generated/qwen-tension-material-mobile.webp",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/webp",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 6974,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/qwen-full-film.js",
+              "method": "GET",
+              "type": "Script",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "application/javascript",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 19323,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/proof/real/crops/finished-porsche-wide.webp",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/webp",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 178606,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/proof/real/crops/film-sheet-wide.webp",
+              "method": "GET",
+              "type": "Image",
+              "stage": "proof",
+              "status": 200,
+              "mimeType": "image/webp",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 100408,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/proof/real/crops/gloss-front-wide.webp",
+              "method": "GET",
+              "type": "Image",
+              "stage": "proof",
+              "status": 200,
+              "mimeType": "image/webp",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 124256,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            }
+          ]
+        }
+      },
+      "diagnostics": {
+        "consoleErrors": [],
+        "pageErrors": []
+      },
+      "assertions": [
+        {
+          "scope": "mobile-390x844-cold-05",
+          "metric": "fcp",
+          "pass": true,
+          "actual": 1352,
+          "budget": 1800,
+          "unit": "ms",
+          "operator": "<="
+        },
+        {
+          "scope": "mobile-390x844-cold-05",
+          "metric": "lcp",
+          "pass": true,
+          "actual": 1352,
+          "budget": 2500,
+          "unit": "ms",
+          "operator": "<="
+        },
+        {
+          "scope": "mobile-390x844-cold-05",
+          "metric": "cls-hard-max",
+          "pass": true,
+          "actual": 0,
+          "budget": 0.1,
+          "unit": "score",
+          "operator": "<="
+        },
+        {
+          "scope": "mobile-390x844-cold-05",
+          "metric": "cls-target",
+          "pass": true,
+          "actual": 0,
+          "budget": 0.05,
+          "unit": "score",
+          "operator": "<="
+        },
+        {
+          "scope": "mobile-390x844-cold-05",
+          "metric": "tbt-proxy",
+          "pass": true,
+          "actual": 0,
+          "budget": 200,
+          "unit": "ms",
+          "operator": "<="
+        },
+        {
+          "scope": "mobile-390x844-cold-05",
+          "metric": "initial-transfer",
+          "pass": true,
+          "actual": 322560,
+          "budget": 358400,
+          "unit": "bytes",
+          "operator": "<="
+        },
+        {
+          "scope": "mobile-390x844-cold-05",
+          "metric": "full-after-proof-transfer",
+          "pass": true,
+          "actual": 547468,
+          "budget": 1048576,
+          "unit": "bytes",
+          "operator": "<="
+        },
+        {
+          "scope": "mobile-390x844-cold-05",
+          "metric": "secondary-proof-webp-before-scroll",
+          "pass": true,
+          "actual": 0,
+          "budget": 0,
+          "unit": "files",
+          "operator": "==",
+          "details": {
+            "secondaryProofWebpFilenames": [
+              "film-sheet-wide.webp",
+              "gloss-front-wide.webp"
+            ],
+            "loadedBeforeScroll": [],
+            "initialResourceFilenames": [
+              "index.html",
+              "qwen-full-film.css",
+              "ohtaawa-mark.png",
+              "ohtaawa-wordmark.png",
+              "qwen-tension-material-mobile.webp",
+              "qwen-full-film.js",
+              "finished-porsche-wide.webp"
+            ]
+          }
+        },
+        {
+          "scope": "mobile-390x844-cold-05",
+          "metric": "retained-proof-webp-after-traversal",
+          "pass": true,
+          "actual": 3,
+          "budget": 3,
+          "unit": "files",
+          "operator": "==",
+          "details": {
+            "retainedProofWebpFilenames": [
+              "finished-porsche-wide.webp",
+              "film-sheet-wide.webp",
+              "gloss-front-wide.webp"
+            ],
+            "loadedAfterTraversal": [
+              "finished-porsche-wide.webp",
+              "film-sheet-wide.webp",
+              "gloss-front-wide.webp"
+            ],
+            "missingAfterTraversal": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "desktop-1440x1000-cold-01",
+      "profile": "desktop-1440x1000",
+      "kind": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "deviceScaleFactor": 1
+      },
+      "coldRun": true,
+      "startedAt": "2026-08-17T01:31:16.400Z",
+      "finishedAt": "2026-08-17T01:31:24.094Z",
+      "emulation": {
+        "network": {
+          "latencyMs": 150,
+          "downloadBitsPerSecond": 1600000,
+          "uploadBitsPerSecond": 750000,
+          "downloadBytesPerSecond": 200000,
+          "uploadBytesPerSecond": 93750,
+          "connectionType": "cellular4g"
+        },
+        "cpuThrottlingRate": 4,
+        "navigatorConnectionObserved": {
+          "effectiveType": "4g",
+          "downlink": 10,
+          "rtt": 0,
+          "saveData": false
+        }
+      },
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+      "initialIdle": {
+        "timedOut": false
+      },
+      "proofIdle": {
+        "timedOut": false
+      },
+      "fullIdle": {
+        "timedOut": false
+      },
+      "initial": {
+        "sampledAtMs": 4258.799999998882,
+        "metrics": {
+          "fcpMs": 1448,
+          "lcpMs": 1492,
+          "cls": 0,
+          "tbtProxyMs": 0,
+          "responseStartMs": 2.099999999627471,
+          "domContentLoadedMs": 1438.7999999988824,
+          "loadEventEndMs": 1438.7999999988824
+        },
+        "observer": {
+          "installedBeforeNavigation": true,
+          "supported": {
+            "paint": true,
+            "largest-contentful-paint": true,
+            "layout-shift": true,
+            "longtask": true
+          },
+          "errors": [],
+          "counts": {
+            "paint": 2,
+            "largestContentfulPaint": 2,
+            "layoutShift": 0,
+            "longTask": 0,
+            "longTasksAfterFcp": 0
+          },
+          "lcpCandidate": {
+            "startTime": 1492,
+            "renderTime": 1492,
+            "loadTime": 1385.2999999988824,
+            "size": 579264,
+            "url": "http://127.0.0.1:56756/assets/generated/qwen-tension-material-desktop.webp",
+            "element": {
+              "tagName": "IMG",
+              "id": "",
+              "className": ""
+            }
+          },
+          "layoutShifts": [],
+          "longTasks": []
+        },
+        "transfer": {
+          "bytes": 339706,
+          "resourceFilenames": [
+            "index.html",
+            "qwen-full-film.css",
+            "ohtaawa-mark.png",
+            "ohtaawa-wordmark.png",
+            "qwen-tension-material-desktop.webp",
+            "qwen-full-film.js",
+            "finished-porsche-wide.webp"
+          ],
+          "entries": [
+            {
+              "entryType": "navigation",
+              "name": "/?qa=1&utm_source=codex&utm_medium=performance_qa&utm_campaign=sol_perf_v2_4&scenario=full-film&experiment_id=sol_perf_v2_4_desktop_1",
+              "initiatorType": "navigation",
+              "startTime": 0,
+              "duration": 1438.7999999988824,
+              "transferSize": 45391,
+              "encodedBodySize": 45091,
+              "decodedBodySize": 45091,
+              "responseStart": 2.099999999627471,
+              "domContentLoadedEventEnd": 1438.7999999988824,
+              "loadEventEnd": 1438.7999999988824
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/qwen-full-film.css",
+              "initiatorType": "link",
+              "startTime": 194.90000000037253,
+              "duration": 675.1999999992549,
+              "transferSize": 24049,
+              "encodedBodySize": 23749,
+              "decodedBodySize": 23749
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/ohtaawa-mark.png",
+              "initiatorType": "img",
+              "startTime": 196.19999999925494,
+              "duration": 750.8000000007451,
+              "transferSize": 27746,
+              "encodedBodySize": 27446,
+              "decodedBodySize": 27446
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/ohtaawa-wordmark.png",
+              "initiatorType": "img",
+              "startTime": 197,
+              "duration": 642,
+              "transferSize": 20129,
+              "encodedBodySize": 19829,
+              "decodedBodySize": 19829
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/generated/qwen-tension-material-desktop.webp",
+              "initiatorType": "img",
+              "startTime": 229.40000000037253,
+              "duration": 702.5,
+              "transferSize": 24244,
+              "encodedBodySize": 23944,
+              "decodedBodySize": 23944
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/qwen-full-film.js",
+              "initiatorType": "script",
+              "startTime": 576.5,
+              "duration": 418.09999999962747,
+              "transferSize": 19419,
+              "encodedBodySize": 19119,
+              "decodedBodySize": 19119
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/proof/real/crops/finished-porsche-wide.webp",
+              "initiatorType": "img",
+              "startTime": 1384.5,
+              "duration": 1068.5999999996275,
+              "transferSize": 178728,
+              "encodedBodySize": 178428,
+              "decodedBodySize": 178428
+            }
+          ]
+        },
+        "cdp": {
+          "transferBytes": 338898,
+          "requestCount": 7,
+          "finishedCount": 7,
+          "failedCount": 0,
+          "cacheHitCount": 0,
+          "resources": [
+            {
+              "url": "/?qa=1&utm_source=codex&utm_medium=performance_qa&utm_campaign=sol_perf_v2_4&scenario=full-film&experiment_id=sol_perf_v2_4_desktop_1",
+              "method": "GET",
+              "type": "Document",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "text/html",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 45282,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/qwen-full-film.css",
+              "method": "GET",
+              "type": "Stylesheet",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "text/css",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 23939,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/ohtaawa-mark.png",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/png",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 27622,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/ohtaawa-wordmark.png",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/png",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 20005,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/generated/qwen-tension-material-desktop.webp",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/webp",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 24121,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/qwen-full-film.js",
+              "method": "GET",
+              "type": "Script",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "application/javascript",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 19323,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/proof/real/crops/finished-porsche-wide.webp",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/webp",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 178606,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            }
+          ]
+        }
+      },
+      "proofManifest": {
+        "proofFound": true,
+        "primaryProofWebpFilename": "finished-porsche-wide.webp",
+        "primaryProofWebpPath": "/assets/proof/real/crops/finished-porsche-wide.webp",
+        "retainedProofWebpFilenames": [
+          "finished-porsche-wide.webp",
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "retainedProofWebpPaths": [
+          "/assets/proof/real/crops/finished-porsche-wide.webp",
+          "/assets/proof/real/crops/film-sheet-wide.webp",
+          "/assets/proof/real/crops/gloss-front-wide.webp"
+        ],
+        "secondaryProofWebpFilenames": [
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "secondaryProofWebpPaths": [
+          "/assets/proof/real/crops/film-sheet-wide.webp",
+          "/assets/proof/real/crops/gloss-front-wide.webp"
+        ]
+      },
+      "proofResourceGate": {
+        "initialResourceFilenames": [
+          "index.html",
+          "qwen-full-film.css",
+          "ohtaawa-mark.png",
+          "ohtaawa-wordmark.png",
+          "qwen-tension-material-desktop.webp",
+          "qwen-full-film.js",
+          "finished-porsche-wide.webp"
+        ],
+        "primaryProofWebpFilename": "finished-porsche-wide.webp",
+        "retainedProofWebpFilenames": [
+          "finished-porsche-wide.webp",
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "secondaryProofWebpFilenames": [
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "secondaryLoadedBeforeScroll": [],
+        "retainedLoadedAfterTraversal": [
+          "finished-porsche-wide.webp",
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "retainedMissingAfterTraversal": [],
+        "secondaryDeferredPass": true,
+        "retainedLoadedPass": true
+      },
+      "proof": {
+        "found": true,
+        "tabs": 3,
+        "decodedTabs": 3,
+        "images": [
+          {
+            "src": "/assets/proof/real/crops/gloss-front-wide.webp",
+            "complete": true,
+            "naturalWidth": 1200,
+            "naturalHeight": 675
+          },
+          {
+            "src": "/assets/proof/real/crops/finished-porsche-wide.webp",
+            "complete": true,
+            "naturalWidth": 1200,
+            "naturalHeight": 675
+          },
+          {
+            "src": "/assets/proof/real/crops/film-sheet-wide.webp",
+            "complete": true,
+            "naturalWidth": 1600,
+            "naturalHeight": 900
+          },
+          {
+            "src": "/assets/proof/real/crops/gloss-front-wide.webp",
+            "complete": true,
+            "naturalWidth": 1200,
+            "naturalHeight": 675
+          }
+        ]
+      },
+      "fullPage": {
+        "positionsVisited": 9,
+        "stepPx": 750,
+        "geometry": {
+          "height": 5732,
+          "viewportHeight": 1000
+        },
+        "decode": {
+          "total": 8,
+          "decoded": 8,
+          "broken": [],
+          "finalScrollY": 4732,
+          "scrollHeight": 5732
+        }
+      },
+      "full": {
+        "sampledAtMs": 7682.799999998882,
+        "metrics": {
+          "fcpMs": 1448,
+          "lcpMs": 4540,
+          "cls": 0,
+          "tbtProxyMs": 0,
+          "responseStartMs": 2.099999999627471,
+          "domContentLoadedMs": 1438.7999999988824,
+          "loadEventEndMs": 1438.7999999988824
+        },
+        "observer": {
+          "installedBeforeNavigation": true,
+          "supported": {
+            "paint": true,
+            "largest-contentful-paint": true,
+            "layout-shift": true,
+            "longtask": true
+          },
+          "errors": [],
+          "counts": {
+            "paint": 2,
+            "largestContentfulPaint": 3,
+            "layoutShift": 0,
+            "longTask": 0,
+            "longTasksAfterFcp": 0
+          },
+          "lcpCandidate": {
+            "startTime": 4540,
+            "renderTime": 4540,
+            "loadTime": 2454.5,
+            "size": 809718,
+            "url": "http://127.0.0.1:56756/assets/proof/real/crops/finished-porsche-wide.webp",
+            "element": {
+              "tagName": "IMG",
+              "id": "",
+              "className": "q-proof-img"
+            }
+          },
+          "layoutShifts": [],
+          "longTasks": []
+        },
+        "transfer": {
+          "bytes": 564614,
+          "resourceFilenames": [
+            "index.html",
+            "qwen-full-film.css",
+            "ohtaawa-mark.png",
+            "ohtaawa-wordmark.png",
+            "qwen-tension-material-desktop.webp",
+            "qwen-full-film.js",
+            "finished-porsche-wide.webp",
+            "film-sheet-wide.webp",
+            "gloss-front-wide.webp"
+          ],
+          "entries": [
+            {
+              "entryType": "navigation",
+              "name": "/?qa=1&utm_source=codex&utm_medium=performance_qa&utm_campaign=sol_perf_v2_4&scenario=full-film&experiment_id=sol_perf_v2_4_desktop_1",
+              "initiatorType": "navigation",
+              "startTime": 0,
+              "duration": 1438.7999999988824,
+              "transferSize": 45391,
+              "encodedBodySize": 45091,
+              "decodedBodySize": 45091,
+              "responseStart": 2.099999999627471,
+              "domContentLoadedEventEnd": 1438.7999999988824,
+              "loadEventEnd": 1438.7999999988824
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/qwen-full-film.css",
+              "initiatorType": "link",
+              "startTime": 194.90000000037253,
+              "duration": 675.1999999992549,
+              "transferSize": 24049,
+              "encodedBodySize": 23749,
+              "decodedBodySize": 23749
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/ohtaawa-mark.png",
+              "initiatorType": "img",
+              "startTime": 196.19999999925494,
+              "duration": 750.8000000007451,
+              "transferSize": 27746,
+              "encodedBodySize": 27446,
+              "decodedBodySize": 27446
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/ohtaawa-wordmark.png",
+              "initiatorType": "img",
+              "startTime": 197,
+              "duration": 642,
+              "transferSize": 20129,
+              "encodedBodySize": 19829,
+              "decodedBodySize": 19829
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/generated/qwen-tension-material-desktop.webp",
+              "initiatorType": "img",
+              "startTime": 229.40000000037253,
+              "duration": 702.5,
+              "transferSize": 24244,
+              "encodedBodySize": 23944,
+              "decodedBodySize": 23944
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/qwen-full-film.js",
+              "initiatorType": "script",
+              "startTime": 576.5,
+              "duration": 418.09999999962747,
+              "transferSize": 19419,
+              "encodedBodySize": 19119,
+              "decodedBodySize": 19119
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/proof/real/crops/finished-porsche-wide.webp",
+              "initiatorType": "img",
+              "startTime": 1384.5,
+              "duration": 1068.5999999996275,
+              "transferSize": 178728,
+              "encodedBodySize": 178428,
+              "decodedBodySize": 178428
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/proof/real/crops/film-sheet-wide.webp",
+              "initiatorType": "img",
+              "startTime": 4304.299999998882,
+              "duration": 1168.2000000011176,
+              "transferSize": 100530,
+              "encodedBodySize": 100230,
+              "decodedBodySize": 100230
+            },
+            {
+              "entryType": "resource",
+              "name": "/assets/proof/real/crops/gloss-front-wide.webp",
+              "initiatorType": "img",
+              "startTime": 4304.5999999996275,
+              "duration": 1306.199999999255,
+              "transferSize": 124378,
+              "encodedBodySize": 124078,
+              "decodedBodySize": 124078
+            }
+          ]
+        },
+        "cdp": {
+          "transferBytes": 563562,
+          "requestCount": 9,
+          "finishedCount": 9,
+          "failedCount": 0,
+          "cacheHitCount": 0,
+          "resources": [
+            {
+              "url": "/?qa=1&utm_source=codex&utm_medium=performance_qa&utm_campaign=sol_perf_v2_4&scenario=full-film&experiment_id=sol_perf_v2_4_desktop_1",
+              "method": "GET",
+              "type": "Document",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "text/html",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 45282,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/qwen-full-film.css",
+              "method": "GET",
+              "type": "Stylesheet",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "text/css",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 23939,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/ohtaawa-mark.png",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/png",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 27622,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/ohtaawa-wordmark.png",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/png",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 20005,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/generated/qwen-tension-material-desktop.webp",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/webp",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 24121,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/qwen-full-film.js",
+              "method": "GET",
+              "type": "Script",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "application/javascript",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 19323,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/proof/real/crops/finished-porsche-wide.webp",
+              "method": "GET",
+              "type": "Image",
+              "stage": "initial",
+              "status": 200,
+              "mimeType": "image/webp",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 178606,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/proof/real/crops/film-sheet-wide.webp",
+              "method": "GET",
+              "type": "Image",
+              "stage": "proof",
+              "status": 200,
+              "mimeType": "image/webp",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 100408,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            },
+            {
+              "url": "/assets/proof/real/crops/gloss-front-wide.webp",
+              "method": "GET",
+              "type": "Image",
+              "stage": "proof",
+              "status": 200,
+              "mimeType": "image/webp",
+              "protocol": "http/1.1",
+              "fromDiskCache": false,
+              "fromServiceWorker": false,
+              "encodedDataLength": 124256,
+              "finished": true,
+              "failed": false,
+              "failure": null
+            }
+          ]
+        }
+      },
+      "diagnostics": {
+        "consoleErrors": [],
+        "pageErrors": []
+      },
+      "assertions": [
+        {
+          "scope": "desktop-1440x1000-cold-01",
+          "metric": "fcp",
+          "pass": true,
+          "actual": 1448,
+          "budget": 1800,
+          "unit": "ms",
+          "operator": "<="
+        },
+        {
+          "scope": "desktop-1440x1000-cold-01",
+          "metric": "lcp",
+          "pass": true,
+          "actual": 1492,
+          "budget": 2500,
+          "unit": "ms",
+          "operator": "<="
+        },
+        {
+          "scope": "desktop-1440x1000-cold-01",
+          "metric": "cls-hard-max",
+          "pass": true,
+          "actual": 0,
+          "budget": 0.1,
+          "unit": "score",
+          "operator": "<="
+        },
+        {
+          "scope": "desktop-1440x1000-cold-01",
+          "metric": "cls-target",
+          "pass": true,
+          "actual": 0,
+          "budget": 0.05,
+          "unit": "score",
+          "operator": "<="
+        },
+        {
+          "scope": "desktop-1440x1000-cold-01",
+          "metric": "tbt-proxy",
+          "pass": true,
+          "actual": 0,
+          "budget": 200,
+          "unit": "ms",
+          "operator": "<="
+        },
+        {
+          "scope": "desktop-1440x1000-cold-01",
+          "metric": "initial-transfer",
+          "pass": true,
+          "actual": 339706,
+          "budget": 460800,
+          "unit": "bytes",
+          "operator": "<="
+        },
+        {
+          "scope": "desktop-1440x1000-cold-01",
+          "metric": "full-after-proof-transfer",
+          "pass": true,
+          "actual": 564614,
+          "budget": 1048576,
+          "unit": "bytes",
+          "operator": "<="
+        },
+        {
+          "scope": "desktop-1440x1000-cold-01",
+          "metric": "secondary-proof-webp-before-scroll",
+          "pass": true,
+          "actual": 0,
+          "budget": 0,
+          "unit": "files",
+          "operator": "==",
+          "details": {
+            "secondaryProofWebpFilenames": [
+              "film-sheet-wide.webp",
+              "gloss-front-wide.webp"
+            ],
+            "loadedBeforeScroll": [],
+            "initialResourceFilenames": [
+              "index.html",
+              "qwen-full-film.css",
+              "ohtaawa-mark.png",
+              "ohtaawa-wordmark.png",
+              "qwen-tension-material-desktop.webp",
+              "qwen-full-film.js",
+              "finished-porsche-wide.webp"
+            ]
+          }
+        },
+        {
+          "scope": "desktop-1440x1000-cold-01",
+          "metric": "retained-proof-webp-after-traversal",
+          "pass": true,
+          "actual": 3,
+          "budget": 3,
+          "unit": "files",
+          "operator": "==",
+          "details": {
+            "retainedProofWebpFilenames": [
+              "finished-porsche-wide.webp",
+              "film-sheet-wide.webp",
+              "gloss-front-wide.webp"
+            ],
+            "loadedAfterTraversal": [
+              "finished-porsche-wide.webp",
+              "film-sheet-wide.webp",
+              "gloss-front-wide.webp"
+            ],
+            "missingAfterTraversal": []
+          }
+        }
+      ]
+    }
+  ],
+  "aggregates": {
+    "mobile": {
+      "samples": 5,
+      "fcpMs": {
+        "count": 5,
+        "min": 1332,
+        "median": 1344,
+        "max": 1352
+      },
+      "lcpMs": {
+        "count": 5,
+        "min": 1332,
+        "median": 1344,
+        "max": 1352
+      },
+      "cls": {
+        "count": 5,
+        "min": 0,
+        "median": 0,
+        "max": 0
+      },
+      "tbtProxyMs": {
+        "count": 5,
+        "min": 0,
+        "median": 0,
+        "max": 0
+      },
+      "initialTransferBytes": {
+        "count": 5,
+        "min": 322560,
+        "median": 322560,
+        "max": 322560
+      },
+      "initialCdpEncodedBytes": {
+        "count": 5,
+        "min": 321751,
+        "median": 321751,
+        "max": 321751
+      },
+      "fullTransferBytes": {
+        "count": 5,
+        "min": 547468,
+        "median": 547468,
+        "max": 547468
+      },
+      "fullCdpEncodedBytes": {
+        "count": 5,
+        "min": 546415,
+        "median": 546415,
+        "max": 546415
+      },
+      "secondaryProofBeforeScrollCount": {
+        "count": 5,
+        "min": 0,
+        "median": 0,
+        "max": 0
+      },
+      "retainedProofMissingAfterTraversalCount": {
+        "count": 5,
+        "min": 0,
+        "median": 0,
+        "max": 0
+      },
+      "retainedProofCount": {
+        "count": 5,
+        "min": 3,
+        "median": 3,
+        "max": 3
+      },
+      "responseStartMs": {
+        "count": 5,
+        "min": 2,
+        "median": 2.5,
+        "max": 8.5
+      },
+      "domContentLoadedMs": {
+        "count": 5,
+        "min": 1338.7,
+        "median": 1342.5,
+        "max": 1356.6
+      },
+      "loadEventEndMs": {
+        "count": 5,
+        "min": 1338.7,
+        "median": 1342.7,
+        "max": 1356.8
+      }
+    },
+    "desktop": {
+      "samples": 1,
+      "fcpMs": {
+        "count": 1,
+        "min": 1448,
+        "median": 1448,
+        "max": 1448
+      },
+      "lcpMs": {
+        "count": 1,
+        "min": 1492,
+        "median": 1492,
+        "max": 1492
+      },
+      "cls": {
+        "count": 1,
+        "min": 0,
+        "median": 0,
+        "max": 0
+      },
+      "tbtProxyMs": {
+        "count": 1,
+        "min": 0,
+        "median": 0,
+        "max": 0
+      },
+      "initialTransferBytes": {
+        "count": 1,
+        "min": 339706,
+        "median": 339706,
+        "max": 339706
+      },
+      "initialCdpEncodedBytes": {
+        "count": 1,
+        "min": 338898,
+        "median": 338898,
+        "max": 338898
+      },
+      "fullTransferBytes": {
+        "count": 1,
+        "min": 564614,
+        "median": 564614,
+        "max": 564614
+      },
+      "fullCdpEncodedBytes": {
+        "count": 1,
+        "min": 563562,
+        "median": 563562,
+        "max": 563562
+      },
+      "secondaryProofBeforeScrollCount": {
+        "count": 1,
+        "min": 0,
+        "median": 0,
+        "max": 0
+      },
+      "retainedProofMissingAfterTraversalCount": {
+        "count": 1,
+        "min": 0,
+        "median": 0,
+        "max": 0
+      },
+      "retainedProofCount": {
+        "count": 1,
+        "min": 3,
+        "median": 3,
+        "max": 3
+      },
+      "responseStartMs": {
+        "count": 1,
+        "min": 2.1,
+        "median": 2.1,
+        "max": 2.1
+      },
+      "domContentLoadedMs": {
+        "count": 1,
+        "min": 1438.8,
+        "median": 1438.8,
+        "max": 1438.8
+      },
+      "loadEventEndMs": {
+        "count": 1,
+        "min": 1438.8,
+        "median": 1438.8,
+        "max": 1438.8
+      }
+    }
+  },
+  "initialResourceFilenames": [
+    {
+      "run": "mobile-390x844-cold-01",
+      "filenames": [
+        "index.html",
+        "qwen-full-film.css",
+        "ohtaawa-mark.png",
+        "ohtaawa-wordmark.png",
+        "qwen-tension-material-mobile.webp",
+        "qwen-full-film.js",
+        "finished-porsche-wide.webp"
+      ]
+    },
+    {
+      "run": "mobile-390x844-cold-02",
+      "filenames": [
+        "index.html",
+        "qwen-full-film.css",
+        "ohtaawa-mark.png",
+        "ohtaawa-wordmark.png",
+        "qwen-tension-material-mobile.webp",
+        "qwen-full-film.js",
+        "finished-porsche-wide.webp"
+      ]
+    },
+    {
+      "run": "mobile-390x844-cold-03",
+      "filenames": [
+        "index.html",
+        "qwen-full-film.css",
+        "ohtaawa-mark.png",
+        "ohtaawa-wordmark.png",
+        "qwen-tension-material-mobile.webp",
+        "qwen-full-film.js",
+        "finished-porsche-wide.webp"
+      ]
+    },
+    {
+      "run": "mobile-390x844-cold-04",
+      "filenames": [
+        "index.html",
+        "qwen-full-film.css",
+        "ohtaawa-mark.png",
+        "ohtaawa-wordmark.png",
+        "qwen-tension-material-mobile.webp",
+        "qwen-full-film.js",
+        "finished-porsche-wide.webp"
+      ]
+    },
+    {
+      "run": "mobile-390x844-cold-05",
+      "filenames": [
+        "index.html",
+        "qwen-full-film.css",
+        "ohtaawa-mark.png",
+        "ohtaawa-wordmark.png",
+        "qwen-tension-material-mobile.webp",
+        "qwen-full-film.js",
+        "finished-porsche-wide.webp"
+      ]
+    },
+    {
+      "run": "desktop-1440x1000-cold-01",
+      "filenames": [
+        "index.html",
+        "qwen-full-film.css",
+        "ohtaawa-mark.png",
+        "ohtaawa-wordmark.png",
+        "qwen-tension-material-desktop.webp",
+        "qwen-full-film.js",
+        "finished-porsche-wide.webp"
+      ]
+    }
+  ],
+  "proofResourceGate": {
+    "pass": true,
+    "samples": [
+      {
+        "run": "mobile-390x844-cold-01",
+        "primaryProofWebpFilename": "finished-porsche-wide.webp",
+        "retainedProofWebpFilenames": [
+          "finished-porsche-wide.webp",
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "secondaryProofWebpFilenames": [
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "secondaryLoadedBeforeScroll": [],
+        "retainedLoadedAfterTraversal": [
+          "finished-porsche-wide.webp",
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "retainedMissingAfterTraversal": [],
+        "pass": true
+      },
+      {
+        "run": "mobile-390x844-cold-02",
+        "primaryProofWebpFilename": "finished-porsche-wide.webp",
+        "retainedProofWebpFilenames": [
+          "finished-porsche-wide.webp",
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "secondaryProofWebpFilenames": [
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "secondaryLoadedBeforeScroll": [],
+        "retainedLoadedAfterTraversal": [
+          "finished-porsche-wide.webp",
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "retainedMissingAfterTraversal": [],
+        "pass": true
+      },
+      {
+        "run": "mobile-390x844-cold-03",
+        "primaryProofWebpFilename": "finished-porsche-wide.webp",
+        "retainedProofWebpFilenames": [
+          "finished-porsche-wide.webp",
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "secondaryProofWebpFilenames": [
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "secondaryLoadedBeforeScroll": [],
+        "retainedLoadedAfterTraversal": [
+          "finished-porsche-wide.webp",
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "retainedMissingAfterTraversal": [],
+        "pass": true
+      },
+      {
+        "run": "mobile-390x844-cold-04",
+        "primaryProofWebpFilename": "finished-porsche-wide.webp",
+        "retainedProofWebpFilenames": [
+          "finished-porsche-wide.webp",
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "secondaryProofWebpFilenames": [
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "secondaryLoadedBeforeScroll": [],
+        "retainedLoadedAfterTraversal": [
+          "finished-porsche-wide.webp",
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "retainedMissingAfterTraversal": [],
+        "pass": true
+      },
+      {
+        "run": "mobile-390x844-cold-05",
+        "primaryProofWebpFilename": "finished-porsche-wide.webp",
+        "retainedProofWebpFilenames": [
+          "finished-porsche-wide.webp",
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "secondaryProofWebpFilenames": [
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "secondaryLoadedBeforeScroll": [],
+        "retainedLoadedAfterTraversal": [
+          "finished-porsche-wide.webp",
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "retainedMissingAfterTraversal": [],
+        "pass": true
+      },
+      {
+        "run": "desktop-1440x1000-cold-01",
+        "primaryProofWebpFilename": "finished-porsche-wide.webp",
+        "retainedProofWebpFilenames": [
+          "finished-porsche-wide.webp",
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "secondaryProofWebpFilenames": [
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "secondaryLoadedBeforeScroll": [],
+        "retainedLoadedAfterTraversal": [
+          "finished-porsche-wide.webp",
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "retainedMissingAfterTraversal": [],
+        "pass": true
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "scope": "mobile-390x844-cold-01",
+      "metric": "fcp",
+      "pass": true,
+      "actual": 1352,
+      "budget": 1800,
+      "unit": "ms",
+      "operator": "<="
+    },
+    {
+      "scope": "mobile-390x844-cold-01",
+      "metric": "lcp",
+      "pass": true,
+      "actual": 1352,
+      "budget": 2500,
+      "unit": "ms",
+      "operator": "<="
+    },
+    {
+      "scope": "mobile-390x844-cold-01",
+      "metric": "cls-hard-max",
+      "pass": true,
+      "actual": 0,
+      "budget": 0.1,
+      "unit": "score",
+      "operator": "<="
+    },
+    {
+      "scope": "mobile-390x844-cold-01",
+      "metric": "cls-target",
+      "pass": true,
+      "actual": 0,
+      "budget": 0.05,
+      "unit": "score",
+      "operator": "<="
+    },
+    {
+      "scope": "mobile-390x844-cold-01",
+      "metric": "tbt-proxy",
+      "pass": true,
+      "actual": 0,
+      "budget": 200,
+      "unit": "ms",
+      "operator": "<="
+    },
+    {
+      "scope": "mobile-390x844-cold-01",
+      "metric": "initial-transfer",
+      "pass": true,
+      "actual": 322560,
+      "budget": 358400,
+      "unit": "bytes",
+      "operator": "<="
+    },
+    {
+      "scope": "mobile-390x844-cold-01",
+      "metric": "full-after-proof-transfer",
+      "pass": true,
+      "actual": 547468,
+      "budget": 1048576,
+      "unit": "bytes",
+      "operator": "<="
+    },
+    {
+      "scope": "mobile-390x844-cold-01",
+      "metric": "secondary-proof-webp-before-scroll",
+      "pass": true,
+      "actual": 0,
+      "budget": 0,
+      "unit": "files",
+      "operator": "==",
+      "details": {
+        "secondaryProofWebpFilenames": [
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "loadedBeforeScroll": [],
+        "initialResourceFilenames": [
+          "index.html",
+          "qwen-full-film.css",
+          "ohtaawa-mark.png",
+          "ohtaawa-wordmark.png",
+          "qwen-tension-material-mobile.webp",
+          "qwen-full-film.js",
+          "finished-porsche-wide.webp"
+        ]
+      }
+    },
+    {
+      "scope": "mobile-390x844-cold-01",
+      "metric": "retained-proof-webp-after-traversal",
+      "pass": true,
+      "actual": 3,
+      "budget": 3,
+      "unit": "files",
+      "operator": "==",
+      "details": {
+        "retainedProofWebpFilenames": [
+          "finished-porsche-wide.webp",
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "loadedAfterTraversal": [
+          "finished-porsche-wide.webp",
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "missingAfterTraversal": []
+      }
+    },
+    {
+      "scope": "mobile-390x844-cold-02",
+      "metric": "fcp",
+      "pass": true,
+      "actual": 1340,
+      "budget": 1800,
+      "unit": "ms",
+      "operator": "<="
+    },
+    {
+      "scope": "mobile-390x844-cold-02",
+      "metric": "lcp",
+      "pass": true,
+      "actual": 1340,
+      "budget": 2500,
+      "unit": "ms",
+      "operator": "<="
+    },
+    {
+      "scope": "mobile-390x844-cold-02",
+      "metric": "cls-hard-max",
+      "pass": true,
+      "actual": 0,
+      "budget": 0.1,
+      "unit": "score",
+      "operator": "<="
+    },
+    {
+      "scope": "mobile-390x844-cold-02",
+      "metric": "cls-target",
+      "pass": true,
+      "actual": 0,
+      "budget": 0.05,
+      "unit": "score",
+      "operator": "<="
+    },
+    {
+      "scope": "mobile-390x844-cold-02",
+      "metric": "tbt-proxy",
+      "pass": true,
+      "actual": 0,
+      "budget": 200,
+      "unit": "ms",
+      "operator": "<="
+    },
+    {
+      "scope": "mobile-390x844-cold-02",
+      "metric": "initial-transfer",
+      "pass": true,
+      "actual": 322560,
+      "budget": 358400,
+      "unit": "bytes",
+      "operator": "<="
+    },
+    {
+      "scope": "mobile-390x844-cold-02",
+      "metric": "full-after-proof-transfer",
+      "pass": true,
+      "actual": 547468,
+      "budget": 1048576,
+      "unit": "bytes",
+      "operator": "<="
+    },
+    {
+      "scope": "mobile-390x844-cold-02",
+      "metric": "secondary-proof-webp-before-scroll",
+      "pass": true,
+      "actual": 0,
+      "budget": 0,
+      "unit": "files",
+      "operator": "==",
+      "details": {
+        "secondaryProofWebpFilenames": [
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "loadedBeforeScroll": [],
+        "initialResourceFilenames": [
+          "index.html",
+          "qwen-full-film.css",
+          "ohtaawa-mark.png",
+          "ohtaawa-wordmark.png",
+          "qwen-tension-material-mobile.webp",
+          "qwen-full-film.js",
+          "finished-porsche-wide.webp"
+        ]
+      }
+    },
+    {
+      "scope": "mobile-390x844-cold-02",
+      "metric": "retained-proof-webp-after-traversal",
+      "pass": true,
+      "actual": 3,
+      "budget": 3,
+      "unit": "files",
+      "operator": "==",
+      "details": {
+        "retainedProofWebpFilenames": [
+          "finished-porsche-wide.webp",
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "loadedAfterTraversal": [
+          "finished-porsche-wide.webp",
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "missingAfterTraversal": []
+      }
+    },
+    {
+      "scope": "mobile-390x844-cold-03",
+      "metric": "fcp",
+      "pass": true,
+      "actual": 1332,
+      "budget": 1800,
+      "unit": "ms",
+      "operator": "<="
+    },
+    {
+      "scope": "mobile-390x844-cold-03",
+      "metric": "lcp",
+      "pass": true,
+      "actual": 1332,
+      "budget": 2500,
+      "unit": "ms",
+      "operator": "<="
+    },
+    {
+      "scope": "mobile-390x844-cold-03",
+      "metric": "cls-hard-max",
+      "pass": true,
+      "actual": 0,
+      "budget": 0.1,
+      "unit": "score",
+      "operator": "<="
+    },
+    {
+      "scope": "mobile-390x844-cold-03",
+      "metric": "cls-target",
+      "pass": true,
+      "actual": 0,
+      "budget": 0.05,
+      "unit": "score",
+      "operator": "<="
+    },
+    {
+      "scope": "mobile-390x844-cold-03",
+      "metric": "tbt-proxy",
+      "pass": true,
+      "actual": 0,
+      "budget": 200,
+      "unit": "ms",
+      "operator": "<="
+    },
+    {
+      "scope": "mobile-390x844-cold-03",
+      "metric": "initial-transfer",
+      "pass": true,
+      "actual": 322560,
+      "budget": 358400,
+      "unit": "bytes",
+      "operator": "<="
+    },
+    {
+      "scope": "mobile-390x844-cold-03",
+      "metric": "full-after-proof-transfer",
+      "pass": true,
+      "actual": 547468,
+      "budget": 1048576,
+      "unit": "bytes",
+      "operator": "<="
+    },
+    {
+      "scope": "mobile-390x844-cold-03",
+      "metric": "secondary-proof-webp-before-scroll",
+      "pass": true,
+      "actual": 0,
+      "budget": 0,
+      "unit": "files",
+      "operator": "==",
+      "details": {
+        "secondaryProofWebpFilenames": [
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "loadedBeforeScroll": [],
+        "initialResourceFilenames": [
+          "index.html",
+          "qwen-full-film.css",
+          "ohtaawa-mark.png",
+          "ohtaawa-wordmark.png",
+          "qwen-tension-material-mobile.webp",
+          "qwen-full-film.js",
+          "finished-porsche-wide.webp"
+        ]
+      }
+    },
+    {
+      "scope": "mobile-390x844-cold-03",
+      "metric": "retained-proof-webp-after-traversal",
+      "pass": true,
+      "actual": 3,
+      "budget": 3,
+      "unit": "files",
+      "operator": "==",
+      "details": {
+        "retainedProofWebpFilenames": [
+          "finished-porsche-wide.webp",
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "loadedAfterTraversal": [
+          "finished-porsche-wide.webp",
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "missingAfterTraversal": []
+      }
+    },
+    {
+      "scope": "mobile-390x844-cold-04",
+      "metric": "fcp",
+      "pass": true,
+      "actual": 1344,
+      "budget": 1800,
+      "unit": "ms",
+      "operator": "<="
+    },
+    {
+      "scope": "mobile-390x844-cold-04",
+      "metric": "lcp",
+      "pass": true,
+      "actual": 1344,
+      "budget": 2500,
+      "unit": "ms",
+      "operator": "<="
+    },
+    {
+      "scope": "mobile-390x844-cold-04",
+      "metric": "cls-hard-max",
+      "pass": true,
+      "actual": 0,
+      "budget": 0.1,
+      "unit": "score",
+      "operator": "<="
+    },
+    {
+      "scope": "mobile-390x844-cold-04",
+      "metric": "cls-target",
+      "pass": true,
+      "actual": 0,
+      "budget": 0.05,
+      "unit": "score",
+      "operator": "<="
+    },
+    {
+      "scope": "mobile-390x844-cold-04",
+      "metric": "tbt-proxy",
+      "pass": true,
+      "actual": 0,
+      "budget": 200,
+      "unit": "ms",
+      "operator": "<="
+    },
+    {
+      "scope": "mobile-390x844-cold-04",
+      "metric": "initial-transfer",
+      "pass": true,
+      "actual": 322560,
+      "budget": 358400,
+      "unit": "bytes",
+      "operator": "<="
+    },
+    {
+      "scope": "mobile-390x844-cold-04",
+      "metric": "full-after-proof-transfer",
+      "pass": true,
+      "actual": 547468,
+      "budget": 1048576,
+      "unit": "bytes",
+      "operator": "<="
+    },
+    {
+      "scope": "mobile-390x844-cold-04",
+      "metric": "secondary-proof-webp-before-scroll",
+      "pass": true,
+      "actual": 0,
+      "budget": 0,
+      "unit": "files",
+      "operator": "==",
+      "details": {
+        "secondaryProofWebpFilenames": [
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "loadedBeforeScroll": [],
+        "initialResourceFilenames": [
+          "index.html",
+          "qwen-full-film.css",
+          "ohtaawa-mark.png",
+          "ohtaawa-wordmark.png",
+          "qwen-tension-material-mobile.webp",
+          "qwen-full-film.js",
+          "finished-porsche-wide.webp"
+        ]
+      }
+    },
+    {
+      "scope": "mobile-390x844-cold-04",
+      "metric": "retained-proof-webp-after-traversal",
+      "pass": true,
+      "actual": 3,
+      "budget": 3,
+      "unit": "files",
+      "operator": "==",
+      "details": {
+        "retainedProofWebpFilenames": [
+          "finished-porsche-wide.webp",
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "loadedAfterTraversal": [
+          "finished-porsche-wide.webp",
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "missingAfterTraversal": []
+      }
+    },
+    {
+      "scope": "mobile-390x844-cold-05",
+      "metric": "fcp",
+      "pass": true,
+      "actual": 1352,
+      "budget": 1800,
+      "unit": "ms",
+      "operator": "<="
+    },
+    {
+      "scope": "mobile-390x844-cold-05",
+      "metric": "lcp",
+      "pass": true,
+      "actual": 1352,
+      "budget": 2500,
+      "unit": "ms",
+      "operator": "<="
+    },
+    {
+      "scope": "mobile-390x844-cold-05",
+      "metric": "cls-hard-max",
+      "pass": true,
+      "actual": 0,
+      "budget": 0.1,
+      "unit": "score",
+      "operator": "<="
+    },
+    {
+      "scope": "mobile-390x844-cold-05",
+      "metric": "cls-target",
+      "pass": true,
+      "actual": 0,
+      "budget": 0.05,
+      "unit": "score",
+      "operator": "<="
+    },
+    {
+      "scope": "mobile-390x844-cold-05",
+      "metric": "tbt-proxy",
+      "pass": true,
+      "actual": 0,
+      "budget": 200,
+      "unit": "ms",
+      "operator": "<="
+    },
+    {
+      "scope": "mobile-390x844-cold-05",
+      "metric": "initial-transfer",
+      "pass": true,
+      "actual": 322560,
+      "budget": 358400,
+      "unit": "bytes",
+      "operator": "<="
+    },
+    {
+      "scope": "mobile-390x844-cold-05",
+      "metric": "full-after-proof-transfer",
+      "pass": true,
+      "actual": 547468,
+      "budget": 1048576,
+      "unit": "bytes",
+      "operator": "<="
+    },
+    {
+      "scope": "mobile-390x844-cold-05",
+      "metric": "secondary-proof-webp-before-scroll",
+      "pass": true,
+      "actual": 0,
+      "budget": 0,
+      "unit": "files",
+      "operator": "==",
+      "details": {
+        "secondaryProofWebpFilenames": [
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "loadedBeforeScroll": [],
+        "initialResourceFilenames": [
+          "index.html",
+          "qwen-full-film.css",
+          "ohtaawa-mark.png",
+          "ohtaawa-wordmark.png",
+          "qwen-tension-material-mobile.webp",
+          "qwen-full-film.js",
+          "finished-porsche-wide.webp"
+        ]
+      }
+    },
+    {
+      "scope": "mobile-390x844-cold-05",
+      "metric": "retained-proof-webp-after-traversal",
+      "pass": true,
+      "actual": 3,
+      "budget": 3,
+      "unit": "files",
+      "operator": "==",
+      "details": {
+        "retainedProofWebpFilenames": [
+          "finished-porsche-wide.webp",
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "loadedAfterTraversal": [
+          "finished-porsche-wide.webp",
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "missingAfterTraversal": []
+      }
+    },
+    {
+      "scope": "desktop-1440x1000-cold-01",
+      "metric": "fcp",
+      "pass": true,
+      "actual": 1448,
+      "budget": 1800,
+      "unit": "ms",
+      "operator": "<="
+    },
+    {
+      "scope": "desktop-1440x1000-cold-01",
+      "metric": "lcp",
+      "pass": true,
+      "actual": 1492,
+      "budget": 2500,
+      "unit": "ms",
+      "operator": "<="
+    },
+    {
+      "scope": "desktop-1440x1000-cold-01",
+      "metric": "cls-hard-max",
+      "pass": true,
+      "actual": 0,
+      "budget": 0.1,
+      "unit": "score",
+      "operator": "<="
+    },
+    {
+      "scope": "desktop-1440x1000-cold-01",
+      "metric": "cls-target",
+      "pass": true,
+      "actual": 0,
+      "budget": 0.05,
+      "unit": "score",
+      "operator": "<="
+    },
+    {
+      "scope": "desktop-1440x1000-cold-01",
+      "metric": "tbt-proxy",
+      "pass": true,
+      "actual": 0,
+      "budget": 200,
+      "unit": "ms",
+      "operator": "<="
+    },
+    {
+      "scope": "desktop-1440x1000-cold-01",
+      "metric": "initial-transfer",
+      "pass": true,
+      "actual": 339706,
+      "budget": 460800,
+      "unit": "bytes",
+      "operator": "<="
+    },
+    {
+      "scope": "desktop-1440x1000-cold-01",
+      "metric": "full-after-proof-transfer",
+      "pass": true,
+      "actual": 564614,
+      "budget": 1048576,
+      "unit": "bytes",
+      "operator": "<="
+    },
+    {
+      "scope": "desktop-1440x1000-cold-01",
+      "metric": "secondary-proof-webp-before-scroll",
+      "pass": true,
+      "actual": 0,
+      "budget": 0,
+      "unit": "files",
+      "operator": "==",
+      "details": {
+        "secondaryProofWebpFilenames": [
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "loadedBeforeScroll": [],
+        "initialResourceFilenames": [
+          "index.html",
+          "qwen-full-film.css",
+          "ohtaawa-mark.png",
+          "ohtaawa-wordmark.png",
+          "qwen-tension-material-desktop.webp",
+          "qwen-full-film.js",
+          "finished-porsche-wide.webp"
+        ]
+      }
+    },
+    {
+      "scope": "desktop-1440x1000-cold-01",
+      "metric": "retained-proof-webp-after-traversal",
+      "pass": true,
+      "actual": 3,
+      "budget": 3,
+      "unit": "files",
+      "operator": "==",
+      "details": {
+        "retainedProofWebpFilenames": [
+          "finished-porsche-wide.webp",
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "loadedAfterTraversal": [
+          "finished-porsche-wide.webp",
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "missingAfterTraversal": []
+      }
+    },
+    {
+      "scope": "aggregate",
+      "metric": "mobile-median-fcp",
+      "pass": true,
+      "actual": 1344,
+      "budget": 1800,
+      "unit": "ms",
+      "operator": "<="
+    },
+    {
+      "scope": "aggregate",
+      "metric": "mobile-median-lcp",
+      "pass": true,
+      "actual": 1344,
+      "budget": 2500,
+      "unit": "ms",
+      "operator": "<="
+    },
+    {
+      "scope": "aggregate",
+      "metric": "mobile-median-cls-target",
+      "pass": true,
+      "actual": 0,
+      "budget": 0.05,
+      "unit": "score",
+      "operator": "<="
+    },
+    {
+      "scope": "aggregate",
+      "metric": "mobile-max-cls-hard-limit",
+      "pass": true,
+      "actual": 0,
+      "budget": 0.1,
+      "unit": "score",
+      "operator": "<="
+    },
+    {
+      "scope": "aggregate",
+      "metric": "mobile-median-tbt-proxy",
+      "pass": true,
+      "actual": 0,
+      "budget": 200,
+      "unit": "ms",
+      "operator": "<="
+    },
+    {
+      "scope": "aggregate",
+      "metric": "mobile-max-initial-transfer",
+      "pass": true,
+      "actual": 322560,
+      "budget": 358400,
+      "unit": "bytes",
+      "operator": "<="
+    },
+    {
+      "scope": "aggregate",
+      "metric": "mobile-max-full-transfer",
+      "pass": true,
+      "actual": 547468,
+      "budget": 1048576,
+      "unit": "bytes",
+      "operator": "<="
+    },
+    {
+      "scope": "aggregate",
+      "metric": "desktop-fcp",
+      "pass": true,
+      "actual": 1448,
+      "budget": 1800,
+      "unit": "ms",
+      "operator": "<="
+    },
+    {
+      "scope": "aggregate",
+      "metric": "desktop-lcp",
+      "pass": true,
+      "actual": 1492,
+      "budget": 2500,
+      "unit": "ms",
+      "operator": "<="
+    },
+    {
+      "scope": "aggregate",
+      "metric": "desktop-cls-target",
+      "pass": true,
+      "actual": 0,
+      "budget": 0.05,
+      "unit": "score",
+      "operator": "<="
+    },
+    {
+      "scope": "aggregate",
+      "metric": "desktop-cls-hard-limit",
+      "pass": true,
+      "actual": 0,
+      "budget": 0.1,
+      "unit": "score",
+      "operator": "<="
+    },
+    {
+      "scope": "aggregate",
+      "metric": "desktop-tbt-proxy",
+      "pass": true,
+      "actual": 0,
+      "budget": 200,
+      "unit": "ms",
+      "operator": "<="
+    },
+    {
+      "scope": "aggregate",
+      "metric": "desktop-initial-transfer",
+      "pass": true,
+      "actual": 339706,
+      "budget": 460800,
+      "unit": "bytes",
+      "operator": "<="
+    },
+    {
+      "scope": "aggregate",
+      "metric": "desktop-full-transfer",
+      "pass": true,
+      "actual": 564614,
+      "budget": 1048576,
+      "unit": "bytes",
+      "operator": "<="
+    },
+    {
+      "scope": "aggregate",
+      "metric": "all-samples-secondary-proof-webp-deferred",
+      "pass": true,
+      "actual": 0,
+      "budget": 0,
+      "unit": "files",
+      "operator": "==",
+      "details": {
+        "loadedBeforeScroll": []
+      }
+    },
+    {
+      "scope": "aggregate",
+      "metric": "all-samples-retained-proof-webp-loaded",
+      "pass": true,
+      "actual": 0,
+      "budget": 0,
+      "unit": "files",
+      "operator": "==",
+      "details": {
+        "missingAfterTraversal": [],
+        "runsWithoutRetainedProof": []
+      }
+    }
+  ],
+  "limitations": [
+    {
+      "type": "tbt-proxy-not-lighthouse",
+      "impact": "Long-task blocking proxy is not Lighthouse TBT because Lighthouse TTI and trace attribution are intentionally absent."
+    },
+    {
+      "type": "lab-only",
+      "impact": "One local machine and a loopback HTTP server under synthetic throttling do not substitute for field RUM/CrUX."
+    }
+  ]
+}

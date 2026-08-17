@@ -1,0 +1,2570 @@
+{
+  "schema": "ohtaawa-sol-browser-qa-v2.3/1",
+  "baseline": {
+    "runner": "sol_qa_v2_1.cjs",
+    "existingChecks": 77
+  },
+  "startedAt": "2026-08-17T01:29:18.746Z",
+  "finishedAt": "2026-08-17T01:30:27.919Z",
+  "root": ".",
+  "server": {
+    "mode": "started",
+    "baseUrl": "http://127.0.0.1:56660/"
+  },
+  "source": {
+    "index": {
+      "path": "index.html",
+      "bytes": 45091,
+      "sha256": "b9ea16bc9f414022e10e69f9bcf6e1a26610e2828829ca10089f37798dda3387"
+    },
+    "css": {
+      "path": "assets/qwen-full-film.css",
+      "bytes": 23749,
+      "sha256": "5be775f92a63167d8feccbb74131349bb5c31947d6a0fd1d558df1a0ea8c47e3"
+    },
+    "js": {
+      "path": "assets/qwen-full-film.js",
+      "bytes": 19119,
+      "sha256": "16050b84ba3daee26b0ad10322915deb00d76977e4768ca6d570d5414bde914d"
+    },
+    "runner": {
+      "path": "scripts/sol_qa_v2_1.cjs",
+      "bytes": 63815,
+      "sha256": "a8253454944743c9befb46d47c96e589925123ac5c99f5146808b6f5e4315536"
+    }
+  },
+  "screenshots": [
+    "artifacts/sol-qa-v2-3/desktop-1440x1000-hero.png",
+    "artifacts/sol-qa-v2-3/desktop-1440x1000-full.png",
+    "artifacts/sol-qa-v2-3/mobile-430x932-hero.png",
+    "artifacts/sol-qa-v2-3/mobile-430x932-full.png",
+    "artifacts/sol-qa-v2-3/mobile-390x844-hero.png",
+    "artifacts/sol-qa-v2-3/mobile-390x844-full.png",
+    "artifacts/sol-qa-v2-3/mobile-360x800-hero.png",
+    "artifacts/sol-qa-v2-3/mobile-360x800-full.png",
+    "artifacts/sol-qa-v2-3/no-js-desktop-1440x1000-hero.png",
+    "artifacts/sol-qa-v2-3/no-js-desktop-1440x1000-full.png",
+    "artifacts/sol-qa-v2-3/no-js-mobile-390x844-hero.png",
+    "artifacts/sol-qa-v2-3/no-js-mobile-390x844-full.png",
+    "artifacts/sol-qa-v2-3/reduced-motion-mobile-390x844-hero.png",
+    "artifacts/sol-qa-v2-3/reduced-motion-mobile-390x844-full.png",
+    "artifacts/sol-qa-v2-3/save-data-mobile-390x844-hero.png",
+    "artifacts/sol-qa-v2-3/save-data-mobile-390x844-full.png"
+  ],
+  "checks": [
+    {
+      "group": "proof",
+      "id": "v2.3.blocked-proof-filenames-absent",
+      "pass": true,
+      "details": {
+        "blocked": [
+          "gloss-panel-wide.webp",
+          "film-edge-process-wide.webp",
+          "full-body-disassembly-wide.webp"
+        ],
+        "hits": [],
+        "scanned": [
+          "index.html",
+          "assets/qwen-full-film.css",
+          "assets/qwen-full-film.js"
+        ]
+      }
+    },
+    {
+      "group": "viewport.desktop-1440x1000",
+      "id": "desktop-1440x1000.initial-secondary-proof-resources-zero",
+      "pass": true,
+      "details": {
+        "scrollY": 0,
+        "viewportHeight": 1000,
+        "proofDocumentTop": 1958,
+        "retainedResourceEntries": [
+          {
+            "name": "http://127.0.0.1:56660/assets/proof/real/crops/finished-porsche-wide.webp",
+            "filename": "finished-porsche-wide.webp",
+            "initiatorType": "img",
+            "startTime": 140.7,
+            "transferSize": 178728,
+            "decodedBodySize": 178428
+          }
+        ],
+        "secondaryRequests": []
+      }
+    },
+    {
+      "group": "viewport.desktop-1440x1000",
+      "id": "desktop-1440x1000.sections-traversed",
+      "pass": true,
+      "details": {
+        "count": 8
+      }
+    },
+    {
+      "group": "viewport.desktop-1440x1000",
+      "id": "desktop-1440x1000.hero-visible",
+      "pass": true,
+      "details": {
+        "exists": true,
+        "visible": true,
+        "text": "OHTAAWA · Охта Парк Полная оклейка кузова защитной плёнкой Окрашенные элементы кузова 180 000 ₽ Прозрачная полиуретановая плёнка, подготовка автомобиля, монтаж и финальный контроль уже входят в стоимость. ПЕРВЫЙ ШАГ — КОНСУЛЬТАЦИЯ Какой автомобиль? Telegram WhatsApp Позвонить Для Telegram и MAX: текст скопируется — вставьте его в открывшийся чат. 3-5 дней полный цикл 5 лет гарантия Такси за наш счёт"
+      }
+    },
+    {
+      "group": "viewport.desktop-1440x1000",
+      "id": "desktop-1440x1000.no-horizontal-overflow",
+      "pass": true,
+      "details": {
+        "viewportWidth": 1440,
+        "documentClientWidth": 1440,
+        "documentScrollWidth": 1440,
+        "bodyScrollWidth": 1440,
+        "horizontalScrollPosition": 0,
+        "clippedElements": []
+      }
+    },
+    {
+      "group": "viewport.desktop-1440x1000",
+      "id": "desktop-1440x1000.all-reveals-visible",
+      "pass": true,
+      "details": {
+        "total": 18,
+        "hidden": []
+      }
+    },
+    {
+      "group": "viewport.desktop-1440x1000",
+      "id": "desktop-1440x1000.images-load",
+      "pass": true,
+      "details": {
+        "total": 8,
+        "broken": []
+      }
+    },
+    {
+      "group": "viewport.desktop-1440x1000",
+      "id": "desktop-1440x1000.runtime-clean",
+      "pass": true,
+      "details": {
+        "consoleErrors": [],
+        "pageErrors": [],
+        "requestFailures": [],
+        "httpFailures": []
+      }
+    },
+    {
+      "group": "viewport.mobile-430x932",
+      "id": "mobile-430x932.initial-secondary-proof-resources-zero",
+      "pass": true,
+      "details": {
+        "scrollY": 0,
+        "viewportHeight": 932,
+        "proofDocumentTop": 1834.2,
+        "retainedResourceEntries": [
+          {
+            "name": "http://127.0.0.1:56660/assets/proof/real/crops/finished-porsche-wide.webp",
+            "filename": "finished-porsche-wide.webp",
+            "initiatorType": "img",
+            "startTime": 117.6,
+            "transferSize": 178728,
+            "decodedBodySize": 178428
+          }
+        ],
+        "secondaryRequests": []
+      }
+    },
+    {
+      "group": "viewport.mobile-430x932",
+      "id": "mobile-430x932.responsive-contact-accessible-names",
+      "pass": true,
+      "details": {
+        "expected": [
+          "header-phone",
+          "hero-telegram",
+          "hero-whatsapp",
+          "hero-phone"
+        ],
+        "results": [
+          {
+            "id": "header-phone",
+            "selector": "header a[href^='tel:'][data-contact-location='header']",
+            "count": 1,
+            "ariaLabel": "Позвонить в студию",
+            "accessibleName": "Позвонить в студию",
+            "nameMatchesLabel": true,
+            "ariaSnapshot": "- link \"Позвонить в студию\": - /url: tel:+78127678840",
+            "snapshotError": null,
+            "pass": true
+          },
+          {
+            "id": "hero-telegram",
+            "selector": "a[data-contact-location='hero'][data-channel='telegram']",
+            "count": 1,
+            "ariaLabel": "Написать в Telegram",
+            "accessibleName": "Написать в Telegram",
+            "nameMatchesLabel": true,
+            "ariaSnapshot": "- link \"Написать в Telegram\": - /url: https://t.me/ohtaawa_chat - text: Telegram",
+            "snapshotError": null,
+            "pass": true
+          },
+          {
+            "id": "hero-whatsapp",
+            "selector": "a[data-contact-location='hero'][data-channel='whatsapp']",
+            "count": 1,
+            "ariaLabel": "Написать в WhatsApp",
+            "accessibleName": "Написать в WhatsApp",
+            "nameMatchesLabel": true,
+            "ariaSnapshot": "- link \"Написать в WhatsApp\": - /url: https://wa.me/79910102020 - text: WhatsApp",
+            "snapshotError": null,
+            "pass": true
+          },
+          {
+            "id": "hero-phone",
+            "selector": "a[data-contact-location='hero'][data-channel='phone']",
+            "count": 1,
+            "ariaLabel": "Позвонить",
+            "accessibleName": "Позвонить",
+            "nameMatchesLabel": true,
+            "ariaSnapshot": "- link \"Позвонить\": - /url: tel:+78127678840",
+            "snapshotError": null,
+            "pass": true
+          }
+        ],
+        "missingOrUnnamed": []
+      }
+    },
+    {
+      "group": "viewport.mobile-430x932",
+      "id": "mobile-430x932.sections-traversed",
+      "pass": true,
+      "details": {
+        "count": 8
+      }
+    },
+    {
+      "group": "viewport.mobile-430x932",
+      "id": "mobile-430x932.hero-visible",
+      "pass": true,
+      "details": {
+        "exists": true,
+        "visible": true,
+        "text": "OHTAAWA · Охта Парк Полная оклейка кузова защитной плёнкой Окрашенные элементы кузова 180 000 ₽ Прозрачная полиуретановая плёнка, подготовка автомобиля, монтаж и финальный контроль уже входят в стоимость. ПЕРВЫЙ ШАГ — КОНСУЛЬТАЦИЯ Какой автомобиль? Telegram WhatsApp Позвонить Для Telegram и MAX: текст скопируется — вставьте его в открывшийся чат. 3-5 дней полный цикл 5 лет гарантия Такси за наш счёт"
+      }
+    },
+    {
+      "group": "viewport.mobile-430x932",
+      "id": "mobile-430x932.no-horizontal-overflow",
+      "pass": true,
+      "details": {
+        "viewportWidth": 430,
+        "documentClientWidth": 430,
+        "documentScrollWidth": 430,
+        "bodyScrollWidth": 430,
+        "horizontalScrollPosition": 0,
+        "clippedElements": []
+      }
+    },
+    {
+      "group": "viewport.mobile-430x932",
+      "id": "mobile-430x932.all-reveals-visible",
+      "pass": true,
+      "details": {
+        "total": 18,
+        "hidden": []
+      }
+    },
+    {
+      "group": "viewport.mobile-430x932",
+      "id": "mobile-430x932.images-load",
+      "pass": true,
+      "details": {
+        "total": 8,
+        "broken": []
+      }
+    },
+    {
+      "group": "viewport.mobile-430x932",
+      "id": "mobile-430x932.runtime-clean",
+      "pass": true,
+      "details": {
+        "consoleErrors": [],
+        "pageErrors": [],
+        "requestFailures": [],
+        "httpFailures": []
+      }
+    },
+    {
+      "group": "viewport.mobile-390x844",
+      "id": "mobile-390x844.initial-secondary-proof-resources-zero",
+      "pass": true,
+      "details": {
+        "scrollY": 0,
+        "viewportHeight": 844,
+        "proofDocumentTop": 1904.9,
+        "retainedResourceEntries": [
+          {
+            "name": "http://127.0.0.1:56660/assets/proof/real/crops/finished-porsche-wide.webp",
+            "filename": "finished-porsche-wide.webp",
+            "initiatorType": "img",
+            "startTime": 116.3,
+            "transferSize": 178728,
+            "decodedBodySize": 178428
+          }
+        ],
+        "secondaryRequests": []
+      }
+    },
+    {
+      "group": "viewport.mobile-390x844",
+      "id": "mobile-390x844.responsive-contact-accessible-names",
+      "pass": true,
+      "details": {
+        "expected": [
+          "header-phone",
+          "hero-telegram",
+          "hero-whatsapp",
+          "hero-phone"
+        ],
+        "results": [
+          {
+            "id": "header-phone",
+            "selector": "header a[href^='tel:'][data-contact-location='header']",
+            "count": 1,
+            "ariaLabel": "Позвонить в студию",
+            "accessibleName": "Позвонить в студию",
+            "nameMatchesLabel": true,
+            "ariaSnapshot": "- link \"Позвонить в студию\": - /url: tel:+78127678840",
+            "snapshotError": null,
+            "pass": true
+          },
+          {
+            "id": "hero-telegram",
+            "selector": "a[data-contact-location='hero'][data-channel='telegram']",
+            "count": 1,
+            "ariaLabel": "Написать в Telegram",
+            "accessibleName": "Написать в Telegram",
+            "nameMatchesLabel": true,
+            "ariaSnapshot": "- link \"Написать в Telegram\": - /url: https://t.me/ohtaawa_chat - text: Telegram",
+            "snapshotError": null,
+            "pass": true
+          },
+          {
+            "id": "hero-whatsapp",
+            "selector": "a[data-contact-location='hero'][data-channel='whatsapp']",
+            "count": 1,
+            "ariaLabel": "Написать в WhatsApp",
+            "accessibleName": "Написать в WhatsApp",
+            "nameMatchesLabel": true,
+            "ariaSnapshot": "- link \"Написать в WhatsApp\": - /url: https://wa.me/79910102020 - text: WhatsApp",
+            "snapshotError": null,
+            "pass": true
+          },
+          {
+            "id": "hero-phone",
+            "selector": "a[data-contact-location='hero'][data-channel='phone']",
+            "count": 1,
+            "ariaLabel": "Позвонить",
+            "accessibleName": "Позвонить",
+            "nameMatchesLabel": true,
+            "ariaSnapshot": "- link \"Позвонить\": - /url: tel:+78127678840",
+            "snapshotError": null,
+            "pass": true
+          }
+        ],
+        "missingOrUnnamed": []
+      }
+    },
+    {
+      "group": "viewport.mobile-390x844",
+      "id": "mobile-390x844.sections-traversed",
+      "pass": true,
+      "details": {
+        "count": 8
+      }
+    },
+    {
+      "group": "viewport.mobile-390x844",
+      "id": "mobile-390x844.hero-visible",
+      "pass": true,
+      "details": {
+        "exists": true,
+        "visible": true,
+        "text": "OHTAAWA · Охта Парк Полная оклейка кузова защитной плёнкой Окрашенные элементы кузова 180 000 ₽ Прозрачная полиуретановая плёнка, подготовка автомобиля, монтаж и финальный контроль уже входят в стоимость. ПЕРВЫЙ ШАГ — КОНСУЛЬТАЦИЯ Какой автомобиль? Telegram WhatsApp Позвонить Для Telegram и MAX: текст скопируется — вставьте его в открывшийся чат. 3-5 дней полный цикл 5 лет гарантия Такси за наш счёт"
+      }
+    },
+    {
+      "group": "viewport.mobile-390x844",
+      "id": "mobile-390x844.no-horizontal-overflow",
+      "pass": true,
+      "details": {
+        "viewportWidth": 390,
+        "documentClientWidth": 390,
+        "documentScrollWidth": 390,
+        "bodyScrollWidth": 390,
+        "horizontalScrollPosition": 0,
+        "clippedElements": []
+      }
+    },
+    {
+      "group": "viewport.mobile-390x844",
+      "id": "mobile-390x844.all-reveals-visible",
+      "pass": true,
+      "details": {
+        "total": 18,
+        "hidden": []
+      }
+    },
+    {
+      "group": "viewport.mobile-390x844",
+      "id": "mobile-390x844.images-load",
+      "pass": true,
+      "details": {
+        "total": 8,
+        "broken": []
+      }
+    },
+    {
+      "group": "viewport.mobile-390x844",
+      "id": "mobile-390x844.runtime-clean",
+      "pass": true,
+      "details": {
+        "consoleErrors": [],
+        "pageErrors": [],
+        "requestFailures": [],
+        "httpFailures": []
+      }
+    },
+    {
+      "group": "viewport.mobile-360x800",
+      "id": "mobile-360x800.initial-secondary-proof-resources-zero",
+      "pass": true,
+      "details": {
+        "scrollY": 0,
+        "viewportHeight": 800,
+        "proofDocumentTop": 1933.1,
+        "retainedResourceEntries": [
+          {
+            "name": "http://127.0.0.1:56660/assets/proof/real/crops/finished-porsche-wide.webp",
+            "filename": "finished-porsche-wide.webp",
+            "initiatorType": "img",
+            "startTime": 114.6,
+            "transferSize": 178728,
+            "decodedBodySize": 178428
+          }
+        ],
+        "secondaryRequests": []
+      }
+    },
+    {
+      "group": "viewport.mobile-360x800",
+      "id": "mobile-360x800.responsive-contact-accessible-names",
+      "pass": true,
+      "details": {
+        "expected": [
+          "header-phone",
+          "hero-telegram",
+          "hero-whatsapp",
+          "hero-phone"
+        ],
+        "results": [
+          {
+            "id": "header-phone",
+            "selector": "header a[href^='tel:'][data-contact-location='header']",
+            "count": 1,
+            "ariaLabel": "Позвонить в студию",
+            "accessibleName": "Позвонить в студию",
+            "nameMatchesLabel": true,
+            "ariaSnapshot": "- link \"Позвонить в студию\": - /url: tel:+78127678840",
+            "snapshotError": null,
+            "pass": true
+          },
+          {
+            "id": "hero-telegram",
+            "selector": "a[data-contact-location='hero'][data-channel='telegram']",
+            "count": 1,
+            "ariaLabel": "Написать в Telegram",
+            "accessibleName": "Написать в Telegram",
+            "nameMatchesLabel": true,
+            "ariaSnapshot": "- link \"Написать в Telegram\": - /url: https://t.me/ohtaawa_chat",
+            "snapshotError": null,
+            "pass": true
+          },
+          {
+            "id": "hero-whatsapp",
+            "selector": "a[data-contact-location='hero'][data-channel='whatsapp']",
+            "count": 1,
+            "ariaLabel": "Написать в WhatsApp",
+            "accessibleName": "Написать в WhatsApp",
+            "nameMatchesLabel": true,
+            "ariaSnapshot": "- link \"Написать в WhatsApp\": - /url: https://wa.me/79910102020",
+            "snapshotError": null,
+            "pass": true
+          },
+          {
+            "id": "hero-phone",
+            "selector": "a[data-contact-location='hero'][data-channel='phone']",
+            "count": 1,
+            "ariaLabel": "Позвонить",
+            "accessibleName": "Позвонить",
+            "nameMatchesLabel": true,
+            "ariaSnapshot": "- link \"Позвонить\": - /url: tel:+78127678840",
+            "snapshotError": null,
+            "pass": true
+          }
+        ],
+        "missingOrUnnamed": []
+      }
+    },
+    {
+      "group": "viewport.mobile-360x800",
+      "id": "mobile-360x800.sections-traversed",
+      "pass": true,
+      "details": {
+        "count": 8
+      }
+    },
+    {
+      "group": "viewport.mobile-360x800",
+      "id": "mobile-360x800.hero-visible",
+      "pass": true,
+      "details": {
+        "exists": true,
+        "visible": true,
+        "text": "OHTAAWA · Охта Парк Полная оклейка кузова защитной плёнкой Окрашенные элементы кузова 180 000 ₽ Прозрачная полиуретановая плёнка, подготовка автомобиля, монтаж и финальный контроль уже входят в стоимость. ПЕРВЫЙ ШАГ — КОНСУЛЬТАЦИЯ Какой автомобиль? Для Telegram и MAX: текст скопируется — вставьте его в открывшийся чат. 3-5 дней полный цикл 5 лет гарантия Такси за наш счёт"
+      }
+    },
+    {
+      "group": "viewport.mobile-360x800",
+      "id": "mobile-360x800.no-horizontal-overflow",
+      "pass": true,
+      "details": {
+        "viewportWidth": 360,
+        "documentClientWidth": 360,
+        "documentScrollWidth": 360,
+        "bodyScrollWidth": 360,
+        "horizontalScrollPosition": 0,
+        "clippedElements": []
+      }
+    },
+    {
+      "group": "viewport.mobile-360x800",
+      "id": "mobile-360x800.all-reveals-visible",
+      "pass": true,
+      "details": {
+        "total": 18,
+        "hidden": []
+      }
+    },
+    {
+      "group": "viewport.mobile-360x800",
+      "id": "mobile-360x800.images-load",
+      "pass": true,
+      "details": {
+        "total": 8,
+        "broken": []
+      }
+    },
+    {
+      "group": "viewport.mobile-360x800",
+      "id": "mobile-360x800.runtime-clean",
+      "pass": true,
+      "details": {
+        "consoleErrors": [],
+        "pageErrors": [],
+        "requestFailures": [],
+        "httpFailures": []
+      }
+    },
+    {
+      "group": "progressive-enhancement.no-js-desktop-1440x1000",
+      "id": "no-js-desktop-1440x1000.full-content-visible",
+      "pass": true,
+      "details": {
+        "traversed": 8,
+        "sectionTotal": 7,
+        "visibleSections": 7,
+        "textLength": 3088
+      }
+    },
+    {
+      "group": "progressive-enhancement.no-js-desktop-1440x1000",
+      "id": "no-js-desktop-1440x1000.all-reveals-visible",
+      "pass": true,
+      "details": {
+        "total": 18,
+        "hidden": []
+      }
+    },
+    {
+      "group": "progressive-enhancement.no-js-desktop-1440x1000",
+      "id": "no-js-desktop-1440x1000.no-horizontal-overflow",
+      "pass": true,
+      "details": {
+        "viewportWidth": 1440,
+        "documentClientWidth": 1440,
+        "documentScrollWidth": 1440,
+        "bodyScrollWidth": 1440,
+        "horizontalScrollPosition": 0,
+        "clippedElements": []
+      }
+    },
+    {
+      "group": "progressive-enhancement.no-js-desktop-1440x1000",
+      "id": "no-js-desktop-1440x1000.images-load",
+      "pass": true,
+      "details": {
+        "total": 8,
+        "broken": []
+      }
+    },
+    {
+      "group": "progressive-enhancement.no-js-desktop-1440x1000",
+      "id": "no-js-desktop-1440x1000.runtime-clean",
+      "pass": true,
+      "details": {
+        "consoleErrors": [],
+        "pageErrors": [],
+        "requestFailures": [],
+        "httpFailures": []
+      }
+    },
+    {
+      "group": "progressive-enhancement.no-js-mobile-390x844",
+      "id": "no-js-mobile-390x844.full-content-visible",
+      "pass": true,
+      "details": {
+        "traversed": 8,
+        "sectionTotal": 7,
+        "visibleSections": 7,
+        "textLength": 3044
+      }
+    },
+    {
+      "group": "progressive-enhancement.no-js-mobile-390x844",
+      "id": "no-js-mobile-390x844.all-reveals-visible",
+      "pass": true,
+      "details": {
+        "total": 18,
+        "hidden": []
+      }
+    },
+    {
+      "group": "progressive-enhancement.no-js-mobile-390x844",
+      "id": "no-js-mobile-390x844.no-horizontal-overflow",
+      "pass": true,
+      "details": {
+        "viewportWidth": 390,
+        "documentClientWidth": 390,
+        "documentScrollWidth": 390,
+        "bodyScrollWidth": 390,
+        "horizontalScrollPosition": 0,
+        "clippedElements": []
+      }
+    },
+    {
+      "group": "progressive-enhancement.no-js-mobile-390x844",
+      "id": "no-js-mobile-390x844.images-load",
+      "pass": true,
+      "details": {
+        "total": 8,
+        "broken": []
+      }
+    },
+    {
+      "group": "progressive-enhancement.no-js-mobile-390x844",
+      "id": "no-js-mobile-390x844.runtime-clean",
+      "pass": true,
+      "details": {
+        "consoleErrors": [],
+        "pageErrors": [],
+        "requestFailures": [],
+        "httpFailures": []
+      }
+    },
+    {
+      "group": "motion.reduced-motion",
+      "id": "reduced-motion-mobile-390x844.replacement-is-static",
+      "pass": true,
+      "details": {
+        "reducedMotionMatches": true,
+        "runningAnimations": [],
+        "hiddenReveals": 0,
+        "ignoredInactiveRevealTotal": 2,
+        "selectedMessageVariant": "default",
+        "saveDataClass": false,
+        "analyticsSaveData": false,
+        "navigatorSaveData": false,
+        "injectedSaveDataOverride": false
+      }
+    },
+    {
+      "group": "motion.reduced-motion",
+      "id": "reduced-motion-mobile-390x844.runtime-clean",
+      "pass": true,
+      "details": {
+        "consoleErrors": [],
+        "pageErrors": [],
+        "requestFailures": [],
+        "httpFailures": []
+      }
+    },
+    {
+      "group": "motion.save-data",
+      "id": "save-data-mobile-390x844.navigator-override-is-real",
+      "pass": true,
+      "details": {
+        "reducedMotionMatches": false,
+        "runningAnimations": [],
+        "hiddenReveals": 0,
+        "ignoredInactiveRevealTotal": 2,
+        "selectedMessageVariant": "default",
+        "saveDataClass": true,
+        "analyticsSaveData": true,
+        "navigatorSaveData": true,
+        "injectedSaveDataOverride": true
+      }
+    },
+    {
+      "group": "motion.save-data",
+      "id": "save-data-mobile-390x844.static-visible-replacement",
+      "pass": true,
+      "details": {
+        "reducedMotionMatches": false,
+        "runningAnimations": [],
+        "hiddenReveals": 0,
+        "ignoredInactiveRevealTotal": 2,
+        "selectedMessageVariant": "default",
+        "saveDataClass": true,
+        "analyticsSaveData": true,
+        "navigatorSaveData": true,
+        "injectedSaveDataOverride": true
+      }
+    },
+    {
+      "group": "motion.save-data",
+      "id": "save-data-mobile-390x844.runtime-clean",
+      "pass": true,
+      "details": {
+        "consoleErrors": [],
+        "pageErrors": [],
+        "requestFailures": [],
+        "httpFailures": []
+      }
+    },
+    {
+      "group": "accessibility",
+      "id": "keyboard-focus-dialog-mobile-390x844.skip-link-first-and-visible",
+      "pass": true,
+      "details": {
+        "isSkipLink": true,
+        "text": "К содержанию",
+        "rect": {
+          "left": 0,
+          "top": 0,
+          "width": 129.890625,
+          "height": 38.390625
+        },
+        "visibleInViewport": true
+      }
+    },
+    {
+      "group": "accessibility",
+      "id": "keyboard-focus-dialog-mobile-390x844.skip-link-targets-main",
+      "pass": true,
+      "details": {
+        "hash": "#main"
+      }
+    },
+    {
+      "group": "accessibility",
+      "id": "keyboard-focus-dialog-mobile-390x844.page-primary-controls-44px",
+      "pass": true,
+      "details": {
+        "scope": "page",
+        "total": 20,
+        "measured": [
+          {
+            "control": "button[data-open-contact=\"\"]",
+            "width": 82.6,
+            "height": 44,
+            "accessibleName": "Записаться"
+          },
+          {
+            "control": "#q-car-input",
+            "width": 326,
+            "height": 44,
+            "accessibleName": "Марка и модель"
+          },
+          {
+            "control": "a[data-channel=\"telegram\"]",
+            "width": 104.9,
+            "height": 44,
+            "accessibleName": "Написать в Telegram"
+          },
+          {
+            "control": "a[data-channel=\"whatsapp\"]",
+            "width": 111.9,
+            "height": 44,
+            "accessibleName": "Написать в WhatsApp"
+          },
+          {
+            "control": "a[data-channel=\"phone\"]",
+            "width": 116.2,
+            "height": 44,
+            "accessibleName": "Позвонить"
+          },
+          {
+            "control": "button[data-proof-prev=\"\"]",
+            "width": 44,
+            "height": 44,
+            "accessibleName": "Предыдущий кадр"
+          },
+          {
+            "control": "button[data-proof-next=\"\"]",
+            "width": 44,
+            "height": 44,
+            "accessibleName": "Следующий кадр"
+          },
+          {
+            "control": "button[data-slide=\"0\"]",
+            "width": 90,
+            "height": 54,
+            "accessibleName": "01"
+          },
+          {
+            "control": "button[data-slide=\"1\"]",
+            "width": 90,
+            "height": 54,
+            "accessibleName": "02"
+          },
+          {
+            "control": "button[data-slide=\"2\"]",
+            "width": 90,
+            "height": 54,
+            "accessibleName": "03"
+          },
+          {
+            "control": "a[data-channel=\"telegram\"]",
+            "width": 358,
+            "height": 93.6,
+            "accessibleName": "Telegram Чат с администратором Текст скопируется — вставьте в чат"
+          },
+          {
+            "control": "a[data-channel=\"whatsapp\"]",
+            "width": 358,
+            "height": 72.4,
+            "accessibleName": "WhatsApp Сообщение с текстом обращения"
+          },
+          {
+            "control": "a[data-channel=\"max\"]",
+            "width": 358,
+            "height": 93.6,
+            "accessibleName": "M MAX Мессенджер Текст скопируется — вставьте в чат"
+          },
+          {
+            "control": "a[data-channel=\"phone\"]",
+            "width": 358,
+            "height": 72.4,
+            "accessibleName": "Позвонить +7 (812) 767-88-40"
+          },
+          {
+            "control": "summary.:14",
+            "width": 358,
+            "height": 56.8,
+            "accessibleName": "Цена действительно фиксированная?"
+          },
+          {
+            "control": "summary.:15",
+            "width": 358,
+            "height": 56.8,
+            "accessibleName": "Какая плёнка используется?"
+          },
+          {
+            "control": "summary.:16",
+            "width": 358,
+            "height": 56.8,
+            "accessibleName": "Какая гарантия действует?"
+          },
+          {
+            "control": "summary.:17",
+            "width": 358,
+            "height": 56.8,
+            "accessibleName": "Сколько времени автомобиль будет в студии?"
+          },
+          {
+            "control": "summary.:18",
+            "width": 358,
+            "height": 56.8,
+            "accessibleName": "Мойка на консультации действительно бесплатная?"
+          },
+          {
+            "control": "summary.:19",
+            "width": 358,
+            "height": 56.8,
+            "accessibleName": "Плёнка делает автомобиль неуязвимым?"
+          }
+        ],
+        "undersized": [],
+        "unnamed": []
+      }
+    },
+    {
+      "group": "accessibility",
+      "id": "keyboard-focus-dialog-mobile-390x844.page-controls-have-names",
+      "pass": true,
+      "details": {
+        "total": 20,
+        "unnamed": []
+      }
+    },
+    {
+      "group": "accessibility",
+      "id": "keyboard-focus-dialog-mobile-390x844.logical-tab-model",
+      "pass": true,
+      "details": {
+        "positiveTabIndex": [],
+        "duplicateIds": [],
+        "lang": "ru"
+      }
+    },
+    {
+      "group": "accessibility",
+      "id": "keyboard-focus-dialog-mobile-390x844.trigger-has-visible-focus",
+      "pass": true,
+      "details": {
+        "focusVisible": true,
+        "outlineStyle": "solid",
+        "outlineWidth": "2px",
+        "boxShadow": "none"
+      }
+    },
+    {
+      "group": "accessibility",
+      "id": "keyboard-focus-dialog-mobile-390x844.dialog-opens-from-keyboard",
+      "pass": true,
+      "details": {
+        "exists": true,
+        "open": true,
+        "labelledBy": "q-dialog-title",
+        "labelExists": true,
+        "focusInside": true,
+        "activeTag": "button",
+        "activeName": "Закрыть"
+      }
+    },
+    {
+      "group": "accessibility",
+      "id": "keyboard-focus-dialog-mobile-390x844.dialog-controls-44px",
+      "pass": true,
+      "details": {
+        "scope": "dialog",
+        "total": 5,
+        "measured": [
+          {
+            "control": "button[data-close-dialog=\"\"]",
+            "width": 44,
+            "height": 44,
+            "accessibleName": "Закрыть"
+          },
+          {
+            "control": "a[data-channel=\"telegram\"]",
+            "width": 314.8,
+            "height": 50,
+            "accessibleName": "Telegram"
+          },
+          {
+            "control": "a[data-channel=\"whatsapp\"]",
+            "width": 314.8,
+            "height": 50,
+            "accessibleName": "WhatsApp"
+          },
+          {
+            "control": "a[data-channel=\"max\"]",
+            "width": 314.8,
+            "height": 50,
+            "accessibleName": "M MAX"
+          },
+          {
+            "control": "a[data-channel=\"phone\"]",
+            "width": 314.8,
+            "height": 50,
+            "accessibleName": "Позвонить"
+          }
+        ],
+        "undersized": [],
+        "unnamed": []
+      }
+    },
+    {
+      "group": "accessibility",
+      "id": "keyboard-focus-dialog-mobile-390x844.dialog-controls-have-names",
+      "pass": true,
+      "details": {
+        "total": 5,
+        "unnamed": []
+      }
+    },
+    {
+      "group": "accessibility",
+      "id": "keyboard-focus-dialog-mobile-390x844.dialog-focus-trap",
+      "pass": true,
+      "details": {
+        "dialogTabCount": 5,
+        "trapStates": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "group": "accessibility",
+      "id": "keyboard-focus-dialog-mobile-390x844.dialog-escape-restores-focus",
+      "pass": true,
+      "details": {
+        "closed": true,
+        "bodyUnlocked": true,
+        "focusReturnedToTrigger": true
+      }
+    },
+    {
+      "group": "accessibility",
+      "id": "keyboard-focus-dialog-mobile-390x844.runtime-clean",
+      "pass": true,
+      "details": {
+        "consoleErrors": [],
+        "pageErrors": [],
+        "requestFailures": [],
+        "httpFailures": []
+      }
+    },
+    {
+      "group": "message-match",
+      "id": "message-match.newcar_fullfilm.attribution",
+      "pass": true,
+      "details": {
+        "heroText": "OHTAAWA · Охта Парк Защита нового автомобиля прозрачной плёнкой Окрашенные элементы кузова 180 000 ₽ Новый автомобиль заслуживает защиты с первого дня. Прозрачная полиуретановая плёнка помогает снизить риск сколов и царапин от дорожного песка. ПЕРВЫЙ ШАГ — КОНСУЛЬТАЦИЯ Какой автомобиль? Telegram WhatsApp Позвонить Для Telegram и MAX: текст скопируется — вставьте его в открывшийся чат. 3-5 дней полный цикл 5 лет гарантия Такси за наш счёт",
+        "eyebrow": "OHTAAWA · Охта Парк",
+        "lead": "Новый автомобиль заслуживает защиты с первого дня. Прозрачная полиуретановая плёнка помогает снизить риск сколов и царапин от дорожного песка.",
+        "leadVariant": "newcar",
+        "price": "Окрашенные элементы кузова180 000 ₽",
+        "isQa": true,
+        "attribution": {
+          "utm_source": "codex",
+          "utm_medium": "qa",
+          "utm_campaign": "qwen_v2_3_sol_qa",
+          "utm_content": "newcar_fullfilm",
+          "utm_term": "none",
+          "scenario": "full-film",
+          "experiment_id": "qwen_v2_3_sol_qa",
+          "landing_version": "qwen-reinvention-v2.4",
+          "service_route": "film_full",
+          "offer_id": "full_film_fixed_180",
+          "message_variant": "newcar"
+        },
+        "landingPayload": {
+          "utm_source": "codex",
+          "utm_medium": "qa",
+          "utm_campaign": "qwen_v2_3_sol_qa",
+          "utm_content": "newcar_fullfilm",
+          "utm_term": "none",
+          "scenario": "full-film",
+          "experiment_id": "qwen_v2_3_sol_qa",
+          "landing_version": "qwen-reinvention-v2.4",
+          "service_route": "film_full",
+          "offer_id": "full_film_fixed_180",
+          "message_variant": "newcar",
+          "viewport_width": 1440,
+          "viewport_height": 1000,
+          "referrer_host": "direct",
+          "event_time": "2026-08-17T01:29:53.972Z",
+          "page_path": "/"
+        },
+        "messageVariant": "newcar"
+      }
+    },
+    {
+      "group": "message-match",
+      "id": "message-match.newcar_fullfilm.hero-copy",
+      "pass": true,
+      "details": {
+        "heroText": "OHTAAWA · Охта Парк Защита нового автомобиля прозрачной плёнкой Окрашенные элементы кузова 180 000 ₽ Новый автомобиль заслуживает защиты с первого дня. Прозрачная полиуретановая плёнка помогает снизить риск сколов и царапин от дорожного песка. ПЕРВЫЙ ШАГ — КОНСУЛЬТАЦИЯ Какой автомобиль? Telegram WhatsApp Позвонить Для Telegram и MAX: текст скопируется — вставьте его в открывшийся чат. 3-5 дней полный цикл 5 лет гарантия Такси за наш счёт",
+        "eyebrow": "OHTAAWA · Охта Парк",
+        "lead": "Новый автомобиль заслуживает защиты с первого дня. Прозрачная полиуретановая плёнка помогает снизить риск сколов и царапин от дорожного песка.",
+        "leadVariant": "newcar",
+        "price": "Окрашенные элементы кузова180 000 ₽"
+      }
+    },
+    {
+      "group": "message-match",
+      "id": "message-match.newcar_fullfilm.variant-in-analytics",
+      "pass": true,
+      "details": {
+        "messageVariant": "newcar",
+        "landingPayload": {
+          "utm_source": "codex",
+          "utm_medium": "qa",
+          "utm_campaign": "qwen_v2_3_sol_qa",
+          "utm_content": "newcar_fullfilm",
+          "utm_term": "none",
+          "scenario": "full-film",
+          "experiment_id": "qwen_v2_3_sol_qa",
+          "landing_version": "qwen-reinvention-v2.4",
+          "service_route": "film_full",
+          "offer_id": "full_film_fixed_180",
+          "message_variant": "newcar",
+          "viewport_width": 1440,
+          "viewport_height": 1000,
+          "referrer_host": "direct",
+          "event_time": "2026-08-17T01:29:53.972Z",
+          "page_path": "/"
+        }
+      }
+    },
+    {
+      "group": "message-match",
+      "id": "message-match.newcar_fullfilm.runtime-clean",
+      "pass": true,
+      "details": {
+        "consoleErrors": [],
+        "pageErrors": [],
+        "requestFailures": [],
+        "httpFailures": []
+      }
+    },
+    {
+      "group": "message-match",
+      "id": "message-match.price_install_fullfilm.attribution",
+      "pass": true,
+      "details": {
+        "heroText": "OHTAAWA · Охта Парк Полная оклейка кузова за 180 000 ₽ Окрашенные элементы кузова 180 000 ₽ 180 000 рублей — это плёнка, подготовка, монтаж и финальный контроль. Применимость и детали администратор подтвердит до начала работ. ПЕРВЫЙ ШАГ — КОНСУЛЬТАЦИЯ Какой автомобиль? Telegram WhatsApp Позвонить Для Telegram и MAX: текст скопируется — вставьте его в открывшийся чат. 3-5 дней полный цикл 5 лет гарантия Такси за наш счёт",
+        "eyebrow": "OHTAAWA · Охта Парк",
+        "lead": "180 000 рублей — это плёнка, подготовка, монтаж и финальный контроль. Применимость и детали администратор подтвердит до начала работ.",
+        "leadVariant": "price",
+        "price": "Окрашенные элементы кузова180 000 ₽",
+        "isQa": true,
+        "attribution": {
+          "utm_source": "codex",
+          "utm_medium": "qa",
+          "utm_campaign": "qwen_v2_3_sol_qa",
+          "utm_content": "price_install_fullfilm",
+          "utm_term": "none",
+          "scenario": "full-film",
+          "experiment_id": "qwen_v2_3_sol_qa",
+          "landing_version": "qwen-reinvention-v2.4",
+          "service_route": "film_full",
+          "offer_id": "full_film_fixed_180",
+          "message_variant": "price"
+        },
+        "landingPayload": {
+          "utm_source": "codex",
+          "utm_medium": "qa",
+          "utm_campaign": "qwen_v2_3_sol_qa",
+          "utm_content": "price_install_fullfilm",
+          "utm_term": "none",
+          "scenario": "full-film",
+          "experiment_id": "qwen_v2_3_sol_qa",
+          "landing_version": "qwen-reinvention-v2.4",
+          "service_route": "film_full",
+          "offer_id": "full_film_fixed_180",
+          "message_variant": "price",
+          "viewport_width": 1440,
+          "viewport_height": 1000,
+          "referrer_host": "direct",
+          "event_time": "2026-08-17T01:29:54.914Z",
+          "page_path": "/"
+        },
+        "messageVariant": "price"
+      }
+    },
+    {
+      "group": "message-match",
+      "id": "message-match.price_install_fullfilm.hero-copy",
+      "pass": true,
+      "details": {
+        "heroText": "OHTAAWA · Охта Парк Полная оклейка кузова за 180 000 ₽ Окрашенные элементы кузова 180 000 ₽ 180 000 рублей — это плёнка, подготовка, монтаж и финальный контроль. Применимость и детали администратор подтвердит до начала работ. ПЕРВЫЙ ШАГ — КОНСУЛЬТАЦИЯ Какой автомобиль? Telegram WhatsApp Позвонить Для Telegram и MAX: текст скопируется — вставьте его в открывшийся чат. 3-5 дней полный цикл 5 лет гарантия Такси за наш счёт",
+        "eyebrow": "OHTAAWA · Охта Парк",
+        "lead": "180 000 рублей — это плёнка, подготовка, монтаж и финальный контроль. Применимость и детали администратор подтвердит до начала работ.",
+        "leadVariant": "price",
+        "price": "Окрашенные элементы кузова180 000 ₽"
+      }
+    },
+    {
+      "group": "message-match",
+      "id": "message-match.price_install_fullfilm.variant-in-analytics",
+      "pass": true,
+      "details": {
+        "messageVariant": "price",
+        "landingPayload": {
+          "utm_source": "codex",
+          "utm_medium": "qa",
+          "utm_campaign": "qwen_v2_3_sol_qa",
+          "utm_content": "price_install_fullfilm",
+          "utm_term": "none",
+          "scenario": "full-film",
+          "experiment_id": "qwen_v2_3_sol_qa",
+          "landing_version": "qwen-reinvention-v2.4",
+          "service_route": "film_full",
+          "offer_id": "full_film_fixed_180",
+          "message_variant": "price",
+          "viewport_width": 1440,
+          "viewport_height": 1000,
+          "referrer_host": "direct",
+          "event_time": "2026-08-17T01:29:54.914Z",
+          "page_path": "/"
+        }
+      }
+    },
+    {
+      "group": "message-match",
+      "id": "message-match.price_install_fullfilm.runtime-clean",
+      "pass": true,
+      "details": {
+        "consoleErrors": [],
+        "pageErrors": [],
+        "requestFailures": [],
+        "httpFailures": []
+      }
+    },
+    {
+      "group": "message-match",
+      "id": "message-match.variants-are-distinct",
+      "pass": true,
+      "details": {
+        "variants": [
+          {
+            "content": "newcar_fullfilm",
+            "variant": "newcar",
+            "heroText": "OHTAAWA · Охта Парк Защита нового автомобиля прозрачной плёнкой Окрашенные элементы кузова 180 000 ₽ Новый автомобиль заслуживает защиты с первого дня. Прозрачная полиуретановая плёнка помогает снизить риск сколов и царапин от дорожного песка. ПЕРВЫЙ ШАГ — КОНСУЛЬТАЦИЯ Какой автомобиль? Telegram WhatsApp Позвонить Для Telegram и MAX: текст скопируется — вставьте его в открывшийся чат. 3-5 дней полный цикл 5 лет гарантия Такси за наш счёт"
+          },
+          {
+            "content": "price_install_fullfilm",
+            "variant": "price",
+            "heroText": "OHTAAWA · Охта Парк Полная оклейка кузова за 180 000 ₽ Окрашенные элементы кузова 180 000 ₽ 180 000 рублей — это плёнка, подготовка, монтаж и финальный контроль. Применимость и детали администратор подтвердит до начала работ. ПЕРВЫЙ ШАГ — КОНСУЛЬТАЦИЯ Какой автомобиль? Telegram WhatsApp Позвонить Для Telegram и MAX: текст скопируется — вставьте его в открывшийся чат. 3-5 дней полный цикл 5 лет гарантия Такси за наш счёт"
+          }
+        ]
+      }
+    },
+    {
+      "group": "privacy",
+      "id": "canonical-event-map.car-input-ym-disable-keys",
+      "pass": true,
+      "details": {
+        "exists": true,
+        "classes": [
+          "ym-disable-keys"
+        ],
+        "hasKeysOptOut": true
+      }
+    },
+    {
+      "group": "privacy",
+      "id": "canonical-event-map.all-whatsapp-links-webvisor-opt-out",
+      "pass": true,
+      "details": {
+        "carInput": {
+          "exists": true,
+          "classes": [
+            "ym-disable-keys"
+          ],
+          "hasKeysOptOut": true
+        },
+        "whatsappLinks": [
+          {
+            "index": 0,
+            "location": "hero",
+            "destination": "wa.me/79910102020",
+            "classes": [
+              "q-channel",
+              "q-channel-wa",
+              "ym-disable-tracklink",
+              "ym-disable-clickmap"
+            ],
+            "hasTracklinkOptOut": true,
+            "hasClickmapOptOut": true
+          },
+          {
+            "index": 1,
+            "location": "contact",
+            "destination": "wa.me/79910102020",
+            "classes": [
+              "q-channel-card",
+              "ym-disable-tracklink",
+              "ym-disable-clickmap"
+            ],
+            "hasTracklinkOptOut": true,
+            "hasClickmapOptOut": true
+          },
+          {
+            "index": 2,
+            "location": "dialog",
+            "destination": "wa.me/79910102020",
+            "classes": [
+              "ym-disable-tracklink",
+              "ym-disable-clickmap"
+            ],
+            "hasTracklinkOptOut": true,
+            "hasClickmapOptOut": true
+          }
+        ],
+        "nonCompliantWhatsappLinks": []
+      }
+    },
+    {
+      "group": "analytics",
+      "id": "canonical-event-map.counter-and-qa-mode",
+      "pass": true,
+      "details": {
+        "counter": 110584673,
+        "bodyCounters": "110584673",
+        "analyticsIsQa": true,
+        "currentUrlQa": "1",
+        "viewMappings": [
+          "price_view_polish_film_v9",
+          "proof_view_polish_film_v9",
+          "offer_terms_view_polish_film_v8"
+        ],
+        "trackedMappings": [
+          {
+            "event": "lead_phone_polish_film_v8",
+            "location": "header",
+            "explicitContactLocation": "header"
+          },
+          {
+            "event": "lead_phone_polish_film_v8",
+            "location": "contact",
+            "explicitContactLocation": "contact"
+          },
+          {
+            "event": "route_yandex_maps_v8",
+            "location": "contact",
+            "explicitContactLocation": "contact"
+          },
+          {
+            "event": "route_yandex_reviews_v8",
+            "location": "reviews",
+            "explicitContactLocation": "reviews"
+          },
+          {
+            "event": "route_main_site_v8",
+            "location": "footer",
+            "explicitContactLocation": "footer"
+          },
+          {
+            "event": "route_telegram_channel_v8",
+            "location": "footer",
+            "explicitContactLocation": "footer"
+          },
+          {
+            "event": "route_yandex_reviews_v8",
+            "location": "footer",
+            "explicitContactLocation": "footer"
+          },
+          {
+            "event": "lead_phone_polish_film_v8",
+            "location": "footer",
+            "explicitContactLocation": "footer"
+          }
+        ],
+        "channels": [
+          {
+            "channel": "telegram",
+            "location": "hero",
+            "href": "https://t.me/ohtaawa_chat",
+            "copyMessage": "Добрый день! Хочу узнать о полной защитной оклейке кузова за 180 000 рублей. Автомобиль: [марка и модель]."
+          },
+          {
+            "channel": "whatsapp",
+            "location": "hero",
+            "href": "https://wa.me/79910102020",
+            "copyMessage": "Добрый день! Хочу узнать о полной защитной оклейке кузова за 180 000 рублей. Автомобиль: [марка и модель]."
+          },
+          {
+            "channel": "phone",
+            "location": "hero",
+            "href": "tel:+78127678840",
+            "copyMessage": null
+          },
+          {
+            "channel": "telegram",
+            "location": "contact",
+            "href": "https://t.me/ohtaawa_chat",
+            "copyMessage": "Добрый день! Хочу записаться на консультацию по полной защитной оклейке кузова за 180 000 рублей. Автомобиль: [марка и модель]. Подскажите ближайшее время."
+          },
+          {
+            "channel": "whatsapp",
+            "location": "contact",
+            "href": "https://wa.me/79910102020",
+            "copyMessage": "Добрый день! Хочу записаться на консультацию по полной защитной оклейке кузова за 180 000 рублей. Автомобиль: [марка и модель]. Подскажите ближайшее время."
+          },
+          {
+            "channel": "max",
+            "location": "contact",
+            "href": "https://max.ru/u/f9LHodD0cOI5wt5WT7UlPEsbpi4oIsz6xG3oS67WnEdrB3Btf3BZUshskUk",
+            "copyMessage": "Добрый день! Хочу записаться на консультацию по полной защитной оклейке кузова за 180 000 рублей. Автомобиль: [марка и модель]. Подскажите ближайшее время."
+          },
+          {
+            "channel": "phone",
+            "location": "contact",
+            "href": "tel:+78127678840",
+            "copyMessage": null
+          },
+          {
+            "channel": "telegram",
+            "location": "dialog",
+            "href": "https://t.me/ohtaawa_chat",
+            "copyMessage": "Добрый день! Хочу записаться на консультацию по полной защитной оклейке кузова за 180 000 рублей. Автомобиль: [марка и модель]. Подскажите ближайшее время."
+          },
+          {
+            "channel": "whatsapp",
+            "location": "dialog",
+            "href": "https://wa.me/79910102020",
+            "copyMessage": "Добрый день! Хочу записаться на консультацию по полной защитной оклейке кузова за 180 000 рублей. Автомобиль: [марка и модель]. Подскажите ближайшее время."
+          },
+          {
+            "channel": "max",
+            "location": "dialog",
+            "href": "https://max.ru/u/f9LHodD0cOI5wt5WT7UlPEsbpi4oIsz6xG3oS67WnEdrB3Btf3BZUshskUk",
+            "copyMessage": "Добрый день! Хочу записаться на консультацию по полной защитной оклейке кузова за 180 000 рублей. Автомобиль: [марка и модель]. Подскажите ближайшее время."
+          },
+          {
+            "channel": "phone",
+            "location": "dialog",
+            "href": "tel:+78127678840",
+            "copyMessage": null
+          }
+        ],
+        "missingContactLocations": [],
+        "expected": {
+          "view": [
+            "price_view_polish_film_v9",
+            "proof_view_polish_film_v9",
+            "offer_terms_view_polish_film_v8"
+          ],
+          "scroll": [
+            "landing_scroll_50_polish_film_v8",
+            "landing_scroll_90_polish_film_v8"
+          ],
+          "channel": {
+            "phone": "lead_phone_polish_film_v8",
+            "telegram": "lead_telegram_polish_film_v8",
+            "whatsapp": "lead_whatsapp_polish_film_v8",
+            "max": "lead_max_direct_polish_film_v8"
+          },
+          "route": [
+            "route_main_site_v8",
+            "route_telegram_channel_v8",
+            "route_yandex_maps_v8",
+            "route_yandex_reviews_v8"
+          ]
+        }
+      }
+    },
+    {
+      "group": "analytics",
+      "id": "canonical-event-map.dom-view-map",
+      "pass": true,
+      "details": {
+        "expected": [
+          "price_view_polish_film_v9",
+          "proof_view_polish_film_v9",
+          "offer_terms_view_polish_film_v8"
+        ],
+        "actual": [
+          "price_view_polish_film_v9",
+          "proof_view_polish_film_v9",
+          "offer_terms_view_polish_film_v8"
+        ]
+      }
+    },
+    {
+      "group": "analytics",
+      "id": "canonical-event-map.dom-channel-map",
+      "pass": true,
+      "details": {
+        "channels": [
+          {
+            "channel": "telegram",
+            "location": "hero",
+            "href": "https://t.me/ohtaawa_chat",
+            "copyMessage": "Добрый день! Хочу узнать о полной защитной оклейке кузова за 180 000 рублей. Автомобиль: [марка и модель]."
+          },
+          {
+            "channel": "whatsapp",
+            "location": "hero",
+            "href": "https://wa.me/79910102020",
+            "copyMessage": "Добрый день! Хочу узнать о полной защитной оклейке кузова за 180 000 рублей. Автомобиль: [марка и модель]."
+          },
+          {
+            "channel": "phone",
+            "location": "hero",
+            "href": "tel:+78127678840",
+            "copyMessage": null
+          },
+          {
+            "channel": "telegram",
+            "location": "contact",
+            "href": "https://t.me/ohtaawa_chat",
+            "copyMessage": "Добрый день! Хочу записаться на консультацию по полной защитной оклейке кузова за 180 000 рублей. Автомобиль: [марка и модель]. Подскажите ближайшее время."
+          },
+          {
+            "channel": "whatsapp",
+            "location": "contact",
+            "href": "https://wa.me/79910102020",
+            "copyMessage": "Добрый день! Хочу записаться на консультацию по полной защитной оклейке кузова за 180 000 рублей. Автомобиль: [марка и модель]. Подскажите ближайшее время."
+          },
+          {
+            "channel": "max",
+            "location": "contact",
+            "href": "https://max.ru/u/f9LHodD0cOI5wt5WT7UlPEsbpi4oIsz6xG3oS67WnEdrB3Btf3BZUshskUk",
+            "copyMessage": "Добрый день! Хочу записаться на консультацию по полной защитной оклейке кузова за 180 000 рублей. Автомобиль: [марка и модель]. Подскажите ближайшее время."
+          },
+          {
+            "channel": "phone",
+            "location": "contact",
+            "href": "tel:+78127678840",
+            "copyMessage": null
+          },
+          {
+            "channel": "telegram",
+            "location": "dialog",
+            "href": "https://t.me/ohtaawa_chat",
+            "copyMessage": "Добрый день! Хочу записаться на консультацию по полной защитной оклейке кузова за 180 000 рублей. Автомобиль: [марка и модель]. Подскажите ближайшее время."
+          },
+          {
+            "channel": "whatsapp",
+            "location": "dialog",
+            "href": "https://wa.me/79910102020",
+            "copyMessage": "Добрый день! Хочу записаться на консультацию по полной защитной оклейке кузова за 180 000 рублей. Автомобиль: [марка и модель]. Подскажите ближайшее время."
+          },
+          {
+            "channel": "max",
+            "location": "dialog",
+            "href": "https://max.ru/u/f9LHodD0cOI5wt5WT7UlPEsbpi4oIsz6xG3oS67WnEdrB3Btf3BZUshskUk",
+            "copyMessage": "Добрый день! Хочу записаться на консультацию по полной защитной оклейке кузова за 180 000 рублей. Автомобиль: [марка и модель]. Подскажите ближайшее время."
+          },
+          {
+            "channel": "phone",
+            "location": "dialog",
+            "href": "tel:+78127678840",
+            "copyMessage": null
+          }
+        ],
+        "missingContactLocations": []
+      }
+    },
+    {
+      "group": "analytics",
+      "id": "canonical-event-map.dom-route-map",
+      "pass": true,
+      "details": {
+        "expected": [
+          "route_main_site_v8",
+          "route_telegram_channel_v8",
+          "route_yandex_maps_v8",
+          "route_yandex_reviews_v8"
+        ],
+        "actual": [
+          {
+            "event": "lead_phone_polish_film_v8",
+            "location": "header",
+            "explicitContactLocation": "header"
+          },
+          {
+            "event": "lead_phone_polish_film_v8",
+            "location": "contact",
+            "explicitContactLocation": "contact"
+          },
+          {
+            "event": "route_yandex_maps_v8",
+            "location": "contact",
+            "explicitContactLocation": "contact"
+          },
+          {
+            "event": "route_yandex_reviews_v8",
+            "location": "reviews",
+            "explicitContactLocation": "reviews"
+          },
+          {
+            "event": "route_main_site_v8",
+            "location": "footer",
+            "explicitContactLocation": "footer"
+          },
+          {
+            "event": "route_telegram_channel_v8",
+            "location": "footer",
+            "explicitContactLocation": "footer"
+          },
+          {
+            "event": "route_yandex_reviews_v8",
+            "location": "footer",
+            "explicitContactLocation": "footer"
+          },
+          {
+            "event": "lead_phone_polish_film_v8",
+            "location": "footer",
+            "explicitContactLocation": "footer"
+          }
+        ]
+      }
+    },
+    {
+      "group": "analytics",
+      "id": "canonical-event-map.car-question-present",
+      "pass": true,
+      "details": {
+        "selector": "#q-car-input"
+      }
+    },
+    {
+      "group": "analytics",
+      "id": "canonical-event-map.channel-events-one-canonical-goal",
+      "pass": true,
+      "details": [
+        {
+          "channel": "phone",
+          "goal": "lead_phone_polish_film_v8",
+          "exists": true,
+          "events": [
+            {
+              "event": "contact_channel_click",
+              "payload": {
+                "utm_source": "codex",
+                "utm_medium": "qa",
+                "utm_campaign": "qwen_v2_3_sol_qa",
+                "utm_content": "price_install_fullfilm",
+                "utm_term": "none",
+                "scenario": "full-film",
+                "experiment_id": "qwen_v2_3_sol_qa",
+                "landing_version": "qwen-reinvention-v2.4",
+                "service_route": "film_full",
+                "offer_id": "full_film_fixed_180",
+                "message_variant": "price",
+                "channel": "phone",
+                "location": "hero",
+                "event_time": "2026-08-17T01:29:58.360Z",
+                "page_path": "/"
+              },
+              "qa": true
+            },
+            {
+              "event": "lead_phone_polish_film_v8",
+              "payload": {
+                "utm_source": "codex",
+                "utm_medium": "qa",
+                "utm_campaign": "qwen_v2_3_sol_qa",
+                "utm_content": "price_install_fullfilm",
+                "utm_term": "none",
+                "scenario": "full-film",
+                "experiment_id": "qwen_v2_3_sol_qa",
+                "landing_version": "qwen-reinvention-v2.4",
+                "service_route": "film_full",
+                "offer_id": "full_film_fixed_180",
+                "message_variant": "price",
+                "channel": "phone",
+                "location": "hero",
+                "event_time": "2026-08-17T01:29:58.360Z",
+                "page_path": "/"
+              },
+              "qa": true
+            }
+          ],
+          "goalCount": 1,
+          "genericCount": 1,
+          "goalPayload": {
+            "utm_source": "codex",
+            "utm_medium": "qa",
+            "utm_campaign": "qwen_v2_3_sol_qa",
+            "utm_content": "price_install_fullfilm",
+            "utm_term": "none",
+            "scenario": "full-film",
+            "experiment_id": "qwen_v2_3_sol_qa",
+            "landing_version": "qwen-reinvention-v2.4",
+            "service_route": "film_full",
+            "offer_id": "full_film_fixed_180",
+            "message_variant": "price",
+            "channel": "phone",
+            "location": "hero",
+            "event_time": "2026-08-17T01:29:58.360Z",
+            "page_path": "/"
+          },
+          "href": "tel:+78127678840"
+        },
+        {
+          "channel": "telegram",
+          "goal": "lead_telegram_polish_film_v8",
+          "exists": true,
+          "events": [
+            {
+              "event": "contact_channel_click",
+              "payload": {
+                "utm_source": "codex",
+                "utm_medium": "qa",
+                "utm_campaign": "qwen_v2_3_sol_qa",
+                "utm_content": "price_install_fullfilm",
+                "utm_term": "none",
+                "scenario": "full-film",
+                "experiment_id": "qwen_v2_3_sol_qa",
+                "landing_version": "qwen-reinvention-v2.4",
+                "service_route": "film_full",
+                "offer_id": "full_film_fixed_180",
+                "message_variant": "price",
+                "channel": "telegram",
+                "location": "hero",
+                "event_time": "2026-08-17T01:29:58.462Z",
+                "page_path": "/"
+              },
+              "qa": true
+            },
+            {
+              "event": "lead_telegram_polish_film_v8",
+              "payload": {
+                "utm_source": "codex",
+                "utm_medium": "qa",
+                "utm_campaign": "qwen_v2_3_sol_qa",
+                "utm_content": "price_install_fullfilm",
+                "utm_term": "none",
+                "scenario": "full-film",
+                "experiment_id": "qwen_v2_3_sol_qa",
+                "landing_version": "qwen-reinvention-v2.4",
+                "service_route": "film_full",
+                "offer_id": "full_film_fixed_180",
+                "message_variant": "price",
+                "channel": "telegram",
+                "location": "hero",
+                "event_time": "2026-08-17T01:29:58.462Z",
+                "page_path": "/"
+              },
+              "qa": true
+            }
+          ],
+          "goalCount": 1,
+          "genericCount": 1,
+          "goalPayload": {
+            "utm_source": "codex",
+            "utm_medium": "qa",
+            "utm_campaign": "qwen_v2_3_sol_qa",
+            "utm_content": "price_install_fullfilm",
+            "utm_term": "none",
+            "scenario": "full-film",
+            "experiment_id": "qwen_v2_3_sol_qa",
+            "landing_version": "qwen-reinvention-v2.4",
+            "service_route": "film_full",
+            "offer_id": "full_film_fixed_180",
+            "message_variant": "price",
+            "channel": "telegram",
+            "location": "hero",
+            "event_time": "2026-08-17T01:29:58.462Z",
+            "page_path": "/"
+          },
+          "href": "https://t.me/ohtaawa_chat"
+        },
+        {
+          "channel": "whatsapp",
+          "goal": "lead_whatsapp_polish_film_v8",
+          "exists": true,
+          "events": [
+            {
+              "event": "contact_channel_click",
+              "payload": {
+                "utm_source": "codex",
+                "utm_medium": "qa",
+                "utm_campaign": "qwen_v2_3_sol_qa",
+                "utm_content": "price_install_fullfilm",
+                "utm_term": "none",
+                "scenario": "full-film",
+                "experiment_id": "qwen_v2_3_sol_qa",
+                "landing_version": "qwen-reinvention-v2.4",
+                "service_route": "film_full",
+                "offer_id": "full_film_fixed_180",
+                "message_variant": "price",
+                "channel": "whatsapp",
+                "location": "hero",
+                "event_time": "2026-08-17T01:29:58.571Z",
+                "page_path": "/"
+              },
+              "qa": true
+            },
+            {
+              "event": "lead_whatsapp_polish_film_v8",
+              "payload": {
+                "utm_source": "codex",
+                "utm_medium": "qa",
+                "utm_campaign": "qwen_v2_3_sol_qa",
+                "utm_content": "price_install_fullfilm",
+                "utm_term": "none",
+                "scenario": "full-film",
+                "experiment_id": "qwen_v2_3_sol_qa",
+                "landing_version": "qwen-reinvention-v2.4",
+                "service_route": "film_full",
+                "offer_id": "full_film_fixed_180",
+                "message_variant": "price",
+                "channel": "whatsapp",
+                "location": "hero",
+                "event_time": "2026-08-17T01:29:58.571Z",
+                "page_path": "/"
+              },
+              "qa": true
+            }
+          ],
+          "goalCount": 1,
+          "genericCount": 1,
+          "goalPayload": {
+            "utm_source": "codex",
+            "utm_medium": "qa",
+            "utm_campaign": "qwen_v2_3_sol_qa",
+            "utm_content": "price_install_fullfilm",
+            "utm_term": "none",
+            "scenario": "full-film",
+            "experiment_id": "qwen_v2_3_sol_qa",
+            "landing_version": "qwen-reinvention-v2.4",
+            "service_route": "film_full",
+            "offer_id": "full_film_fixed_180",
+            "message_variant": "price",
+            "channel": "whatsapp",
+            "location": "hero",
+            "event_time": "2026-08-17T01:29:58.571Z",
+            "page_path": "/"
+          },
+          "href": "https://wa.me/79910102020?text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C!%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BE%20%D0%BF%D0%BE%D0%BB%D0%BD%D0%BE%D0%B9%20%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D0%BD%D0%BE%D0%B9%20%D0%BE%D0%BA%D0%BB%D0%B5%D0%B9%D0%BA%D0%B5%20%D0%BA%D1%83%D0%B7%D0%BE%D0%B2%D0%B0%20%D0%B7%D0%B0%20180%20000%20%D1%80%D1%83%D0%B1%D0%BB%D0%B5%D0%B9.%20%D0%90%D0%B2%D1%82%D0%BE%D0%BC%D0%BE%D0%B1%D0%B8%D0%BB%D1%8C%3A%20BMW%20X5."
+        },
+        {
+          "channel": "max",
+          "goal": "lead_max_direct_polish_film_v8",
+          "exists": true,
+          "events": [
+            {
+              "event": "contact_channel_click",
+              "payload": {
+                "utm_source": "codex",
+                "utm_medium": "qa",
+                "utm_campaign": "qwen_v2_3_sol_qa",
+                "utm_content": "price_install_fullfilm",
+                "utm_term": "none",
+                "scenario": "full-film",
+                "experiment_id": "qwen_v2_3_sol_qa",
+                "landing_version": "qwen-reinvention-v2.4",
+                "service_route": "film_full",
+                "offer_id": "full_film_fixed_180",
+                "message_variant": "price",
+                "channel": "max",
+                "location": "contact",
+                "event_time": "2026-08-17T01:29:58.663Z",
+                "page_path": "/"
+              },
+              "qa": true
+            },
+            {
+              "event": "lead_max_direct_polish_film_v8",
+              "payload": {
+                "utm_source": "codex",
+                "utm_medium": "qa",
+                "utm_campaign": "qwen_v2_3_sol_qa",
+                "utm_content": "price_install_fullfilm",
+                "utm_term": "none",
+                "scenario": "full-film",
+                "experiment_id": "qwen_v2_3_sol_qa",
+                "landing_version": "qwen-reinvention-v2.4",
+                "service_route": "film_full",
+                "offer_id": "full_film_fixed_180",
+                "message_variant": "price",
+                "channel": "max",
+                "location": "contact",
+                "event_time": "2026-08-17T01:29:58.663Z",
+                "page_path": "/"
+              },
+              "qa": true
+            }
+          ],
+          "goalCount": 1,
+          "genericCount": 1,
+          "goalPayload": {
+            "utm_source": "codex",
+            "utm_medium": "qa",
+            "utm_campaign": "qwen_v2_3_sol_qa",
+            "utm_content": "price_install_fullfilm",
+            "utm_term": "none",
+            "scenario": "full-film",
+            "experiment_id": "qwen_v2_3_sol_qa",
+            "landing_version": "qwen-reinvention-v2.4",
+            "service_route": "film_full",
+            "offer_id": "full_film_fixed_180",
+            "message_variant": "price",
+            "channel": "max",
+            "location": "contact",
+            "event_time": "2026-08-17T01:29:58.663Z",
+            "page_path": "/"
+          },
+          "href": "https://max.ru/u/f9LHodD0cOI5wt5WT7UlPEsbpi4oIsz6xG3oS67WnEdrB3Btf3BZUshskUk"
+        }
+      ]
+    },
+    {
+      "group": "analytics",
+      "id": "canonical-event-map.whatsapp-prepared-message",
+      "pass": true,
+      "details": {
+        "channel": "whatsapp",
+        "goal": "lead_whatsapp_polish_film_v8",
+        "exists": true,
+        "events": [
+          {
+            "event": "contact_channel_click",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "qwen_v2_3_sol_qa",
+              "utm_content": "price_install_fullfilm",
+              "utm_term": "none",
+              "scenario": "full-film",
+              "experiment_id": "qwen_v2_3_sol_qa",
+              "landing_version": "qwen-reinvention-v2.4",
+              "service_route": "film_full",
+              "offer_id": "full_film_fixed_180",
+              "message_variant": "price",
+              "channel": "whatsapp",
+              "location": "hero",
+              "event_time": "2026-08-17T01:29:58.571Z",
+              "page_path": "/"
+            },
+            "qa": true
+          },
+          {
+            "event": "lead_whatsapp_polish_film_v8",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "qwen_v2_3_sol_qa",
+              "utm_content": "price_install_fullfilm",
+              "utm_term": "none",
+              "scenario": "full-film",
+              "experiment_id": "qwen_v2_3_sol_qa",
+              "landing_version": "qwen-reinvention-v2.4",
+              "service_route": "film_full",
+              "offer_id": "full_film_fixed_180",
+              "message_variant": "price",
+              "channel": "whatsapp",
+              "location": "hero",
+              "event_time": "2026-08-17T01:29:58.571Z",
+              "page_path": "/"
+            },
+            "qa": true
+          }
+        ],
+        "goalCount": 1,
+        "genericCount": 1,
+        "goalPayload": {
+          "utm_source": "codex",
+          "utm_medium": "qa",
+          "utm_campaign": "qwen_v2_3_sol_qa",
+          "utm_content": "price_install_fullfilm",
+          "utm_term": "none",
+          "scenario": "full-film",
+          "experiment_id": "qwen_v2_3_sol_qa",
+          "landing_version": "qwen-reinvention-v2.4",
+          "service_route": "film_full",
+          "offer_id": "full_film_fixed_180",
+          "message_variant": "price",
+          "channel": "whatsapp",
+          "location": "hero",
+          "event_time": "2026-08-17T01:29:58.571Z",
+          "page_path": "/"
+        },
+        "href": "https://wa.me/79910102020?text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C!%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BE%20%D0%BF%D0%BE%D0%BB%D0%BD%D0%BE%D0%B9%20%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D0%BD%D0%BE%D0%B9%20%D0%BE%D0%BA%D0%BB%D0%B5%D0%B9%D0%BA%D0%B5%20%D0%BA%D1%83%D0%B7%D0%BE%D0%B2%D0%B0%20%D0%B7%D0%B0%20180%20000%20%D1%80%D1%83%D0%B1%D0%BB%D0%B5%D0%B9.%20%D0%90%D0%B2%D1%82%D0%BE%D0%BC%D0%BE%D0%B1%D0%B8%D0%BB%D1%8C%3A%20BMW%20X5."
+      }
+    },
+    {
+      "group": "analytics",
+      "id": "canonical-event-map.route-events-one-canonical-event",
+      "pass": true,
+      "details": [
+        {
+          "event": "route_main_site_v8",
+          "exists": true,
+          "count": 1,
+          "events": [
+            {
+              "event": "route_main_site_v8",
+              "payload": {
+                "utm_source": "codex",
+                "utm_medium": "qa",
+                "utm_campaign": "qwen_v2_3_sol_qa",
+                "utm_content": "price_install_fullfilm",
+                "utm_term": "none",
+                "scenario": "full-film",
+                "experiment_id": "qwen_v2_3_sol_qa",
+                "landing_version": "qwen-reinvention-v2.4",
+                "service_route": "film_full",
+                "offer_id": "full_film_fixed_180",
+                "message_variant": "price",
+                "location": "footer",
+                "event_time": "2026-08-17T01:29:58.758Z",
+                "page_path": "/"
+              },
+              "qa": true
+            }
+          ]
+        },
+        {
+          "event": "route_telegram_channel_v8",
+          "exists": true,
+          "count": 1,
+          "events": [
+            {
+              "event": "route_telegram_channel_v8",
+              "payload": {
+                "utm_source": "codex",
+                "utm_medium": "qa",
+                "utm_campaign": "qwen_v2_3_sol_qa",
+                "utm_content": "price_install_fullfilm",
+                "utm_term": "none",
+                "scenario": "full-film",
+                "experiment_id": "qwen_v2_3_sol_qa",
+                "landing_version": "qwen-reinvention-v2.4",
+                "service_route": "film_full",
+                "offer_id": "full_film_fixed_180",
+                "message_variant": "price",
+                "location": "footer",
+                "event_time": "2026-08-17T01:29:58.837Z",
+                "page_path": "/"
+              },
+              "qa": true
+            }
+          ]
+        },
+        {
+          "event": "route_yandex_maps_v8",
+          "exists": true,
+          "count": 1,
+          "events": [
+            {
+              "event": "route_yandex_maps_v8",
+              "payload": {
+                "utm_source": "codex",
+                "utm_medium": "qa",
+                "utm_campaign": "qwen_v2_3_sol_qa",
+                "utm_content": "price_install_fullfilm",
+                "utm_term": "none",
+                "scenario": "full-film",
+                "experiment_id": "qwen_v2_3_sol_qa",
+                "landing_version": "qwen-reinvention-v2.4",
+                "service_route": "film_full",
+                "offer_id": "full_film_fixed_180",
+                "message_variant": "price",
+                "location": "contact",
+                "event_time": "2026-08-17T01:29:58.915Z",
+                "page_path": "/"
+              },
+              "qa": true
+            }
+          ]
+        },
+        {
+          "event": "route_yandex_reviews_v8",
+          "exists": true,
+          "count": 1,
+          "events": [
+            {
+              "event": "route_yandex_reviews_v8",
+              "payload": {
+                "utm_source": "codex",
+                "utm_medium": "qa",
+                "utm_campaign": "qwen_v2_3_sol_qa",
+                "utm_content": "price_install_fullfilm",
+                "utm_term": "none",
+                "scenario": "full-film",
+                "experiment_id": "qwen_v2_3_sol_qa",
+                "landing_version": "qwen-reinvention-v2.4",
+                "service_route": "film_full",
+                "offer_id": "full_film_fixed_180",
+                "message_variant": "price",
+                "location": "reviews",
+                "event_time": "2026-08-17T01:29:58.995Z",
+                "page_path": "/"
+              },
+              "qa": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "group": "analytics",
+      "id": "canonical-event-map.all-required-events-emitted",
+      "pass": true,
+      "details": {
+        "required": [
+          "landing_view",
+          "price_view_polish_film_v9",
+          "proof_view_polish_film_v9",
+          "offer_terms_view_polish_film_v8",
+          "landing_scroll_50_polish_film_v8",
+          "landing_scroll_90_polish_film_v8",
+          "lead_phone_polish_film_v8",
+          "lead_telegram_polish_film_v8",
+          "lead_whatsapp_polish_film_v8",
+          "lead_max_direct_polish_film_v8",
+          "route_main_site_v8",
+          "route_telegram_channel_v8",
+          "route_yandex_maps_v8",
+          "route_yandex_reviews_v8"
+        ],
+        "missing": [],
+        "emittedNames": [
+          "landing_view",
+          "price_view_polish_film_v9",
+          "proof_view_polish_film_v9",
+          "landing_scroll_50_polish_film_v8",
+          "offer_terms_view_polish_film_v8",
+          "landing_scroll_90_polish_film_v8",
+          "contact_channel_click",
+          "lead_phone_polish_film_v8",
+          "contact_channel_click",
+          "lead_telegram_polish_film_v8",
+          "contact_channel_click",
+          "lead_whatsapp_polish_film_v8",
+          "contact_channel_click",
+          "lead_max_direct_polish_film_v8",
+          "route_main_site_v8",
+          "route_telegram_channel_v8",
+          "route_yandex_maps_v8",
+          "route_yandex_reviews_v8"
+        ]
+      }
+    },
+    {
+      "group": "analytics",
+      "id": "canonical-event-map.all-events-qa-and-attributed",
+      "pass": true,
+      "details": {
+        "total": 18,
+        "invalidQa": [],
+        "invalidAttribution": []
+      }
+    },
+    {
+      "group": "analytics",
+      "id": "canonical-event-map.runtime-clean",
+      "pass": true,
+      "details": {
+        "consoleErrors": [],
+        "pageErrors": [],
+        "requestFailures": [],
+        "httpFailures": []
+      }
+    },
+    {
+      "group": "gallery",
+      "id": "manual-gallery.no-initial-autonomous-change",
+      "pass": true,
+      "details": {
+        "baseline": {
+          "selectedSlide": "0",
+          "src": "http://127.0.0.1:56660/assets/proof/real/crops/finished-porsche-wide.webp",
+          "counter": "01 / 03",
+          "title": "Финальная проверка в студии"
+        },
+        "idleAfterNineSeconds": {
+          "selectedSlide": "0",
+          "src": "http://127.0.0.1:56660/assets/proof/real/crops/finished-porsche-wide.webp",
+          "counter": "01 / 03",
+          "title": "Финальная проверка в студии"
+        }
+      }
+    },
+    {
+      "group": "gallery",
+      "id": "manual-gallery.manual-next-works",
+      "pass": true,
+      "details": {
+        "nextExists": true,
+        "before": {
+          "selectedSlide": "0",
+          "src": "http://127.0.0.1:56660/assets/proof/real/crops/finished-porsche-wide.webp",
+          "counter": "01 / 03",
+          "title": "Финальная проверка в студии"
+        },
+        "after": {
+          "selectedSlide": "1",
+          "src": "http://127.0.0.1:56660/assets/proof/real/crops/film-sheet-wide.webp",
+          "counter": "02 / 03",
+          "title": "Плёнка на кузовной панели"
+        }
+      }
+    },
+    {
+      "group": "gallery",
+      "id": "manual-gallery.no-autonomous-change-after-interaction",
+      "pass": true,
+      "details": {
+        "afterManualNext": {
+          "selectedSlide": "1",
+          "src": "http://127.0.0.1:56660/assets/proof/real/crops/film-sheet-wide.webp",
+          "counter": "02 / 03",
+          "title": "Плёнка на кузовной панели"
+        },
+        "afterManualIdle": {
+          "selectedSlide": "1",
+          "src": "http://127.0.0.1:56660/assets/proof/real/crops/film-sheet-wide.webp",
+          "counter": "02 / 03",
+          "title": "Плёнка на кузовной панели"
+        }
+      }
+    },
+    {
+      "group": "gallery",
+      "id": "manual-gallery.no-misleading-pause-control",
+      "pass": true,
+      "details": {
+        "pauseControls": 0
+      }
+    },
+    {
+      "group": "gallery",
+      "id": "manual-gallery.retained-proof-set-exact",
+      "pass": true,
+      "details": {
+        "expected": [
+          "finished-porsche-wide.webp",
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "inventory": [
+          {
+            "index": 0,
+            "slide": "0",
+            "declaredSource": "assets/proof/real/crops/finished-porsche-wide.webp",
+            "filename": "finished-porsche-wide.webp",
+            "imageSrc": "assets/proof/real/crops/finished-porsche-wide.webp",
+            "imageDataSrc": null
+          },
+          {
+            "index": 1,
+            "slide": "1",
+            "declaredSource": "assets/proof/real/crops/film-sheet-wide.webp",
+            "filename": "film-sheet-wide.webp",
+            "imageSrc": "assets/proof/real/crops/film-sheet-wide.webp",
+            "imageDataSrc": null
+          },
+          {
+            "index": 2,
+            "slide": "2",
+            "declaredSource": "assets/proof/real/crops/gloss-front-wide.webp",
+            "filename": "gloss-front-wide.webp",
+            "imageSrc": "assets/proof/real/crops/gloss-front-wide.webp",
+            "imageDataSrc": null
+          }
+        ],
+        "declaredFilenames": [
+          "finished-porsche-wide.webp",
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "exactRetainedSet": true,
+        "steps": [
+          {
+            "expectedFilename": "finished-porsche-wide.webp",
+            "found": true,
+            "inventory": {
+              "index": 0,
+              "slide": "0",
+              "declaredSource": "assets/proof/real/crops/finished-porsche-wide.webp",
+              "filename": "finished-porsche-wide.webp",
+              "imageSrc": "assets/proof/real/crops/finished-porsche-wide.webp",
+              "imageDataSrc": null
+            },
+            "clickError": null,
+            "waitError": null,
+            "state": {
+              "mainExists": true,
+              "currentSrc": "http://127.0.0.1:56660/assets/proof/real/crops/finished-porsche-wide.webp",
+              "currentFilename": "finished-porsche-wide.webp",
+              "complete": true,
+              "naturalWidth": 1200,
+              "naturalHeight": 675,
+              "decodeAttempted": true,
+              "decoded": true,
+              "decodeError": null,
+              "resourceEntries": [
+                {
+                  "initiatorType": "img",
+                  "startTime": 119.5,
+                  "transferSize": 178728,
+                  "decodedBodySize": 178428
+                }
+              ]
+            },
+            "pass": true
+          },
+          {
+            "expectedFilename": "film-sheet-wide.webp",
+            "found": true,
+            "inventory": {
+              "index": 1,
+              "slide": "1",
+              "declaredSource": "assets/proof/real/crops/film-sheet-wide.webp",
+              "filename": "film-sheet-wide.webp",
+              "imageSrc": "assets/proof/real/crops/film-sheet-wide.webp",
+              "imageDataSrc": null
+            },
+            "clickError": null,
+            "waitError": null,
+            "state": {
+              "mainExists": true,
+              "currentSrc": "http://127.0.0.1:56660/assets/proof/real/crops/film-sheet-wide.webp",
+              "currentFilename": "film-sheet-wide.webp",
+              "complete": true,
+              "naturalWidth": 1600,
+              "naturalHeight": 900,
+              "decodeAttempted": true,
+              "decoded": true,
+              "decodeError": null,
+              "resourceEntries": [
+                {
+                  "initiatorType": "img",
+                  "startTime": 937.9,
+                  "transferSize": 100530,
+                  "decodedBodySize": 100230
+                }
+              ]
+            },
+            "pass": true
+          },
+          {
+            "expectedFilename": "gloss-front-wide.webp",
+            "found": true,
+            "inventory": {
+              "index": 2,
+              "slide": "2",
+              "declaredSource": "assets/proof/real/crops/gloss-front-wide.webp",
+              "filename": "gloss-front-wide.webp",
+              "imageSrc": "assets/proof/real/crops/gloss-front-wide.webp",
+              "imageDataSrc": null
+            },
+            "clickError": null,
+            "waitError": null,
+            "state": {
+              "mainExists": true,
+              "currentSrc": "http://127.0.0.1:56660/assets/proof/real/crops/gloss-front-wide.webp",
+              "currentFilename": "gloss-front-wide.webp",
+              "complete": true,
+              "naturalWidth": 1200,
+              "naturalHeight": 675,
+              "decodeAttempted": true,
+              "decoded": true,
+              "decodeError": null,
+              "resourceEntries": [
+                {
+                  "initiatorType": "img",
+                  "startTime": 938,
+                  "transferSize": 124378,
+                  "decodedBodySize": 124078
+                }
+              ]
+            },
+            "pass": true
+          }
+        ],
+        "allLoadedAndDecoded": true
+      }
+    },
+    {
+      "group": "gallery",
+      "id": "manual-gallery.retained-proof-images-loaded-and-decoded",
+      "pass": true,
+      "details": {
+        "expected": [
+          "finished-porsche-wide.webp",
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "inventory": [
+          {
+            "index": 0,
+            "slide": "0",
+            "declaredSource": "assets/proof/real/crops/finished-porsche-wide.webp",
+            "filename": "finished-porsche-wide.webp",
+            "imageSrc": "assets/proof/real/crops/finished-porsche-wide.webp",
+            "imageDataSrc": null
+          },
+          {
+            "index": 1,
+            "slide": "1",
+            "declaredSource": "assets/proof/real/crops/film-sheet-wide.webp",
+            "filename": "film-sheet-wide.webp",
+            "imageSrc": "assets/proof/real/crops/film-sheet-wide.webp",
+            "imageDataSrc": null
+          },
+          {
+            "index": 2,
+            "slide": "2",
+            "declaredSource": "assets/proof/real/crops/gloss-front-wide.webp",
+            "filename": "gloss-front-wide.webp",
+            "imageSrc": "assets/proof/real/crops/gloss-front-wide.webp",
+            "imageDataSrc": null
+          }
+        ],
+        "declaredFilenames": [
+          "finished-porsche-wide.webp",
+          "film-sheet-wide.webp",
+          "gloss-front-wide.webp"
+        ],
+        "exactRetainedSet": true,
+        "steps": [
+          {
+            "expectedFilename": "finished-porsche-wide.webp",
+            "found": true,
+            "inventory": {
+              "index": 0,
+              "slide": "0",
+              "declaredSource": "assets/proof/real/crops/finished-porsche-wide.webp",
+              "filename": "finished-porsche-wide.webp",
+              "imageSrc": "assets/proof/real/crops/finished-porsche-wide.webp",
+              "imageDataSrc": null
+            },
+            "clickError": null,
+            "waitError": null,
+            "state": {
+              "mainExists": true,
+              "currentSrc": "http://127.0.0.1:56660/assets/proof/real/crops/finished-porsche-wide.webp",
+              "currentFilename": "finished-porsche-wide.webp",
+              "complete": true,
+              "naturalWidth": 1200,
+              "naturalHeight": 675,
+              "decodeAttempted": true,
+              "decoded": true,
+              "decodeError": null,
+              "resourceEntries": [
+                {
+                  "initiatorType": "img",
+                  "startTime": 119.5,
+                  "transferSize": 178728,
+                  "decodedBodySize": 178428
+                }
+              ]
+            },
+            "pass": true
+          },
+          {
+            "expectedFilename": "film-sheet-wide.webp",
+            "found": true,
+            "inventory": {
+              "index": 1,
+              "slide": "1",
+              "declaredSource": "assets/proof/real/crops/film-sheet-wide.webp",
+              "filename": "film-sheet-wide.webp",
+              "imageSrc": "assets/proof/real/crops/film-sheet-wide.webp",
+              "imageDataSrc": null
+            },
+            "clickError": null,
+            "waitError": null,
+            "state": {
+              "mainExists": true,
+              "currentSrc": "http://127.0.0.1:56660/assets/proof/real/crops/film-sheet-wide.webp",
+              "currentFilename": "film-sheet-wide.webp",
+              "complete": true,
+              "naturalWidth": 1600,
+              "naturalHeight": 900,
+              "decodeAttempted": true,
+              "decoded": true,
+              "decodeError": null,
+              "resourceEntries": [
+                {
+                  "initiatorType": "img",
+                  "startTime": 937.9,
+                  "transferSize": 100530,
+                  "decodedBodySize": 100230
+                }
+              ]
+            },
+            "pass": true
+          },
+          {
+            "expectedFilename": "gloss-front-wide.webp",
+            "found": true,
+            "inventory": {
+              "index": 2,
+              "slide": "2",
+              "declaredSource": "assets/proof/real/crops/gloss-front-wide.webp",
+              "filename": "gloss-front-wide.webp",
+              "imageSrc": "assets/proof/real/crops/gloss-front-wide.webp",
+              "imageDataSrc": null
+            },
+            "clickError": null,
+            "waitError": null,
+            "state": {
+              "mainExists": true,
+              "currentSrc": "http://127.0.0.1:56660/assets/proof/real/crops/gloss-front-wide.webp",
+              "currentFilename": "gloss-front-wide.webp",
+              "complete": true,
+              "naturalWidth": 1200,
+              "naturalHeight": 675,
+              "decodeAttempted": true,
+              "decoded": true,
+              "decodeError": null,
+              "resourceEntries": [
+                {
+                  "initiatorType": "img",
+                  "startTime": 938,
+                  "transferSize": 124378,
+                  "decodedBodySize": 124078
+                }
+              ]
+            },
+            "pass": true
+          }
+        ],
+        "allLoadedAndDecoded": true
+      }
+    },
+    {
+      "group": "gallery",
+      "id": "manual-gallery.no-autonomous-change-after-deliberate-traversal",
+      "pass": true,
+      "details": {
+        "afterDeliberateTraversal": {
+          "selectedSlide": "2",
+          "src": "http://127.0.0.1:56660/assets/proof/real/crops/gloss-front-wide.webp",
+          "counter": "03 / 03",
+          "title": "Контроль отражения"
+        },
+        "afterDeliberateTraversalIdle": {
+          "selectedSlide": "2",
+          "src": "http://127.0.0.1:56660/assets/proof/real/crops/gloss-front-wide.webp",
+          "counter": "03 / 03",
+          "title": "Контроль отражения"
+        }
+      }
+    },
+    {
+      "group": "gallery",
+      "id": "manual-gallery.runtime-clean",
+      "pass": true,
+      "details": {
+        "consoleErrors": [],
+        "pageErrors": [],
+        "requestFailures": [],
+        "httpFailures": []
+      }
+    },
+    {
+      "group": "analytics",
+      "id": "qa-isolation.zero-metrika-requests",
+      "pass": true,
+      "details": {
+        "requests": []
+      }
+    }
+  ],
+  "metrikaRequests": [],
+  "summary": {
+    "pass": true,
+    "total": 90,
+    "passed": 90,
+    "failed": 0,
+    "failedIds": []
+  }
+}

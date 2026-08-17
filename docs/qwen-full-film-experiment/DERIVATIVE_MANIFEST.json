@@ -1,0 +1,124 @@
+{
+  "manifest_version": 1,
+  "project": "OHTAAWA Qwen full-film reinvention",
+  "scope": "Retained internal proof-crop candidates and generated illustrative material-layer derivatives",
+  "created_at": "2026-08-17",
+  "hash_algorithm": "SHA-256",
+  "policy": "Output hashes identify the current local derivatives only. Real proof rights/consent gaps and generated-layer owner approval remain unresolved and block public use. Generated material derivatives are decorative illustration with proof=false.",
+  "derivatives": [
+    {
+      "asset_id": "ohtaawa-proof-finished-porsche-wide-v1",
+      "output_file": "assets/proof/real/crops/finished-porsche-wide.webp",
+      "output_sha256": "9DDAFF33C0829D798EA1C159D08DA40ABCD85099370DC699DFBFAE61CEBDF443",
+      "source_type": "owner-provided-real-ohtaawa-material",
+      "parent_asset_id": "UNKNOWN_NOT_ASSIGNED_IN_EXISTING_MANIFESTS",
+      "parent_source_reference": "assets/proof/real/real-finished-porsche.webp",
+      "parent_sha256": "UNKNOWN_NOT_RECORDED_IN_EXISTING_MANIFESTS",
+      "parent_chain_status": "PARTIAL_PARENT_FILE_IDENTIFIED_HASH_UNKNOWN",
+      "derivative_recipe": "Deterministic 16:9 crop with recorded art-directed top position, brightness 0.98, contrast 1.06, color 0.94, sharpness 1.06, and WebP quality 90 method 6.",
+      "recipe_reference": "scripts/build_proof_crops.py",
+      "tool": "Pillow",
+      "tool_version": "UNKNOWN_NOT_RECORDED",
+      "existing_manifest_references": [
+        "assets/provenance-wave45.json",
+        "assets/provenance-wave46.json"
+      ],
+      "status": "candidate_not_published",
+      "public_use_gate": "BLOCK_PUBLIC_USE"
+    },
+    {
+      "asset_id": "ohtaawa-proof-film-sheet-wide-v1",
+      "output_file": "assets/proof/real/crops/film-sheet-wide.webp",
+      "output_sha256": "35B5382B2CFCEBA0CF8735BBDE420B3DD253CA4CFC9FBBC2B7F7C15750BF0B4A",
+      "source_type": "owner-provided-real-ohtaawa-material",
+      "parent_asset_id": "UNKNOWN_NOT_ASSIGNED_IN_EXISTING_MANIFESTS",
+      "parent_source_reference": "UNKNOWN_NOT_IDENTIFIED_IN_EXISTING_MANIFESTS",
+      "parent_sha256": "UNKNOWN_NOT_RECORDED_IN_EXISTING_MANIFESTS",
+      "parent_chain_status": "INCOMPLETE_PARENT_SOURCE_AND_HASH_UNKNOWN",
+      "derivative_recipe": "Existing manifests describe a deterministic crop, Lanczos resize, and WebP compression; exact source, parameters, tool, and tool version are not recorded.",
+      "recipe_reference": "UNKNOWN_NOT_RECORDED_IN_EXISTING_MANIFESTS",
+      "tool": "UNKNOWN_NOT_RECORDED",
+      "tool_version": "UNKNOWN_NOT_RECORDED",
+      "existing_manifest_references": [
+        "assets/provenance-wave45.json",
+        "assets/provenance-wave46.json"
+      ],
+      "status": "candidate_not_published",
+      "public_use_gate": "BLOCK_PUBLIC_USE"
+    },
+    {
+      "asset_id": "ohtaawa-proof-gloss-front-wide-v1",
+      "output_file": "assets/proof/real/crops/gloss-front-wide.webp",
+      "output_sha256": "373D28444B5C21F29072FFA5ADECD737BFDD0F97EF91F7C9430226A46A78F9C2",
+      "source_type": "owner-provided-real-ohtaawa-material",
+      "parent_asset_id": "UNKNOWN_NOT_ASSIGNED_IN_EXISTING_MANIFESTS",
+      "parent_source_reference": "assets/proof/real/real-gloss-front.webp",
+      "parent_sha256": "UNKNOWN_NOT_RECORDED_IN_EXISTING_MANIFESTS",
+      "parent_chain_status": "PARTIAL_PARENT_FILE_IDENTIFIED_HASH_UNKNOWN",
+      "derivative_recipe": "Deterministic 16:9 crop with recorded art-directed top position, brightness 0.98, contrast 1.06, color 0.94, sharpness 1.06, and WebP quality 90 method 6.",
+      "recipe_reference": "scripts/build_proof_crops.py",
+      "tool": "Pillow",
+      "tool_version": "UNKNOWN_NOT_RECORDED",
+      "existing_manifest_references": [
+        "assets/provenance-wave45.json",
+        "assets/provenance-wave46.json"
+      ],
+      "status": "candidate_not_published",
+      "public_use_gate": "BLOCK_PUBLIC_USE"
+    },
+    {
+      "asset_id": "qwen-tension-material-desktop-v1",
+      "output_file": "assets/generated/qwen-tension-material-desktop.webp",
+      "output_sha256": "1A4414495B110C77183FB586F0058637597A77DAA6B336C6F1B1BCCD5C5C38A7",
+      "output_dimensions": {
+        "width": 720,
+        "height": 900
+      },
+      "source_type": "generated-illustrative-material-derivative",
+      "parent_asset_id": "qwen-tension-material-source-v1",
+      "parent_source_reference": "artifacts/qwen-full-film-generated-assets/qwen-tension-material-source.png",
+      "parent_sha256": "84707A492F4A6C9546B52A20498371DE915BE05877C52BF3EE959A0F393438D1",
+      "parent_dimensions": {
+        "width": 1536,
+        "height": 1024
+      },
+      "parent_chain_status": "COMPLETE_LOCAL_GENERATED_SOURCE_TO_DERIVATIVE_HASH_CHAIN",
+      "derivative_recipe": "From the 1536x1024 source, extract left=round(width*0.39), top=0, width=source width-left, height=source height; resize with cover and attention strategy to 720x900; encode WebP quality 76, effort 6, smartSubsample true.",
+      "recipe_reference": "scripts/build_qwen_material_derivatives.cjs",
+      "recipe_reference_sha256": "B86FABA12689CF9C444B7682D76A53B4C7BDB052E68CDF8D06D8A08A6C395B73",
+      "tool": "Sharp via bundled workspace runtime",
+      "tool_version": "UNKNOWN_NOT_RECORDED_AT_RENDER_TIME",
+      "intended_use": "decorative material hero layer",
+      "proof": false,
+      "status": "candidate_not_published_owner_gate",
+      "public_use_gate": "BLOCK_PUBLIC_USE_PENDING_OWNER_APPROVAL"
+    },
+    {
+      "asset_id": "qwen-tension-material-mobile-v1",
+      "output_file": "assets/generated/qwen-tension-material-mobile.webp",
+      "output_sha256": "96DAD204270FBA2F3DC45C78D8B587493D2A8093B5F550F88FCB6DC72F2170E1",
+      "output_dimensions": {
+        "width": 360,
+        "height": 600
+      },
+      "source_type": "generated-illustrative-material-derivative",
+      "parent_asset_id": "qwen-tension-material-source-v1",
+      "parent_source_reference": "artifacts/qwen-full-film-generated-assets/qwen-tension-material-source.png",
+      "parent_sha256": "84707A492F4A6C9546B52A20498371DE915BE05877C52BF3EE959A0F393438D1",
+      "parent_dimensions": {
+        "width": 1536,
+        "height": 1024
+      },
+      "parent_chain_status": "COMPLETE_LOCAL_GENERATED_SOURCE_TO_DERIVATIVE_HASH_CHAIN",
+      "derivative_recipe": "From the 1536x1024 source, extract left=round(width*0.39), top=0, width=source width-left, height=source height; resize with cover and attention strategy to 360x600; encode WebP quality 70, effort 6, smartSubsample true.",
+      "recipe_reference": "scripts/build_qwen_material_derivatives.cjs",
+      "recipe_reference_sha256": "B86FABA12689CF9C444B7682D76A53B4C7BDB052E68CDF8D06D8A08A6C395B73",
+      "tool": "Sharp via bundled workspace runtime",
+      "tool_version": "UNKNOWN_NOT_RECORDED_AT_RENDER_TIME",
+      "intended_use": "decorative material hero layer",
+      "proof": false,
+      "status": "candidate_not_published_owner_gate",
+      "public_use_gate": "BLOCK_PUBLIC_USE_PENDING_OWNER_APPROVAL"
+    }
+  ]
+}

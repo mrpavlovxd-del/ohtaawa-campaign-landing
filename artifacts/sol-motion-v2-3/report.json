@@ -1,0 +1,2784 @@
+{
+  "schema": "ohtaawa-sol-motion-proof-v2.3/1",
+  "startedAt": "2026-08-17T01:31:30.734Z",
+  "finishedAt": "2026-08-17T01:31:47.788Z",
+  "runner": "scripts/sol_motion_proof_v2_3.cjs",
+  "root": ".",
+  "output": "artifacts/sol-motion-v2-3",
+  "server": {
+    "host": "127.0.0.1",
+    "port": 56816,
+    "baseUrl": "http://127.0.0.1:56816/",
+    "loopbackOnly": true
+  },
+  "browser": {
+    "route": "playwright-chromium"
+  },
+  "sources": [
+    {
+      "path": "index.html",
+      "bytes": 45091,
+      "sha256": "b9ea16bc9f414022e10e69f9bcf6e1a26610e2828829ca10089f37798dda3387"
+    },
+    {
+      "path": "assets/qwen-full-film.css",
+      "bytes": 23749,
+      "sha256": "5be775f92a63167d8feccbb74131349bb5c31947d6a0fd1d558df1a0ea8c47e3"
+    },
+    {
+      "path": "assets/qwen-full-film.js",
+      "bytes": 19119,
+      "sha256": "16050b84ba3daee26b0ad10322915deb00d76977e4768ca6d570d5414bde914d"
+    },
+    {
+      "path": "scripts/sol_motion_proof_v2_3.cjs",
+      "bytes": 51694,
+      "sha256": "e79867c649abb1449d345ebabffaaf8b733da008fafbb17a23b3f1e842a05749"
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "normal-desktop-1440x1000",
+      "kind": "normal-motion",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "pointerProof": true,
+      "startedAt": "2026-08-17T01:31:30.867Z",
+      "finishedAt": "2026-08-17T01:31:39.109Z",
+      "interactionEvidence": {
+        "pointer": {
+          "moved": true,
+          "points": [
+            {
+              "x": 897.6,
+              "y": 279.5
+            },
+            {
+              "x": 1056,
+              "y": 429.5
+            },
+            {
+              "x": 1203.8,
+              "y": 602
+            }
+          ]
+        },
+        "heroToNextChapter": {
+          "found": true,
+          "selector": "#edge",
+          "startY": 0,
+          "targetY": 840,
+          "endY": 840,
+          "targetTop": 60,
+          "headerHeight": 60,
+          "samples": [
+            {
+              "time": 0.7,
+              "y": 0
+            },
+            {
+              "time": 100.8,
+              "y": 3
+            },
+            {
+              "time": 200.8,
+              "y": 27
+            },
+            {
+              "time": 300.7,
+              "y": 91
+            },
+            {
+              "time": 417.4,
+              "y": 244
+            },
+            {
+              "time": 517.4,
+              "y": 462
+            },
+            {
+              "time": 617.4,
+              "y": 652
+            },
+            {
+              "time": 717.4,
+              "y": 764
+            },
+            {
+              "time": 817.4,
+              "y": 820
+            },
+            {
+              "time": 917.4,
+              "y": 838
+            },
+            {
+              "time": 1017.4,
+              "y": 840
+            }
+          ]
+        },
+        "nextChapterToProof": {
+          "found": true,
+          "selector": "#proof",
+          "startY": 840,
+          "targetY": 1898,
+          "endY": 1898,
+          "targetTop": 60,
+          "headerHeight": 60,
+          "samples": [
+            {
+              "time": 3,
+              "y": 840
+            },
+            {
+              "time": 103,
+              "y": 845
+            },
+            {
+              "time": 203,
+              "y": 881
+            },
+            {
+              "time": 303,
+              "y": 977
+            },
+            {
+              "time": 403,
+              "y": 1163
+            },
+            {
+              "time": 503,
+              "y": 1457
+            },
+            {
+              "time": 603,
+              "y": 1692
+            },
+            {
+              "time": 703,
+              "y": 1824
+            },
+            {
+              "time": 802.9,
+              "y": 1882
+            },
+            {
+              "time": 903,
+              "y": 1897
+            },
+            {
+              "time": 953,
+              "y": 1898
+            }
+          ]
+        },
+        "gallery": {
+          "before": {
+            "tabCount": 3,
+            "selectedIndex": 0,
+            "selectedSlide": "0",
+            "counter": "01 / 03",
+            "title": "Финальная проверка в студии",
+            "mainSrc": "http://127.0.0.1:56816/assets/proof/real/crops/finished-porsche-wide.webp",
+            "mainComplete": true,
+            "mainNaturalWidth": 1200,
+            "mainNaturalHeight": 675
+          },
+          "afterNext": {
+            "tabCount": 3,
+            "selectedIndex": 1,
+            "selectedSlide": "1",
+            "counter": "02 / 03",
+            "title": "Плёнка на кузовной панели",
+            "mainSrc": "http://127.0.0.1:56816/assets/proof/real/crops/film-sheet-wide.webp",
+            "mainComplete": true,
+            "mainNaturalWidth": 1600,
+            "mainNaturalHeight": 900
+          },
+          "afterPrev": {
+            "tabCount": 3,
+            "selectedIndex": 0,
+            "selectedSlide": "0",
+            "counter": "01 / 03",
+            "title": "Финальная проверка в студии",
+            "mainSrc": "http://127.0.0.1:56816/assets/proof/real/crops/finished-porsche-wide.webp",
+            "mainComplete": true,
+            "mainNaturalWidth": 1200,
+            "mainNaturalHeight": 675
+          },
+          "afterDirectTab": {
+            "tabCount": 3,
+            "selectedIndex": 2,
+            "selectedSlide": "2",
+            "counter": "03 / 03",
+            "title": "Контроль отражения",
+            "mainSrc": "http://127.0.0.1:56816/assets/proof/real/crops/gloss-front-wide.webp",
+            "mainComplete": true,
+            "mainNaturalWidth": 1200,
+            "mainNaturalHeight": 675
+          },
+          "stableState": {
+            "tabCount": 3,
+            "selectedIndex": 2,
+            "selectedSlide": "2",
+            "counter": "03 / 03",
+            "title": "Контроль отражения",
+            "mainSrc": "http://127.0.0.1:56816/assets/proof/real/crops/gloss-front-wide.webp",
+            "mainComplete": true,
+            "mainNaturalWidth": 1200,
+            "mainNaturalHeight": 675
+          }
+        },
+        "dialog": {
+          "opened": {
+            "open": true,
+            "bodyClass": true,
+            "activeInside": true,
+            "activeElement": "<button class=\"q-dialog-close\" type=\"button\" data-close-dialog=\"\" aria-label=\"Закрыть\"><svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" aria-hidden=\"true\"><path d=\"M18 6L6 18M6 6l12 12\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"></path></svg></button>"
+          },
+          "closed": {
+            "open": false,
+            "bodyClass": false,
+            "focusReturned": true
+          }
+        }
+      }
+    },
+    {
+      "id": "normal-mobile-390x844",
+      "kind": "normal-motion",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "pointerProof": false,
+      "startedAt": "2026-08-17T01:31:39.601Z",
+      "finishedAt": "2026-08-17T01:31:45.297Z",
+      "interactionEvidence": {
+        "heroToNextChapter": {
+          "found": true,
+          "selector": "#edge",
+          "startY": 0,
+          "targetY": 735.2,
+          "endY": 735,
+          "targetTop": 52.2,
+          "headerHeight": 52,
+          "samples": [
+            {
+              "time": 14.5,
+              "y": 0
+            },
+            {
+              "time": 114.5,
+              "y": 4
+            },
+            {
+              "time": 214.5,
+              "y": 29
+            },
+            {
+              "time": 314.5,
+              "y": 91
+            },
+            {
+              "time": 414.5,
+              "y": 209
+            },
+            {
+              "time": 514.5,
+              "y": 399
+            },
+            {
+              "time": 614.4,
+              "y": 567
+            },
+            {
+              "time": 714.5,
+              "y": 667
+            },
+            {
+              "time": 814.4,
+              "y": 716
+            },
+            {
+              "time": 914.4,
+              "y": 733
+            },
+            {
+              "time": 1014.5,
+              "y": 735
+            }
+          ]
+        },
+        "nextChapterToProof": {
+          "found": true,
+          "selector": "#proof",
+          "startY": 735,
+          "targetY": 1852.9,
+          "endY": 1853,
+          "targetTop": 51.9,
+          "headerHeight": 52,
+          "samples": [
+            {
+              "time": 9.4,
+              "y": 735
+            },
+            {
+              "time": 109.5,
+              "y": 742
+            },
+            {
+              "time": 209.4,
+              "y": 783
+            },
+            {
+              "time": 309.5,
+              "y": 890
+            },
+            {
+              "time": 409.4,
+              "y": 1093
+            },
+            {
+              "time": 509.5,
+              "y": 1407
+            },
+            {
+              "time": 609.4,
+              "y": 1647
+            },
+            {
+              "time": 709.4,
+              "y": 1780
+            },
+            {
+              "time": 809.4,
+              "y": 1838
+            },
+            {
+              "time": 909.5,
+              "y": 1853
+            },
+            {
+              "time": 959.4,
+              "y": 1853
+            }
+          ]
+        },
+        "gallery": {
+          "before": {
+            "tabCount": 3,
+            "selectedIndex": 0,
+            "selectedSlide": "0",
+            "counter": "01 / 03",
+            "title": "Финальная проверка в студии",
+            "mainSrc": "http://127.0.0.1:56816/assets/proof/real/crops/finished-porsche-wide.webp",
+            "mainComplete": true,
+            "mainNaturalWidth": 1200,
+            "mainNaturalHeight": 675
+          },
+          "afterNext": {
+            "tabCount": 3,
+            "selectedIndex": 1,
+            "selectedSlide": "1",
+            "counter": "02 / 03",
+            "title": "Плёнка на кузовной панели",
+            "mainSrc": "http://127.0.0.1:56816/assets/proof/real/crops/film-sheet-wide.webp",
+            "mainComplete": true,
+            "mainNaturalWidth": 1600,
+            "mainNaturalHeight": 900
+          },
+          "afterPrev": {
+            "tabCount": 3,
+            "selectedIndex": 0,
+            "selectedSlide": "0",
+            "counter": "01 / 03",
+            "title": "Финальная проверка в студии",
+            "mainSrc": "http://127.0.0.1:56816/assets/proof/real/crops/finished-porsche-wide.webp",
+            "mainComplete": true,
+            "mainNaturalWidth": 1200,
+            "mainNaturalHeight": 675
+          },
+          "afterDirectTab": {
+            "tabCount": 3,
+            "selectedIndex": 2,
+            "selectedSlide": "2",
+            "counter": "03 / 03",
+            "title": "Контроль отражения",
+            "mainSrc": "http://127.0.0.1:56816/assets/proof/real/crops/gloss-front-wide.webp",
+            "mainComplete": true,
+            "mainNaturalWidth": 1200,
+            "mainNaturalHeight": 675
+          },
+          "stableState": {
+            "tabCount": 3,
+            "selectedIndex": 2,
+            "selectedSlide": "2",
+            "counter": "03 / 03",
+            "title": "Контроль отражения",
+            "mainSrc": "http://127.0.0.1:56816/assets/proof/real/crops/gloss-front-wide.webp",
+            "mainComplete": true,
+            "mainNaturalWidth": 1200,
+            "mainNaturalHeight": 675
+          }
+        },
+        "dialog": {
+          "opened": {
+            "open": true,
+            "bodyClass": true,
+            "activeInside": true,
+            "activeElement": "<button class=\"q-dialog-close\" type=\"button\" data-close-dialog=\"\" aria-label=\"Закрыть\"><svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" aria-hidden=\"true\"><path d=\"M18 6L6 18M6 6l12 12\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"></path></svg></button>"
+          },
+          "closed": {
+            "open": false,
+            "bodyClass": false,
+            "focusReturned": true
+          }
+        }
+      }
+    },
+    {
+      "id": "reduced-motion-desktop-1440x1000",
+      "kind": "reduced-motion",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "startedAt": "2026-08-17T01:31:45.406Z",
+      "finishedAt": "2026-08-17T01:31:46.627Z"
+    },
+    {
+      "id": "save-data-mobile-390x844",
+      "kind": "save-data",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "startedAt": "2026-08-17T01:31:46.631Z",
+      "finishedAt": "2026-08-17T01:31:47.726Z"
+    }
+  ],
+  "screenshots": [
+    {
+      "scope": "normal-desktop-1440x1000",
+      "state": "entrance",
+      "path": "artifacts/sol-motion-v2-3/screenshots/normal-desktop-1440x1000--entrance.png",
+      "dimensions": {
+        "width": 1440,
+        "height": 1000
+      }
+    },
+    {
+      "scope": "normal-desktop-1440x1000",
+      "state": "pointer-hover",
+      "path": "artifacts/sol-motion-v2-3/screenshots/normal-desktop-1440x1000--pointer-hover.png",
+      "dimensions": {
+        "width": 1440,
+        "height": 1000
+      }
+    },
+    {
+      "scope": "normal-desktop-1440x1000",
+      "state": "next-chapter",
+      "path": "artifacts/sol-motion-v2-3/screenshots/normal-desktop-1440x1000--next-chapter.png",
+      "dimensions": {
+        "width": 1440,
+        "height": 1000
+      }
+    },
+    {
+      "scope": "normal-desktop-1440x1000",
+      "state": "proof-manual-next",
+      "path": "artifacts/sol-motion-v2-3/screenshots/normal-desktop-1440x1000--proof-manual-next.png",
+      "dimensions": {
+        "width": 1440,
+        "height": 1000
+      }
+    },
+    {
+      "scope": "normal-desktop-1440x1000",
+      "state": "dialog-open",
+      "path": "artifacts/sol-motion-v2-3/screenshots/normal-desktop-1440x1000--dialog-open.png",
+      "dimensions": {
+        "width": 1440,
+        "height": 1000
+      }
+    },
+    {
+      "scope": "normal-desktop-1440x1000",
+      "state": "dialog-closed",
+      "path": "artifacts/sol-motion-v2-3/screenshots/normal-desktop-1440x1000--dialog-closed.png",
+      "dimensions": {
+        "width": 1440,
+        "height": 1000
+      }
+    },
+    {
+      "scope": "normal-mobile-390x844",
+      "state": "entrance",
+      "path": "artifacts/sol-motion-v2-3/screenshots/normal-mobile-390x844--entrance.png",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "scope": "normal-mobile-390x844",
+      "state": "next-chapter",
+      "path": "artifacts/sol-motion-v2-3/screenshots/normal-mobile-390x844--next-chapter.png",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "scope": "normal-mobile-390x844",
+      "state": "proof-manual-next",
+      "path": "artifacts/sol-motion-v2-3/screenshots/normal-mobile-390x844--proof-manual-next.png",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "scope": "normal-mobile-390x844",
+      "state": "dialog-open",
+      "path": "artifacts/sol-motion-v2-3/screenshots/normal-mobile-390x844--dialog-open.png",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "scope": "normal-mobile-390x844",
+      "state": "dialog-closed",
+      "path": "artifacts/sol-motion-v2-3/screenshots/normal-mobile-390x844--dialog-closed.png",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "scope": "reduced-motion-desktop-1440x1000",
+      "state": "reduced-motion",
+      "path": "artifacts/sol-motion-v2-3/screenshots/reduced-motion-desktop-1440x1000--reduced-motion.png",
+      "dimensions": {
+        "width": 1440,
+        "height": 1000
+      }
+    },
+    {
+      "scope": "save-data-mobile-390x844",
+      "state": "save-data",
+      "path": "artifacts/sol-motion-v2-3/screenshots/save-data-mobile-390x844--save-data.png",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      }
+    }
+  ],
+  "videos": [
+    {
+      "scope": "normal-desktop-1440x1000",
+      "path": "artifacts/sol-motion-v2-3/videos/normal-desktop-1440x1000.webm",
+      "bytes": 1150992
+    },
+    {
+      "scope": "normal-mobile-390x844",
+      "path": "artifacts/sol-motion-v2-3/videos/normal-mobile-390x844.webm",
+      "bytes": 717842
+    }
+  ],
+  "checks": [
+    {
+      "scope": "source",
+      "id": "source.index.html.exists",
+      "pass": true,
+      "details": {
+        "bytes": 45091
+      }
+    },
+    {
+      "scope": "source",
+      "id": "source.assets/qwen-full-film.css.exists",
+      "pass": true,
+      "details": {
+        "bytes": 23749
+      }
+    },
+    {
+      "scope": "source",
+      "id": "source.assets/qwen-full-film.js.exists",
+      "pass": true,
+      "details": {
+        "bytes": 19119
+      }
+    },
+    {
+      "scope": "source",
+      "id": "source.scripts/sol_motion_proof_v2_3.cjs.exists",
+      "pass": true,
+      "details": {
+        "bytes": 51694
+      }
+    },
+    {
+      "scope": "server",
+      "id": "server.loopback-only",
+      "pass": true,
+      "details": {
+        "host": "127.0.0.1",
+        "port": 56816,
+        "baseUrl": "http://127.0.0.1:56816/",
+        "loopbackOnly": true
+      }
+    },
+    {
+      "scope": "normal-desktop-1440x1000",
+      "id": "motion.entrance.get-animations-available",
+      "pass": true,
+      "details": {
+        "animationCount": 11
+      }
+    },
+    {
+      "scope": "normal-desktop-1440x1000",
+      "id": "motion.entrance.no-infinite-animation",
+      "pass": true,
+      "details": {
+        "animationsAvailable": true,
+        "animationCount": 11,
+        "animations": [
+          {
+            "index": 0,
+            "type": "CSSTransition",
+            "animationName": null,
+            "transitionProperty": "transform",
+            "playState": "running",
+            "pending": true,
+            "currentTime": 0,
+            "playbackRate": 1,
+            "target": "div.q-timeline-stage.q-reveal-pending",
+            "pseudoElement": null,
+            "duration": 500,
+            "delay": 0,
+            "iterations": 1,
+            "endTime": 500,
+            "activeDuration": 500
+          },
+          {
+            "index": 1,
+            "type": "CSSTransition",
+            "animationName": null,
+            "transitionProperty": "transform",
+            "playState": "running",
+            "pending": true,
+            "currentTime": 0,
+            "playbackRate": 1,
+            "target": "div.q-timeline-stage.q-reveal-pending",
+            "pseudoElement": null,
+            "duration": 500,
+            "delay": 0,
+            "iterations": 1,
+            "endTime": 500,
+            "activeDuration": 500
+          },
+          {
+            "index": 2,
+            "type": "CSSTransition",
+            "animationName": null,
+            "transitionProperty": "transform",
+            "playState": "running",
+            "pending": true,
+            "currentTime": 0,
+            "playbackRate": 1,
+            "target": "div.q-timeline-stage.q-reveal-pending",
+            "pseudoElement": null,
+            "duration": 500,
+            "delay": 0,
+            "iterations": 1,
+            "endTime": 500,
+            "activeDuration": 500
+          },
+          {
+            "index": 3,
+            "type": "CSSTransition",
+            "animationName": null,
+            "transitionProperty": "transform",
+            "playState": "running",
+            "pending": true,
+            "currentTime": 0,
+            "playbackRate": 1,
+            "target": "div.q-timeline-stage.q-reveal-pending",
+            "pseudoElement": null,
+            "duration": 500,
+            "delay": 0,
+            "iterations": 1,
+            "endTime": 500,
+            "activeDuration": 500
+          },
+          {
+            "index": 4,
+            "type": "CSSTransition",
+            "animationName": null,
+            "transitionProperty": "transform",
+            "playState": "running",
+            "pending": true,
+            "currentTime": 0,
+            "playbackRate": 1,
+            "target": "div.q-timeline-stage.q-reveal-pending",
+            "pseudoElement": null,
+            "duration": 500,
+            "delay": 0,
+            "iterations": 1,
+            "endTime": 500,
+            "activeDuration": 500
+          },
+          {
+            "index": 5,
+            "type": "CSSTransition",
+            "animationName": null,
+            "transitionProperty": "transform",
+            "playState": "running",
+            "pending": true,
+            "currentTime": 0,
+            "playbackRate": 1,
+            "target": "div.q-proof-header.q-reveal-pending",
+            "pseudoElement": null,
+            "duration": 500,
+            "delay": 0,
+            "iterations": 1,
+            "endTime": 500,
+            "activeDuration": 500
+          },
+          {
+            "index": 6,
+            "type": "CSSTransition",
+            "animationName": null,
+            "transitionProperty": "transform",
+            "playState": "running",
+            "pending": true,
+            "currentTime": 0,
+            "playbackRate": 1,
+            "target": "div.q-proof-gallery.q-reveal-pending",
+            "pseudoElement": null,
+            "duration": 500,
+            "delay": 0,
+            "iterations": 1,
+            "endTime": 500,
+            "activeDuration": 500
+          },
+          {
+            "index": 7,
+            "type": "CSSTransition",
+            "animationName": null,
+            "transitionProperty": "transform",
+            "playState": "running",
+            "pending": true,
+            "currentTime": 0,
+            "playbackRate": 1,
+            "target": "div.q-scope-inner.q-reveal-pending",
+            "pseudoElement": null,
+            "duration": 500,
+            "delay": 0,
+            "iterations": 1,
+            "endTime": 500,
+            "activeDuration": 500
+          },
+          {
+            "index": 8,
+            "type": "CSSTransition",
+            "animationName": null,
+            "transitionProperty": "transform",
+            "playState": "running",
+            "pending": true,
+            "currentTime": 0,
+            "playbackRate": 1,
+            "target": "div.q-contact-inner.q-reveal-pending",
+            "pseudoElement": null,
+            "duration": 500,
+            "delay": 0,
+            "iterations": 1,
+            "endTime": 500,
+            "activeDuration": 500
+          },
+          {
+            "index": 9,
+            "type": "CSSTransition",
+            "animationName": null,
+            "transitionProperty": "transform",
+            "playState": "running",
+            "pending": true,
+            "currentTime": 0,
+            "playbackRate": 1,
+            "target": "div.q-reviews-inner.q-reveal-pending",
+            "pseudoElement": null,
+            "duration": 500,
+            "delay": 0,
+            "iterations": 1,
+            "endTime": 500,
+            "activeDuration": 500
+          },
+          {
+            "index": 10,
+            "type": "CSSTransition",
+            "animationName": null,
+            "transitionProperty": "transform",
+            "playState": "running",
+            "pending": true,
+            "currentTime": 0,
+            "playbackRate": 1,
+            "target": "div.q-faq-inner.q-reveal-pending",
+            "pseudoElement": null,
+            "duration": 500,
+            "delay": 0,
+            "iterations": 1,
+            "endTime": 500,
+            "activeDuration": 500
+          }
+        ],
+        "infiniteAnimations": [],
+        "computedInfiniteDeclarations": []
+      }
+    },
+    {
+      "scope": "normal-desktop-1440x1000",
+      "id": "viewport.exact",
+      "pass": true,
+      "details": {
+        "actual": {
+          "width": 1440,
+          "height": 1000
+        },
+        "expected": {
+          "width": 1440,
+          "height": 1000
+        },
+        "videoSize": {
+          "width": 1440,
+          "height": 1000
+        }
+      }
+    },
+    {
+      "scope": "normal-desktop-1440x1000",
+      "id": "qa.metrika-disabled-in-qa-1",
+      "pass": true,
+      "details": {
+        "qaParam": "1",
+        "analyticsExists": true,
+        "analyticsQa": true,
+        "ymType": "undefined",
+        "yandexCounterGlobals": [],
+        "metrikaNodes": []
+      }
+    },
+    {
+      "scope": "normal-desktop-1440x1000",
+      "id": "screenshot.entrance.viewport-size",
+      "pass": true,
+      "details": {
+        "path": "artifacts/sol-motion-v2-3/screenshots/normal-desktop-1440x1000--entrance.png",
+        "dimensions": {
+          "width": 1440,
+          "height": 1000
+        },
+        "expected": {
+          "id": "desktop-1440x1000",
+          "width": 1440,
+          "height": 1000,
+          "isMobile": false,
+          "hasTouch": false,
+          "pointerProof": true
+        }
+      }
+    },
+    {
+      "scope": "normal-desktop-1440x1000",
+      "id": "interaction.desktop-pointer-move",
+      "pass": true,
+      "details": {
+        "moved": true,
+        "points": [
+          {
+            "x": 897.6,
+            "y": 279.5
+          },
+          {
+            "x": 1056,
+            "y": 429.5
+          },
+          {
+            "x": 1203.8,
+            "y": 602
+          }
+        ]
+      }
+    },
+    {
+      "scope": "normal-desktop-1440x1000",
+      "id": "screenshot.pointer-hover.viewport-size",
+      "pass": true,
+      "details": {
+        "path": "artifacts/sol-motion-v2-3/screenshots/normal-desktop-1440x1000--pointer-hover.png",
+        "dimensions": {
+          "width": 1440,
+          "height": 1000
+        },
+        "expected": {
+          "id": "desktop-1440x1000",
+          "width": 1440,
+          "height": 1000,
+          "isMobile": false,
+          "hasTouch": false,
+          "pointerProof": true
+        }
+      }
+    },
+    {
+      "scope": "normal-desktop-1440x1000",
+      "id": "interaction.controlled-scroll-hero-to-next-chapter",
+      "pass": true,
+      "details": {
+        "found": true,
+        "selector": "#edge",
+        "startY": 0,
+        "targetY": 840,
+        "endY": 840,
+        "targetTop": 60,
+        "headerHeight": 60,
+        "samples": [
+          {
+            "time": 0.7,
+            "y": 0
+          },
+          {
+            "time": 100.8,
+            "y": 3
+          },
+          {
+            "time": 200.8,
+            "y": 27
+          },
+          {
+            "time": 300.7,
+            "y": 91
+          },
+          {
+            "time": 417.4,
+            "y": 244
+          },
+          {
+            "time": 517.4,
+            "y": 462
+          },
+          {
+            "time": 617.4,
+            "y": 652
+          },
+          {
+            "time": 717.4,
+            "y": 764
+          },
+          {
+            "time": 817.4,
+            "y": 820
+          },
+          {
+            "time": 917.4,
+            "y": 838
+          },
+          {
+            "time": 1017.4,
+            "y": 840
+          }
+        ]
+      }
+    },
+    {
+      "scope": "normal-desktop-1440x1000",
+      "id": "screenshot.next-chapter.viewport-size",
+      "pass": true,
+      "details": {
+        "path": "artifacts/sol-motion-v2-3/screenshots/normal-desktop-1440x1000--next-chapter.png",
+        "dimensions": {
+          "width": 1440,
+          "height": 1000
+        },
+        "expected": {
+          "id": "desktop-1440x1000",
+          "width": 1440,
+          "height": 1000,
+          "isMobile": false,
+          "hasTouch": false,
+          "pointerProof": true
+        }
+      }
+    },
+    {
+      "scope": "normal-desktop-1440x1000",
+      "id": "interaction.controlled-scroll-to-proof",
+      "pass": true,
+      "details": {
+        "found": true,
+        "selector": "#proof",
+        "startY": 840,
+        "targetY": 1898,
+        "endY": 1898,
+        "targetTop": 60,
+        "headerHeight": 60,
+        "samples": [
+          {
+            "time": 3,
+            "y": 840
+          },
+          {
+            "time": 103,
+            "y": 845
+          },
+          {
+            "time": 203,
+            "y": 881
+          },
+          {
+            "time": 303,
+            "y": 977
+          },
+          {
+            "time": 403,
+            "y": 1163
+          },
+          {
+            "time": 503,
+            "y": 1457
+          },
+          {
+            "time": 603,
+            "y": 1692
+          },
+          {
+            "time": 703,
+            "y": 1824
+          },
+          {
+            "time": 802.9,
+            "y": 1882
+          },
+          {
+            "time": 903,
+            "y": 1897
+          },
+          {
+            "time": 953,
+            "y": 1898
+          }
+        ]
+      }
+    },
+    {
+      "scope": "normal-desktop-1440x1000",
+      "id": "interaction.proof-manual-controls-exist",
+      "pass": true,
+      "details": {
+        "before": {
+          "tabCount": 3,
+          "selectedIndex": 0,
+          "selectedSlide": "0",
+          "counter": "01 / 03",
+          "title": "Финальная проверка в студии",
+          "mainSrc": "http://127.0.0.1:56816/assets/proof/real/crops/finished-porsche-wide.webp",
+          "mainComplete": true,
+          "mainNaturalWidth": 1200,
+          "mainNaturalHeight": 675
+        }
+      }
+    },
+    {
+      "scope": "normal-desktop-1440x1000",
+      "id": "interaction.proof-next-changes-slide",
+      "pass": true,
+      "details": {
+        "before": {
+          "tabCount": 3,
+          "selectedIndex": 0,
+          "selectedSlide": "0",
+          "counter": "01 / 03",
+          "title": "Финальная проверка в студии",
+          "mainSrc": "http://127.0.0.1:56816/assets/proof/real/crops/finished-porsche-wide.webp",
+          "mainComplete": true,
+          "mainNaturalWidth": 1200,
+          "mainNaturalHeight": 675
+        },
+        "afterNext": {
+          "tabCount": 3,
+          "selectedIndex": 1,
+          "selectedSlide": "1",
+          "counter": "02 / 03",
+          "title": "Плёнка на кузовной панели",
+          "mainSrc": "http://127.0.0.1:56816/assets/proof/real/crops/film-sheet-wide.webp",
+          "mainComplete": true,
+          "mainNaturalWidth": 1600,
+          "mainNaturalHeight": 900
+        }
+      }
+    },
+    {
+      "scope": "normal-desktop-1440x1000",
+      "id": "screenshot.proof-manual-next.viewport-size",
+      "pass": true,
+      "details": {
+        "path": "artifacts/sol-motion-v2-3/screenshots/normal-desktop-1440x1000--proof-manual-next.png",
+        "dimensions": {
+          "width": 1440,
+          "height": 1000
+        },
+        "expected": {
+          "id": "desktop-1440x1000",
+          "width": 1440,
+          "height": 1000,
+          "isMobile": false,
+          "hasTouch": false,
+          "pointerProof": true
+        }
+      }
+    },
+    {
+      "scope": "normal-desktop-1440x1000",
+      "id": "interaction.proof-prev-restores-slide",
+      "pass": true,
+      "details": {
+        "before": {
+          "tabCount": 3,
+          "selectedIndex": 0,
+          "selectedSlide": "0",
+          "counter": "01 / 03",
+          "title": "Финальная проверка в студии",
+          "mainSrc": "http://127.0.0.1:56816/assets/proof/real/crops/finished-porsche-wide.webp",
+          "mainComplete": true,
+          "mainNaturalWidth": 1200,
+          "mainNaturalHeight": 675
+        },
+        "afterNext": {
+          "tabCount": 3,
+          "selectedIndex": 1,
+          "selectedSlide": "1",
+          "counter": "02 / 03",
+          "title": "Плёнка на кузовной панели",
+          "mainSrc": "http://127.0.0.1:56816/assets/proof/real/crops/film-sheet-wide.webp",
+          "mainComplete": true,
+          "mainNaturalWidth": 1600,
+          "mainNaturalHeight": 900
+        },
+        "afterPrev": {
+          "tabCount": 3,
+          "selectedIndex": 0,
+          "selectedSlide": "0",
+          "counter": "01 / 03",
+          "title": "Финальная проверка в студии",
+          "mainSrc": "http://127.0.0.1:56816/assets/proof/real/crops/finished-porsche-wide.webp",
+          "mainComplete": true,
+          "mainNaturalWidth": 1200,
+          "mainNaturalHeight": 675
+        }
+      }
+    },
+    {
+      "scope": "normal-desktop-1440x1000",
+      "id": "interaction.proof-direct-tab-works",
+      "pass": true,
+      "details": {
+        "lastIndex": 2,
+        "afterDirectTab": {
+          "tabCount": 3,
+          "selectedIndex": 2,
+          "selectedSlide": "2",
+          "counter": "03 / 03",
+          "title": "Контроль отражения",
+          "mainSrc": "http://127.0.0.1:56816/assets/proof/real/crops/gloss-front-wide.webp",
+          "mainComplete": true,
+          "mainNaturalWidth": 1200,
+          "mainNaturalHeight": 675
+        }
+      }
+    },
+    {
+      "scope": "normal-desktop-1440x1000",
+      "id": "interaction.proof-remains-manual-after-input",
+      "pass": true,
+      "details": {
+        "afterDirectTab": {
+          "tabCount": 3,
+          "selectedIndex": 2,
+          "selectedSlide": "2",
+          "counter": "03 / 03",
+          "title": "Контроль отражения",
+          "mainSrc": "http://127.0.0.1:56816/assets/proof/real/crops/gloss-front-wide.webp",
+          "mainComplete": true,
+          "mainNaturalWidth": 1200,
+          "mainNaturalHeight": 675
+        },
+        "stableState": {
+          "tabCount": 3,
+          "selectedIndex": 2,
+          "selectedSlide": "2",
+          "counter": "03 / 03",
+          "title": "Контроль отражения",
+          "mainSrc": "http://127.0.0.1:56816/assets/proof/real/crops/gloss-front-wide.webp",
+          "mainComplete": true,
+          "mainNaturalWidth": 1200,
+          "mainNaturalHeight": 675
+        }
+      }
+    },
+    {
+      "scope": "normal-desktop-1440x1000",
+      "id": "interaction.dialog-controls-exist",
+      "pass": true,
+      "details": {}
+    },
+    {
+      "scope": "normal-desktop-1440x1000",
+      "id": "interaction.dialog-opens",
+      "pass": true,
+      "details": {
+        "open": true,
+        "bodyClass": true,
+        "activeInside": true,
+        "activeElement": "<button class=\"q-dialog-close\" type=\"button\" data-close-dialog=\"\" aria-label=\"Закрыть\"><svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" aria-hidden=\"true\"><path d=\"M18 6L6 18M6 6l12 12\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"></path></svg></button>"
+      }
+    },
+    {
+      "scope": "normal-desktop-1440x1000",
+      "id": "screenshot.dialog-open.viewport-size",
+      "pass": true,
+      "details": {
+        "path": "artifacts/sol-motion-v2-3/screenshots/normal-desktop-1440x1000--dialog-open.png",
+        "dimensions": {
+          "width": 1440,
+          "height": 1000
+        },
+        "expected": {
+          "id": "desktop-1440x1000",
+          "width": 1440,
+          "height": 1000,
+          "isMobile": false,
+          "hasTouch": false,
+          "pointerProof": true
+        }
+      }
+    },
+    {
+      "scope": "normal-desktop-1440x1000",
+      "id": "interaction.dialog-open-no-horizontal-overflow",
+      "pass": true,
+      "details": {
+        "viewportWidth": 1440,
+        "rootClientWidth": 1440,
+        "rootScrollWidth": 1440,
+        "bodyScrollWidth": 1440,
+        "horizontalScrollPosition": 0,
+        "leakingElements": []
+      }
+    },
+    {
+      "scope": "normal-desktop-1440x1000",
+      "id": "interaction.dialog-closes-and-restores-focus",
+      "pass": true,
+      "details": {
+        "open": false,
+        "bodyClass": false,
+        "focusReturned": true
+      }
+    },
+    {
+      "scope": "normal-desktop-1440x1000",
+      "id": "screenshot.dialog-closed.viewport-size",
+      "pass": true,
+      "details": {
+        "path": "artifacts/sol-motion-v2-3/screenshots/normal-desktop-1440x1000--dialog-closed.png",
+        "dimensions": {
+          "width": 1440,
+          "height": 1000
+        },
+        "expected": {
+          "id": "desktop-1440x1000",
+          "width": 1440,
+          "height": 1000,
+          "isMobile": false,
+          "hasTouch": false,
+          "pointerProof": true
+        }
+      }
+    },
+    {
+      "scope": "normal-desktop-1440x1000",
+      "id": "motion.after-interactions.get-animations-available",
+      "pass": true,
+      "details": {
+        "animationCount": 1
+      }
+    },
+    {
+      "scope": "normal-desktop-1440x1000",
+      "id": "motion.after-interactions.no-infinite-animation",
+      "pass": true,
+      "details": {
+        "animationsAvailable": true,
+        "animationCount": 1,
+        "animations": [
+          {
+            "index": 0,
+            "type": "CSSAnimation",
+            "animationName": "tf-light-enter",
+            "transitionProperty": null,
+            "playState": "finished",
+            "pending": false,
+            "currentTime": 2200,
+            "playbackRate": 1,
+            "target": "path.tf-light-cut.tf-sweep",
+            "pseudoElement": null,
+            "duration": 2200,
+            "delay": 0,
+            "iterations": 1,
+            "endTime": 2200,
+            "activeDuration": 2200
+          }
+        ],
+        "infiniteAnimations": [],
+        "computedInfiniteDeclarations": []
+      }
+    },
+    {
+      "scope": "normal-desktop-1440x1000",
+      "id": "integrity.after-interactions.no-broken-images",
+      "pass": true,
+      "details": {
+        "imageCount": 8,
+        "broken": []
+      }
+    },
+    {
+      "scope": "normal-desktop-1440x1000",
+      "id": "integrity.after-interactions.no-horizontal-overflow",
+      "pass": true,
+      "details": {
+        "viewportWidth": 1440,
+        "rootClientWidth": 1440,
+        "rootScrollWidth": 1440,
+        "bodyScrollWidth": 1440,
+        "horizontalScrollPosition": 0,
+        "leakingElements": []
+      }
+    },
+    {
+      "scope": "normal-desktop-1440x1000",
+      "id": "qa.metrika-disabled-in-qa-1",
+      "pass": true,
+      "details": {
+        "qaParam": "1",
+        "analyticsExists": true,
+        "analyticsQa": true,
+        "ymType": "undefined",
+        "yandexCounterGlobals": [],
+        "metrikaNodes": []
+      }
+    },
+    {
+      "scope": "normal-desktop-1440x1000",
+      "id": "scenario.completed",
+      "pass": true,
+      "details": {}
+    },
+    {
+      "scope": "normal-desktop-1440x1000",
+      "id": "runtime.no-console-failures",
+      "pass": true,
+      "details": {
+        "failures": []
+      }
+    },
+    {
+      "scope": "normal-desktop-1440x1000",
+      "id": "runtime.no-page-errors",
+      "pass": true,
+      "details": {
+        "failures": []
+      }
+    },
+    {
+      "scope": "normal-desktop-1440x1000",
+      "id": "runtime.no-page-crashes",
+      "pass": true,
+      "details": {
+        "failures": []
+      }
+    },
+    {
+      "scope": "normal-desktop-1440x1000",
+      "id": "runtime.no-network-failures",
+      "pass": true,
+      "details": {
+        "requestFailures": [],
+        "httpFailures": []
+      }
+    },
+    {
+      "scope": "normal-desktop-1440x1000",
+      "id": "qa.no-metrika-network",
+      "pass": true,
+      "details": {
+        "metrikaRequests": [],
+        "externalRequests": []
+      }
+    },
+    {
+      "scope": "normal-desktop-1440x1000",
+      "id": "video.recorded",
+      "pass": true,
+      "details": {
+        "path": "artifacts/sol-motion-v2-3/videos/normal-desktop-1440x1000.webm",
+        "bytes": 1150992
+      }
+    },
+    {
+      "scope": "normal-mobile-390x844",
+      "id": "motion.entrance.get-animations-available",
+      "pass": true,
+      "details": {
+        "animationCount": 12
+      }
+    },
+    {
+      "scope": "normal-mobile-390x844",
+      "id": "motion.entrance.no-infinite-animation",
+      "pass": true,
+      "details": {
+        "animationsAvailable": true,
+        "animationCount": 12,
+        "animations": [
+          {
+            "index": 0,
+            "type": "CSSTransition",
+            "animationName": null,
+            "transitionProperty": "transform",
+            "playState": "running",
+            "pending": true,
+            "currentTime": 0,
+            "playbackRate": 1,
+            "target": "div.q-edge-header.q-reveal-pending",
+            "pseudoElement": null,
+            "duration": 500,
+            "delay": 0,
+            "iterations": 1,
+            "endTime": 500,
+            "activeDuration": 500
+          },
+          {
+            "index": 1,
+            "type": "CSSTransition",
+            "animationName": null,
+            "transitionProperty": "transform",
+            "playState": "running",
+            "pending": true,
+            "currentTime": 0,
+            "playbackRate": 1,
+            "target": "div.q-timeline-stage.q-reveal-pending",
+            "pseudoElement": null,
+            "duration": 500,
+            "delay": 0,
+            "iterations": 1,
+            "endTime": 500,
+            "activeDuration": 500
+          },
+          {
+            "index": 2,
+            "type": "CSSTransition",
+            "animationName": null,
+            "transitionProperty": "transform",
+            "playState": "running",
+            "pending": true,
+            "currentTime": 0,
+            "playbackRate": 1,
+            "target": "div.q-timeline-stage.q-reveal-pending",
+            "pseudoElement": null,
+            "duration": 500,
+            "delay": 0,
+            "iterations": 1,
+            "endTime": 500,
+            "activeDuration": 500
+          },
+          {
+            "index": 3,
+            "type": "CSSTransition",
+            "animationName": null,
+            "transitionProperty": "transform",
+            "playState": "running",
+            "pending": true,
+            "currentTime": 0,
+            "playbackRate": 1,
+            "target": "div.q-timeline-stage.q-reveal-pending",
+            "pseudoElement": null,
+            "duration": 500,
+            "delay": 0,
+            "iterations": 1,
+            "endTime": 500,
+            "activeDuration": 500
+          },
+          {
+            "index": 4,
+            "type": "CSSTransition",
+            "animationName": null,
+            "transitionProperty": "transform",
+            "playState": "running",
+            "pending": true,
+            "currentTime": 0,
+            "playbackRate": 1,
+            "target": "div.q-timeline-stage.q-reveal-pending",
+            "pseudoElement": null,
+            "duration": 500,
+            "delay": 0,
+            "iterations": 1,
+            "endTime": 500,
+            "activeDuration": 500
+          },
+          {
+            "index": 5,
+            "type": "CSSTransition",
+            "animationName": null,
+            "transitionProperty": "transform",
+            "playState": "running",
+            "pending": true,
+            "currentTime": 0,
+            "playbackRate": 1,
+            "target": "div.q-timeline-stage.q-reveal-pending",
+            "pseudoElement": null,
+            "duration": 500,
+            "delay": 0,
+            "iterations": 1,
+            "endTime": 500,
+            "activeDuration": 500
+          },
+          {
+            "index": 6,
+            "type": "CSSTransition",
+            "animationName": null,
+            "transitionProperty": "transform",
+            "playState": "running",
+            "pending": true,
+            "currentTime": 0,
+            "playbackRate": 1,
+            "target": "div.q-proof-header.q-reveal-pending",
+            "pseudoElement": null,
+            "duration": 500,
+            "delay": 0,
+            "iterations": 1,
+            "endTime": 500,
+            "activeDuration": 500
+          },
+          {
+            "index": 7,
+            "type": "CSSTransition",
+            "animationName": null,
+            "transitionProperty": "transform",
+            "playState": "running",
+            "pending": true,
+            "currentTime": 0,
+            "playbackRate": 1,
+            "target": "div.q-proof-gallery.q-reveal-pending",
+            "pseudoElement": null,
+            "duration": 500,
+            "delay": 0,
+            "iterations": 1,
+            "endTime": 500,
+            "activeDuration": 500
+          },
+          {
+            "index": 8,
+            "type": "CSSTransition",
+            "animationName": null,
+            "transitionProperty": "transform",
+            "playState": "running",
+            "pending": true,
+            "currentTime": 0,
+            "playbackRate": 1,
+            "target": "div.q-scope-inner.q-reveal-pending",
+            "pseudoElement": null,
+            "duration": 500,
+            "delay": 0,
+            "iterations": 1,
+            "endTime": 500,
+            "activeDuration": 500
+          },
+          {
+            "index": 9,
+            "type": "CSSTransition",
+            "animationName": null,
+            "transitionProperty": "transform",
+            "playState": "running",
+            "pending": true,
+            "currentTime": 0,
+            "playbackRate": 1,
+            "target": "div.q-contact-inner.q-reveal-pending",
+            "pseudoElement": null,
+            "duration": 500,
+            "delay": 0,
+            "iterations": 1,
+            "endTime": 500,
+            "activeDuration": 500
+          },
+          {
+            "index": 10,
+            "type": "CSSTransition",
+            "animationName": null,
+            "transitionProperty": "transform",
+            "playState": "running",
+            "pending": true,
+            "currentTime": 0,
+            "playbackRate": 1,
+            "target": "div.q-reviews-inner.q-reveal-pending",
+            "pseudoElement": null,
+            "duration": 500,
+            "delay": 0,
+            "iterations": 1,
+            "endTime": 500,
+            "activeDuration": 500
+          },
+          {
+            "index": 11,
+            "type": "CSSTransition",
+            "animationName": null,
+            "transitionProperty": "transform",
+            "playState": "running",
+            "pending": true,
+            "currentTime": 0,
+            "playbackRate": 1,
+            "target": "div.q-faq-inner.q-reveal-pending",
+            "pseudoElement": null,
+            "duration": 500,
+            "delay": 0,
+            "iterations": 1,
+            "endTime": 500,
+            "activeDuration": 500
+          }
+        ],
+        "infiniteAnimations": [],
+        "computedInfiniteDeclarations": []
+      }
+    },
+    {
+      "scope": "normal-mobile-390x844",
+      "id": "viewport.exact",
+      "pass": true,
+      "details": {
+        "actual": {
+          "width": 390,
+          "height": 844
+        },
+        "expected": {
+          "width": 390,
+          "height": 844
+        },
+        "videoSize": {
+          "width": 390,
+          "height": 844
+        }
+      }
+    },
+    {
+      "scope": "normal-mobile-390x844",
+      "id": "qa.metrika-disabled-in-qa-1",
+      "pass": true,
+      "details": {
+        "qaParam": "1",
+        "analyticsExists": true,
+        "analyticsQa": true,
+        "ymType": "undefined",
+        "yandexCounterGlobals": [],
+        "metrikaNodes": []
+      }
+    },
+    {
+      "scope": "normal-mobile-390x844",
+      "id": "screenshot.entrance.viewport-size",
+      "pass": true,
+      "details": {
+        "path": "artifacts/sol-motion-v2-3/screenshots/normal-mobile-390x844--entrance.png",
+        "dimensions": {
+          "width": 390,
+          "height": 844
+        },
+        "expected": {
+          "id": "mobile-390x844",
+          "width": 390,
+          "height": 844,
+          "isMobile": true,
+          "hasTouch": true,
+          "pointerProof": false
+        }
+      }
+    },
+    {
+      "scope": "normal-mobile-390x844",
+      "id": "interaction.controlled-scroll-hero-to-next-chapter",
+      "pass": true,
+      "details": {
+        "found": true,
+        "selector": "#edge",
+        "startY": 0,
+        "targetY": 735.2,
+        "endY": 735,
+        "targetTop": 52.2,
+        "headerHeight": 52,
+        "samples": [
+          {
+            "time": 14.5,
+            "y": 0
+          },
+          {
+            "time": 114.5,
+            "y": 4
+          },
+          {
+            "time": 214.5,
+            "y": 29
+          },
+          {
+            "time": 314.5,
+            "y": 91
+          },
+          {
+            "time": 414.5,
+            "y": 209
+          },
+          {
+            "time": 514.5,
+            "y": 399
+          },
+          {
+            "time": 614.4,
+            "y": 567
+          },
+          {
+            "time": 714.5,
+            "y": 667
+          },
+          {
+            "time": 814.4,
+            "y": 716
+          },
+          {
+            "time": 914.4,
+            "y": 733
+          },
+          {
+            "time": 1014.5,
+            "y": 735
+          }
+        ]
+      }
+    },
+    {
+      "scope": "normal-mobile-390x844",
+      "id": "screenshot.next-chapter.viewport-size",
+      "pass": true,
+      "details": {
+        "path": "artifacts/sol-motion-v2-3/screenshots/normal-mobile-390x844--next-chapter.png",
+        "dimensions": {
+          "width": 390,
+          "height": 844
+        },
+        "expected": {
+          "id": "mobile-390x844",
+          "width": 390,
+          "height": 844,
+          "isMobile": true,
+          "hasTouch": true,
+          "pointerProof": false
+        }
+      }
+    },
+    {
+      "scope": "normal-mobile-390x844",
+      "id": "interaction.controlled-scroll-to-proof",
+      "pass": true,
+      "details": {
+        "found": true,
+        "selector": "#proof",
+        "startY": 735,
+        "targetY": 1852.9,
+        "endY": 1853,
+        "targetTop": 51.9,
+        "headerHeight": 52,
+        "samples": [
+          {
+            "time": 9.4,
+            "y": 735
+          },
+          {
+            "time": 109.5,
+            "y": 742
+          },
+          {
+            "time": 209.4,
+            "y": 783
+          },
+          {
+            "time": 309.5,
+            "y": 890
+          },
+          {
+            "time": 409.4,
+            "y": 1093
+          },
+          {
+            "time": 509.5,
+            "y": 1407
+          },
+          {
+            "time": 609.4,
+            "y": 1647
+          },
+          {
+            "time": 709.4,
+            "y": 1780
+          },
+          {
+            "time": 809.4,
+            "y": 1838
+          },
+          {
+            "time": 909.5,
+            "y": 1853
+          },
+          {
+            "time": 959.4,
+            "y": 1853
+          }
+        ]
+      }
+    },
+    {
+      "scope": "normal-mobile-390x844",
+      "id": "interaction.proof-manual-controls-exist",
+      "pass": true,
+      "details": {
+        "before": {
+          "tabCount": 3,
+          "selectedIndex": 0,
+          "selectedSlide": "0",
+          "counter": "01 / 03",
+          "title": "Финальная проверка в студии",
+          "mainSrc": "http://127.0.0.1:56816/assets/proof/real/crops/finished-porsche-wide.webp",
+          "mainComplete": true,
+          "mainNaturalWidth": 1200,
+          "mainNaturalHeight": 675
+        }
+      }
+    },
+    {
+      "scope": "normal-mobile-390x844",
+      "id": "interaction.proof-next-changes-slide",
+      "pass": true,
+      "details": {
+        "before": {
+          "tabCount": 3,
+          "selectedIndex": 0,
+          "selectedSlide": "0",
+          "counter": "01 / 03",
+          "title": "Финальная проверка в студии",
+          "mainSrc": "http://127.0.0.1:56816/assets/proof/real/crops/finished-porsche-wide.webp",
+          "mainComplete": true,
+          "mainNaturalWidth": 1200,
+          "mainNaturalHeight": 675
+        },
+        "afterNext": {
+          "tabCount": 3,
+          "selectedIndex": 1,
+          "selectedSlide": "1",
+          "counter": "02 / 03",
+          "title": "Плёнка на кузовной панели",
+          "mainSrc": "http://127.0.0.1:56816/assets/proof/real/crops/film-sheet-wide.webp",
+          "mainComplete": true,
+          "mainNaturalWidth": 1600,
+          "mainNaturalHeight": 900
+        }
+      }
+    },
+    {
+      "scope": "normal-mobile-390x844",
+      "id": "screenshot.proof-manual-next.viewport-size",
+      "pass": true,
+      "details": {
+        "path": "artifacts/sol-motion-v2-3/screenshots/normal-mobile-390x844--proof-manual-next.png",
+        "dimensions": {
+          "width": 390,
+          "height": 844
+        },
+        "expected": {
+          "id": "mobile-390x844",
+          "width": 390,
+          "height": 844,
+          "isMobile": true,
+          "hasTouch": true,
+          "pointerProof": false
+        }
+      }
+    },
+    {
+      "scope": "normal-mobile-390x844",
+      "id": "interaction.proof-prev-restores-slide",
+      "pass": true,
+      "details": {
+        "before": {
+          "tabCount": 3,
+          "selectedIndex": 0,
+          "selectedSlide": "0",
+          "counter": "01 / 03",
+          "title": "Финальная проверка в студии",
+          "mainSrc": "http://127.0.0.1:56816/assets/proof/real/crops/finished-porsche-wide.webp",
+          "mainComplete": true,
+          "mainNaturalWidth": 1200,
+          "mainNaturalHeight": 675
+        },
+        "afterNext": {
+          "tabCount": 3,
+          "selectedIndex": 1,
+          "selectedSlide": "1",
+          "counter": "02 / 03",
+          "title": "Плёнка на кузовной панели",
+          "mainSrc": "http://127.0.0.1:56816/assets/proof/real/crops/film-sheet-wide.webp",
+          "mainComplete": true,
+          "mainNaturalWidth": 1600,
+          "mainNaturalHeight": 900
+        },
+        "afterPrev": {
+          "tabCount": 3,
+          "selectedIndex": 0,
+          "selectedSlide": "0",
+          "counter": "01 / 03",
+          "title": "Финальная проверка в студии",
+          "mainSrc": "http://127.0.0.1:56816/assets/proof/real/crops/finished-porsche-wide.webp",
+          "mainComplete": true,
+          "mainNaturalWidth": 1200,
+          "mainNaturalHeight": 675
+        }
+      }
+    },
+    {
+      "scope": "normal-mobile-390x844",
+      "id": "interaction.proof-direct-tab-works",
+      "pass": true,
+      "details": {
+        "lastIndex": 2,
+        "afterDirectTab": {
+          "tabCount": 3,
+          "selectedIndex": 2,
+          "selectedSlide": "2",
+          "counter": "03 / 03",
+          "title": "Контроль отражения",
+          "mainSrc": "http://127.0.0.1:56816/assets/proof/real/crops/gloss-front-wide.webp",
+          "mainComplete": true,
+          "mainNaturalWidth": 1200,
+          "mainNaturalHeight": 675
+        }
+      }
+    },
+    {
+      "scope": "normal-mobile-390x844",
+      "id": "interaction.proof-remains-manual-after-input",
+      "pass": true,
+      "details": {
+        "afterDirectTab": {
+          "tabCount": 3,
+          "selectedIndex": 2,
+          "selectedSlide": "2",
+          "counter": "03 / 03",
+          "title": "Контроль отражения",
+          "mainSrc": "http://127.0.0.1:56816/assets/proof/real/crops/gloss-front-wide.webp",
+          "mainComplete": true,
+          "mainNaturalWidth": 1200,
+          "mainNaturalHeight": 675
+        },
+        "stableState": {
+          "tabCount": 3,
+          "selectedIndex": 2,
+          "selectedSlide": "2",
+          "counter": "03 / 03",
+          "title": "Контроль отражения",
+          "mainSrc": "http://127.0.0.1:56816/assets/proof/real/crops/gloss-front-wide.webp",
+          "mainComplete": true,
+          "mainNaturalWidth": 1200,
+          "mainNaturalHeight": 675
+        }
+      }
+    },
+    {
+      "scope": "normal-mobile-390x844",
+      "id": "interaction.dialog-controls-exist",
+      "pass": true,
+      "details": {}
+    },
+    {
+      "scope": "normal-mobile-390x844",
+      "id": "interaction.dialog-opens",
+      "pass": true,
+      "details": {
+        "open": true,
+        "bodyClass": true,
+        "activeInside": true,
+        "activeElement": "<button class=\"q-dialog-close\" type=\"button\" data-close-dialog=\"\" aria-label=\"Закрыть\"><svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" aria-hidden=\"true\"><path d=\"M18 6L6 18M6 6l12 12\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"></path></svg></button>"
+      }
+    },
+    {
+      "scope": "normal-mobile-390x844",
+      "id": "screenshot.dialog-open.viewport-size",
+      "pass": true,
+      "details": {
+        "path": "artifacts/sol-motion-v2-3/screenshots/normal-mobile-390x844--dialog-open.png",
+        "dimensions": {
+          "width": 390,
+          "height": 844
+        },
+        "expected": {
+          "id": "mobile-390x844",
+          "width": 390,
+          "height": 844,
+          "isMobile": true,
+          "hasTouch": true,
+          "pointerProof": false
+        }
+      }
+    },
+    {
+      "scope": "normal-mobile-390x844",
+      "id": "interaction.dialog-open-no-horizontal-overflow",
+      "pass": true,
+      "details": {
+        "viewportWidth": 390,
+        "rootClientWidth": 390,
+        "rootScrollWidth": 390,
+        "bodyScrollWidth": 390,
+        "horizontalScrollPosition": 0,
+        "leakingElements": []
+      }
+    },
+    {
+      "scope": "normal-mobile-390x844",
+      "id": "interaction.dialog-closes-and-restores-focus",
+      "pass": true,
+      "details": {
+        "open": false,
+        "bodyClass": false,
+        "focusReturned": true
+      }
+    },
+    {
+      "scope": "normal-mobile-390x844",
+      "id": "screenshot.dialog-closed.viewport-size",
+      "pass": true,
+      "details": {
+        "path": "artifacts/sol-motion-v2-3/screenshots/normal-mobile-390x844--dialog-closed.png",
+        "dimensions": {
+          "width": 390,
+          "height": 844
+        },
+        "expected": {
+          "id": "mobile-390x844",
+          "width": 390,
+          "height": 844,
+          "isMobile": true,
+          "hasTouch": true,
+          "pointerProof": false
+        }
+      }
+    },
+    {
+      "scope": "normal-mobile-390x844",
+      "id": "motion.after-interactions.get-animations-available",
+      "pass": true,
+      "details": {
+        "animationCount": 2
+      }
+    },
+    {
+      "scope": "normal-mobile-390x844",
+      "id": "motion.after-interactions.no-infinite-animation",
+      "pass": true,
+      "details": {
+        "animationsAvailable": true,
+        "animationCount": 2,
+        "animations": [
+          {
+            "index": 0,
+            "type": "CSSTransition",
+            "animationName": null,
+            "transitionProperty": "background-color",
+            "playState": "running",
+            "pending": false,
+            "currentTime": 83.381,
+            "playbackRate": 1,
+            "target": "button.q-btn.q-btn-primary",
+            "pseudoElement": null,
+            "duration": 200,
+            "delay": 0,
+            "iterations": 1,
+            "endTime": 200,
+            "activeDuration": 200
+          },
+          {
+            "index": 1,
+            "type": "CSSAnimation",
+            "animationName": "tf-light-enter",
+            "transitionProperty": null,
+            "playState": "finished",
+            "pending": false,
+            "currentTime": 2200,
+            "playbackRate": 1,
+            "target": "path.tf-light-cut.tf-sweep",
+            "pseudoElement": null,
+            "duration": 2200,
+            "delay": 0,
+            "iterations": 1,
+            "endTime": 2200,
+            "activeDuration": 2200
+          }
+        ],
+        "infiniteAnimations": [],
+        "computedInfiniteDeclarations": []
+      }
+    },
+    {
+      "scope": "normal-mobile-390x844",
+      "id": "integrity.after-interactions.no-broken-images",
+      "pass": true,
+      "details": {
+        "imageCount": 8,
+        "broken": []
+      }
+    },
+    {
+      "scope": "normal-mobile-390x844",
+      "id": "integrity.after-interactions.no-horizontal-overflow",
+      "pass": true,
+      "details": {
+        "viewportWidth": 390,
+        "rootClientWidth": 390,
+        "rootScrollWidth": 390,
+        "bodyScrollWidth": 390,
+        "horizontalScrollPosition": 0,
+        "leakingElements": []
+      }
+    },
+    {
+      "scope": "normal-mobile-390x844",
+      "id": "qa.metrika-disabled-in-qa-1",
+      "pass": true,
+      "details": {
+        "qaParam": "1",
+        "analyticsExists": true,
+        "analyticsQa": true,
+        "ymType": "undefined",
+        "yandexCounterGlobals": [],
+        "metrikaNodes": []
+      }
+    },
+    {
+      "scope": "normal-mobile-390x844",
+      "id": "scenario.completed",
+      "pass": true,
+      "details": {}
+    },
+    {
+      "scope": "normal-mobile-390x844",
+      "id": "runtime.no-console-failures",
+      "pass": true,
+      "details": {
+        "failures": []
+      }
+    },
+    {
+      "scope": "normal-mobile-390x844",
+      "id": "runtime.no-page-errors",
+      "pass": true,
+      "details": {
+        "failures": []
+      }
+    },
+    {
+      "scope": "normal-mobile-390x844",
+      "id": "runtime.no-page-crashes",
+      "pass": true,
+      "details": {
+        "failures": []
+      }
+    },
+    {
+      "scope": "normal-mobile-390x844",
+      "id": "runtime.no-network-failures",
+      "pass": true,
+      "details": {
+        "requestFailures": [],
+        "httpFailures": []
+      }
+    },
+    {
+      "scope": "normal-mobile-390x844",
+      "id": "qa.no-metrika-network",
+      "pass": true,
+      "details": {
+        "metrikaRequests": [],
+        "externalRequests": []
+      }
+    },
+    {
+      "scope": "normal-mobile-390x844",
+      "id": "video.recorded",
+      "pass": true,
+      "details": {
+        "path": "artifacts/sol-motion-v2-3/videos/normal-mobile-390x844.webm",
+        "bytes": 717842
+      }
+    },
+    {
+      "scope": "reduced-motion-desktop-1440x1000",
+      "id": "motion.no-nonessential-animation",
+      "pass": true,
+      "details": {
+        "early": {
+          "animationsAvailable": true,
+          "prefersReducedMotion": true,
+          "bodySaveDataClass": false,
+          "navigatorSaveData": false,
+          "analyticsSaveData": false,
+          "qaMode": true,
+          "htmlScrollBehavior": "auto",
+          "violations": [],
+          "activeLongAnimations": [],
+          "revealViolations": []
+        },
+        "settled": {
+          "animationsAvailable": true,
+          "prefersReducedMotion": true,
+          "bodySaveDataClass": false,
+          "navigatorSaveData": false,
+          "analyticsSaveData": false,
+          "qaMode": true,
+          "htmlScrollBehavior": "auto",
+          "violations": [],
+          "activeLongAnimations": [],
+          "revealViolations": []
+        }
+      }
+    },
+    {
+      "scope": "reduced-motion-desktop-1440x1000",
+      "id": "motion.suppressed-mode.get-animations-available",
+      "pass": true,
+      "details": {
+        "animationCount": 0
+      }
+    },
+    {
+      "scope": "reduced-motion-desktop-1440x1000",
+      "id": "motion.suppressed-mode.no-infinite-animation",
+      "pass": true,
+      "details": {
+        "animationsAvailable": true,
+        "animationCount": 0,
+        "animations": [],
+        "infiniteAnimations": [],
+        "computedInfiniteDeclarations": []
+      }
+    },
+    {
+      "scope": "reduced-motion-desktop-1440x1000",
+      "id": "qa.metrika-disabled-in-qa-1",
+      "pass": true,
+      "details": {
+        "qaParam": "1",
+        "analyticsExists": true,
+        "analyticsQa": true,
+        "ymType": "undefined",
+        "yandexCounterGlobals": [],
+        "metrikaNodes": []
+      }
+    },
+    {
+      "scope": "reduced-motion-desktop-1440x1000",
+      "id": "integrity.suppressed-mode.no-broken-images",
+      "pass": true,
+      "details": {
+        "imageCount": 8,
+        "broken": []
+      }
+    },
+    {
+      "scope": "reduced-motion-desktop-1440x1000",
+      "id": "integrity.suppressed-mode.no-horizontal-overflow",
+      "pass": true,
+      "details": {
+        "viewportWidth": 1440,
+        "rootClientWidth": 1440,
+        "rootScrollWidth": 1440,
+        "bodyScrollWidth": 1440,
+        "horizontalScrollPosition": 0,
+        "leakingElements": []
+      }
+    },
+    {
+      "scope": "reduced-motion-desktop-1440x1000",
+      "id": "screenshot.reduced-motion.viewport-size",
+      "pass": true,
+      "details": {
+        "path": "artifacts/sol-motion-v2-3/screenshots/reduced-motion-desktop-1440x1000--reduced-motion.png",
+        "dimensions": {
+          "width": 1440,
+          "height": 1000
+        },
+        "expected": {
+          "width": 1440,
+          "height": 1000
+        }
+      }
+    },
+    {
+      "scope": "reduced-motion-desktop-1440x1000",
+      "id": "scenario.completed",
+      "pass": true,
+      "details": {}
+    },
+    {
+      "scope": "reduced-motion-desktop-1440x1000",
+      "id": "runtime.no-console-failures",
+      "pass": true,
+      "details": {
+        "failures": []
+      }
+    },
+    {
+      "scope": "reduced-motion-desktop-1440x1000",
+      "id": "runtime.no-page-errors",
+      "pass": true,
+      "details": {
+        "failures": []
+      }
+    },
+    {
+      "scope": "reduced-motion-desktop-1440x1000",
+      "id": "runtime.no-page-crashes",
+      "pass": true,
+      "details": {
+        "failures": []
+      }
+    },
+    {
+      "scope": "reduced-motion-desktop-1440x1000",
+      "id": "runtime.no-network-failures",
+      "pass": true,
+      "details": {
+        "requestFailures": [],
+        "httpFailures": []
+      }
+    },
+    {
+      "scope": "reduced-motion-desktop-1440x1000",
+      "id": "qa.no-metrika-network",
+      "pass": true,
+      "details": {
+        "metrikaRequests": [],
+        "externalRequests": []
+      }
+    },
+    {
+      "scope": "save-data-mobile-390x844",
+      "id": "motion.no-nonessential-animation",
+      "pass": true,
+      "details": {
+        "early": {
+          "animationsAvailable": true,
+          "prefersReducedMotion": false,
+          "bodySaveDataClass": true,
+          "navigatorSaveData": true,
+          "analyticsSaveData": true,
+          "qaMode": true,
+          "htmlScrollBehavior": "auto",
+          "violations": [],
+          "activeLongAnimations": [],
+          "revealViolations": []
+        },
+        "settled": {
+          "animationsAvailable": true,
+          "prefersReducedMotion": false,
+          "bodySaveDataClass": true,
+          "navigatorSaveData": true,
+          "analyticsSaveData": true,
+          "qaMode": true,
+          "htmlScrollBehavior": "auto",
+          "violations": [],
+          "activeLongAnimations": [],
+          "revealViolations": []
+        }
+      }
+    },
+    {
+      "scope": "save-data-mobile-390x844",
+      "id": "motion.suppressed-mode.get-animations-available",
+      "pass": true,
+      "details": {
+        "animationCount": 0
+      }
+    },
+    {
+      "scope": "save-data-mobile-390x844",
+      "id": "motion.suppressed-mode.no-infinite-animation",
+      "pass": true,
+      "details": {
+        "animationsAvailable": true,
+        "animationCount": 0,
+        "animations": [],
+        "infiniteAnimations": [],
+        "computedInfiniteDeclarations": []
+      }
+    },
+    {
+      "scope": "save-data-mobile-390x844",
+      "id": "save-data.request-header-and-runtime-observed",
+      "pass": true,
+      "details": {
+        "documentRequests": [
+          {
+            "method": "GET",
+            "resourceType": "document",
+            "url": "http://127.0.0.1:56816/?qa=1&utm_source=codex&utm_medium=qa&utm_campaign=sol_motion_proof_v2_3&utm_content=fullfilm_price&scenario=full-film&experiment_id=sol_motion_proof_v2_3&proof_case=save-data-mobile-390x844",
+            "saveData": "on"
+          }
+        ],
+        "settled": {
+          "animationsAvailable": true,
+          "prefersReducedMotion": false,
+          "bodySaveDataClass": true,
+          "navigatorSaveData": true,
+          "analyticsSaveData": true,
+          "qaMode": true,
+          "htmlScrollBehavior": "auto",
+          "violations": [],
+          "activeLongAnimations": [],
+          "revealViolations": []
+        }
+      }
+    },
+    {
+      "scope": "save-data-mobile-390x844",
+      "id": "qa.metrika-disabled-in-qa-1",
+      "pass": true,
+      "details": {
+        "qaParam": "1",
+        "analyticsExists": true,
+        "analyticsQa": true,
+        "ymType": "undefined",
+        "yandexCounterGlobals": [],
+        "metrikaNodes": []
+      }
+    },
+    {
+      "scope": "save-data-mobile-390x844",
+      "id": "integrity.suppressed-mode.no-broken-images",
+      "pass": true,
+      "details": {
+        "imageCount": 8,
+        "broken": []
+      }
+    },
+    {
+      "scope": "save-data-mobile-390x844",
+      "id": "integrity.suppressed-mode.no-horizontal-overflow",
+      "pass": true,
+      "details": {
+        "viewportWidth": 390,
+        "rootClientWidth": 390,
+        "rootScrollWidth": 390,
+        "bodyScrollWidth": 390,
+        "horizontalScrollPosition": 0,
+        "leakingElements": []
+      }
+    },
+    {
+      "scope": "save-data-mobile-390x844",
+      "id": "screenshot.save-data.viewport-size",
+      "pass": true,
+      "details": {
+        "path": "artifacts/sol-motion-v2-3/screenshots/save-data-mobile-390x844--save-data.png",
+        "dimensions": {
+          "width": 390,
+          "height": 844
+        },
+        "expected": {
+          "width": 390,
+          "height": 844
+        }
+      }
+    },
+    {
+      "scope": "save-data-mobile-390x844",
+      "id": "scenario.completed",
+      "pass": true,
+      "details": {}
+    },
+    {
+      "scope": "save-data-mobile-390x844",
+      "id": "runtime.no-console-failures",
+      "pass": true,
+      "details": {
+        "failures": []
+      }
+    },
+    {
+      "scope": "save-data-mobile-390x844",
+      "id": "runtime.no-page-errors",
+      "pass": true,
+      "details": {
+        "failures": []
+      }
+    },
+    {
+      "scope": "save-data-mobile-390x844",
+      "id": "runtime.no-page-crashes",
+      "pass": true,
+      "details": {
+        "failures": []
+      }
+    },
+    {
+      "scope": "save-data-mobile-390x844",
+      "id": "runtime.no-network-failures",
+      "pass": true,
+      "details": {
+        "requestFailures": [],
+        "httpFailures": []
+      }
+    },
+    {
+      "scope": "save-data-mobile-390x844",
+      "id": "qa.no-metrika-network",
+      "pass": true,
+      "details": {
+        "metrikaRequests": [],
+        "externalRequests": []
+      }
+    },
+    {
+      "scope": "runner",
+      "id": "runner.completed",
+      "pass": true,
+      "details": {}
+    }
+  ],
+  "runtimeErrors": [],
+  "serverRequests": [
+    {
+      "method": "GET",
+      "url": "/?qa=1&utm_source=codex&utm_medium=qa&utm_campaign=sol_motion_proof_v2_3&utm_content=fullfilm_price&scenario=full-film&experiment_id=sol_motion_proof_v2_3&proof_case=normal-desktop-1440x1000",
+      "host": "127.0.0.1:56816",
+      "saveData": ""
+    },
+    {
+      "method": "GET",
+      "url": "/assets/qwen-full-film.css",
+      "host": "127.0.0.1:56816",
+      "saveData": ""
+    },
+    {
+      "method": "GET",
+      "url": "/assets/generated/qwen-tension-material-desktop.webp",
+      "host": "127.0.0.1:56816",
+      "saveData": ""
+    },
+    {
+      "method": "GET",
+      "url": "/assets/qwen-full-film.js",
+      "host": "127.0.0.1:56816",
+      "saveData": ""
+    },
+    {
+      "method": "GET",
+      "url": "/assets/ohtaawa-mark.png",
+      "host": "127.0.0.1:56816",
+      "saveData": ""
+    },
+    {
+      "method": "GET",
+      "url": "/assets/ohtaawa-wordmark.png",
+      "host": "127.0.0.1:56816",
+      "saveData": ""
+    },
+    {
+      "method": "GET",
+      "url": "/assets/proof/real/crops/finished-porsche-wide.webp",
+      "host": "127.0.0.1:56816",
+      "saveData": ""
+    },
+    {
+      "method": "GET",
+      "url": "/assets/proof/real/crops/film-sheet-wide.webp",
+      "host": "127.0.0.1:56816",
+      "saveData": ""
+    },
+    {
+      "method": "GET",
+      "url": "/assets/proof/real/crops/gloss-front-wide.webp",
+      "host": "127.0.0.1:56816",
+      "saveData": ""
+    },
+    {
+      "method": "GET",
+      "url": "/?qa=1&utm_source=codex&utm_medium=qa&utm_campaign=sol_motion_proof_v2_3&utm_content=fullfilm_price&scenario=full-film&experiment_id=sol_motion_proof_v2_3&proof_case=normal-mobile-390x844",
+      "host": "127.0.0.1:56816",
+      "saveData": ""
+    },
+    {
+      "method": "GET",
+      "url": "/assets/qwen-full-film.css",
+      "host": "127.0.0.1:56816",
+      "saveData": ""
+    },
+    {
+      "method": "GET",
+      "url": "/assets/generated/qwen-tension-material-mobile.webp",
+      "host": "127.0.0.1:56816",
+      "saveData": ""
+    },
+    {
+      "method": "GET",
+      "url": "/assets/ohtaawa-wordmark.png",
+      "host": "127.0.0.1:56816",
+      "saveData": ""
+    },
+    {
+      "method": "GET",
+      "url": "/assets/qwen-full-film.js",
+      "host": "127.0.0.1:56816",
+      "saveData": ""
+    },
+    {
+      "method": "GET",
+      "url": "/assets/ohtaawa-mark.png",
+      "host": "127.0.0.1:56816",
+      "saveData": ""
+    },
+    {
+      "method": "GET",
+      "url": "/assets/proof/real/crops/finished-porsche-wide.webp",
+      "host": "127.0.0.1:56816",
+      "saveData": ""
+    },
+    {
+      "method": "GET",
+      "url": "/assets/proof/real/crops/film-sheet-wide.webp",
+      "host": "127.0.0.1:56816",
+      "saveData": ""
+    },
+    {
+      "method": "GET",
+      "url": "/assets/proof/real/crops/gloss-front-wide.webp",
+      "host": "127.0.0.1:56816",
+      "saveData": ""
+    },
+    {
+      "method": "GET",
+      "url": "/?qa=1&utm_source=codex&utm_medium=qa&utm_campaign=sol_motion_proof_v2_3&utm_content=fullfilm_price&scenario=full-film&experiment_id=sol_motion_proof_v2_3&proof_case=reduced-motion-desktop-1440x1000",
+      "host": "127.0.0.1:56816",
+      "saveData": ""
+    },
+    {
+      "method": "GET",
+      "url": "/assets/qwen-full-film.css",
+      "host": "127.0.0.1:56816",
+      "saveData": ""
+    },
+    {
+      "method": "GET",
+      "url": "/assets/generated/qwen-tension-material-desktop.webp",
+      "host": "127.0.0.1:56816",
+      "saveData": ""
+    },
+    {
+      "method": "GET",
+      "url": "/assets/qwen-full-film.js",
+      "host": "127.0.0.1:56816",
+      "saveData": ""
+    },
+    {
+      "method": "GET",
+      "url": "/assets/ohtaawa-mark.png",
+      "host": "127.0.0.1:56816",
+      "saveData": ""
+    },
+    {
+      "method": "GET",
+      "url": "/assets/ohtaawa-wordmark.png",
+      "host": "127.0.0.1:56816",
+      "saveData": ""
+    },
+    {
+      "method": "GET",
+      "url": "/assets/proof/real/crops/finished-porsche-wide.webp",
+      "host": "127.0.0.1:56816",
+      "saveData": ""
+    },
+    {
+      "method": "GET",
+      "url": "/?qa=1&utm_source=codex&utm_medium=qa&utm_campaign=sol_motion_proof_v2_3&utm_content=fullfilm_price&scenario=full-film&experiment_id=sol_motion_proof_v2_3&proof_case=save-data-mobile-390x844",
+      "host": "127.0.0.1:56816",
+      "saveData": "on"
+    },
+    {
+      "method": "GET",
+      "url": "/assets/qwen-full-film.css",
+      "host": "127.0.0.1:56816",
+      "saveData": "on"
+    },
+    {
+      "method": "GET",
+      "url": "/assets/generated/qwen-tension-material-mobile.webp",
+      "host": "127.0.0.1:56816",
+      "saveData": "on"
+    },
+    {
+      "method": "GET",
+      "url": "/assets/qwen-full-film.js",
+      "host": "127.0.0.1:56816",
+      "saveData": "on"
+    },
+    {
+      "method": "GET",
+      "url": "/assets/ohtaawa-mark.png",
+      "host": "127.0.0.1:56816",
+      "saveData": "on"
+    },
+    {
+      "method": "GET",
+      "url": "/assets/ohtaawa-wordmark.png",
+      "host": "127.0.0.1:56816",
+      "saveData": "on"
+    },
+    {
+      "method": "GET",
+      "url": "/assets/proof/real/crops/finished-porsche-wide.webp",
+      "host": "127.0.0.1:56816",
+      "saveData": "on"
+    }
+  ],
+  "summary": {
+    "pass": true,
+    "totalChecks": 99,
+    "passedChecks": 99,
+    "failedChecks": 0,
+    "failedIds": [],
+    "screenshotCount": 13,
+    "videoCount": 2,
+    "scenarioCount": 4
+  }
+}
