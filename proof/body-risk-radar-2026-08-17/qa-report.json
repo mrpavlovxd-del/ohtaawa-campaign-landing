@@ -1,0 +1,80 @@
+{
+  "verdict": "PASS",
+  "testedAt": "2026-08-17T06:44:28.468Z",
+  "url": "http://go.detailingspb.ru:4199/body-radar/?utm_source=qa&utm_medium=codex&utm_campaign=unconventional_body_risk_radar_2026w34&utm_content=browser_qa&entry_signal=qa-fixture&_ym_debug=1",
+  "viewports": [
+    {
+      "name": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "initial": {
+        "title": "Кузовный радар Санкт-Петербурга — OHTAAWA",
+        "h1": 1,
+        "formControls": 0,
+        "overflow": 0,
+        "fixedElements": 0,
+        "qa": true,
+        "scenario": "vehicle_risk_signal_optin",
+        "experiment": "body_risk_radar_w34",
+        "channelCode": "BRR_W34",
+        "subscribeLinks": 3,
+        "sourceLinks": 3,
+        "heroCtaVisible": true,
+        "heroBackground": "linear-gradient(90deg, rgba(5, 8, 6, 0.98) 0%, rgba(5, 8, 6, 0.9) 52%, rgba(5, 8, 6, 0.55) 100%), linear-gradient(rgba(5, 8, 6, 0.1) 48%, rgba(5, 8, 6, 0.98) 100%), url(\"http://go.detailingspb.ru:4199/estimate-check/assets/real-gloss-panel.webp\")",
+        "heroWidth": 1440,
+        "h1Right": 815.6875,
+        "viewportWidth": 1440
+      },
+      "eventNames": [
+        "body_radar_view_v1",
+        "body_radar_subscribe_click_v1",
+        "body_radar_how_it_works_v1",
+        "body_radar_source_click_v1",
+        "lead_telegram_body_radar_v1",
+        "lead_telegram_polish_film_v8"
+      ],
+      "buttonCount": 3,
+      "metrikaRequests": 0,
+      "failedRequests": 0
+    },
+    {
+      "name": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "initial": {
+        "title": "Кузовный радар Санкт-Петербурга — OHTAAWA",
+        "h1": 1,
+        "formControls": 0,
+        "overflow": 0,
+        "fixedElements": 0,
+        "qa": true,
+        "scenario": "vehicle_risk_signal_optin",
+        "experiment": "body_risk_radar_w34",
+        "channelCode": "BRR_W34",
+        "subscribeLinks": 3,
+        "sourceLinks": 3,
+        "heroCtaVisible": true,
+        "heroBackground": "linear-gradient(90deg, rgba(5, 8, 6, 0.98) 0%, rgba(5, 8, 6, 0.9) 52%, rgba(5, 8, 6, 0.55) 100%), linear-gradient(rgba(5, 8, 6, 0.1) 48%, rgba(5, 8, 6, 0.98) 100%), url(\"http://go.detailingspb.ru:4199/estimate-check/assets/real-gloss-panel.webp\")",
+        "heroWidth": 390,
+        "h1Right": 372,
+        "viewportWidth": 390
+      },
+      "eventNames": [
+        "body_radar_view_v1",
+        "body_radar_subscribe_click_v1",
+        "body_radar_how_it_works_v1",
+        "body_radar_source_click_v1",
+        "lead_telegram_body_radar_v1",
+        "lead_telegram_polish_film_v8"
+      ],
+      "buttonCount": 3,
+      "metrikaRequests": 0,
+      "failedRequests": 0
+    }
+  ],
+  "publicDeployPerformed": false
+}

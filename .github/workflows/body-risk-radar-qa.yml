@@ -1,0 +1,44 @@
+name: Body Risk Radar QA
+
+on:
+  pull_request:
+    paths:
+      - "body-radar/**"
+      - "scripts/qa_body_risk_radar.cjs"
+      - "scripts/verify_body_risk_radar_contract.cjs"
+      - "docs/BODY_RISK_RADAR_*"
+      - "proof/body-risk-radar-2026-08-17/qa-report.json"
+      - ".github/workflows/body-risk-radar-qa.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  static-contract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Use Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Validate JavaScript syntax
+        run: |
+          node --check body-radar/app.js
+          node --check scripts/qa_body_risk_radar.cjs
+          node --check scripts/verify_body_risk_radar_contract.cjs
+
+      - name: Verify body-risk-radar contract
+        run: node scripts/verify_body_risk_radar_contract.cjs
+
+      - name: Reject whitespace errors
+        run: |
+          git fetch origin "${{ github.base_ref || 'main' }}" --depth=1
+          git diff --check FETCH_HEAD...HEAD

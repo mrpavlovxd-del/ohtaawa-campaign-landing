@@ -1,0 +1,29 @@
+{
+  "run_id": "ohtaawa-body-risk-radar-20260817-r1",
+  "surface": "/body-radar/",
+  "assets": [
+    {
+      "id": "body-radar-real-gloss-panel",
+      "path": "estimate-check/assets/real-gloss-panel.webp",
+      "source_type": "owner-provided-real-ohtaawa-material",
+      "usage": "atmosphere and directed-light inspection context",
+      "publishability": "EXISTING_PUBLIC_CANDIDATE_REUSED_FOR_RELEASE",
+      "truth_rule": "not a before/after or specific outcome claim",
+      "privacy_review": "existing 100 percent crop review passed"
+    },
+    {
+      "id": "ohtaawa-wordmark",
+      "path": "assets/ohtaawa-wordmark.png",
+      "source_type": "brand_asset",
+      "publishability": "BRAND_APPROVED_EXISTING"
+    },
+    {
+      "id": "ohtaawa-mark",
+      "path": "assets/ohtaawa-mark.png",
+      "source_type": "brand_asset",
+      "publishability": "BRAND_APPROVED_EXISTING"
+    }
+  ],
+  "generated_assets": [],
+  "public_truth_note": "The route uses no generated proof, testimonials, before/after continuity or claims about a specific customer vehicle."
+}
