@@ -1,6 +1,6 @@
 # Visual Target Translation Contract — Qwen «Натяжение» v2
 
-Статус: v2.2 FAIL (около 0,55–0,60); v2.3 independent revalidation pending.
+Статус: historical v2.2 FAIL (около 0,55–0,60); final v2.4 `GO_OWNER_GRADE / VISUAL GO`: overall `8,8`, signature `8,9`, premium `8,6`, target translation `0,84`.
 
 ## Targets
 
@@ -25,8 +25,8 @@
 
 ## Production format
 
-- HTML/CSS/SVG/canvas, доступные controls и текст — code-native.
-- Static fallback — code-native SVG/CSS state.
+- Layout, доступные controls и текст — code-native HTML/CSS/SVG; generated material WebP используется только как декоративная `proof:false` texture с provenance и responsive crop.
+- Static fallback — полноценное SVG/CSS state с той же декоративной still-texture, без зависимости фактов или controls от движения.
 - Motion: CSS/WAAPI или requestAnimationFrame только для одного Tension Field; interruptible, visibility-aware, Save-Data/reduced-motion safe.
 - Реальные proof images остаются отдельными и явно подписанными.
 

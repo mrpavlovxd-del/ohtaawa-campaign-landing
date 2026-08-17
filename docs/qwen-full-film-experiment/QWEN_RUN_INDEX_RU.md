@@ -30,4 +30,4 @@
 
 - Final visual score/verdict: `GO_OWNER_GRADE / VISUAL GO`; overall `8,8`, signature `8,9`, premium `8,6`, target translation `0,84`. Старый v2.2 score сохранён только как historical failure.
 - Generated hero layer остаётся owner-gated; три retained real proof assets — `UNKNOWN_DO_NOT_PUBLISH`.
-- Final commit/Draft PR, merge, deploy, live experiment assignment и любые production changes не выполнены.
+- Candidate commit `8022efa7b66f7c2af01f9d4fa999147bb783148b` опубликован только в отдельной ветке; Draft PR #24 создан с меткой `NOT FOR DEPLOY`. Merge, deploy, live experiment assignment и любые production changes не выполнены.

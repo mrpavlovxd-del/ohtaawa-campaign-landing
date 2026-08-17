@@ -53,7 +53,7 @@
 
 ## Режим и завершённая source-линия
 
-Qwen получил право самостоятельно спроектировать и собрать challenger в этом worktree: IA, визуальный язык, код, motion, custom code-native icons и локальные internal illustrative assets. Run `20260817-025031-189-8bce3396` (v2.3) завершён `COMPLETED`, `exit 0`; один v2.4 stdin/capsule запуск `20260817-032324-052-83245090` упал до исполнения на UTF-8 decode и не изменил source; исправленный run `20260817-032408-893-3a8887ee` (v2.4) завершён `COMPLETED`, `exit 0`. После него выполнен только bounded Sol hardening/material integration, включая asymmetric compositing. Ни Qwen, ни Sol не получили полномочий на push/PR/merge/deploy, внешние публикации, live tracking или платные действия.
+Qwen получил право самостоятельно спроектировать и собрать challenger в этом worktree: IA, визуальный язык, код, motion, custom code-native icons и локальные internal illustrative assets. Run `20260817-025031-189-8bce3396` (v2.3) завершён `COMPLETED`, `exit 0`; один v2.4 stdin/capsule запуск `20260817-032324-052-83245090` упал до исполнения на UTF-8 decode и не изменил source; исправленный run `20260817-032408-893-3a8887ee` (v2.4) завершён `COMPLETED`, `exit 0`. После него выполнен только bounded Sol hardening/material integration, включая asymmetric compositing. Specialist runs не выполняли GitHub/live действия; после закрытия gates canonical parent по явному разрешению владельца создал candidate commit `8022efa7b66f7c2af01f9d4fa999147bb783148b` и Draft PR #24. Merge/deploy, внешние marketing-публикации, live tracking и платные действия не выполнялись.
 
 ## Обязательные маршруты Product Studio
 

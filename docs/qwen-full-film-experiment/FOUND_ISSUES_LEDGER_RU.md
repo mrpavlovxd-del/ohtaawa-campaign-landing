@@ -29,7 +29,7 @@
 | QF-016 | Workspace hygiene | Medium | Temp text writers удалены patch-методом; node_modules и superseded evidence не войдут в Git. Recursive local cleanup отклонён execution safety gate. | Explicit staging; `.gitignore`; удалить локальный debt позже разрешённым безопасным способом. | LOCAL_CLEANUP_DEBT / PR_SCOPE_CLOSED | Final staged-file review и ignored-file check. |
 | QF-017 | Documentation hygiene | Medium | Старые pending/verdict/path противоречия могли попасть в review pack. | Синхронизировать final scores, repo-relative paths и launch boundaries. | CLOSED_DOCS | UTF-8/BOM/zero-width, absolute-path и stale-status scans. |
 | QF-018 | Generated material provenance | Blocker if misused | Source + desktop/mobile derivatives имеют stable IDs, SHA256 и source-output chain; люди/логотипы/текст/identifiers не обнаружены; `proof:false`. | Сохранять generated-illustrative label; source не грузить runtime; live/public marketing use только после owner approval. | DOCS_COMPLETE / RENDER_QA_PASS / BLOCKED_PUBLIC_USE | Hash-chain 3/3; final 1440/430/390/360 crop/contrast QA PASS; owner approval pending. |
-| QF-019 | Git/release | Boundary | Локальные gates не равны release. | Explicit commit/push/Draft PR `NOT FOR DEPLOY`; остановиться до merge/deploy. | PENDING_GIT_THEN_OWNER_GATE | Commit, public Draft PR, checks; no merge/deploy. |
+| QF-019 | Git/release | Boundary | Локальные gates не равны release. | Explicit commit/push/Draft PR `NOT FOR DEPLOY`; остановиться до merge/deploy. | DRAFT_PR_CREATED / OWNER_GATE | Commit `8022efa7b66f7c2af01f9d4fa999147bb783148b`; public Draft PR #24, base `main`, merge state `CLEAN`, checks не настроены; no merge/deploy. |
 
 ## Открытые hard boundaries
 

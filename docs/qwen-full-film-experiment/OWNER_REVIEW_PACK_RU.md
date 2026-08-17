@@ -20,7 +20,7 @@ Owner-grade кандидат собран и проверен: browser QA `90/90
 - `20260817-025031-189-8bce3396`: Qwen v2.3, `COMPLETED`, `exit 0`.
 - `20260817-032324-052-83245090`: v2.4 capsule/runtime failure на UTF-8 decode, `exit 1`, source effect `0`.
 - `20260817-032408-893-3a8887ee`: corrected Qwen v2.4, `COMPLETED`, `exit 0`.
-- Финальное состояние: Qwen v2.4 + bounded Sol hardening/material integration с asymmetric compositing; production/live systems не затрагивались.
+- Финальное состояние: Qwen v2.4 + bounded Sol hardening/material integration с asymmetric compositing; candidate commit `8022efa7b66f7c2af01f9d4fa999147bb783148b`, Draft PR #24. Production/live systems не затрагивались.
 
 ## Факты и гипотезы
 
@@ -49,6 +49,7 @@ Owner-grade кандидат собран и проверен: browser QA `90/90
 | Final performance | 70/70 PASS | artifacts/sol-performance-v2-4/ |
 | Final motion proof | 99/99 PASS | artifacts/sol-motion-v2-3/; 13 screenshots, 2 WebM. |
 | Final independent visual score | GO_OWNER_GRADE / VISUAL GO | Overall 8,8/10; signature 8,9/10; premium 8,6/10; target translation 0,84. |
+| Git review boundary | DRAFT / NOT FOR DEPLOY | PR #24, base `main`, merge state `CLEAN`; repository checks не настроены. |
 | Generated hero layer | OWNER_GATED | generated-illustrative, proof:false; не real work/proof. |
 | Retained real proof media | UNKNOWN_DO_NOT_PUBLISH | File-level rights/consent/factual-use evidence и owner approval отсутствуют. |
 

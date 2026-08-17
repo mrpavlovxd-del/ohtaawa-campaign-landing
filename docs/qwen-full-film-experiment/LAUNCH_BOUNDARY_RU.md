@@ -1,6 +1,6 @@
 # Launch boundary — Qwen Full Film v2.4
 
-Текущий verdict: NOT FOR DEPLOY. Этот worktree и будущий Draft PR не дают разрешения на production change.
+Текущий verdict: NOT FOR DEPLOY. Этот worktree и Draft PR #24 не дают разрешения на production change.
 
 ## Разрешено автономно в этой задаче
 
@@ -32,7 +32,7 @@
 | Media | Blocked slides absent; retained three real proof assets получают rights/consent/parent chain и owner approval; generated derivatives остаются proof=false и получают owner public-use approval. | BLOCKED_PUBLIC_USE |
 | Truth/copy | Цена/условия точны; unsupported claims отсутствуют. | PASS |
 | Security/hygiene | Secret scan PASS; no absolute private paths/BOM; node_modules/temp artifacts excluded; exact staged file list. | PASS |
-| Git/CI | Explicit staging, commit hash, push, Draft PR, green relevant checks; base main; NOT FOR DEPLOY label/body. | PENDING |
+| Git/CI | Explicit staging, commit hash, push, Draft PR, configured checks green или явно отсутствуют; base main; NOT FOR DEPLOY label/body. | PASS_FOR_DRAFT: commit `8022efa7b66f7c2af01f9d4fa999147bb783148b`, PR #24 Draft, base `main`, merge state `CLEAN`; repository checks не настроены. |
 
 ## Staged boundary
 

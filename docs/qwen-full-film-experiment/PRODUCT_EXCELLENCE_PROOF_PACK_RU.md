@@ -23,7 +23,8 @@
 | Motion proof | Yes | Yes | artifacts/sol-motion-v2-3/ | 99/99, 13 screenshots, 2 WebM. |
 | Performance | Yes | Yes | artifacts/sol-performance-v2-4/performance-report.json | 70/70; budgets PASS. |
 | Tracking/QA isolation | Yes | Yes | artifacts/sol-qa-v2-3/sol-qa-v2-3-report.json | 13 canonical events; QA Metrika requests 0. |
-| Privacy/security scan | Yes | Yes | FOUND_ISSUES_LEDGER_RU.md | Input/link opt-outs and payload checks PASS; final staged scan required before commit. |
+| Privacy/security scan | Yes | Yes | FOUND_ISSUES_LEDGER_RU.md | Input/link opt-outs and payload checks PASS; final staged secret/private-path/BOM/zero-width/JSON scans PASS. |
+| Git review boundary | Yes | Yes | Draft PR #24 | Commit `8022efa7b66f7c2af01f9d4fa999147bb783148b`; Draft, base `main`, merge state `CLEAN`, checks не настроены; NOT FOR DEPLOY. |
 | Real-media provenance | Yes | Blocked | docs/qwen-full-film-experiment/MEDIA_RIGHTS_LEDGER.json + DERIVATIVE_MANIFEST.json | Stable output IDs/hashes present; parent hashes, rights/consent/factual-use evidence and owner approval missing. |
 | Media publishability decision | Yes | Yes, blocked verdict | docs/qwen-full-film-experiment/MEDIA_PUBLISHABILITY_DECISION_RU.md | Exact retained/removed real-media matrix plus generated decorative-layer owner gate. |
 | Rollback/launch boundary | Yes | Yes | LAUNCH_BOUNDARY_RU.md | Production untouched. |
@@ -53,7 +54,7 @@
 
 ## Known unverified
 
-- Git staged-file review после explicit staging; secret/private-path/BOM/zero-width/JSON scans уже PASS.
+- Production Core Web Vitals/INP и реальный experiment assignment.
 - Public media rights.
 - Public owner approval для generated material hero derivatives.
 - Real conversion effect.
