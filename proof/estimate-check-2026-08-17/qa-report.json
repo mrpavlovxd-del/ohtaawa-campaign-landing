@@ -1,0 +1,106 @@
+{
+  "verdict": "PASS",
+  "testedAt": "2026-08-17T03:52:37.764Z",
+  "url": "http://go.detailingspb.ru:4198/estimate-check/?utm_source=qa&utm_medium=codex&utm_campaign=unconventional_quote_audit_2026w34&utm_content=browser_qa&scenario=quote_second_opinion&experiment_id=estimate_audit_w34&_ym_debug=1",
+  "viewports": [
+    {
+      "name": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "initial": {
+        "title": "Разбор сметы на оклейку автомобиля — OHTAAWA",
+        "h1": 1,
+        "fileInputs": 0,
+        "overflow": 0,
+        "qa": true,
+        "scenario": "quote_second_opinion",
+        "experiment": "estimate_audit_w34",
+        "checklistLabels": 6,
+        "heroCtaVisible": true
+      },
+      "result": {
+        "index": "03 / 06",
+        "resultTitle": "Основа есть, но важные детали еще открыты",
+        "questionCount": 3,
+        "actionHidden": false,
+        "overflow": 0,
+        "events": [
+          {
+            "name": "estimate_audit_started_v1",
+            "scenario": "quote_second_opinion",
+            "experiment": "estimate_audit_w34"
+          },
+          {
+            "name": "estimate_audit_result_v1",
+            "scenario": "quote_second_opinion",
+            "experiment": "estimate_audit_w34",
+            "service": "Полная прозрачная оклейка",
+            "specified": 3
+          }
+        ]
+      },
+      "bottom": {
+        "finalCtaVisible": true,
+        "proofLink": "../risk-zones/",
+        "overflow": 0
+      },
+      "ctaEvents": [
+        "lead_telegram_estimate_audit_v1",
+        "lead_telegram_polish_film_v8"
+      ],
+      "metrikaRequests": 0
+    },
+    {
+      "name": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "initial": {
+        "title": "Разбор сметы на оклейку автомобиля — OHTAAWA",
+        "h1": 1,
+        "fileInputs": 0,
+        "overflow": 0,
+        "qa": true,
+        "scenario": "quote_second_opinion",
+        "experiment": "estimate_audit_w34",
+        "checklistLabels": 6,
+        "heroCtaVisible": true
+      },
+      "result": {
+        "index": "03 / 06",
+        "resultTitle": "Основа есть, но важные детали еще открыты",
+        "questionCount": 3,
+        "actionHidden": false,
+        "overflow": 0,
+        "events": [
+          {
+            "name": "estimate_audit_started_v1",
+            "scenario": "quote_second_opinion",
+            "experiment": "estimate_audit_w34"
+          },
+          {
+            "name": "estimate_audit_result_v1",
+            "scenario": "quote_second_opinion",
+            "experiment": "estimate_audit_w34",
+            "service": "Полная прозрачная оклейка",
+            "specified": 3
+          }
+        ]
+      },
+      "bottom": {
+        "finalCtaVisible": true,
+        "proofLink": "../risk-zones/",
+        "overflow": 0
+      },
+      "ctaEvents": [
+        "lead_telegram_estimate_audit_v1",
+        "lead_telegram_polish_film_v8"
+      ],
+      "metrikaRequests": 0
+    }
+  ],
+  "publicDeployPerformed": false
+}

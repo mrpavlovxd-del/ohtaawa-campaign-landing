@@ -1,0 +1,36 @@
+{
+  "run_id": "ohtaawa-estimate-audit-20260817-r1",
+  "surface": "/estimate-check/",
+  "assets": [
+    {
+      "id": "estimate-audit-real-gloss-panel",
+      "path": "estimate-check/assets/real-gloss-panel.webp",
+      "source_path": "assets/proof/real/real-gloss-panel.webp",
+      "source_type": "owner-provided-real-ohtaawa-material",
+      "sha256": "CD6688DBBCD0AFD4FF092E28FAA3A6917F152E33A9AF9FC793A8E6F9B211EA3A",
+      "dimensions": "1200x1500",
+      "usage": "hero and consultation-context background crop",
+      "publishability": "EXISTING_PUBLIC_CANDIDATE_REUSED_FOR_RELEASE",
+      "truth_rule": "atmosphere and inspection context only; no before/after or specific outcome claim",
+      "privacy_review": "100_PERCENT_CROP_PASS_NO_FACE_PLATE_OR_IDENTIFIER"
+    },
+    {
+      "id": "ohtaawa-wordmark",
+      "path": "estimate-check/assets/ohtaawa-wordmark.png",
+      "source_type": "brand_asset",
+      "sha256": "B5E2BF3195248A0112E17E9610FBE0E0A8B0639402B514C1D231768D0267E198",
+      "dimensions": "1040x180",
+      "publishability": "BRAND_APPROVED_EXISTING"
+    },
+    {
+      "id": "ohtaawa-mark",
+      "path": "estimate-check/assets/ohtaawa-mark.png",
+      "source_type": "brand_asset",
+      "sha256": "D30152CB3960D3CF3BDFC3BE1482DE9FEABC03681B5035907E69BAE36C91FCCA",
+      "dimensions": "456x452",
+      "publishability": "BRAND_APPROVED_EXISTING"
+    }
+  ],
+  "generated_assets": [],
+  "public_truth_note": "The utility does not present generated media, testimonials, before/after continuity, competitor claims or a specific client result."
+}
