@@ -1,0 +1,44 @@
+name: Photo Triage QA
+
+on:
+  pull_request:
+    paths:
+      - "photo-check/**"
+      - "scripts/qa_photo_triage.cjs"
+      - "scripts/verify_photo_triage_contract.cjs"
+      - "docs/PHOTO_TRIAGE_*"
+      - "proof/photo-triage-2026-08-17/qa-report.json"
+      - ".github/workflows/photo-triage-qa.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  static-contract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Use Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Validate JavaScript syntax
+        run: |
+          node --check photo-check/app.js
+          node --check scripts/qa_photo_triage.cjs
+          node --check scripts/verify_photo_triage_contract.cjs
+
+      - name: Verify photo-triage contract
+        run: node scripts/verify_photo_triage_contract.cjs
+
+      - name: Reject whitespace errors
+        run: |
+          git fetch origin "${{ github.base_ref || 'main' }}" --depth=1
+          git diff --check FETCH_HEAD...HEAD

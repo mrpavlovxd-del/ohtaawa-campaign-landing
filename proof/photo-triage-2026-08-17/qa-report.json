@@ -1,0 +1,78 @@
+{
+  "verdict": "PASS",
+  "testedAt": "2026-08-17T07:51:26.539Z",
+  "url": "http://go.detailingspb.ru:4201/photo-check/?utm_source=qa&utm_medium=codex&utm_campaign=unconventional_photo_triage_2026w34&utm_content=browser_qa&partner_code=qa-partner&entry_signal=qa-fixture&_ym_debug=1",
+  "viewports": [
+    {
+      "name": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "initial": {
+        "title": "Что делать с дефектом кузова — фото-триаж OHTAAWA",
+        "h1": 1,
+        "formControls": 0,
+        "overflow": 0,
+        "fixedElements": 0,
+        "qa": true,
+        "scenario": "photo_defect_triage",
+        "experiment": "photo_triage_w34",
+        "channelCode": "PHT_W34",
+        "partnerCode": "qa-partner",
+        "photoCtas": 5,
+        "heroCtaVisible": true,
+        "heroBackground": "linear-gradient(90deg, rgba(5, 8, 6, 0.98) 0%, rgba(5, 8, 6, 0.9) 52%, rgba(5, 8, 6, 0.5) 100%), linear-gradient(rgba(5, 8, 6, 0.08) 48%, rgba(5, 8, 6, 0.98) 100%), url(\"http://go.detailingspb.ru:4201/estimate-check/assets/real-gloss-panel.webp\")",
+        "h1Right": 816.921875,
+        "viewportWidth": 1440
+      },
+      "eventNames": [
+        "photo_triage_view_v1",
+        "photo_triage_telegram_click_v1",
+        "lead_telegram_polish_film_v8",
+        "photo_triage_shot_guide_v1",
+        "photo_triage_route_view_v1",
+        "photo_triage_inspection_view_v1"
+      ],
+      "buttonCount": 4,
+      "metrikaRequests": 0,
+      "failedRequests": 0
+    },
+    {
+      "name": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "initial": {
+        "title": "Что делать с дефектом кузова — фото-триаж OHTAAWA",
+        "h1": 1,
+        "formControls": 0,
+        "overflow": 0,
+        "fixedElements": 0,
+        "qa": true,
+        "scenario": "photo_defect_triage",
+        "experiment": "photo_triage_w34",
+        "channelCode": "PHT_W34",
+        "partnerCode": "qa-partner",
+        "photoCtas": 5,
+        "heroCtaVisible": true,
+        "heroBackground": "linear-gradient(90deg, rgba(5, 8, 6, 0.98) 0%, rgba(5, 8, 6, 0.9) 52%, rgba(5, 8, 6, 0.5) 100%), linear-gradient(rgba(5, 8, 6, 0.08) 48%, rgba(5, 8, 6, 0.98) 100%), url(\"http://go.detailingspb.ru:4201/estimate-check/assets/real-gloss-panel.webp\")",
+        "h1Right": 372,
+        "viewportWidth": 390
+      },
+      "eventNames": [
+        "photo_triage_view_v1",
+        "photo_triage_telegram_click_v1",
+        "lead_telegram_polish_film_v8",
+        "photo_triage_shot_guide_v1",
+        "photo_triage_route_view_v1",
+        "photo_triage_inspection_view_v1"
+      ],
+      "buttonCount": 4,
+      "metrikaRequests": 0,
+      "failedRequests": 0
+    }
+  ],
+  "publicDeployPerformed": false
+}

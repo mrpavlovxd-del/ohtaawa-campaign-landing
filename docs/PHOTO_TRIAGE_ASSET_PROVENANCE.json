@@ -1,0 +1,25 @@
+{
+  "route": "/photo-check/",
+  "generated_assets": [],
+  "assets": [
+    {
+      "path": "assets/ohtaawa-mark.png",
+      "type": "brand_asset",
+      "use": "header mark",
+      "publishability": "approved_existing"
+    },
+    {
+      "path": "assets/ohtaawa-wordmark.png",
+      "type": "brand_asset",
+      "use": "header wordmark",
+      "publishability": "approved_existing"
+    },
+    {
+      "path": "estimate-check/assets/real-gloss-panel.webp",
+      "type": "real_ohtaawa_atmosphere",
+      "use": "hero, three-shot guide and inspection context",
+      "claim_boundary": "environment and surface context only; not a specific customer result",
+      "publishability": "approved_existing_privacy_reviewed"
+    }
+  ]
+}
