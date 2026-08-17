@@ -1,0 +1,128 @@
+{
+  "manifest_version": 1,
+  "project": "OHTAAWA Qwen full-film reinvention",
+  "created_at": "2026-08-16",
+  "policy": "Concept targets are internal art-direction evidence only. The generated material source and its deterministic derivatives are generated-illustrative hero decoration, never real OHTAAWA work or product proof, and remain candidate_not_published_owner_gate until explicit owner approval.",
+  "assets": [
+    {
+      "asset_id": "qwen-tension-desktop-v1",
+      "file": "artifacts/qwen-full-film-concept-targets/desktop-tension-target.png",
+      "sha256": "0B623F02460B04984D2BC125D222629B14FCF8D32ABC1220CCED7B89815EDF9B",
+      "route": "built-in image_gen",
+      "source_type": "generated-illustrative-ui-concept",
+      "surface": "desktop hero art-direction target",
+      "prompt_registry": "docs/qwen-full-film-experiment/ART_DIRECTION_PROMPT_PACK_RU.md",
+      "proof": false,
+      "status": "SELF_REJECTED",
+      "reason": "Metal anchors and tent-like wrinkles could imply a false installation method."
+    },
+    {
+      "asset_id": "qwen-tension-desktop-v2",
+      "file": "artifacts/qwen-full-film-concept-targets/desktop-tension-target-v2.png",
+      "sha256": "8FBEB5EA6E69B196EF32F1033DAA5DA2C3B76755C8F67E71DB6A24DBB8B5FF4D",
+      "route": "built-in image_gen edit/refinement",
+      "source_type": "generated-illustrative-ui-concept",
+      "surface": "desktop hero art-direction target",
+      "prompt_registry": "docs/qwen-full-film-experiment/ART_DIRECTION_PROMPT_PACK_RU.md",
+      "proof": false,
+      "status": "ACCEPTED_INTERNAL_TARGET_NOT_FOR_PUBLIC_USE",
+      "production_format": "Translate to code-native HTML/CSS/SVG/canvas; do not ship this raster as UI or proof."
+    },
+    {
+      "asset_id": "qwen-tension-mobile-v1",
+      "file": "artifacts/qwen-full-film-concept-targets/mobile-tension-target.png",
+      "sha256": "5B82FD16A50DE4BCAB378EA6C9A61AF2B4606CA2D32204D76C2D862849E7B211",
+      "route": "built-in image_gen",
+      "source_type": "generated-illustrative-ui-concept",
+      "surface": "mobile hero art-direction target",
+      "prompt_registry": "docs/qwen-full-film-experiment/ART_DIRECTION_PROMPT_PACK_RU.md",
+      "proof": false,
+      "status": "SELF_REJECTED",
+      "reason": "The signature component did not appear early enough in the first mobile viewport."
+    },
+    {
+      "asset_id": "qwen-tension-mobile-v2",
+      "file": "artifacts/qwen-full-film-concept-targets/mobile-tension-target-v2.png",
+      "sha256": "3BA9BDFAE6D530D7C99E04EC15824CA431F273F7FEE534F39A3CBFCB545B3921",
+      "route": "built-in image_gen edit/refinement",
+      "source_type": "generated-illustrative-ui-concept",
+      "surface": "mobile hero art-direction target",
+      "prompt_registry": "docs/qwen-full-film-experiment/ART_DIRECTION_PROMPT_PACK_RU.md",
+      "proof": false,
+      "status": "ACCEPTED_INTERNAL_TARGET_NOT_FOR_PUBLIC_USE",
+      "production_format": "Translate to code-native responsive composition; do not ship this raster as UI or proof."
+    },
+    {
+      "asset_id": "qwen-tension-material-source-v1",
+      "file": "artifacts/qwen-full-film-generated-assets/qwen-tension-material-source.png",
+      "sha256": "84707A492F4A6C9546B52A20498371DE915BE05877C52BF3EE959A0F393438D1",
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      },
+      "route": "built-in image_gen",
+      "source_type": "generated-illustrative-material-source",
+      "art_direction_parent_asset_ids": [
+        "qwen-tension-desktop-v2",
+        "qwen-tension-mobile-v2"
+      ],
+      "prompt_record_id": "qwen-tension-material-prompt-v1",
+      "prompt_registry": "docs/qwen-full-film-experiment/ART_DIRECTION_PROMPT_PACK_RU.md",
+      "raw_prompt_status": "UNKNOWN_NOT_RECORDED_VERBATIM",
+      "surface": "source for decorative material hero layer",
+      "proof": false,
+      "embedded_in_candidate": false,
+      "content_review": {
+        "real_people": false,
+        "logos_or_brand_marks": false,
+        "readable_text": false,
+        "client_or_result_claim": false,
+        "private_identifiers": false,
+        "metadata_exif_xmp_icc_text_gps": false,
+        "review_basis": "Local visual and metadata inspection of the current source file."
+      },
+      "status": "candidate_not_published_owner_gate",
+      "public_use_gate": "BLOCK_PUBLIC_USE_PENDING_OWNER_APPROVAL"
+    },
+    {
+      "asset_id": "qwen-tension-material-desktop-v1",
+      "file": "assets/generated/qwen-tension-material-desktop.webp",
+      "sha256": "1A4414495B110C77183FB586F0058637597A77DAA6B336C6F1B1BCCD5C5C38A7",
+      "dimensions": {
+        "width": 720,
+        "height": 900
+      },
+      "route": "deterministic local derivative",
+      "source_type": "generated-illustrative-material-derivative",
+      "parent_asset_id": "qwen-tension-material-source-v1",
+      "parent_sha256": "84707A492F4A6C9546B52A20498371DE915BE05877C52BF3EE959A0F393438D1",
+      "derivative_manifest": "docs/qwen-full-film-experiment/DERIVATIVE_MANIFEST.json",
+      "surface": "desktop decorative material hero layer",
+      "proof": false,
+      "embedded_in_candidate": true,
+      "candidate_embedding": "index.html hero picture inside aria-hidden decorative container with empty image alt",
+      "status": "candidate_not_published_owner_gate",
+      "public_use_gate": "BLOCK_PUBLIC_USE_PENDING_OWNER_APPROVAL"
+    },
+    {
+      "asset_id": "qwen-tension-material-mobile-v1",
+      "file": "assets/generated/qwen-tension-material-mobile.webp",
+      "sha256": "96DAD204270FBA2F3DC45C78D8B587493D2A8093B5F550F88FCB6DC72F2170E1",
+      "dimensions": {
+        "width": 360,
+        "height": 600
+      },
+      "route": "deterministic local derivative",
+      "source_type": "generated-illustrative-material-derivative",
+      "parent_asset_id": "qwen-tension-material-source-v1",
+      "parent_sha256": "84707A492F4A6C9546B52A20498371DE915BE05877C52BF3EE959A0F393438D1",
+      "derivative_manifest": "docs/qwen-full-film-experiment/DERIVATIVE_MANIFEST.json",
+      "surface": "mobile decorative material hero layer",
+      "proof": false,
+      "embedded_in_candidate": true,
+      "candidate_embedding": "index.html hero picture source inside aria-hidden decorative container",
+      "status": "candidate_not_published_owner_gate",
+      "public_use_gate": "BLOCK_PUBLIC_USE_PENDING_OWNER_APPROVAL"
+    }
+  ]
+}

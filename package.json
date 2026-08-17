@@ -1,0 +1,13 @@
+{
+  "name": "ohtaawa-campaign-landing",
+  "version": "0.0.0-private",
+  "private": true,
+  "scripts": {
+    "qa:qwen": "node scripts/sol_qa_v2_1.cjs",
+    "qa:qwen:performance": "node scripts/sol_perf_v2_2.cjs",
+    "qa:qwen:motion": "node scripts/sol_motion_proof_v2_3.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}
