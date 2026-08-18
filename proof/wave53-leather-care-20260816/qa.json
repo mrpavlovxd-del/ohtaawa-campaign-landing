@@ -1,0 +1,2920 @@
+{
+  "pass": true,
+  "url": "http://127.0.0.1:4197/leather-care/?utm_source=codex&utm_medium=qa&utm_campaign=wave53_ya_search_leather_care_3500&scenario=leather_care_fixed_3500&experiment_id=wave53&qa=1",
+  "reports": [
+    {
+      "name": "desktop-1440",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "staticChecks": {
+        "lang": "ru",
+        "h1Count": 1,
+        "mainExists": true,
+        "skipLinkExists": true,
+        "dialogLabelled": true,
+        "headingSkips": [],
+        "unnamedInteractive": [],
+        "missingAlt": [],
+        "tapTargetFailures": [],
+        "noHorizontalOverflow": true,
+        "brokenImages": [],
+        "heroCtaText": "Узнать ближайшее время ↗",
+        "heroCtaInFirstViewport": true,
+        "heroDirectChannelCount": 0,
+        "openContactCount": 5,
+        "contactChannelCount": 4,
+        "priceText": "3 500 ₽",
+        "offerTitle": "Чистка кожии кондиционер Koch",
+        "bodyRoute": "leather_care",
+        "counterData": "110584673",
+        "config": {
+          "metrikaCounter": 110584673,
+          "landingVersion": "wave53-leather-care-v1",
+          "serviceRoute": "leather_care",
+          "offerId": "leather_care_koch_fixed_3500",
+          "experimentId": "wave53",
+          "scenarioDefault": "leather_care_fixed_3500",
+          "pageViewGoal": "landing_view_leather_care_w53",
+          "contactSheetGoal": "contact_sheet_open_leather_care_w53",
+          "contactChannelGoal": "contact_channel_click_leather_care_w53",
+          "scrollGoals": {
+            "50": "landing_scroll_50_leather_care_w53",
+            "90": "landing_scroll_90_leather_care_w53"
+          },
+          "contactGoals": {
+            "phone": "lead_phone_leather_care_w53",
+            "telegram": "lead_telegram_leather_care_w53",
+            "whatsapp": "lead_whatsapp_leather_care_w53",
+            "max": "lead_max_leather_care_w53"
+          },
+          "whatsappUrl": "https://wa.me/79910102020"
+        },
+        "attribution": {
+          "utm_source": "codex",
+          "utm_medium": "qa",
+          "utm_campaign": "wave53_ya_search_leather_care_3500",
+          "utm_content": "none",
+          "utm_term": "none",
+          "scenario": "leather_care_fixed_3500",
+          "experiment_id": "wave53",
+          "service_route": "leather_care",
+          "offer_id": "leather_care_koch_fixed_3500",
+          "landing_version": "wave53-leather-care-v1"
+        },
+        "isQa": true,
+        "mapHasSrc": false,
+        "reducedMotion": true
+      },
+      "dialogFocusContained": true,
+      "faqOpen": true,
+      "tracking": {
+        "observedNames": [
+          "contact_sheet_open_leather_care_w53",
+          "contact_channel_click_leather_care_w53",
+          "lead_telegram_leather_care_w53",
+          "contact_channel_click_leather_care_w53",
+          "lead_whatsapp_leather_care_w53",
+          "contact_channel_click_leather_care_w53",
+          "lead_max_leather_care_w53",
+          "contact_channel_click_leather_care_w53",
+          "lead_phone_leather_care_w53",
+          "offer_terms_view_leather_care_w53",
+          "trust_view_leather_care_w53",
+          "process_view_leather_care_w53",
+          "landing_scroll_50_leather_care_w53",
+          "landing_scroll_90_leather_care_w53"
+        ],
+        "qaEventNames": [
+          "landing_view_leather_care_w53",
+          "price_view_leather_care_w53",
+          "contact_sheet_open_leather_care_w53",
+          "contact_channel_click_leather_care_w53",
+          "lead_telegram_leather_care_w53",
+          "contact_channel_click_leather_care_w53",
+          "lead_whatsapp_leather_care_w53",
+          "contact_channel_click_leather_care_w53",
+          "lead_max_leather_care_w53",
+          "contact_channel_click_leather_care_w53",
+          "lead_phone_leather_care_w53",
+          "offer_terms_view_leather_care_w53",
+          "trust_view_leather_care_w53",
+          "process_view_leather_care_w53",
+          "landing_scroll_50_leather_care_w53",
+          "landing_scroll_90_leather_care_w53"
+        ],
+        "missingObserved": [],
+        "whatsappPrefillPresent": true
+      },
+      "network": {
+        "metrikaRequests": [],
+        "externalRequests": [],
+        "sameOriginErrors": [],
+        "sameOriginFailures": []
+      },
+      "performance": {
+        "initial": {
+          "fcp": 1008,
+          "ttfb": 18,
+          "domContentLoaded": 478.6,
+          "transferBytes": 400250,
+          "encodedBytes": 398450,
+          "resourceCount": 6,
+          "vitals": {
+            "lcp": 1008,
+            "cls": 0,
+            "longTaskMs": 432
+          }
+        },
+        "finalVitals": {
+          "lcp": 1008,
+          "cls": 0,
+          "longTaskMs": 432
+        }
+      },
+      "finalChecks": {
+        "noHorizontalOverflow": true,
+        "brokenImages": [],
+        "observed": [
+          {
+            "event": "contact_sheet_open_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:27.390Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "contact_channel_click_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "telegram",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:27.750Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "lead_telegram_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "telegram",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:27.750Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "contact_channel_click_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "whatsapp",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:27.801Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "lead_whatsapp_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "whatsapp",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:27.801Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "contact_channel_click_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "max",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:27.835Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "lead_max_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "max",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:27.835Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "contact_channel_click_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "phone",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:27.872Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "lead_phone_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "phone",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:27.872Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "offer_terms_view_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "visible_ratio": 0.61,
+              "event_time": "2026-08-16T03:00:28.098Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "trust_view_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "visible_ratio": 0.99,
+              "event_time": "2026-08-16T03:00:28.222Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "process_view_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "visible_ratio": 0.77,
+              "event_time": "2026-08-16T03:00:28.284Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "landing_scroll_50_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "scroll_percent": 50,
+              "event_time": "2026-08-16T03:00:28.346Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "landing_scroll_90_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "scroll_percent": 90,
+              "event_time": "2026-08-16T03:00:28.496Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          }
+        ],
+        "qaEvents": [
+          {
+            "event": "landing_view_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "viewport_width": 1440,
+              "viewport_height": 900,
+              "referrer_host": "direct",
+              "event_time": "2026-08-16T03:00:26.124Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "price_view_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "visible_ratio": 1,
+              "event_time": "2026-08-16T03:00:26.208Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "contact_sheet_open_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:27.390Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "contact_channel_click_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "telegram",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:27.750Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "lead_telegram_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "telegram",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:27.750Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "contact_channel_click_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "whatsapp",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:27.801Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "lead_whatsapp_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "whatsapp",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:27.801Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "contact_channel_click_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "max",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:27.835Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "lead_max_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "max",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:27.835Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "contact_channel_click_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "phone",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:27.872Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "lead_phone_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "phone",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:27.872Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "offer_terms_view_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "visible_ratio": 0.61,
+              "event_time": "2026-08-16T03:00:28.098Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "trust_view_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "visible_ratio": 0.99,
+              "event_time": "2026-08-16T03:00:28.222Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "process_view_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "visible_ratio": 0.77,
+              "event_time": "2026-08-16T03:00:28.284Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "landing_scroll_50_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "scroll_percent": 50,
+              "event_time": "2026-08-16T03:00:28.346Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "landing_scroll_90_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "scroll_percent": 90,
+              "event_time": "2026-08-16T03:00:28.496Z",
+              "page_path": "/leather-care/"
+            }
+          }
+        ],
+        "vitals": {
+          "lcp": 1008,
+          "cls": 0,
+          "longTaskMs": 432
+        }
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "name": "mobile-430",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "staticChecks": {
+        "lang": "ru",
+        "h1Count": 1,
+        "mainExists": true,
+        "skipLinkExists": true,
+        "dialogLabelled": true,
+        "headingSkips": [],
+        "unnamedInteractive": [],
+        "missingAlt": [],
+        "tapTargetFailures": [],
+        "noHorizontalOverflow": true,
+        "brokenImages": [],
+        "heroCtaText": "Узнать ближайшее время ↗",
+        "heroCtaInFirstViewport": true,
+        "heroDirectChannelCount": 0,
+        "openContactCount": 5,
+        "contactChannelCount": 4,
+        "priceText": "3 500 ₽",
+        "offerTitle": "Чистка кожии кондиционер Koch",
+        "bodyRoute": "leather_care",
+        "counterData": "110584673",
+        "config": {
+          "metrikaCounter": 110584673,
+          "landingVersion": "wave53-leather-care-v1",
+          "serviceRoute": "leather_care",
+          "offerId": "leather_care_koch_fixed_3500",
+          "experimentId": "wave53",
+          "scenarioDefault": "leather_care_fixed_3500",
+          "pageViewGoal": "landing_view_leather_care_w53",
+          "contactSheetGoal": "contact_sheet_open_leather_care_w53",
+          "contactChannelGoal": "contact_channel_click_leather_care_w53",
+          "scrollGoals": {
+            "50": "landing_scroll_50_leather_care_w53",
+            "90": "landing_scroll_90_leather_care_w53"
+          },
+          "contactGoals": {
+            "phone": "lead_phone_leather_care_w53",
+            "telegram": "lead_telegram_leather_care_w53",
+            "whatsapp": "lead_whatsapp_leather_care_w53",
+            "max": "lead_max_leather_care_w53"
+          },
+          "whatsappUrl": "https://wa.me/79910102020"
+        },
+        "attribution": {
+          "utm_source": "codex",
+          "utm_medium": "qa",
+          "utm_campaign": "wave53_ya_search_leather_care_3500",
+          "utm_content": "none",
+          "utm_term": "none",
+          "scenario": "leather_care_fixed_3500",
+          "experiment_id": "wave53",
+          "service_route": "leather_care",
+          "offer_id": "leather_care_koch_fixed_3500",
+          "landing_version": "wave53-leather-care-v1"
+        },
+        "isQa": true,
+        "mapHasSrc": false,
+        "reducedMotion": true
+      },
+      "dialogFocusContained": true,
+      "faqOpen": true,
+      "tracking": {
+        "observedNames": [
+          "contact_sheet_open_leather_care_w53",
+          "contact_channel_click_leather_care_w53",
+          "lead_telegram_leather_care_w53",
+          "contact_channel_click_leather_care_w53",
+          "lead_whatsapp_leather_care_w53",
+          "contact_channel_click_leather_care_w53",
+          "lead_max_leather_care_w53",
+          "contact_channel_click_leather_care_w53",
+          "lead_phone_leather_care_w53",
+          "offer_terms_view_leather_care_w53",
+          "trust_view_leather_care_w53",
+          "process_view_leather_care_w53",
+          "landing_scroll_50_leather_care_w53",
+          "landing_scroll_90_leather_care_w53"
+        ],
+        "qaEventNames": [
+          "landing_view_leather_care_w53",
+          "price_view_leather_care_w53",
+          "contact_sheet_open_leather_care_w53",
+          "contact_channel_click_leather_care_w53",
+          "lead_telegram_leather_care_w53",
+          "contact_channel_click_leather_care_w53",
+          "lead_whatsapp_leather_care_w53",
+          "contact_channel_click_leather_care_w53",
+          "lead_max_leather_care_w53",
+          "contact_channel_click_leather_care_w53",
+          "lead_phone_leather_care_w53",
+          "offer_terms_view_leather_care_w53",
+          "trust_view_leather_care_w53",
+          "process_view_leather_care_w53",
+          "landing_scroll_50_leather_care_w53",
+          "landing_scroll_90_leather_care_w53"
+        ],
+        "missingObserved": [],
+        "whatsappPrefillPresent": true
+      },
+      "network": {
+        "metrikaRequests": [],
+        "externalRequests": [],
+        "sameOriginErrors": [],
+        "sameOriginFailures": []
+      },
+      "performance": {
+        "initial": {
+          "fcp": 712,
+          "ttfb": 3.2,
+          "domContentLoaded": 633.6,
+          "transferBytes": 314758,
+          "encodedBytes": 312958,
+          "resourceCount": 6,
+          "vitals": {
+            "lcp": 712,
+            "cls": 0,
+            "longTaskMs": 599
+          }
+        },
+        "finalVitals": {
+          "lcp": 712,
+          "cls": 0,
+          "longTaskMs": 599
+        }
+      },
+      "finalChecks": {
+        "noHorizontalOverflow": true,
+        "brokenImages": [],
+        "observed": [
+          {
+            "event": "contact_sheet_open_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:31.579Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "contact_channel_click_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "telegram",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:31.745Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "lead_telegram_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "telegram",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:31.745Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "contact_channel_click_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "whatsapp",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:31.779Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "lead_whatsapp_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "whatsapp",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:31.779Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "contact_channel_click_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "max",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:31.815Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "lead_max_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "max",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:31.815Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "contact_channel_click_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "phone",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:31.853Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "lead_phone_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "phone",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:31.854Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "offer_terms_view_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "visible_ratio": 0.6,
+              "event_time": "2026-08-16T03:00:32.085Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "trust_view_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "visible_ratio": 1,
+              "event_time": "2026-08-16T03:00:32.194Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "process_view_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "visible_ratio": 0.72,
+              "event_time": "2026-08-16T03:00:32.256Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "landing_scroll_50_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "scroll_percent": 50,
+              "event_time": "2026-08-16T03:00:32.303Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "landing_scroll_90_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "scroll_percent": 90,
+              "event_time": "2026-08-16T03:00:32.517Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          }
+        ],
+        "qaEvents": [
+          {
+            "event": "landing_view_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "viewport_width": 430,
+              "viewport_height": 932,
+              "referrer_host": "direct",
+              "event_time": "2026-08-16T03:00:30.582Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "price_view_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "visible_ratio": 1,
+              "event_time": "2026-08-16T03:00:30.591Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "contact_sheet_open_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:31.579Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "contact_channel_click_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "telegram",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:31.745Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "lead_telegram_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "telegram",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:31.745Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "contact_channel_click_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "whatsapp",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:31.779Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "lead_whatsapp_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "whatsapp",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:31.779Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "contact_channel_click_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "max",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:31.815Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "lead_max_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "max",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:31.815Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "contact_channel_click_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "phone",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:31.853Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "lead_phone_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "phone",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:31.854Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "offer_terms_view_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "visible_ratio": 0.6,
+              "event_time": "2026-08-16T03:00:32.085Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "trust_view_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "visible_ratio": 1,
+              "event_time": "2026-08-16T03:00:32.194Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "process_view_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "visible_ratio": 0.72,
+              "event_time": "2026-08-16T03:00:32.256Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "landing_scroll_50_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "scroll_percent": 50,
+              "event_time": "2026-08-16T03:00:32.303Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "landing_scroll_90_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "scroll_percent": 90,
+              "event_time": "2026-08-16T03:00:32.517Z",
+              "page_path": "/leather-care/"
+            }
+          }
+        ],
+        "vitals": {
+          "lcp": 712,
+          "cls": 0,
+          "longTaskMs": 599
+        }
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "name": "mobile-390",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "staticChecks": {
+        "lang": "ru",
+        "h1Count": 1,
+        "mainExists": true,
+        "skipLinkExists": true,
+        "dialogLabelled": true,
+        "headingSkips": [],
+        "unnamedInteractive": [],
+        "missingAlt": [],
+        "tapTargetFailures": [],
+        "noHorizontalOverflow": true,
+        "brokenImages": [],
+        "heroCtaText": "Узнать ближайшее время ↗",
+        "heroCtaInFirstViewport": true,
+        "heroDirectChannelCount": 0,
+        "openContactCount": 5,
+        "contactChannelCount": 4,
+        "priceText": "3 500 ₽",
+        "offerTitle": "Чистка кожии кондиционер Koch",
+        "bodyRoute": "leather_care",
+        "counterData": "110584673",
+        "config": {
+          "metrikaCounter": 110584673,
+          "landingVersion": "wave53-leather-care-v1",
+          "serviceRoute": "leather_care",
+          "offerId": "leather_care_koch_fixed_3500",
+          "experimentId": "wave53",
+          "scenarioDefault": "leather_care_fixed_3500",
+          "pageViewGoal": "landing_view_leather_care_w53",
+          "contactSheetGoal": "contact_sheet_open_leather_care_w53",
+          "contactChannelGoal": "contact_channel_click_leather_care_w53",
+          "scrollGoals": {
+            "50": "landing_scroll_50_leather_care_w53",
+            "90": "landing_scroll_90_leather_care_w53"
+          },
+          "contactGoals": {
+            "phone": "lead_phone_leather_care_w53",
+            "telegram": "lead_telegram_leather_care_w53",
+            "whatsapp": "lead_whatsapp_leather_care_w53",
+            "max": "lead_max_leather_care_w53"
+          },
+          "whatsappUrl": "https://wa.me/79910102020"
+        },
+        "attribution": {
+          "utm_source": "codex",
+          "utm_medium": "qa",
+          "utm_campaign": "wave53_ya_search_leather_care_3500",
+          "utm_content": "none",
+          "utm_term": "none",
+          "scenario": "leather_care_fixed_3500",
+          "experiment_id": "wave53",
+          "service_route": "leather_care",
+          "offer_id": "leather_care_koch_fixed_3500",
+          "landing_version": "wave53-leather-care-v1"
+        },
+        "isQa": true,
+        "mapHasSrc": false,
+        "reducedMotion": true
+      },
+      "dialogFocusContained": true,
+      "faqOpen": true,
+      "tracking": {
+        "observedNames": [
+          "contact_sheet_open_leather_care_w53",
+          "contact_channel_click_leather_care_w53",
+          "lead_telegram_leather_care_w53",
+          "contact_channel_click_leather_care_w53",
+          "lead_whatsapp_leather_care_w53",
+          "contact_channel_click_leather_care_w53",
+          "lead_max_leather_care_w53",
+          "contact_channel_click_leather_care_w53",
+          "lead_phone_leather_care_w53",
+          "offer_terms_view_leather_care_w53",
+          "trust_view_leather_care_w53",
+          "process_view_leather_care_w53",
+          "landing_scroll_50_leather_care_w53",
+          "landing_scroll_90_leather_care_w53"
+        ],
+        "qaEventNames": [
+          "landing_view_leather_care_w53",
+          "price_view_leather_care_w53",
+          "contact_sheet_open_leather_care_w53",
+          "contact_channel_click_leather_care_w53",
+          "lead_telegram_leather_care_w53",
+          "contact_channel_click_leather_care_w53",
+          "lead_whatsapp_leather_care_w53",
+          "contact_channel_click_leather_care_w53",
+          "lead_max_leather_care_w53",
+          "contact_channel_click_leather_care_w53",
+          "lead_phone_leather_care_w53",
+          "offer_terms_view_leather_care_w53",
+          "trust_view_leather_care_w53",
+          "process_view_leather_care_w53",
+          "landing_scroll_50_leather_care_w53",
+          "landing_scroll_90_leather_care_w53"
+        ],
+        "missingObserved": [],
+        "whatsappPrefillPresent": true
+      },
+      "network": {
+        "metrikaRequests": [],
+        "externalRequests": [],
+        "sameOriginErrors": [],
+        "sameOriginFailures": []
+      },
+      "performance": {
+        "initial": {
+          "fcp": 252,
+          "ttfb": 2.4,
+          "domContentLoaded": 196.6,
+          "transferBytes": 314758,
+          "encodedBytes": 312958,
+          "resourceCount": 6,
+          "vitals": {
+            "lcp": 252,
+            "cls": 0,
+            "longTaskMs": 168
+          }
+        },
+        "finalVitals": {
+          "lcp": 252,
+          "cls": 0,
+          "longTaskMs": 168
+        }
+      },
+      "finalChecks": {
+        "noHorizontalOverflow": true,
+        "brokenImages": [],
+        "observed": [
+          {
+            "event": "contact_sheet_open_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:34.473Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "contact_channel_click_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "telegram",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:34.683Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "lead_telegram_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "telegram",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:34.683Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "contact_channel_click_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "whatsapp",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:34.718Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "lead_whatsapp_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "whatsapp",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:34.718Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "contact_channel_click_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "max",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:34.755Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "lead_max_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "max",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:34.755Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "contact_channel_click_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "phone",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:34.788Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "lead_phone_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "phone",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:34.788Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "offer_terms_view_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "visible_ratio": 0.54,
+              "event_time": "2026-08-16T03:00:35.027Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "trust_view_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "visible_ratio": 0.83,
+              "event_time": "2026-08-16T03:00:35.120Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "process_view_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "visible_ratio": 0.45,
+              "event_time": "2026-08-16T03:00:35.168Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "landing_scroll_50_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "scroll_percent": 50,
+              "event_time": "2026-08-16T03:00:35.290Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "landing_scroll_90_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "scroll_percent": 90,
+              "event_time": "2026-08-16T03:00:35.492Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          }
+        ],
+        "qaEvents": [
+          {
+            "event": "landing_view_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "viewport_width": 390,
+              "viewport_height": 844,
+              "referrer_host": "direct",
+              "event_time": "2026-08-16T03:00:33.527Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "price_view_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "visible_ratio": 1,
+              "event_time": "2026-08-16T03:00:33.532Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "contact_sheet_open_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:34.473Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "contact_channel_click_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "telegram",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:34.683Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "lead_telegram_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "telegram",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:34.683Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "contact_channel_click_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "whatsapp",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:34.718Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "lead_whatsapp_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "whatsapp",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:34.718Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "contact_channel_click_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "max",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:34.755Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "lead_max_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "max",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:34.755Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "contact_channel_click_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "phone",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:34.788Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "lead_phone_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "phone",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:34.788Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "offer_terms_view_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "visible_ratio": 0.54,
+              "event_time": "2026-08-16T03:00:35.027Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "trust_view_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "visible_ratio": 0.83,
+              "event_time": "2026-08-16T03:00:35.120Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "process_view_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "visible_ratio": 0.45,
+              "event_time": "2026-08-16T03:00:35.168Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "landing_scroll_50_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "scroll_percent": 50,
+              "event_time": "2026-08-16T03:00:35.290Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "landing_scroll_90_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "scroll_percent": 90,
+              "event_time": "2026-08-16T03:00:35.492Z",
+              "page_path": "/leather-care/"
+            }
+          }
+        ],
+        "vitals": {
+          "lcp": 252,
+          "cls": 0,
+          "longTaskMs": 168
+        }
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "name": "mobile-360",
+      "viewport": {
+        "width": 360,
+        "height": 800
+      },
+      "staticChecks": {
+        "lang": "ru",
+        "h1Count": 1,
+        "mainExists": true,
+        "skipLinkExists": true,
+        "dialogLabelled": true,
+        "headingSkips": [],
+        "unnamedInteractive": [],
+        "missingAlt": [],
+        "tapTargetFailures": [],
+        "noHorizontalOverflow": true,
+        "brokenImages": [],
+        "heroCtaText": "Узнать ближайшее время ↗",
+        "heroCtaInFirstViewport": true,
+        "heroDirectChannelCount": 0,
+        "openContactCount": 5,
+        "contactChannelCount": 4,
+        "priceText": "3 500 ₽",
+        "offerTitle": "Чистка кожии кондиционер Koch",
+        "bodyRoute": "leather_care",
+        "counterData": "110584673",
+        "config": {
+          "metrikaCounter": 110584673,
+          "landingVersion": "wave53-leather-care-v1",
+          "serviceRoute": "leather_care",
+          "offerId": "leather_care_koch_fixed_3500",
+          "experimentId": "wave53",
+          "scenarioDefault": "leather_care_fixed_3500",
+          "pageViewGoal": "landing_view_leather_care_w53",
+          "contactSheetGoal": "contact_sheet_open_leather_care_w53",
+          "contactChannelGoal": "contact_channel_click_leather_care_w53",
+          "scrollGoals": {
+            "50": "landing_scroll_50_leather_care_w53",
+            "90": "landing_scroll_90_leather_care_w53"
+          },
+          "contactGoals": {
+            "phone": "lead_phone_leather_care_w53",
+            "telegram": "lead_telegram_leather_care_w53",
+            "whatsapp": "lead_whatsapp_leather_care_w53",
+            "max": "lead_max_leather_care_w53"
+          },
+          "whatsappUrl": "https://wa.me/79910102020"
+        },
+        "attribution": {
+          "utm_source": "codex",
+          "utm_medium": "qa",
+          "utm_campaign": "wave53_ya_search_leather_care_3500",
+          "utm_content": "none",
+          "utm_term": "none",
+          "scenario": "leather_care_fixed_3500",
+          "experiment_id": "wave53",
+          "service_route": "leather_care",
+          "offer_id": "leather_care_koch_fixed_3500",
+          "landing_version": "wave53-leather-care-v1"
+        },
+        "isQa": true,
+        "mapHasSrc": false,
+        "reducedMotion": true
+      },
+      "dialogFocusContained": true,
+      "faqOpen": true,
+      "tracking": {
+        "observedNames": [
+          "contact_sheet_open_leather_care_w53",
+          "contact_channel_click_leather_care_w53",
+          "lead_telegram_leather_care_w53",
+          "contact_channel_click_leather_care_w53",
+          "lead_whatsapp_leather_care_w53",
+          "contact_channel_click_leather_care_w53",
+          "lead_max_leather_care_w53",
+          "contact_channel_click_leather_care_w53",
+          "lead_phone_leather_care_w53",
+          "offer_terms_view_leather_care_w53",
+          "trust_view_leather_care_w53",
+          "process_view_leather_care_w53",
+          "landing_scroll_50_leather_care_w53",
+          "landing_scroll_90_leather_care_w53"
+        ],
+        "qaEventNames": [
+          "landing_view_leather_care_w53",
+          "price_view_leather_care_w53",
+          "contact_sheet_open_leather_care_w53",
+          "contact_channel_click_leather_care_w53",
+          "lead_telegram_leather_care_w53",
+          "contact_channel_click_leather_care_w53",
+          "lead_whatsapp_leather_care_w53",
+          "contact_channel_click_leather_care_w53",
+          "lead_max_leather_care_w53",
+          "contact_channel_click_leather_care_w53",
+          "lead_phone_leather_care_w53",
+          "offer_terms_view_leather_care_w53",
+          "trust_view_leather_care_w53",
+          "process_view_leather_care_w53",
+          "landing_scroll_50_leather_care_w53",
+          "landing_scroll_90_leather_care_w53"
+        ],
+        "missingObserved": [],
+        "whatsappPrefillPresent": true
+      },
+      "network": {
+        "metrikaRequests": [],
+        "externalRequests": [],
+        "sameOriginErrors": [],
+        "sameOriginFailures": []
+      },
+      "performance": {
+        "initial": {
+          "fcp": 312,
+          "ttfb": 2.1,
+          "domContentLoaded": 292.1,
+          "transferBytes": 314758,
+          "encodedBytes": 312958,
+          "resourceCount": 6,
+          "vitals": {
+            "lcp": 312,
+            "cls": 0,
+            "longTaskMs": 94
+          }
+        },
+        "finalVitals": {
+          "lcp": 312,
+          "cls": 0,
+          "longTaskMs": 94
+        }
+      },
+      "finalChecks": {
+        "noHorizontalOverflow": true,
+        "brokenImages": [],
+        "observed": [
+          {
+            "event": "contact_sheet_open_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:37.996Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "contact_channel_click_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "telegram",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:38.158Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "lead_telegram_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "telegram",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:38.158Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "contact_channel_click_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "whatsapp",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:38.194Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "lead_whatsapp_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "whatsapp",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:38.194Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "contact_channel_click_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "max",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:38.232Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "lead_max_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "max",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:38.232Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "contact_channel_click_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "phone",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:38.269Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "lead_phone_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "phone",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:38.269Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "offer_terms_view_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "visible_ratio": 0.52,
+              "event_time": "2026-08-16T03:00:38.497Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "trust_view_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "visible_ratio": 0.71,
+              "event_time": "2026-08-16T03:00:38.623Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "process_view_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "visible_ratio": 0.78,
+              "event_time": "2026-08-16T03:00:38.746Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "landing_scroll_50_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "scroll_percent": 50,
+              "event_time": "2026-08-16T03:00:38.791Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          },
+          {
+            "event": "landing_scroll_90_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "scroll_percent": 90,
+              "event_time": "2026-08-16T03:00:39.101Z",
+              "page_path": "/leather-care/"
+            },
+            "qa": true
+          }
+        ],
+        "qaEvents": [
+          {
+            "event": "landing_view_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "viewport_width": 360,
+              "viewport_height": 800,
+              "referrer_host": "direct",
+              "event_time": "2026-08-16T03:00:37.048Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "price_view_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "visible_ratio": 1,
+              "event_time": "2026-08-16T03:00:37.051Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "contact_sheet_open_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:37.996Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "contact_channel_click_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "telegram",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:38.158Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "lead_telegram_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "telegram",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:38.158Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "contact_channel_click_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "whatsapp",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:38.194Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "lead_whatsapp_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "whatsapp",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:38.194Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "contact_channel_click_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "max",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:38.232Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "lead_max_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "max",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:38.232Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "contact_channel_click_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "phone",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:38.269Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "lead_phone_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "channel": "phone",
+              "location": "hero",
+              "event_time": "2026-08-16T03:00:38.269Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "offer_terms_view_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "visible_ratio": 0.52,
+              "event_time": "2026-08-16T03:00:38.497Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "trust_view_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "visible_ratio": 0.71,
+              "event_time": "2026-08-16T03:00:38.623Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "process_view_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "visible_ratio": 0.78,
+              "event_time": "2026-08-16T03:00:38.746Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "landing_scroll_50_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "scroll_percent": 50,
+              "event_time": "2026-08-16T03:00:38.791Z",
+              "page_path": "/leather-care/"
+            }
+          },
+          {
+            "event": "landing_scroll_90_leather_care_w53",
+            "payload": {
+              "utm_source": "codex",
+              "utm_medium": "qa",
+              "utm_campaign": "wave53_ya_search_leather_care_3500",
+              "utm_content": "none",
+              "utm_term": "none",
+              "scenario": "leather_care_fixed_3500",
+              "experiment_id": "wave53",
+              "service_route": "leather_care",
+              "offer_id": "leather_care_koch_fixed_3500",
+              "landing_version": "wave53-leather-care-v1",
+              "scroll_percent": 90,
+              "event_time": "2026-08-16T03:00:39.101Z",
+              "page_path": "/leather-care/"
+            }
+          }
+        ],
+        "vitals": {
+          "lcp": 312,
+          "cls": 0,
+          "longTaskMs": 94
+        }
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "pass": true
+    }
+  ],
+  "nonQaMapping": {
+    "pass": true,
+    "isQa": false,
+    "metrikaRequests": [
+      "https://mc.yandex.ru/metrika/tag.js"
+    ],
+    "counters": [
+      110584673
+    ],
+    "goalNames": [
+      "landing_view_leather_care_w53",
+      "price_view_leather_care_w53",
+      "contact_sheet_open_leather_care_w53",
+      "contact_channel_click_leather_care_w53",
+      "lead_whatsapp_leather_care_w53"
+    ],
+    "landingPayload": {
+      "utm_source": "yandex",
+      "utm_medium": "cpc",
+      "utm_campaign": "wave53_ya_search_leather_care_3500",
+      "utm_content": "none",
+      "utm_term": "none",
+      "scenario": "leather_care_fixed_3500",
+      "experiment_id": "wave53",
+      "service_route": "leather_care",
+      "offer_id": "leather_care_koch_fixed_3500",
+      "landing_version": "wave53-leather-care-v1",
+      "viewport_width": 1440,
+      "viewport_height": 900,
+      "referrer_host": "direct",
+      "event_time": "2026-08-16T03:00:40.151Z",
+      "page_path": "/leather-care/"
+    }
+  }
+}
